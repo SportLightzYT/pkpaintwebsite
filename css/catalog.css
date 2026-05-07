@@ -474,8 +474,74 @@
 .color-grid.list-view .color-card-body {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+    padding: 12px 24px;
     flex: 1;
+}
+
+.color-grid.list-view .color-card-name {
+    flex: 1;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.color-grid.list-view .color-card-code {
+    min-width: 120px;
+}
+
+.color-grid.list-view .color-card-brand {
+    min-width: 140px;
+    margin-bottom: 0;
+}
+
+/* ═══ PAGINATION ═══ */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    color: #555;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    border-color: #1e90ff;
+    color: #1e90ff;
+    background: #f0f7ff;
+}
+
+.page-link.active {
+    background: #1e90ff;
+    border-color: #1e90ff;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
+.page-link.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.page-dots {
+    color: #999;
+    padding: 0 4px;
 }
 
 .no-results {
