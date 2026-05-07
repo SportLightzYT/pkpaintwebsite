@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="view-transition" content="same-origin" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <title>PK Paint & Supply - แคตตาล็อคโค้ดสี</title>
+    <meta name="description"
+        content="แคตตาล็อคโค้ดสีพ่นรถยนต์ ค้นหาโค้ดสีตามยี่ห้อรถ PK Paint & Supply รังสิต ปทุมธานี">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar (อัปเดตให้ตรงกับ contact.html) -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
+            <div class="logo-section">
+                <img src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
+                <div class="logo-text">PAINT & SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="products.html">สินค้า</a></li>
+            <li><a href="catalog.html" class="active">แคตตาล็อค</a></li>
+            <li><a href="promotions.html">โปรโมชั่น</a></li>
+            <li><a href="portfolio.html">ผลงานสีพ่น</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:0928528535">092-852-8535</a>
+            </div>
+            <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
+            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="catalog.html" class="active">แคตตาล็อค</a>
+        <a href="promotions.html">โปรโมชั่น</a>
+        <a href="portfolio.html">ผลงานสีพ่น</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <div class="mobile-nav-contact">
+            <a href="tel:0928528535"><i class="fas fa-phone-alt" style="margin-right:8px;color:#1e90ff;"></i>092-852-8535</a>
+            <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line" style="margin-right:8px;color:#00c300;"></i>LINE: @999snkil</a>
+            <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-container">
+        <div class="breadcrumb">
+            <a href="index.html">หน้าแรก</a> / <span>แคตตาล็อคโค้ดสี</span>
+        </div>
+
+        <h1 class="page-title">แคตตาล็อคโค้ดสี</h1>
+
+        <!-- Search (Standardized style) -->
+        <div class="search-wrap">
+            <input type="text" class="search-input" id="searchInput" placeholder="ค้นหาชื่อสี, โค้ดสี, หรือยี่ห้อรถ...">
+            <button class="search-clear" id="searchClear"><i class="fas fa-times"></i></button>
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <!-- Dropdown Filter -->
+        <section class="filter-section">
+            <div class="filter-wrap">
+                <div class="filter-row">
+                    <div class="dropdown-wrap" id="brandDropdown">
+                        <div class="dropdown-trigger" id="brandTrigger">
+                            <div class="dropdown-trigger-left">
+                                <i class="fas fa-car"></i>
+                                <span class="dropdown-trigger-text" id="brandTriggerText">ยี่ห้อรถทั้งหมด</span>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <span class="dropdown-trigger-count" id="brandCount">0</span>
+                                <i class="fas fa-chevron-down chevron"></i>
+                            </div>
+                        </div>
+                        <div class="dropdown-panel" id="brandPanel"></div>
+                    </div>
+                </div>
+                <div class="active-filters" id="activeFilters" style="display:none;"></div>
+            </div>
+        </section>
+
+        <!-- Color Grid -->
+        <section class="catalog-section">
+            <div class="catalog-toolbar">
+                <div class="catalog-toolbar-left">แสดง <span id="showingCount">0</span> รายการ</div>
+                
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid" title="ตาราง"><i class="fas fa-th"></i></button>
+                    <button class="view-btn" data-view="list" title="รายการ"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            <div class="color-grid" id="colorGrid"></div>
+            <div class="no-results" id="noResults">
+                <i class="fas fa-search"></i>
+                <h3>ไม่พบผลลัพธ์</h3>
+                <p>ลองค้นหาด้วยคำอื่น หรือเลือกยี่ห้อรถจากตัวกรองด้านบน</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>ไม่เจอโค้ดสีที่ต้องการ?</h2>
+            <p>แจ้งยี่ห้อ รุ่นรถ และปีผลิต ทีมงานจะช่วยค้นหาโค้ดสีที่ถูกต้องให้</p>
+            <div class="cta-buttons">
+                <a class="btn-primary" href="contact.html"><i class="fas fa-phone-alt"></i> ติดต่อเรา</a>
+                <a class="btn-line" href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line"></i> แชทผ่าน LINE</a>
+                <a class="btn-secondary" href="products.html"><i class="fas fa-shopping-bag"></i> ดูสินค้า</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <div class="lightbox-swatch" id="lightboxSwatch"></div>
+            <div class="lightbox-info">
+                <div class="lb-brand" id="lightboxBrand"></div>
+                <div class="lb-name" id="lightboxName"></div>
+                <div class="lb-code" id="lightboxCode"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="asset/PK Logo-05.png" alt="PK Paint & Supply Logo" class="footer-logo-img">
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:#fff;">PAINT & SUPPLY</div>
+                        <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
+                    </div>
+                </div>
+                <p class="footer-desc">จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K สีเบอร์ตรงรุ่นรถ<br>ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศไทย</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">เมนู</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="products.html">สินค้า</a></li>
+                    <li><a href="catalog.html" class="active">แคตตาล็อค</a></li>
+                    <li><a href="promotions.html">โปรโมชั่น</a></li>
+                    <li><a href="portfolio.html">ผลงานสีพ่น</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">ติดต่อเรา</h4>
+                <div class="footer-contact">
+                    <div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div>
+                    <div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></div>
+                    <div><i class="fas fa-envelope"></i><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div>
+                    <div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6 ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บางพูน อ.เมือง จ.ปทุมธานี</div>
+                    <div style="margin-top:6px;"><a href="https://maps.app.goo.gl/c7nbR1D9EkWsN8GJ8" target="_blank" rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions" style="margin-right:4px;"></i>เปิดนำทาง Google Maps</a></div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">ติดตามเรา</h4>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint & Supply. All Rights Reserved.</div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="กลับขึ้นด้านบน"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="js/catalog.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyxPjiipS96G679+9fJ3Z4S82X+8t+T9u6x1S5R1y5v5v5v5v5v5v5v5v5v5v" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

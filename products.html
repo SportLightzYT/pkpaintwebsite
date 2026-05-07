@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="view-transition" content="same-origin" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <title>PK Paint &amp; Supply - สินค้า</title>
+    <meta name="description"
+        content="เลือกซื้อสีพ่นรถยนต์และอุปกรณ์พ่นสีคุณภาพสูงจาก PK Paint &amp; Supply พร้อมโปรโมชั่นและบริการให้คำปรึกษา รังสิต ปทุมธานี">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar (อัปเดตให้ตรงกับ contact.html และ index.html) -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
+            <div class="logo-section">
+                <img src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
+                <div class="logo-text">PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="products.html" class="active">สินค้า</a></li>
+            <li><a href="catalog.html">แคตตาล็อค</a></li>
+            <li><a href="promotions.html">โปรโมชั่น</a></li>
+            <li><a href="portfolio.html">ผลงานสีพ่น</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:0928528535">092-852-8535</a>
+            </div>
+            <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
+            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html" class="active">สินค้า</a>
+        <a href="catalog.html">แคตตาล็อค</a>
+        <a href="promotions.html">โปรโมชั่น</a>
+        <a href="portfolio.html">ผลงานสีพ่น</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <div class="mobile-nav-contact">
+            <a href="tel:0928528535"><i class="fas fa-phone-alt" style="margin-right:8px;color:#1e90ff;"></i>092-852-8535</a>
+            <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line" style="margin-right:8px;color:#00c300;"></i>LINE: @999snkil</a>
+            <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-container">
+        <div class="breadcrumb">
+            <a href="index.html">หน้าแรก</a> / <span>สินค้า</span>
+        </div>
+
+        <h1 class="page-title">สินค้าทั้งหมด</h1>
+
+        <!-- Search -->
+        <div class="search-wrap">
+            <input type="text" class="search-input" id="searchInput" placeholder="ค้นหาสินค้า...">
+            <button class="search-clear" id="searchClear"><i class="fas fa-times"></i></button>
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <!-- Filter Row -->
+        <div class="filter-row">
+            <!-- Category Dropdown -->
+            <div class="dropdown-wrap" id="categoryDropdown">
+                <div class="dropdown-trigger" onclick="toggleDropdown('categoryDropdown')">
+                    <div class="dropdown-trigger-left">
+                        <i class="fas fa-layer-group"></i>
+                        <span class="dropdown-trigger-text">หมวดหมู่สินค้า</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span class="dropdown-trigger-count" id="categoryCount" style="display:none;">0</span>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </div>
+                </div>
+                <div class="dropdown-panel" id="categoryPanel">
+                    <div class="dropdown-item" data-value="สีพ่นรถยนต์" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fas fa-fill-drip"></i><span>สีพ่นรถยนต์</span></div>
+                        <span class="dropdown-item-count">24</span>
+                    </div>
+                    <div class="dropdown-item" data-value="อุปกรณ์พ่นสี" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fas fa-spray-can"></i><span>อุปกรณ์พ่นสี</span></div>
+                        <span class="dropdown-item-count">18</span>
+                    </div>
+                    <div class="dropdown-item" data-value="เครื่องมือสี" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fas fa-gears"></i><span>เครื่องมือสี</span></div>
+                        <span class="dropdown-item-count">12</span>
+                    </div>
+                    <div class="dropdown-item" data-value="อุปกรณ์ขัดสี" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fas fa-paint-roller"></i><span>อุปกรณ์ขัดสี</span></div>
+                        <span class="dropdown-item-count">15</span>
+                    </div>
+                    <div class="dropdown-item" data-value="อุปกรณ์งานซ่อม" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fas fa-screwdriver-wrench"></i><span>อุปกรณ์งานซ่อม</span></div>
+                        <span class="dropdown-item-count">20</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Dropdown -->
+            <div class="dropdown-wrap" id="brandDropdown">
+                <div class="brand-dropdown-trigger" onclick="toggleDropdown('brandDropdown')">
+                    <div class="dropdown-trigger-left">
+                        <i class="fas fa-tag"></i>
+                        <span class="dropdown-trigger-text">แบรนด์สินค้า</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span class="dropdown-trigger-count" id="brandCount" style="display:none;">0</span>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </div>
+                </div>
+                <div class="brand-panel" id="brandPanel">
+                    <div class="brand-item" data-value="NIPPON PAINT" onclick="selectBrand(this)">
+                        <div class="brand-item-left">
+                            <img src="asset/PGL-01.png" alt="NIPPON PAINT" class="brand-logo">
+                            <span>NIPPON PAINT</span>
+                        </div>
+                        <span class="brand-item-count">12</span>
+                    </div>
+                    <div class="brand-item" data-value="PPG" onclick="selectBrand(this)">
+                        <div class="brand-item-left">
+                            <img src="asset/PPG_Logo.svg.png" alt="PPG" class="brand-logo">
+                            <span>PPG</span>
+                        </div>
+                        <span class="brand-item-count">8</span>
+                    </div>
+                    <div class="brand-item" data-value="Aikka" onclick="selectBrand(this)">
+                        <div class="brand-item-left">
+                            <img src="asset/AIKKA.jpg" alt="Aikka" class="brand-logo">
+                            <span>Aikka</span>
+                        </div>
+                        <span class="brand-item-count">5</span>
+                    </div>
+                    <div class="brand-item" data-value="STANDOX" onclick="selectBrand(this)">
+                        <div class="brand-item-left">
+                            <img src="asset/STANDOX.png" alt="STANDOX" class="brand-logo">
+                            <span>STANDOX</span>
+                        </div>
+                        <span class="brand-item-count">10</span>
+                    </div>
+                    <div class="brand-item" data-value="SATA" onclick="selectBrand(this)">
+                        <div class="brand-item-left">
+                            <img src="asset/SATA_Logo_new.jpg" alt="SATA" class="brand-logo">
+                            <span>SATA</span>
+                        </div>
+                        <span class="brand-item-count">6</span>
+                    </div>
+                    <div class="brand-item" data-value="Anest Iwata" onclick="selectBrand(this)">
+                        <div class="brand-item-left">
+                            <img src="asset/anest-iwata-logo-sm_orig.png" alt="Anest Iwata" class="brand-logo">
+                            <span>Anest Iwata</span>
+                        </div>
+                        <span class="brand-item-count">4</span>
+                    </div>
+                    <div class="brand-item" data-value="3M" onclick="selectBrand(this)">
+                        <div class="brand-item-left">
+                            <img src="asset/3M_wordmark.svg.png" alt="3M" class="brand-logo">
+                            <span>3M</span>
+                        </div>
+                        <span class="brand-item-count">15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Range Dropdown -->
+            <div class="dropdown-wrap" id="priceDropdown">
+                <div class="dropdown-trigger" onclick="toggleDropdown('priceDropdown')">
+                    <div class="dropdown-trigger-left">
+                        <i class="fas fa-coins"></i>
+                        <span class="dropdown-trigger-text" id="priceTriggerText">ช่วงราคา</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span class="dropdown-trigger-count" id="priceCount" style="display:none;">0</span>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </div>
+                </div>
+                <div class="price-panel" id="pricePanel">
+
+                    <!-- Dual Range Slider -->
+                    <div class="price-panel-section">
+                        <div class="price-section-label">เลื่อนเลือกช่วงราคา</div>
+                        <div class="slider-container">
+                            <div class="slider-track-wrap">
+                                <div class="slider-track">
+                                    <div class="slider-track-fill" id="sliderFill"></div>
+                                </div>
+                                <input type="range" class="dual-slider" id="sliderMin" min="0" max="15000" step="100" value="0">
+                                <input type="range" class="dual-slider" id="sliderMax" min="0" max="15000" step="100" value="15000">
+                            </div>
+                            <div class="slider-labels">
+                                <span>฿0</span>
+                                <span>฿15,000</span>
+                            </div>
+                            <div class="price-display" id="priceDisplay">
+                                <span class="price-display-value" id="priceDisplayText">฿0 - ฿15,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom Input Fields -->
+                    <div class="price-panel-section">
+                        <div class="price-section-label">หรือกรอกราคาเอง</div>
+                        <div class="price-inputs-row">
+                            <div class="price-input-wrap">
+                                <label for="priceMinInput">ราคาต่ำสุด</label>
+                                <input type="text" inputmode="numeric" class="price-input" id="priceMinInput" placeholder="0" autocomplete="off">
+                                <span class="price-input-unit">฿</span>
+                            </div>
+                            <div class="price-separator">-</div>
+                            <div class="price-input-wrap">
+                                <label for="priceMaxInput">ราคาสูงสุด</label>
+                                <input type="text" inputmode="numeric" class="price-input" id="priceMaxInput" placeholder="15,000" autocomplete="off">
+                                <span class="price-input-unit">฿</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apply / Clear Buttons -->
+                    <div class="price-panel-section">
+                        <div class="price-apply-row">
+                            <button class="btn-price-apply btn-price-apply-primary" onclick="applyCustomPrice()">
+                                <i class="fas fa-check"></i> ใช้ราคานี้
+                            </button>
+                            <button class="btn-price-apply btn-price-apply-clear" onclick="clearPriceFilter()">
+                                <i class="fas fa-eraser"></i> ล้าง
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Filters -->
+        <div class="active-filters" id="activeFilters"></div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <div class="item-count">แสดง <span id="productCountDisplay">24</span> รายการ</div>
+            <div class="sort-box">
+                <span>เรียงตาม:</span>
+                <select class="sort-select" id="sortSelect">
+                    <option value="popular">ยอดนิยม</option>
+                    <option value="newest">ใหม่ล่าสุด</option>
+                    <option value="price-low">ราคาต่ำ → สูง</option>
+                    <option value="price-high">ราคาสูง → ต่ำ</option>
+                    <option value="name">ชื่อ A-Z</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- No Results -->
+        <div class="no-results" id="noResults">
+            <i class="fas fa-search"></i>
+            <p>ไม่พบสินค้าที่ค้นหา</p>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="NIPPON PAINT" data-price="850" data-name="สีขาวมุก Nippon 2K" data-badge="hot">
+                <span class="product-badge badge-hot">HOT</span>
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีขาวมุก Nippon Paint 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿850</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="PPG" data-price="1200" data-name="สีดำเงา PPG Deltron" data-badge="new">
+                <span class="product-badge badge-new">NEW</span>
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีดำเงา PPG Deltron 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿1,200</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์พ่นสี" data-brand="SATA" data-price="8500" data-name="ปืนพ่นสี SATAjet 4000">
+                <div class="product-img-box"><i class="fas fa-spray-can"></i></div>
+                <div class="product-title">ปืนพ่นสี SATAjet 4000 B RP 1.3</div>
+                <div class="price-row"><span class="product-price">฿8,500</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์พ่นสี" data-brand="Anest Iwata" data-price="6900" data-name="ปืนพ่นสี Anest Iwata W400">
+                <div class="product-img-box"><i class="fas fa-spray-can"></i></div>
+                <div class="product-title">ปืนพ่นสี Anest Iwata W400-134G</div>
+                <div class="price-row"><span class="product-price">฿6,900</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="STANDOX" data-price="950" data-name="สีเงินเมทัลลิก Standox" data-badge="sale">
+                <span class="product-badge badge-sale">SALE</span>
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีเงินเมทัลลิก Standox 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿950</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์ขัดสี" data-brand="3M" data-price="350" data-name="กระดาษทรายน้ำ 3M">
+                <div class="product-img-box"><i class="fas fa-paint-roller"></i></div>
+                <div class="product-title">กระดาษทรายน้ำ 3M 1000/1500/2000</div>
+                <div class="price-row"><span class="product-price">฿350</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="Aikka" data-price="650" data-name="สีแดงแคนดี้ Aikka">
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีแดงแคนดี้ Aikka 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿650</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="เครื่องมือสี" data-brand="3M" data-price="4500" data-name="เครื่องขัดสี 3M">
+                <div class="product-img-box"><i class="fas fa-gears"></i></div>
+                <div class="product-title">เครื่องขัดสี 3M Random Orbital นวัตกรรมใหม่</div>
+                <div class="price-row"><span class="product-price">฿4,500</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="NIPPON PAINT" data-price="780" data-name="สีน้ำเงินไมก้า Nippon">
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีน้ำเงินไมก้า Nippon Paint 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿780</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์งานซ่อม" data-brand="3M" data-price="180" data-name="เทปกาว 3M">
+                <div class="product-img-box"><i class="fas fa-screwdriver-wrench"></i></div>
+                <div class="product-title">เทปกาว 3M Automotive Masking 24mm</div>
+                <div class="price-row"><span class="product-price">฿180</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="PPG" data-price="1350" data-name="สีเทากันส์ PPG">
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีเทากันส์เมทัลลิก PPG Deltron 2K 1L</div>
+                <div class="price-row"><span class="product-price">฿1,350</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์ขัดสี" data-brand="3M" data-price="420" data-name="น้ำยาขัดสี 3M" data-badge="hot">
+                <span class="product-badge badge-hot">HOT</span>
+                <div class="product-img-box"><i class="fas fa-paint-roller"></i></div>
+                <div class="product-title">น้ำยาขัดสี 3M Fast Cut Plus 1L</div>
+                <div class="price-row"><span class="product-price">฿420</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="STANDOX" data-price="890" data-name="สีขาว Standox">
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีขาว Solid Standox 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿890</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์พ่นสี" data-brand="Anest Iwata" data-price="12000" data-name="ปืนพ่นสี Anest Iwata LPH-80">
+                <span class="product-badge badge-new">NEW</span>
+                <div class="product-img-box"><i class="fas fa-spray-can"></i></div>
+                <div class="product-title">ปืนพ่นสี Anest Iwata LPH-80-134G</div>
+                <div class="price-row"><span class="product-price">฿12,000</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์งานซ่อม" data-brand="3M" data-price="280" data-name="ฟองน้ำขัด 3M">
+                <div class="product-img-box"><i class="fas fa-screwdriver-wrench"></i></div>
+                <div class="product-title">ฟองน้ำขัด 3M Hookit P1500/P2000</div>
+                <div class="price-row"><span class="product-price">฿280</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="Aikka" data-price="580" data-name="สีเขียวมิ้นท์ Aikka" data-badge="sale">
+                <span class="product-badge badge-sale">SALE</span>
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีเขียวมิ้นท์ Aikka 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿580</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์พ่นสี" data-brand="SATA" data-price="3500" data-name="กรองลม SATA">
+                <div class="product-img-box"><i class="fas fa-spray-can"></i></div>
+                <div class="product-title">กรองลม SATA RPS 0.5L</div>
+                <div class="price-row"><span class="product-price">฿3,500</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="เครื่องมือสี" data-brand="NIPPON PAINT" data-price="1800" data-name="น้ำยาลอกสี Nippon">
+                <div class="product-img-box"><i class="fas fa-gears"></i></div>
+                <div class="product-title">น้ำยาลอกสี Nippon Paint Remover 5L</div>
+                <div class="price-row"><span class="product-price">฿1,800</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์ขัดสี" data-brand="3M" data-price="550" data-name="แผ่นขัด 3M">
+                <div class="product-img-box"><i class="fas fa-paint-roller"></i></div>
+                <div class="product-title">แผ่นขัด 3M Trizact P3000 6 นิ้ว</div>
+                <div class="price-row"><span class="product-price">฿550</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="NIPPON PAINT" data-price="920" data-name="สีเทาควันบุหรี่ Nippon" data-badge="hot">
+                <span class="product-badge badge-hot">HOT</span>
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีเทาควันบุหรี่ Nippon Paint 2K 1L</div>
+                <div class="price-row"><span class="product-price">฿920</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์พ่นสี" data-brand="Anest Iwata" data-price="2800" data-name="ชุดซ่อมปืน Anest Iwata">
+                <div class="product-img-box"><i class="fas fa-spray-can"></i></div>
+                <div class="product-title">ชุดซ่อมปืนพ่นสี Anest Iwata Overhaul Kit</div>
+                <div class="price-row"><span class="product-price">฿2,800</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="อุปกรณ์งานซ่อม" data-brand="3M" data-price="150" data-name="ผ้าไมโครไฟเบอร์ 3M">
+                <div class="product-img-box"><i class="fas fa-screwdriver-wrench"></i></div>
+                <div class="product-title">ผ้าไมโครไฟเบอร์ 3M ขนาด 40x40cm</div>
+                <div class="price-row"><span class="product-price">฿150</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="สีพ่นรถยนต์" data-brand="PPG" data-price="1100" data-name="สีเขียว PPG">
+                <div class="product-img-box"><i class="fas fa-fill-drip"></i></div>
+                <div class="product-title">สีเขียวเข้ม PPG Deltron 2K ขนาด 1 ลิตร</div>
+                <div class="price-row"><span class="product-price">฿1,100</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+            <div class="product-card" data-category="เครื่องมือสี" data-brand="3M" data-price="680" data-name="น้ำยาเคลือบสี 3M" data-badge="new">
+                <span class="product-badge badge-new">NEW</span>
+                <div class="product-img-box"><i class="fas fa-gears"></i></div>
+                <div class="product-title">น้ำยาเคลือบสี 3M Perfect-It 500ml</div>
+                <div class="price-row"><span class="product-price">฿680</span></div>
+                <a href="https://shopee.co.th" target="_blank" rel="noopener" class="btn-shopee"><i class="fas fa-shopping-cart"></i> สั่งซื้อ Shopee</a>
+            </div>
+
+        </div>
+
+        <!-- CTA Section -->
+        <div class="products-cta">
+            <div class="products-cta-content">
+                <h2>ไม่เจอสินค้าที่ต้องการ?</h2>
+                <p>ทีมงานผู้เชี่ยวชาญพร้อมให้คำปรึกษาและช่วยค้นหาสินค้าที่ตรงกับความต้องการของคุณ</p>
+                <div class="products-cta-buttons">
+                    <a class="btn-line" href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">
+                        <i class="fab fa-line"></i> แชทผ่าน LINE
+                    </a>
+                    <a class="btn-primary" href="tel:0928528535">
+                        <i class="fas fa-phone-alt"></i> โทร 092-852-8535
+                    </a>
+                    <a class="btn-secondary" href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="asset/PK Logo-05.png" alt="PK Paint & Supply Logo" class="footer-logo-img">
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:#fff;">PAINT &amp; SUPPLY</div>
+                        <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
+                    </div>
+                </div>
+                <p class="footer-desc">จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K สีเบอร์ตรงรุ่นรถ<br>ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศไทย</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">เมนู</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="products.html">สินค้า</a></li>
+                    <li><a href="promotions.html">โปรโมชั่น</a></li>
+                    <li><a href="portfolio.html">ผลงานสีพ่น</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">ติดต่อเรา</h4>
+                <div class="footer-contact">
+                    <div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div>
+                    <div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></div>
+                    <div><i class="fas fa-envelope"></i><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div>
+                    <div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6 ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บางพูน อ.เมือง จ.ปทุมธานี</div>
+                    <div style="margin-top:6px;"><a href="https://maps.app.goo.gl/c7nbR1D9EkWsN8GJ8" target="_blank" rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions" style="margin-right:4px;"></i>เปิดนำทาง Google Maps</a></div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">ติดตามเรา</h4>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint &amp; Supply. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button class="scroll-top" id="scrollTop" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/products.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyxPjiipS96G679+9fJ3Z4S82X+8t+T9u6x1S5R1y5v5v5v5v5v5v5v5v5v5v" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
