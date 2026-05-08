@@ -982,3 +982,20 @@
 .color-grid.list-view .color-disclaimer {
     display: none;
 }
+
+/* ══════════════════════════════════════════
+   COMPATIBLE MODELS TEXT
+══════════════════════════════════════════ */
+.color-card-models {
+    font-size: 11.5px;
+    color: #666;
+    margin-top: 4px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.color-grid.list-view .color-card-models {
+    font-size: 12px;
+    margin-top: 0;
+    min-width: 180px;
+}
