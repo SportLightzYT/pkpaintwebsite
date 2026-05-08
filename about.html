@@ -2,6 +2,21 @@
 <html lang="th">
 
 <head>
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #1e90ff;
+            color: white;
+            padding: 8px;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="view-transition" content="same-origin" />
@@ -27,6 +42,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
     <div class="scroll-progress" id="scrollProgress"></div>
     <!-- Navbar -->
     <nav class="navbar">
@@ -73,8 +89,8 @@
         </div>
     </div>
 
-    <!-- ═══════════ NEW MODE ═══════════ -->
-    <section class="about-hero">
+    <!-- ==================== NEW MODE ==================== -->
+    <section class="about-hero" id="main-content">
         <div class="about-hero-content">
             <div class="breadcrumb" style="justify-content: center; margin-bottom: 24px;">
                 <a href="index.html">หน้าแรก</a> / <span>เกี่ยวกับเรา</span>
@@ -249,7 +265,7 @@
     <!-- Scripts -->
     <script src="js/about.js" defer></script>
     <script src="js/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyxPjiipS96G679+9fJ3Z4S82X+8t+T9u6x1S5R1y5v5v5v5v5v5v5v5v5v5v" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module"></script>
 </body>
 
 </html>

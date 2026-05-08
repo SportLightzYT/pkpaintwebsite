@@ -226,7 +226,11 @@
         const pageSet = new Set(filteredCards.slice(start, end));
 
         allCards.forEach(card => {
-            card.style.display = pageSet.has(card) ? '' : 'none';
+            if (pageSet.has(card)) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
         });
 
         const countDisplay = document.getElementById('productCountDisplay');
@@ -439,7 +443,10 @@
                     default: return 0;
                 }
             });
-            cards.forEach(card => grid.appendChild(card));
+            // Use DocumentFragment to batch append operations and avoid layout thrashing
+            const fragment = document.createDocumentFragment();
+            cards.forEach(card => fragment.appendChild(card));
+            grid.appendChild(fragment);
             currentPage = 1;
             // Re-run filter to keep filtered set in sync with new order
             updateFilters();

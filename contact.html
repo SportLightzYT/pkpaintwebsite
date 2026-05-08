@@ -2,6 +2,21 @@
 <html lang="th">
 
 <head>
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #1e90ff;
+            color: white;
+            padding: 8px;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <title>PK Paint & Supply - ติดต่อเรา</title>
@@ -27,6 +42,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
     <div class="scroll-progress" id="scrollProgress"></div>
     <!-- Navbar -->
     <nav class="navbar">
@@ -48,14 +64,14 @@
         <div class="nav-right">
             <div class="phone"><i class="fas fa-phone-alt"></i> <a href="tel:0928528535">092-852-8535</a></div>
             <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
-            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู">
+            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
     <!-- Mobile Nav -->
-    <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="เมนูหลัก">
         <a href="index.html">หน้าแรก</a>
         <a href="products.html">สินค้า</a>
         <a href="catalog.html">แคตตาล็อค</a>
@@ -66,7 +82,7 @@
     </div>
 
     <!-- ==================== NEW MODE ==================== -->
-    <section class="page-hero">
+    <section class="page-hero" id="main-content">
         <div class="hero-inner">
             <div class="hero-copy">
                 <div class="breadcrumb" style="margin-bottom: 24px;">
@@ -136,21 +152,32 @@
                         <h2 class="section-title">ส่งข้อความถึงเรา</h2>
                         <p class="section-desc">กรอกรายละเอียดเพื่อให้ทีมงานติดต่อกลับโดยเร็วที่สุด</p>
                     </div>
-                    <form action="#" method="post">
+                    <form action="#" method="post" id="contactForm">
+                        <input type="hidden" name="csrf_token" id="csrfToken" value="">
+                        <div class="form-group" style="display:none;">
+                            <label class="form-label">Leave blank if human</label>
+                            <input type="text" name="website" tabindex="-1" autocomplete="off">
+                        </div>
                         <div class="form-grid">
                             <div class="form-group">
                                 <label class="form-label">ชื่อ-นามสกุล <span>*</span></label>
-                                <input type="text" class="form-control" name="name" required />
+                                <input type="text" class="form-control" name="name" required 
+                                    pattern="^[\u0E01-\u0E5B\u0E30-\u0E4E\u0E50-\u0E59a-zA-Z\s]{2,50}$"
+                                    title="กรุณากรอกชื่อ-นามสกุล (2-50 ตัวอักษร)" />
                             </div>
                             <div class="form-group">
                                 <label class="form-label">เบอร์โทรศัพท์ <span>*</span></label>
-                                <input type="tel" class="form-control" name="phone" required />
+                                <input type="tel" class="form-control" name="phone" required 
+                                    pattern="^0[0-9]{8,9}$"
+                                    title="กรุณากรอกเบอร์โทรศัพท์ (10 หลัก ขึ้นต้นด้วย 0)" />
                             </div>
                             <div class="form-group">
                                 <label class="form-label">LINE ID <span
                                         style="color: #777;font-size:11px;">(ไม่บังคับ)</span></label>
                                 <input type="text" class="form-control" name="line_id"
-                                    placeholder="ระบุ LINE ID ของคุณ" />
+                                    placeholder="ระบุ LINE ID ของคุณ"
+                                    pattern="^[a-zA-Z0-9._-]{1,50}$"
+                                    title="LINE ID (1-50 ตัวอักษร ภาษาอังกฤษและตัวเลขเท่านั้น)" />
                             </div>
                             <div class="form-group full">
                                 <label class="form-label">เรื่องที่ติดต่อ <span>*</span></label>
@@ -165,7 +192,9 @@
                             </div>
                             <div class="form-group full">
                                 <label class="form-label">ข้อความรายละเอียด <span>*</span></label>
-                                <textarea class="form-control" name="message" required></textarea>
+                                <textarea class="form-control" name="message" required
+                                    minlength="10" maxlength="1000"
+                                    title="กรุณากรอกข้อความ (10-1000 ตัวอักษร)"></textarea>
                             </div>
                         </div>
                         <div class="privacy-check">
@@ -270,7 +299,7 @@
     <!-- Scripts -->
     <script src="js/contact.js" defer></script>
     <script src="js/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyxPjiipS96G679+9fJ3Z4S82X+8t+T9u6x1S5R1y5v5v5v5v5v5v5v5v5v5v" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module"></script>
 </body>
 
 </html>

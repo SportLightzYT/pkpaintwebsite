@@ -1,34 +1,7 @@
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Page-specific styles for contact.html */
+/* Note: Global reset is in main.css */
 
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        body {
-            font-family: 'Kanit', sans-serif;
-            background: #f8f9fa;
-            color: #333;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        a {
-            color: inherit;
-        }
-
-        img,
-        svg {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Navbar */
+/* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
