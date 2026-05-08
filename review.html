@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #1e90ff;
+            color: white;
+            padding: 8px;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="view-transition" content="same-origin" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <title>PK Paint &amp; Supply - รีวิวผลงาน</title>
+    <meta name="description" content="ชมรีวิวผลงานการซ่อมสีและพ่นสีรถยนต์จากลูกค้าที่ใช้ผลิตภัณฑ์ PK Paint &amp; Supply คุณภาพระดับมืออาชีพ รังสิต ปทุมธานี">
+    <meta property="og:title" content="PK Paint &amp; Supply - รีวิวผลงาน">
+    <meta property="og:description" content="รีวิวผลงานพ่นสีรถยนต์ทุกชนิด ทุกระบบ 2K-1K ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง รังสิต ปทุมธานี">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/review.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <!-- Navbar (อัปเดตให้ตรงกับ contact.html และ index.html) -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
+            <div class="logo-section">
+                <img src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
+                <div class="logo-text">PAINT & SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="products.html">สินค้า</a></li>
+            <li><a href="catalog.html">แคตตาล็อค</a></li>
+            <li><a href="promotions.html">โปรโมชั่น</a></li>
+            <li><a href="review.html" class="active">รีวิว</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:0928528535">092-852-8535</a>
+            </div>
+            <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
+            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav (เรียงลำดับให้ตรงกัน) -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="catalog.html">แคตตาล็อค</a>
+        <a href="promotions.html">โปรโมชั่น</a>
+        <a href="review.html" class="active">รีวิว</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <div class="mobile-nav-contact">
+            <a href="tel:0928528535"><i class="fas fa-phone-alt" style="margin-right:8px;color:#1e90ff;"></i>092-852-8535</a>
+            <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line" style="margin-right:8px;color:#00c300;"></i>LINE: @999snkil</a>
+            <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
+        </div>
+    </div>
+
+    <!-- Hero content (คงเดิม) -->
+    <section class="page-hero" id="main-content">
+        <div class="page-hero-content">
+            <div class="breadcrumb" style="justify-content: center; margin-bottom: 24px;">
+                <a href="index.html">หน้าแรก</a> / <span>รีวิวผลงาน</span>
+            </div>
+            <h1>รีวิวผลงานระดับมืออาชีพ</h1>
+            <p>รวบรวมรีวิวการซ่อมสีและพ่นสีรถยนต์จากลูกค้าที่ไว้วางใจใช้ผลิตภัณฑ์ PK Paint &amp; Supply</p>
+            <div class="stats-row">
+                <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">คันที่ทำสี</span></div>
+                <div class="stat-item"><span class="stat-num">98%</span><span class="stat-label">ลูกค้าพอใจ</span></div>
+                <div class="stat-item"><span class="stat-num">10+</span><span class="stat-label">ปีประสบการณ์</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs (คงเดิม) -->
+    <section class="filter-section">
+        <div class="filter-tabs">
+            <button class="filter-tab active" onclick="filterGallery(this, 'all')">ทั้งหมด</button>
+            <button class="filter-tab" onclick="filterGallery(this, 'sedan')">รถเก๋ง</button>
+            <button class="filter-tab" onclick="filterGallery(this, 'pickup')">รถกระบะ</button>
+            <button class="filter-tab" onclick="filterGallery(this, 'motorcycle')">มอเตอร์ไซค์</button>
+            <button class="filter-tab" onclick="filterGallery(this, 'custom')">งาน Custom</button>
+            <button class="filter-tab" onclick="filterGallery(this, 'repair')">งานซ่อม</button>
+        </div>
+    </section>
+
+    <!-- Masonry Gallery (คงเดิม) -->
+    <section class="gallery-masonry" id="galleryMasonry">
+        <div class="gallery-item" data-cat="sedan" onclick="openLightbox(this)">
+            <img src="https://autopainthq.com/cdn/shop/products/img0280_562e8e53-2d5b-4082-a211-1dbb7f940721.jpg?v=1683747631&width=950" alt="Honda Civic Super Black" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">Honda Civic - Super Black</div>
+                <div class="gallery-tags"><span class="gallery-tag">#เคลือบเงาเต็มระบบ</span><span class="gallery-tag red">#งานซ่อมกันชน</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="sedan" onclick="openLightbox(this)">
+            <img src="https://www.mazda.com.au/49c6b8/globalassets/beyond-the-drive/2024/06-mazdas-red-a-co-evolution-with-technology-and-brand-strategy/mazdas-red-hero-1400-x-1400px.jpg" alt="Mazda Soul Red Crystal" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">Mazda 2 - Soul Red Crystal</div>
+                <div class="gallery-tags"><span class="gallery-tag">#พ่นสีแคนดี้</span><span class="gallery-tag gold">#สีเงาฉ่ำ</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="pickup" onclick="openLightbox(this)">
+            <img src="https://trademe.tmcdn.co.nz/photoserver/full/2300448087.jpg" alt="Isuzu D-Max Silver Metallic" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">Isuzu D-Max - Silver Metallic</div>
+                <div class="gallery-tags"><span class="gallery-tag">#เก็บรอยรอบคัน</span><span class="gallery-tag">#Metallic</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="motorcycle" onclick="openLightbox(this)">
+            <img src="https://images.medialinksonline.com/4564517x1350x900xFFFFFFxE.jpg" alt="Honda Forza Custom Blue" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">Honda Forza - Custom Blue</div>
+                <div class="gallery-tags"><span class="gallery-tag">#ทำสีมอเตอร์ไซค์</span><span class="gallery-tag gold">#น้ำเงินแก้ว</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="sedan" onclick="openLightbox(this)">
+            <img src="https://imgcdn.zigwheels.co.th/large/gallery/color/22/236/nissan-almera-color-749406.jpg" alt="Nissan Almera Gun Metal" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">Nissan Almera - Gun Metal</div>
+                <div class="gallery-tags"><span class="gallery-tag">#พ่นสีล้อแม็ก</span><span class="gallery-tag">#สีเทากันส์</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="custom" onclick="openLightbox(this)">
+            <img src="https://media.karousell.com/media/photos/products/2024/10/9/custom_car_spray_painting__hig_1728454588_a925f691_progressive" alt="Custom Car Spray Painting" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">Suzuki Swift - Hot Pink Custom</div>
+                <div class="gallery-tags"><span class="gallery-tag red">#งานCustom</span><span class="gallery-tag gold">#สีชมพูพิเศษ</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="repair" onclick="openLightbox(this)">
+            <img src="https://excelautobodyshop.com/wp-content/uploads/2023/01/2019-Dodge-Charger-Longwood-685x468.jpg" alt="Before After Repair" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">Dodge Charger - ซ่อมสีกันชนท้าย</div>
+                <div class="gallery-tags"><span class="gallery-tag red">#งานซ่อม</span><span class="gallery-tag">#BeforeAfter</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="custom" onclick="openLightbox(this)">
+            <img src="https://image.made-in-china.com/2f0j00IMmbVdQCLpzS/China-Factory-High-Gloss-Car-Automotive-Clear-Coat-2K-Mirror-Effect-Varnish.webp" alt="2K Clear Coat Mirror Effect" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">งานเคลือบเงา 2K Mirror Effect</div>
+                <div class="gallery-tags"><span class="gallery-tag">#เคลือบเงา</span><span class="gallery-tag gold">#MirrorFinish</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-cat="repair" onclick="openLightbox(this)">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000270511/s19525.pcdn.co/wp-content/uploads/2022/06/auto-body-refinish.jpg" alt="Auto Body Refinish" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+                <div class="gallery-title">งานซ่อมสีรอบคัน - เกรดอู่</div>
+                <div class="gallery-tags"><span class="gallery-tag red">#งานซ่อม</span><span class="gallery-tag">#เกรดอู่</span></div>
+            </div>
+            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        </div>
+    </section>
+
+    <!-- Before/After Section (คงเดิม) -->
+    <section class="compare-section">
+        <div class="section-header">
+            <h2><i class="fas fa-exchange-alt" style="color: #1e90ff;margin-right:10px;"></i>Before &amp; After</h2>
+            <p>เปรียบเทียบผลงานก่อนและหลังการซ่อมสี</p>
+        </div>
+        <div class="compare-grid">
+            <div class="compare-card">
+                <div class="compare-images">
+                    <img src="https://excelautobodyshop.com/wp-content/uploads/2023/01/2019-Dodge-Charger-Longwood-685x468.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="https://autopainthq.com/cdn/shop/products/img0280_562e8e53-2d5b-4082-a211-1dbb7f940721.jpg?v=1683747631&width=950" alt="After" loading="lazy" decoding="async">
+                    <span class="compare-label before">BEFORE</span>
+                    <span class="compare-label after">AFTER</span>
+                </div>
+                <div class="compare-info">
+                    <h4>Honda Civic - ซ่อมสีกันชนหน้า</h4>
+                    <p>ใช้สีรองพื้น 2K + สีพ่น Basecoat + เคลือบเงา Clear Coat Anti-Scratch</p>
+                    <div class="compare-meta">
+                        <span><i class="fas fa-clock"></i> 3 วัน</span>
+                        <span><i class="fas fa-paint-roller"></i> ระบบ 2K</span>
+                        <span><i class="fas fa-shield-alt"></i> รับประกัน 1 ปี</span>
+                    </div>
+                </div>
+            </div>
+            <div class="compare-card">
+                <div class="compare-images">
+                    <img src="https://marvel-b1-cdn.bc0a.com/f00000000270511/s19525.pcdn.co/wp-content/uploads/2022/06/auto-body-refinish.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="https://www.mazda.com.au/49c6b8/globalassets/beyond-the-drive/2024/06-mazdas-red-a-co-evolution-with-technology-and-brand-strategy/mazdas-red-hero-1400-x-1400px.jpg" alt="After" loading="lazy" decoding="async">
+                    <span class="compare-label before">BEFORE</span>
+                    <span class="compare-label after">AFTER</span>
+                </div>
+                <div class="compare-info">
+                    <h4>Mazda 2 - พ่นสีแคนดี้รอบคัน</h4>
+                    <p>สีแคนดี้ Soul Red Crystal 3 ชั้น พร้อมเคลือบเงา UV Protection เงาฉ่ำเหมือนรถใหม่</p>
+                    <div class="compare-meta">
+                        <span><i class="fas fa-clock"></i> 5 วัน</span>
+                        <span><i class="fas fa-paint-roller"></i> สีแคนดี้</span>
+                        <span><i class="fas fa-shield-alt"></i> รับประกัน 2 ปี</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (คงเดิม) -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2><i class="fas fa-comments" style="color: #1e90ff;margin-right:10px;"></i>เสียงจากลูกค้า</h2>
+            <p>รีวิวจากลูกค้าที่ใช้บริการและผลิตภัณฑ์ของเรา</p>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testi-text">"แนะนำร้านนี้ครับบริการดีรวดเร็ว สีออกมาได้เหมือนโอเคเลยครับ"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background: #fbbc04; color: #000;">ส</div>
+                    <div><div class="testi-name">สมชัย แซ่ลิ้ม</div><div class="testi-role">ลูกค้าจาก Google</div></div>
+                </div>
+                <div style="position: absolute; bottom: 28px; right: 28px;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
+            </div>
+            <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testi-text">"สีที่ร้านได้มาตรฐานมากเลยครับ ร้านบริการดีมากเลยครับ"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background: #00a4e4; color: #333;">พ</div>
+                    <div><div class="testi-name">ไพบูลย์ จงปัญญาวิวัฒน์</div><div class="testi-role">ลูกค้าจาก Google</div></div>
+                </div>
+                <div style="position: absolute; bottom: 28px; right: 28px;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
+            </div>
+            <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testi-text">"สีคุณภาพสำหรับรถที่เรารัก ต้องที่นี่เลยจ้าาา มีให้เลือกทุกเฉดสี"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background: #00bcd4; color: #333;">O</div>
+                    <div><div class="testi-name">Oui Napapat</div><div class="testi-role">ลูกค้าจาก Google</div></div>
+                </div>
+                <div style="position: absolute; bottom: 28px; right: 28px;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox (คงเดิม) -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightboxBtn(event)"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev" onclick="lightboxNav(-1,event)" aria-label="รูปก่อนหน้า"><i class="fas fa-chevron-left"></i></button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <button class="lightbox-next" onclick="lightboxNav(1,event)" aria-label="รูปถัดไป"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-caption" id="lightboxCaption"><h3></h3><p></p></div>
+    </div>
+
+    <!-- Share Section (คงเดิม) -->
+    <section class="share-section">
+        <h2>มีผลงานอยากแชร์?</h2>
+        <p>ถ้าคุณใช้สีจาก PK Paint & Supply แล้วผลงานออกมาสวยงาม<br>เชิญแชร์มาให้เราได้โชว์ในหน้านี้ด้วยนะครับ</p>
+        <a class="btn-share-line" href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">
+            <i class="fab fa-line"></i> ส่งรูปมาทาง LINE
+        </a>
+    </section>
+
+    <!-- Footer (คงเดิม) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img">
+                    <div>
+                        <div style="font-size:14px;font-weight:600;color:#fff;">PAINT &amp; SUPPLY</div>
+                        <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
+                    </div>
+                </div>
+                <p class="footer-desc">จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K สีเบอร์ตรงรุ่นรถ<br>ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศไทย</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">เมนู</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="products.html">สินค้า</a></li>
+                    <li><a href="catalog.html">แคตตาล็อค</a></li>
+                    <li><a href="promotions.html">โปรโมชั่น</a></li>
+                    <li><a href="review.html">รีวิว</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">ติดต่อเรา</h4>
+                <div class="footer-contact">
+                    <div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div>
+                    <div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></div>
+                    <div><i class="fas fa-envelope"></i><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div>
+                    <div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6 ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บางพูน อ.เมือง จ.ปทุมธานี</div>
+                    <div style="margin-top:6px;"><a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions" style="margin-right:4px;"></i>เปิดนำทาง Google Maps</a></div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">ติดตามเรา</h4>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint &amp; Supply. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Script (คงเดิม แต่แก้ copyright year และเพิ่มการปิด mobile nav ด้วย ESC) -->
+    
+    
+
+    <!-- Scroll-to-top button -->
+    <button class="scroll-top" id="scrollTop" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/review.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module"></script>
+</body>
+</html>
+

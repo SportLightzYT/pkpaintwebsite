@@ -664,7 +664,14 @@ AUDI, W3, ARGUSBRAUN,#3F3631, "A6, Q7, Q8"`;
         audi: 'asset/Audi-Logo_2016.svg',
         isuzu: 'asset/Isuzu.svg.png',
         'thai-rung': 'asset/Thairung-Logo-removebg-preview.png',
-        taxi: 'asset/taxi-icon.svg'
+        taxi: 'asset/taxi-icon.svg',
+        byd: 'asset/BYD_Auto_2022_logo.svg',
+        'changan-deepal': 'asset/deepal-site-image.png',
+        'gac-aion': 'asset/gac_motor_logo-freelogovectors.net_.png',
+        'greatwall-haval': 'asset/Great-Wall-logo.png',
+        'hozon-neta': 'asset/Hozon_Auto_logo.png',
+        wuling: 'asset/wuling-logo.png',
+        'chery-omodaand-jaecoo': 'asset/Chery_logo.svg'
     };
 
     function slugBrand(brandName) {
@@ -742,7 +749,80 @@ AUDI, W3, ARGUSBRAUN,#3F3631, "A6, Q7, Q8"`;
 
     const seenImportedRows = new Set(COLORS.map(c => `${c.brand}|${String(c.code || '').toUpperCase().replace(/\s/g, '')}|${String(c.color || '').toUpperCase()}`));
 
-    [EXTRA_CSV_DATA, EXTRA_CSV_DATA_2, EXTRA_CSV_DATA_ISUZU, EXTRA_CSV_DATA_3, EXTRA_CSV_DATA_4].forEach(csvText => {
+    const EXTRA_CSV_DATA_5 = `Brand, Color Code, Color Name, Hex, Models
+BYD, AA1, QUANTUM BLACK, #1C1C1C, "Atto 3, Dolphin, Seal, Han, Tang, Sealion"
+BYD, CA2, FLORAL PURPLE, #9B8EB0, "Atto 3, Dolphin"
+BYD, HAN, GRAPHITE ALASKAN GREY, #5E5E5E, "Han, Tang"
+BYD, HB5, MAFIC GREY, #2C3A4A, "Seal, Sealion"
+BYD, HB6, SPACE GREY, #2C2C3A, "Seal, Sealion"
+BYD, KW, CORAL PINK, #B38B6E, "Dolphin, Atto 3"
+BYD, LAP, LAGOON BLUE, #2A6A9E, "Atto 3, Seal"
+BYD, LAQ, SOLAR RED, #C8102E, "Atto 3, Dolphin, Seal"
+BYD, LAT, VELOCITY BLUE, #7A8A96, "Seal, Sealion"
+BYD, UA6, EMERALD GREEN, #4A6B4F, "Atto 3"
+BYD, WA2, HORIZON WHITE, #F5F5F5, "Atto 3, Dolphin, Seal, Han, Tang, Sealion"
+BYD, WAC, FROST WHITE, #D9D9D9, "Atto 3, Dolphin, Seal, Han"
+BYD, YB1, COASTAL CREAM, #F0E8D8, "Atto 3, Sealion"
+CHANGAN (DEEPAL), C05, COMET WHITE, #F5F5EB, "Deepal S07, L07, SL03"
+CHANGAN (DEEPAL), Y08, STELLAR BLUE, #1F2A44, "Deepal S07, L07, SL03"
+CHANGAN (DEEPAL), Y19, MOSS GREEN, #7CA38E, "Deepal S07"
+CHANGAN (DEEPAL), Y25, LUNAR GRAY, #2F2F2F, "Deepal S07, L07, SL03"
+CHANGAN (DEEPAL), Y65, MAGPIE GRAY, #8A8C7E, "Deepal L07, SL03"
+CHANGAN (DEEPAL), Y66, NEBULA CYAN, #5F7A6F, "Deepal S07"
+CHANGAN (DEEPAL), Y74, WHEAT YELLOW, #D9C38A, "Deepal S07"
+CHANGAN (DEEPAL), Y75, SUNSET ORANGE, #E36B4A, "Deepal S07"
+CHANGAN (DEEPAL), Y77, ECLIPSE BLACK, #1C1C1C, "Deepal S07, L07, SL03"
+CHANGAN (DEEPAL), Y78, COSMIC YELLOW, #EDE53C, "Deepal S07"
+CHANGAN (DEEPAL), Y81, SAKURA PINK, #E0B8A0, "Deepal S07"
+GAC (AION), B09, VITALITY GREEN, #9CC3B5, "Aion S, V, Y, LX Plus"
+GAC (AION), B1, GLAMOUR BLACK, #1C1C1C, "Aion S, V, Y, LX Plus"
+GAC (AION), B6H, PURE WHITE, #F5F5F5, "Aion S, V, Y, LX Plus"
+GAC (AION), B8G, LIBERTY ASH, #5A5A5A, "Aion S, V, Y, LX Plus"
+GAC (AION), B81, ELEGANT GRAY, #A8A8A8, "Aion S, V, Y, LX Plus"
+GAC (AION), B9A, SPEEDY SILVER, #7F7F7A, "Aion S, V, Y, LX Plus"
+GAC (AION), B9Y, LUCKY GOLD, #E0C55C, "Aion Y, LX Plus"
+GREATWALL / HAVAL, 1B, HAZEL WOOD BEIGE, #E8D9C2, "Haval H6, Jolion, H9, Dargo"
+GREATWALL / HAVAL, 1Y, MARS RED, #A02C2C, "Haval Jolion, H6"
+GREATWALL / HAVAL, 20, CRYSTAL PURPLE, #6A6A7A, "Haval Jolion"
+GREATWALL / HAVAL, 2Y, ORANGE, #E05C2C, "Haval Jolion"
+GREATWALL / HAVAL, 40, AMETHYST GRAY, #5A6A7A, "Haval H6, Jolion, H9"
+GREATWALL / HAVAL, 6Y, SWAROVSKI BLUE, #2A4A8A, "Haval H6, H9"
+GREATWALL / HAVAL, 7T, VERDANT GREEN, #1A4A4A, "Haval H9, Dargo"
+GREATWALL / HAVAL, 8T, SUN BLACK, #1C1C1C, "Haval H6, Jolion, H9, Dargo"
+GREATWALL / HAVAL, 9C, HAMILTON WHITE, #F5F5F0, "Haval H6, Jolion, H9, Dargo"
+GREATWALL / HAVAL, 9F, JADE WHITE, #F0F0E8, "Haval H6, H9"
+GREATWALL / HAVAL, C0C, CRYSTAL GRAY ULTRA, #5A5A5A, "Haval Jolion, H6"
+GREATWALL / HAVAL, D2, WISDOM BROWN, #3A2C2C, "Haval H9"
+GREATWALL / HAVAL, F3, AYERS GREY, #7A7A7A, "Haval H6, H9, Dargo"
+GREATWALL / HAVAL, G7, BURGUNDY RED, #5A2C2C, "Haval H9"
+GREATWALL / HAVAL, HR, CORAL BLUE, #7A9EB8, "Haval Jolion"
+GREATWALL / HAVAL, KU, AQUA GREY, #5A6A7A, "Haval Jolion, H6"
+GREATWALL / HAVAL, LB, PISTACHIO GREEN, #9EB88A, "Haval Jolion"
+GREATWALL / HAVAL, N1, BLACK, #1C1C1C, "Haval H6, Jolion, H9"
+HOZON / NETA, TBL, GLACIER BLUE, #2A4A8A, "Neta V, U, S, X"
+HOZON / NETA, TBQ, BABY BLUE, #7AB8E0, "Neta V, U"
+HOZON / NETA, TBS, MILK TEA, #E0C8A8, "Neta V, U, S"
+HOZON / NETA, TCA, SAKURA PINK, #E8A88A, "Neta U, S"
+HOZON / NETA, TCC, MIDNIGHT GRAY, #2C2C3A, "Neta V, U, S, X"
+HOZON / NETA, TCD, SKY BLUE, #4A7AB8, "Neta V, U, S, X"
+HOZON / NETA, TCF, MOONLIGHT GREEN, #7A9E8A, "Neta U, S"
+HOZON / NETA, TCQ, CYAN, #6A9E9E, "Neta S, X"
+HOZON / NETA, TCR, WHITE STORM, #F5F5E8, "Neta V, U, S, X"
+Wuling, C2, PRISTINE WHITE, #F5F5EB, "Almaz, Air EV, BinguoEV"
+Wuling, WL9, AVOCADO GREEN, #9EB88A, "Air EV, BinguoEV"
+Wuling, WL10, PEACH PINK, #E8C8B8, "Air EV, BinguoEV"
+Wuling, WL12, LEMON YELLOW, #E8D82C, "Air EV"
+Wuling, WL16, MILK COFFEE, #A88A6A, "Almaz, Air EV"
+Wuling, WL23, MOUSSE GREEN, #8A9E8A, "BinguoEV"
+CHERY (OMODA & JAECOO), BW, ARCTIC WHITE, #F5F5EB, "Omoda 5, Omoda C5, Jaecoo 7"
+CHERY (OMODA & JAECOO), CL, NIGHT BLACK, #1C1C1C, "Omoda 5, Omoda C5, Jaecoo 7"
+CHERY (OMODA & JAECOO), GV, COIN GREY, #5A5A5A, "Omoda 5, Jaecoo 7"
+CHERY (OMODA & JAECOO), KH, LUNAR SILVER, #A8A8A8, "Omoda 5, Omoda C5, Jaecoo 7"
+CHERY (OMODA & JAECOO), NL, VOLCANIC RED, #A02C2C, "Omoda 5, Omoda C5"
+CHERY (OMODA & JAECOO), SJ, FOREST GREEN, #1A3A3A, "Jaecoo 7"
+CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
+
+    [EXTRA_CSV_DATA, EXTRA_CSV_DATA_2, EXTRA_CSV_DATA_ISUZU, EXTRA_CSV_DATA_3, EXTRA_CSV_DATA_4, EXTRA_CSV_DATA_5].forEach(csvText => {
         const parsedCsvData = parseCsvCatalogData(csvText, seenImportedRows);
         BRANDS.push(...parsedCsvData.brandEntries);
 

@@ -1,0 +1,133 @@
+/* Page-specific styles for review.html */
+        
+        /* ═══ NEW MODE ═══ */
+        .page-hero { background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 50%, #ffffff 100%); padding: 140px 60px 80px; text-align: center; position: relative; overflow: hidden; }
+        .page-hero::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(30,144,255,0.06) 0%, transparent 70%); animation: pulse 5s ease-in-out infinite; }
+        @keyframes pulse { 0%,100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 0.8; } }
+        .page-hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+        .page-hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 12px; background: linear-gradient(135deg, #1a5276 0%, #1e90ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .page-hero p { color: #666; font-size: 16px; margin-bottom: 30px; }
+        .stats-row { display: flex; justify-content: center; gap: 40px; margin-top: 30px; }
+        .stat-item { text-align: center; }
+        .stat-num { font-size: 32px; font-weight: 700; color: #1e90ff; display: block; }
+        .stat-label { font-size: 13px; color: #777; }
+
+        /* Filter Tabs */
+        .filter-section { padding: 40px 60px 20px; max-width: 1400px; margin: 0 auto; }
+        .filter-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+        .filter-tab { background: #ffffff; border: 1px solid #ddd; color: #666; padding: 8px 20px; border-radius: 20px; font-family: 'Kanit'; font-size: 13px; cursor: pointer; transition: all 0.25s; }
+        .filter-tab:hover { border-color: #1e90ff; color: #333; }
+        .filter-tab.active { background: #1e90ff; border-color: #1e90ff; color: #fff; }
+
+        /* Masonry Gallery */
+        .gallery-masonry { padding: 20px 60px 60px; max-width: 1400px; margin: 0 auto; column-count: 3; column-gap: 20px; }
+        .gallery-item { break-inside: avoid; margin-bottom: 20px; position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; background: #ffffff; border: 1px solid rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .gallery-item:hover { transform: translateY(-6px) scale(1.01); box-shadow: 0 12px 30px rgba(0,0,0,0.12); border-color: rgba(30,144,255,0.3); }
+        .gallery-item img { width: 100%; display: block; transition: transform 0.5s; }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 40%, transparent 70%); display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; opacity: 0; transition: opacity 0.3s; }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-title { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: #fff; }
+        .gallery-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+        .gallery-tag { background: rgba(30,144,255,0.2); color: #1e90ff; padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+        .gallery-tag.red { background: rgba(255,71,87,0.2); color: #ff4757; }
+        .gallery-tag.gold { background: rgba(255,159,67,0.2); color: #ff9f43; }
+        .gallery-zoom { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); width: 50px; height: 50px; background: rgba(30,144,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #fff; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .gallery-item:hover .gallery-zoom { transform: translate(-50%, -50%) scale(1); }
+
+        /* Before/After */
+        .compare-section { padding: 60px; max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
+        .section-header p { color: #777; font-size: 14px; }
+        .compare-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        .compare-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; }
+        .compare-images { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; position: relative; }
+        .compare-images img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        .compare-label { position: absolute; top: 10px; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: 600; color: #fff; }
+        .compare-label.before { left: 10px; background: rgba(255,71,87,0.9); }
+        .compare-label.after { right: 10px; background: rgba(46,213,115,0.9); }
+        .compare-info { padding: 20px; }
+        .compare-info h4 { font-size: 16px; margin-bottom: 6px; }
+        .compare-info p { font-size: 13px; color: #777; line-height: 1.5; }
+        .compare-meta { display: flex; gap: 16px; margin-top: 12px; font-size: 12px; color: #666; flex-wrap: wrap; }
+        .compare-meta span { display: flex; align-items: center; gap: 4px; }
+        .compare-meta i { color: #1e90ff; }
+
+        /* Testimonials */
+        .testimonials { padding: 60px; max-width: 1200px; margin: 0 auto; }
+        .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .testi-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 28px; position: relative; }
+        .testi-card::before { content: '\201C'; position: absolute; top: 10px; right: 20px; font-size: 60px; color: rgba(30,144,255,0.1); font-family: Georgia, serif; line-height: 1; }
+        .testi-stars { color: #ffb142; font-size: 13px; margin-bottom: 12px; }
+        .testi-text { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 16px; }
+        .testi-author { display: flex; align-items: center; gap: 12px; }
+        .testi-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #1e90ff, #00a8ff); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600; color: #fff; }
+        .testi-name { font-size: 14px; font-weight: 600; }
+        .testi-role { font-size: 12px; color: #666; }
+
+        /* Lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.95); z-index: 9999; align-items: center; justify-content: center; padding: 40px; }
+        .lightbox.open { display: flex; }
+        .lightbox-img { max-width: 90%; max-height: 85vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.8); }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; background: none; border: none; color: #333; font-size: 32px; cursor: pointer; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
+        .lightbox-close:hover { background: rgba(0,0,0,0.05); }
+        .lightbox-caption { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center; }
+        .lightbox-caption h3 { font-size: 18px; margin-bottom: 4px; }
+        .lightbox-caption p { font-size: 13px; color: #777; }
+
+        /* ── Lightbox Nav Arrows ── */
+        .lightbox-prev, .lightbox-next {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background: rgba(0,0,0,0.05); border: none; color: #333;
+            font-size: 24px; width: 50px; height: 50px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: background 0.3s; z-index: 10;
+        }
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+        .lightbox-prev:hover, .lightbox-next:hover { background: rgba(30,144,255,0.7); color: #fff; }
+
+        /* ── Share Section ── */
+        .share-section {
+            background: #f0f4f8; border-top: 2px solid #1e90ff;
+            padding: 60px; text-align: center;
+        }
+        .share-section h2 { font-size: 26px; font-weight: 600; margin-bottom: 10px; }
+        .share-section p { color: #777; font-size: 15px; margin-bottom: 28px; line-height: 1.6; }
+        .btn-share-line {
+            background: #00c300; color: #fff; padding: 14px 36px; border-radius: 8px;
+            font-family: 'Kanit'; font-size: 15px; font-weight: 600; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 10px; min-height: 48px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn-share-line:hover { background: #00a300; transform: translateY(-2px); }
+
+        /* ── Page-specific Responsive ── */
+        @media (max-width: 1100px) {
+            .gallery-masonry { column-count: 2; padding: 20px 30px 40px; }
+            .compare-grid { grid-template-columns: 1fr; }
+            .testi-grid { grid-template-columns: 1fr 1fr; }
+            .page-hero, .compare-section, .testimonials { padding-left: 30px; padding-right: 30px; }
+            .filter-section { padding-left: 30px; padding-right: 30px; }
+        }
+        @media (max-width: 768px) {
+            .gallery-masonry { column-count: 2; padding: 20px 15px 30px; gap: 10px; }
+            .page-hero { padding: 110px 20px 50px; }
+            .page-hero h1 { font-size: 28px; }
+            .stats-row { gap: 24px; flex-wrap: wrap; }
+            .stat-num { font-size: 24px; }
+            .compare-section, .testimonials { padding: 40px 20px; }
+            .filter-section { padding: 30px 15px 10px; }
+            .testi-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .gallery-masonry { column-count: 1; }
+            .page-hero h1 { font-size: 24px; }
+            .page-hero p { font-size: 14px; }
+            .compare-images img { height: 150px; }
+        }
+        @media (max-width: 360px) {
+            .page-hero h1 { font-size: 22px; }
+            .stat-num { font-size: 20px; }
+        }
