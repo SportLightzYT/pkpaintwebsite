@@ -1,7 +1,5 @@
 (function() {
     'use strict';
-
-    // Filter Gallery
     window.filterGallery = function(btn, cat) {
         document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
         btn.classList.add('active');
@@ -9,11 +7,8 @@
             item.style.display = (cat === 'all' || item.dataset.cat === cat) ? '' : 'none';
         });
     };
-
-    // Lightbox with keyboard navigation
     let galleryItems = [];
     let currentLightboxIndex = -1;
-
     window.openLightbox = function(el) {
         galleryItems = Array.from(document.querySelectorAll('#galleryMasonry .gallery-item')).filter(i => i.style.display !== 'none');
         currentLightboxIndex = galleryItems.indexOf(el);
@@ -21,7 +16,6 @@
         document.getElementById('lightbox').classList.add('open');
         document.body.style.overflow = 'hidden';
     };
-
     function showLightboxItem(idx) {
         if (idx < 0 || idx >= galleryItems.length) return;
         const el = galleryItems[idx];
@@ -33,25 +27,21 @@
         document.getElementById('lightboxCaption').querySelector('p').textContent = tags;
         currentLightboxIndex = idx;
     }
-
     window.lightboxNav = function(dir, e) {
         e.stopPropagation();
         const next = currentLightboxIndex + dir;
         if (next >= 0 && next < galleryItems.length) showLightboxItem(next);
     };
-
     window.closeLightbox = function(e) {
         if (!e || e.target === document.getElementById('lightbox')) {
             document.getElementById('lightbox').classList.remove('open');
             document.body.style.overflow = '';
         }
     };
-
     window.closeLightboxBtn = function(e) { 
         e.stopPropagation(); 
         window.closeLightbox(); 
     };
-
     document.addEventListener('keydown', e => {
         const lb = document.getElementById('lightbox');
         if (lb && lb.classList.contains('open')) {
@@ -60,8 +50,6 @@
             else if (e.key === 'Escape') window.closeLightbox();
         }
     });
-
-    // Page-specific: Scroll-in animation
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {
@@ -80,5 +68,4 @@
             observer.observe(el);
         });
     }
-
 })();

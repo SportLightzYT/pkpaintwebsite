@@ -1,17 +1,9 @@
 (function () {
     'use strict';
-    /* ══════════════════════════════════════════════════════════════
-       BRANDS
-    ══════════════════════════════════════════════════════════════ */
     const BRANDS = [
         { id: 'toyota', name: 'Toyota', logo: 'asset/Toyota-Symbol.png' },
         { id: 'honda', name: 'Honda', logo: 'asset/honda-logo.png' },
     ];
-
-    /* ═════════════════════════════════════════════════════════ ═════
-       COLORS — Toyota + Honda + Others
-       *** เป็นค่าอ้างอิงเท่านั้น — สีจริงขึ้นอยู่กับสูตรผสมสี ***
-    ══════════════════════════════════════════════════════════════ */
     const COLORS = [
         { brand: 'toyota', code: '040', name: 'Super White', color: '#F8F8F6', finish: 'solid', models: 'Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova, Raize, Veloz' },
         { brand: 'toyota', code: '058', name: 'Warm White', color: '#FBF5E6', finish: 'solid', models: 'Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova' },
@@ -140,7 +132,6 @@
         { brand: 'honda', code: 'YR628M', name: 'Premium Amber', color: '#CC8020', finish: 'metallic', models: 'City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed' },
         { brand: 'honda', code: 'YR639P', name: 'Phoenix Orange', color: '#DC6418', finish: 'pearl', models: 'City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed' },
     ];
-
     const EXTRA_CSV_DATA = `Brand,Color Name,Color Code,Hex Color,Models
 MITSUBISHI,EISEN GREY,A02,#2C2C2C,"Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
 MITSUBISHI,MEDIUM SILVER,A36,#8C8A78,"Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
@@ -324,7 +315,6 @@ MERCEDES BENZ,DIAMANTWEISS,799,#F8F8F8,"A-Class, B-Class, C-Class, E-Class, S-Cl
 MERCEDES BENZ,CAVANSITBLAU,890,#1A2870,"A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
 MERCEDES BENZ,DIAMANTSILBER,988,#B8B8B8,"A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
 MERCEDES BENZ,SELENITE GREY,992,#787878,"A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"`;
-
     const EXTRA_CSV_DATA_2 = `Brand,Color Code,Color Name,HEX Code,Models
 SUBARU,37J,SATIN WHITE,#F0F4F2,"Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
 SUBARU,61K,DARK GREY,#3A3C3E,"Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
@@ -459,7 +449,6 @@ AUDI,L5,FLORETTSILBER,#A3A5A7,"A4, A6, Q5, Q7"
 AUDI,Q2,TORNADOGRAU,#858889,"A3, A4, Q5"
 AUDI,W1,MONDSCHEINBLAU,#1C2331,"A5, A7, Q8"
 AUDI,W3,ARGUSBRAUN,#3F3631,"A6, Q7, Q8"`;
-
     const EXTRA_CSV_DATA_ISUZU = `Brand, Color Code, Color Name, Hex, Models
 ISUZU, 501, TOPAZ GOLD,#8B7147, "D-Max, MU-X, N-Series"
 ISUZU, 504, TORNADO RED,#652222, "D-Max, MU-X, N-Series"
@@ -524,7 +513,6 @@ ISUZU, PT070, CHANTI RED,#5F1920, "D-Max, MU-X, N-Series"
 ISUZU, PT071, CYPRESS GREEN,#183531, "D-Max, MU-X, N-Series"
 ISUZU, PT072, CASCADE BLUE,#3A87B7, "D-Max, MU-X, N-Series"
 ISUZU, PT073, KAISER SILVER, #AFB3B5, "D-Max, MU-X, N-Series"`;
-
     const EXTRA_CSV_DATA_3 = `Brand, Color Code, Color Name, Hex, Models
 BMW, 329, VULKAN GRAY,#4A4A48, "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
 BMW, 416, CARBONSCHWARZ PEARL MET.,#1C1C1C, "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
@@ -633,7 +621,6 @@ Volvo, 722, MAPLE BROWN PEARL,#5C4033, "S60, S90, V60, XC40, XC60, XC90, C40"
 Volvo, 711, BRIGHT SILVER MET., #C0C0C0, "S60, S90, V60, XC40, XC60, XC90, C40"
 Volvo, 714, LUMINOUS GREY PEARL MET., #A9A9A9, "S60, S90, V60, XC40, XC60, XC90, C40"
 Volvo, 731, BLACK MET.,#1C1C1C, "S60, S90, V60, XC40, XC60, XC90, C40"`;
-
     const EXTRA_CSV_DATA_4 = `Brand, Color Code, Color Name, Hex, Models
 AUDI, 0C, MONSUN GRAU,#5F6264, "A3, A4, A6, Q5, Q7"
 AUDI, 0E, MYTHOSSCHWARZ,#151616, "A3, A4, A5, Q3, Q5, e-tron"
@@ -642,7 +629,6 @@ AUDI, L5, FLORETTSILBER, #A3A5A7, "A4, A6, Q5, Q7"
 AUDI, Q2, TORNADOGRAU,#858889, "A3, A4, Q5"
 AUDI, W1, MONDSCHEINBLAU,#1C2331, "A5, A7, Q8"
 AUDI, W3, ARGUSBRAUN,#3F3631, "A6, Q7, Q8"`;
-
     const INDEX_LOGO_PATHS = {
         toyota: 'asset/Toyota-Symbol.png',
         honda: 'asset/honda-logo.png',
@@ -673,28 +659,23 @@ AUDI, W3, ARGUSBRAUN,#3F3631, "A6, Q7, Q8"`;
         wuling: 'asset/wuling-logo.png',
         'chery-omodaand-jaecoo': 'asset/Chery_logo.svg'
     };
-
     function slugBrand(brandName) {
         return brandName.toLowerCase().replace(' &', 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
     }
-
     function titleCase(text) {
         return text.toLowerCase().replace(/\b\w/g, ch => ch.toUpperCase());
     }
-
     function inferFinishFromName(name) {
         const upper = name.toUpperCase();
         if (upper.includes('PEARL') || upper.includes('CRYSTAL') || upper.includes('MICA')) return 'pearl';
         if (upper.includes('SILVER') || upper.includes('METAL') || upper.includes('MET.') || upper.includes('GREY') || upper.includes('GRAY') || upper.includes(' STEEL') || upper.includes('TITANIUM') || upper.includes('ALUMINUM') || upper.includes('GRAPHITE') || upper.includes('GUNMETAL')) return 'metallic';
         return 'solid';
     }
-
     function fallbackBrandLogo(name) {
         const initials = name.split(/[^A-Za-z0-9]+/).filter(Boolean).slice(0, 2).map(s => s[0].toUpperCase()).join('') || 'BR';
         const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96"><rect width="100%" height="100%" rx="48" fill="#0f172a"/><text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#f8fafc">${initials}</text></svg>`;
         return `data:image/svg+xml,${encodeURIComponent(svg)}`;
     }
-
     function parseCsvLine(line) {
         const out = [];
         let current = '';
@@ -710,22 +691,18 @@ AUDI, W3, ARGUSBRAUN,#3F3631, "A6, Q7, Q8"`;
         out.push(current.trim());
         return out;
     }
-
     function normalizeHeader(text) {
         return (text || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     }
-
     function parseCsvCatalogData(csvText, seenRowKeys) {
         const lines = csvText.trim().split(/\r?\n/).filter(Boolean);
         if (lines.length < 2) return { rows: [], brandEntries: [] };
-
         const headers = parseCsvLine(lines[0]).map(normalizeHeader);
         const brandIdx = headers.findIndex(h => h === 'brand');
         const nameIdx = headers.findIndex(h => h === 'colorname' || h === 'name');
         const codeIdx = headers.findIndex(h => h === 'colorcode' || h === 'code');
         const hexIdx = headers.findIndex(h => h === 'hexcolor' || h === 'hexcode' || h === 'hex');
         const modelsIdx = headers.findIndex(h => h === 'models' || h === 'compatiblemodels');
-
         const rows = lines.slice(1).map(line => {
             const cols = parseCsvLine(line);
             const brandRaw = (cols[brandIdx] || '').trim();
@@ -735,7 +712,6 @@ AUDI, W3, ARGUSBRAUN,#3F3631, "A6, Q7, Q8"`;
             const models = (cols[modelsIdx] || '').trim();
             return { brandRaw, brand: slugBrand(brandRaw), code: colorCode, name: titleCase(colorName), color: hex || '#808080', finish: inferFinishFromName(colorName), models };
         });
-
         const brandEntries = [];
         const seen = new Set(BRANDS.map(b => b.id));
         rows.forEach(item => {
@@ -746,9 +722,7 @@ AUDI, W3, ARGUSBRAUN,#3F3631, "A6, Q7, Q8"`;
         });
         return { rows, brandEntries };
     }
-
     const seenImportedRows = new Set(COLORS.map(c => `${c.brand}|${String(c.code || '').toUpperCase().replace(/\s/g, '')}|${String(c.color || '').toUpperCase()}`));
-
     const EXTRA_CSV_DATA_5 = `Brand, Color Code, Color Name, Hex, Models
 BYD, AA1, QUANTUM BLACK, #1C1C1C, "Atto 3, Dolphin, Seal, Han, Tang, Sealion"
 BYD, CA2, FLORAL PURPLE, #9B8EB0, "Atto 3, Dolphin"
@@ -821,17 +795,14 @@ CHERY (OMODA & JAECOO), KH, LUNAR SILVER, #A8A8A8, "Omoda 5, Omoda C5, Jaecoo 7"
 CHERY (OMODA & JAECOO), NL, VOLCANIC RED, #A02C2C, "Omoda 5, Omoda C5"
 CHERY (OMODA & JAECOO), SJ, FOREST GREEN, #1A3A3A, "Jaecoo 7"
 CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
-
     [EXTRA_CSV_DATA, EXTRA_CSV_DATA_2, EXTRA_CSV_DATA_ISUZU, EXTRA_CSV_DATA_3, EXTRA_CSV_DATA_4, EXTRA_CSV_DATA_5].forEach(csvText => {
         const parsedCsvData = parseCsvCatalogData(csvText, seenImportedRows);
         BRANDS.push(...parsedCsvData.brandEntries);
-
         parsedCsvData.rows.forEach(newItem => {
             if (!newItem.brand || !newItem.code || !/^#[0-9A-F]{6}$/.test(newItem.color)) return;
             const cleanCode = String(newItem.code).toUpperCase().replace(/\s/g, '');
             const rowKey = `${newItem.brand}|${cleanCode}|${newItem.color}`;
             const existing = COLORS.find(c => c.brand === newItem.brand && String(c.code).toUpperCase().replace(/\s/g, '') === cleanCode);
-
             if (existing) {
                 if (newItem.models) existing.models = newItem.models;
             } else if (!seenImportedRows.has(rowKey)) {
@@ -847,13 +818,8 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
             }
         });
     });
-
-    /* ══════════════════════════════════════════════════════════════
-       HELPERS & UI LOGIC
-    ══════════════════════════════════════════════════════════════ */
     const brandMap = {};
     BRANDS.forEach(b => { brandMap[b.id] = b; });
-
     function finishLabel(finish) {
         switch (finish) {
             case 'metallic': return { text: 'เมทัลลิก', cls: 'badge-metallic' };
@@ -862,7 +828,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
             default: return null;
         }
     }
-
     function makeSwatchSVG(hex, finish) {
         const r = parseInt(hex.slice(1, 3), 16);
         const g = parseInt(hex.slice(3, 5), 16);
@@ -881,11 +846,8 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><defs><linearGradient id="base" x1="0.1" y1="0" x2="0.3" y2="1"><stop offset="0%" stop-color="${lighter}"/><stop offset="100%" stop-color="${darker}"/></linearGradient>${extraLayers}</defs><rect width="${w}" height="${h}" fill="url(#base)"/><rect width="${w}" height="${h}" fill="url(#sheen)"/></svg>`;
         return `data:image/svg+xml,${encodeURIComponent(svg)}`;
     }
-
-    /* BRAND DROPDOWN */
     const brandCounts = {};
     COLORS.forEach(c => { brandCounts[c.brand] = (brandCounts[c.brand] || 0) + 1; });
-
     const brandPanel = document.getElementById('brandPanel');
     if (brandPanel) {
         let items = `<div class="dropdown-item active" data-brand="all"><div class="dropdown-item-left"><i class="fas fa-th"></i> ทั้งหมด</div><span class="dropdown-item-count">${COLORS.length}</span></div>`;
@@ -896,8 +858,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         });
         brandPanel.innerHTML = items;
     }
-
-    /* DROPDOWN TOGGLE */
     let selectedBrand = 'all';
     const brandTrigger = document.getElementById('brandTrigger');
     if (brandTrigger && brandPanel) {
@@ -926,8 +886,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
             brandTrigger.classList.remove('open'); brandPanel.classList.remove('open'); filterAndRender();
         });
     }
-
-    /* RENDER + FILTER + PAGINATION */
     const colorGrid = document.getElementById('colorGrid');
     const showingCount = document.getElementById('showingCount');
     const noResults = document.getElementById('noResults');
@@ -936,7 +894,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
     let currentPage = 1;
     const itemsPerPage = 20;
     let currentFiltered = [];
-
     if (colorGrid) {
         colorGrid.classList.remove('list-view');
         const listBtn = document.querySelector('.view-btn[data-view="list"]');
@@ -944,7 +901,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         if (listBtn) listBtn.classList.remove('active');
         if (gridBtn) gridBtn.classList.add('active');
     }
-
     function filterAndRender() {
         const searchInput = document.getElementById('searchInput');
         const search = searchInput ? searchInput.value.toLowerCase().trim() : '';
@@ -958,7 +914,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         if (brandCountEl) brandCountEl.textContent = currentFiltered.length;
         renderPage(1);
     }
-
     function renderPage(page) {
         currentPage = page;
         const start = (currentPage - 1) * itemsPerPage;
@@ -995,7 +950,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         renderPagination(); renderChips();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
     function renderPagination() {
         if (!paginationEl) return;
         paginationEl.innerHTML = '';
@@ -1025,7 +979,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         next.addEventListener('click', () => currentPage < totalPages && renderPage(currentPage + 1));
         paginationEl.appendChild(next);
     }
-
     function createPageLink(num) {
         const link = document.createElement('a');
         link.className = `page-link ${num === currentPage ? 'active' : ''}`;
@@ -1033,7 +986,6 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         link.addEventListener('click', () => renderPage(num));
         return link;
     }
-
     function renderChips() {
         if (!activeFiltersEl) return;
         activeFiltersEl.innerHTML = '';
@@ -1051,12 +1003,10 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         });
         activeFiltersEl.appendChild(chip);
     }
-
     const searchInput = document.getElementById('searchInput');
     const searchClearBtn = document.getElementById('searchClear');
     if (searchInput) searchInput.addEventListener('input', function () { if (searchClearBtn) searchClearBtn.style.display = this.value ? 'block' : 'none'; filterAndRender(); });
     if (searchClearBtn) searchClearBtn.addEventListener('click', function () { if (searchInput) { searchInput.value = ''; searchInput.focus(); } this.style.display = 'none'; filterAndRender(); });
-
     function checkUrlParams() {
         const params = new URLSearchParams(window.location.search);
         const brandParam = params.get('brand');
@@ -1072,23 +1022,18 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
         filterAndRender();
     }
     checkUrlParams(); filterAndRender();
-
     document.querySelectorAll('.view-btn').forEach(btn => { btn.addEventListener('click', () => { document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); if (colorGrid) colorGrid.classList.toggle('list-view', btn.dataset.view === 'list'); }); });
-
-    /* LIGHTBOX */
     const lightbox = document.getElementById('lightbox');
     const lightboxSwatch = document.getElementById('lightboxSwatch');
     const lightboxBrand = document.getElementById('lightboxBrand');
     const lightboxName = document.getElementById('lightboxName');
     const lightboxCode = document.getElementById('lightboxCode');
     let lbIndex = -1; let lbData = [];
-
     window.openLightbox = function (card, dataArr, absIdx) {
         if (!lightbox) return;
         lbData = dataArr; lbIndex = absIdx !== undefined ? absIdx : parseInt(card.dataset.index);
         showLB(lbIndex); lightbox.classList.add('open'); document.body.style.overflow = 'hidden';
     };
-
     function showLB(idx) {
         const c = lbData[idx]; const b = brandMap[c.brand]; const badge = finishLabel(c.finish);
         if (lightboxSwatch) lightboxSwatch.style.background = `linear-gradient(135deg, ${lightenHex(c.color, 30)} 0%, ${c.color} 50%, ${darkenHex(c.color, 20)} 100%)`;
@@ -1099,11 +1044,9 @@ CHERY (OMODA & JAECOO), SK, MINT GREEN, #9EB88A, "Omoda 5"`;
             if (c.models) lightboxCode.innerHTML += `<br><span style="font-size:13px; color:rgba(255,255,255,0.65); margin-top:4px; display:inline-block;">รุ่นที่รองรับ: ${c.models}</span>`;
         }
     }
-
     function lightenHex(hex, amt) { const r = Math.min(255, parseInt(hex.slice(1, 3), 16) + amt); const g = Math.min(255, parseInt(hex.slice(3, 5), 16) + amt); const b = Math.min(255, parseInt(hex.slice(5, 7), 16) + amt); return `rgb(${r}, ${g}, ${b})`; }
     function darkenHex(hex, amt) { const r = Math.max(0, parseInt(hex.slice(1, 3), 16) - amt); const g = Math.max(0, parseInt(hex.slice(3, 5), 16) - amt); const b = Math.max(0, parseInt(hex.slice(5, 7), 16) - amt); return `rgb(${r}, ${g}, ${b})`; }
     function closeLB() { if (lightbox) { lightbox.classList.remove('open'); document.body.style.overflow = ''; } }
-
     const closeBtn = document.getElementById('lightboxClose'); if (closeBtn) closeBtn.addEventListener('click', closeLB);
     const prevBtn = document.getElementById('lightboxPrev'); if (prevBtn) prevBtn.addEventListener('click', () => { lbIndex = (lbIndex - 1 + lbData.length) % lbData.length; showLB(lbIndex); });
     const nextBtn = document.getElementById('lightboxNext'); if (nextBtn) nextBtn.addEventListener('click', () => { lbIndex = (lbIndex + 1) % lbData.length; showLB(lbIndex); });

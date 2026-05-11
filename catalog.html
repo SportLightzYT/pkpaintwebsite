@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
     <style>
         .skip-link {
@@ -27,6 +26,7 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="icon" type="image/jpeg" href="asset/pklogosvg.jpg">
     <title>PK Paint & Supply - แคตตาล็อคโค้ดสี</title>
     <meta name="description"
         content="แคตตาล็อคโค้ดสีพ่นรถยนต์ ค้นหาโค้ดสีตามยี่ห้อรถ PK Paint & Supply รังสิต ปทุมธานี">
@@ -36,12 +36,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/catalog.css">
 </head>
-
 <body>
     <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
     <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Navbar (อัปเดตให้ตรงกับ contact.html) -->
     <nav class="navbar">
         <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
             <div class="logo-section">
@@ -69,8 +66,6 @@
             </button>
         </div>
     </nav>
-
-    <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="เมนูหลัก">
         <a href="index.html">หน้าแรก</a>
         <a href="products.html">สินค้า</a>
@@ -85,23 +80,16 @@
             <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
         </div>
     </div>
-
-    <!-- Page Container -->
     <div class="page-container" id="main-content">
         <div class="breadcrumb">
             <a href="index.html">หน้าแรก</a> / <span>แคตตาล็อคโค้ดสี</span>
         </div>
-
         <h1 class="page-title">แคตตาล็อคโค้ดสี</h1>
-
-        <!-- Search (Standardized style) -->
         <div class="search-wrap">
             <input type="text" class="search-input" id="searchInput" placeholder="ค้นหาชื่อสี, โค้ดสี, หรือยี่ห้อรถ...">
             <button class="search-clear" id="searchClear"><i class="fas fa-times"></i></button>
             <i class="fas fa-search search-icon"></i>
         </div>
-
-        <!-- Dropdown Filter -->
         <section class="filter-section">
             <div class="filter-wrap">
                 <div class="filter-row">
@@ -122,12 +110,9 @@
                 <div class="active-filters" id="activeFilters" style="display:none;"></div>
             </div>
         </section>
-
-        <!-- Color Grid -->
         <section class="catalog-section">
             <div class="catalog-toolbar">
                 <div class="catalog-toolbar-left">แสดง <span id="showingCount">0</span> รายการ</div>
-                
                 <div class="view-toggle">
                     <button class="view-btn active" data-view="grid" title="ตาราง"><i class="fas fa-th"></i></button>
                     <button class="view-btn" data-view="list" title="รายการ"><i class="fas fa-list"></i></button>
@@ -139,12 +124,9 @@
                 <h3>ไม่พบผลลัพธ์</h3>
                 <p>ลองค้นหาด้วยคำอื่น หรือเลือกยี่ห้อรถจากตัวกรองด้านบน</p>
             </div>
-            <!-- Pagination -->
             <div class="pagination" id="pagination"></div>
         </section>
     </div>
-
-    <!-- CTA -->
     <section class="cta-section">
         <div class="cta-content">
             <h2>ไม่เจอโค้ดสีที่ต้องการ?</h2>
@@ -156,8 +138,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Lightbox -->
     <div class="lightbox-overlay" id="lightbox">
         <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
         <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
@@ -171,8 +151,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-col">
@@ -219,13 +197,9 @@
         </div>
         <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint & Supply. All Rights Reserved.</div>
     </footer>
-
     <button class="scroll-top" id="scrollTop" aria-label="กลับขึ้นด้านบน"><i class="fas fa-chevron-up"></i></button>
-
     <script src="js/catalog.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module"></script>
 </body>
 </html>
-
-

@@ -1,7 +1,5 @@
 (function() {
     'use strict';
-
-    // Page-specific: Scroll-in animation for about.html elements
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {
@@ -13,7 +11,6 @@
                 }
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
         document.querySelectorAll('.stat-card, .service-card, .team-card, .partner-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
@@ -21,5 +18,4 @@
             observer.observe(el);
         });
     }
-
 })();
