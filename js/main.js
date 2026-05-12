@@ -1,22 +1,6 @@
 (function() {
     'use strict';
-    const isCatalog = window.location.href.toLowerCase().includes('catalog');
-    if (!isCatalog) {
-        const preventAction = (e) => {
-            const key = e.key ? e.key.toLowerCase() : '';
-            const isCtrl = e.ctrlKey || e.metaKey;
-            const isShift = e.shiftKey;
-            if (e.keyCode === 123 || (isCtrl && isShift && (key === 'i' || key === 'j' || key === 'c')) || (isCtrl && (key === 'u' || key === 's'))) {
-                e.preventDefault();
-                return false;
-            }
-        };
-        window.addEventListener('keydown', preventAction, true);
-        window.addEventListener('contextmenu', e => e.preventDefault(), true);
-        const style = document.createElement('style');
-        style.innerHTML = 'body { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } input, textarea { -webkit-user-select: text; -moz-user-select: text; -ms-user-select: text; user-select: text; }';
-        document.head.appendChild(style);
-    }
+    // DevTools prevention removed.
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
     const navbar = document.querySelector('.navbar');
@@ -32,9 +16,14 @@
     if (hamburger) {
         hamburger.addEventListener('click', toggleMobileMenu);
     }
+    window.addEventListener('popstate', () => { document.body.style.overflow = ''; });
     const mobileNavLinks = mobileNav ? mobileNav.querySelectorAll('a') : [];
     mobileNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            if (link.getAttribute('href') === 'index.html' && (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('pkpaint/'))) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
             if (hamburger && hamburger.classList.contains('open')) {
                 toggleMobileMenu();
             }
@@ -93,7 +82,9 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const counter = entry.target;
-                    const target = parseFloat(counter.getAttribute('data-target'));
+                    const targetStr = counter.getAttribute('data-target');
+                    const target = parseFloat(targetStr);
+                    const decimals = targetStr.includes('.') ? targetStr.split('.')[1].length : 0;
                     const duration = 2000;
                     const startTime = performance.now();
                     function updateCounter(currentTime) {
@@ -101,11 +92,11 @@
                         const progress = Math.min(elapsed / duration, 1);
                         const easeOut = 1 - Math.pow(1 - progress, 4);
                         const current = target * easeOut;
-                        counter.textContent = Math.floor(current).toLocaleString('th-TH');
+                        counter.textContent = Number(current.toFixed(decimals)).toLocaleString('th-TH', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
                         if (progress < 1) {
                             requestAnimationFrame(updateCounter);
                         } else {
-                            counter.textContent = target.toLocaleString('th-TH');
+                            counter.textContent = Number(target.toFixed(decimals)).toLocaleString('th-TH', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
                         }
                     }
                     requestAnimationFrame(updateCounter);

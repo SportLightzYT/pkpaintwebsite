@@ -168,7 +168,7 @@
         filteredCards = allCards.filter(card => {
             const cat = card.dataset.category;
             const brand = card.dataset.brand;
-            const price = parseInt(card.dataset.price);
+            const price = parseInt(card.dataset.price) || 0;
             const name = (card.dataset.name || '').toLowerCase();
             if (selectedCategory && cat !== selectedCategory) return false;
             if (selectedBrand && brand !== selectedBrand) return false;
@@ -184,7 +184,7 @@
         updateTriggerText('brandDropdown', selectedBrand || 'แบรนด์สินค้า');
         renderPills();
     }
-    function renderPage() {
+    function renderPage(isUserNav = false) {
         const allCards = document.querySelectorAll('#productGrid .product-card');
         const start = (currentPage - 1) * ITEMS_PER_PAGE;
         const end = start + ITEMS_PER_PAGE;
@@ -203,10 +203,10 @@
         const paginationWrap = document.getElementById('paginationWrap');
         if (paginationWrap) paginationWrap.style.display = filteredCards.length <= ITEMS_PER_PAGE ? 'none' : '';
         renderPagination();
-        scrollToGrid();
+        scrollToGrid(isUserNav);
     }
-    function scrollToGrid() {
-        if (!renderPage._userNav) return;
+    function scrollToGrid(isUserNav) {
+        if (!isUserNav) return;
         const grid = document.getElementById('productGrid');
         if (grid) {
             const top = grid.getBoundingClientRect().top + window.scrollY - 120;
@@ -265,9 +265,7 @@
         const totalPages = Math.ceil(filteredCards.length / ITEMS_PER_PAGE);
         if (page < 1 || page > totalPages) return;
         currentPage = page;
-        renderPage._userNav = true;
-        renderPage();
-        renderPage._userNav = false;
+        renderPage(true);
     };
     function updateTriggerCount(id, value) {
         const el = document.getElementById(id);
@@ -288,31 +286,44 @@
         let hasPills = false;
         if (selectedCategory) {
             hasPills = true;
-            container.innerHTML += createPill(selectedCategory, 'removeCategory');
+            container.appendChild(createPill(selectedCategory, removeCategory));
         }
         if (selectedBrand) {
             hasPills = true;
             const brandItem = document.querySelector(`.brand-item[data-value="${selectedBrand}"]`);
             const logoSrc = brandItem ? brandItem.querySelector('.brand-logo')?.src : '';
-            const logoHtml = logoSrc ? `<img src="${logoSrc}" class="pill-logo" alt="">` : '';
-            container.innerHTML += createPill(selectedBrand, 'removeBrand', logoHtml);
+            container.appendChild(createPill(selectedBrand, removeBrand, logoSrc));
         }
         if (priceActive) {
             hasPills = true;
             const minStr = '฿' + priceMin.toLocaleString();
             const maxStr = priceMax >= SLIDER_ABS_MAX ? 'ไม่จำกัด' : '฿' + priceMax.toLocaleString();
-            container.innerHTML += createPill(minStr + ' - ' + maxStr, 'removePrice');
+            container.appendChild(createPill(minStr + ' - ' + maxStr, removePrice));
         }
         if (hasPills) {
             const clearBtn = document.createElement('button');
             clearBtn.className = 'clear-all-btn';
             clearBtn.textContent = 'ล้างทั้งหมด';
-            clearBtn.onclick = clearAll;
+            clearBtn.addEventListener('click', clearAll);
             container.appendChild(clearBtn);
         }
     }
-    function createPill(text, removeFn, extraHtml = '') {
-        return `<span class="filter-pill">${extraHtml}${text} <i class="fas fa-times" onclick="${removeFn}()"></i></span>`;
+    function createPill(text, removeFn, logoSrc = '') {
+        const span = document.createElement('span');
+        span.className = 'filter-pill';
+        if (logoSrc) {
+            const img = document.createElement('img');
+            img.src = logoSrc;
+            img.className = 'pill-logo';
+            img.alt = '';
+            span.appendChild(img);
+        }
+        span.appendChild(document.createTextNode(text + ' '));
+        const icon = document.createElement('i');
+        icon.className = 'fas fa-times';
+        icon.addEventListener('click', removeFn);
+        span.appendChild(icon);
+        return span;
     }
     window.removeCategory = function () {
         selectedCategory = '';

@@ -5,7 +5,8 @@
         const csrfToken = document.getElementById('csrfToken');
         let isSubmitting = false;
         if (contactForm && csrfToken) {
-            csrfToken.value = generateCSRFToken();
+            // CSRF Token generation removed - should be handled by the server
+
             contactForm.addEventListener('submit', function(e) {
                 if (isSubmitting) {
                     e.preventDefault();
@@ -24,7 +25,7 @@
                     return false;
                 }
                 const name = contactForm.querySelector('input[name="name"]');
-                if (name && !/^[\u0E01-\u0E5B\u0E30-\u0E4E\u0E50-\u0E59a-zA-Z\s]{2,50}$/.test(name.value)) {
+                if (name && !/^[\u0E00-\u0E7Fa-zA-Z\s]{2,50}$/.test(name.value)) {
                     e.preventDefault();
                     alert('กรุณากรอกชื่อ-นามสกุลให้ถูกต้อง (2-50 ตัวอักษร)');
                     name.focus();
@@ -38,7 +39,7 @@
                         message.focus();
                         return false;
                     }
-                    if (/<script|html|<[^>]+>/i.test(message.value)) {
+                    if (/<\s*script\b|<[^>]+>/i.test(message.value)) {
                         e.preventDefault();
                         alert('ขออภัย ข้อความของคุณมีตัวอักษรที่ไม่ได้รับอนุญาต');
                         message.focus();
@@ -54,10 +55,6 @@
                 }, 30000);
             });
         }
-        function generateCSRFToken() {
-            const timestamp = Date.now().toString(36);
-            const randomStr = Math.random().toString(36).substring(2, 15);
-            return btoa(timestamp + randomStr);
-        }
+        // generateCSRFToken() removed
     });
 })();

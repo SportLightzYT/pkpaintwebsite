@@ -9,7 +9,7 @@
     };
     let galleryItems = [];
     let currentLightboxIndex = -1;
-    window.openLightbox = function(el) {
+    window.openGalleryLightbox = function(el) {
         galleryItems = Array.from(document.querySelectorAll('#galleryMasonry .gallery-item')).filter(i => i.style.display !== 'none');
         currentLightboxIndex = galleryItems.indexOf(el);
         showLightboxItem(currentLightboxIndex);
@@ -42,14 +42,15 @@
         e.stopPropagation(); 
         window.closeLightbox(); 
     };
-    document.addEventListener('keydown', e => {
+    function handleGalleryKeydown(e) {
         const lb = document.getElementById('lightbox');
         if (lb && lb.classList.contains('open')) {
             if (e.key === 'ArrowLeft') showLightboxItem(currentLightboxIndex - 1);
             else if (e.key === 'ArrowRight') showLightboxItem(currentLightboxIndex + 1);
             else if (e.key === 'Escape') window.closeLightbox();
         }
-    });
+    }
+    document.addEventListener('keydown', handleGalleryKeydown);
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {

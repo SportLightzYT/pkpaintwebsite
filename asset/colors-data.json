@@ -1,0 +1,5440 @@
+{
+  "brands": [
+    {
+      "id": "toyota",
+      "name": "Toyota",
+      "logo": "asset/Toyota-Symbol.png"
+    },
+    {
+      "id": "honda",
+      "name": "Honda",
+      "logo": "asset/honda-logo.png"
+    },
+    {
+      "id": "mitsubishi",
+      "name": "MITSUBISHI",
+      "logo": "asset/Mitsubishi_logo.svg.png"
+    },
+    {
+      "id": "ford-mazda",
+      "name": "FORD/MAZDA",
+      "logo": "asset/mazda_PNG86.png"
+    },
+    {
+      "id": "chevrolet",
+      "name": "CHEVROLET",
+      "logo": "asset/Chevrolet-logo.png"
+    },
+    {
+      "id": "mg",
+      "name": "MG",
+      "logo": "asset/MG-Logo.png"
+    },
+    {
+      "id": "bmw",
+      "name": "BMW",
+      "logo": "asset/BMW.svg.png"
+    },
+    {
+      "id": "mercedes-benz",
+      "name": "MERCEDES BENZ",
+      "logo": "asset/Mercedes-Benz-Logo.png"
+    },
+    {
+      "id": "subaru",
+      "name": "SUBARU",
+      "logo": "asset/Subaru_logo_(transparent).svg"
+    },
+    {
+      "id": "hyundai",
+      "name": "HYUNDAI",
+      "logo": "asset/Hyundai-Logo.png"
+    },
+    {
+      "id": "kia",
+      "name": "KIA",
+      "logo": "asset/KIA_logo2.svg.png"
+    },
+    {
+      "id": "suzuki",
+      "name": "SUZUKI",
+      "logo": "asset/Suzuki_Motor_Corporation_logo.svg.png"
+    },
+    {
+      "id": "proton",
+      "name": "PROTON",
+      "logo": "asset/PROTON_Holdings_logo_(2019–present).svg.png"
+    },
+    {
+      "id": "nissan",
+      "name": "NISSAN",
+      "logo": "asset/nissan-6.svg"
+    },
+    {
+      "id": "volvo",
+      "name": "VOLVO",
+      "logo": "asset/Volvo_logo.svg.png"
+    },
+    {
+      "id": "volkswagen",
+      "name": "VOLKSWAGEN",
+      "logo": "asset/volkswagen-10.svg"
+    },
+    {
+      "id": "mini",
+      "name": "MINI",
+      "logo": "asset/MINI_logo.svg"
+    },
+    {
+      "id": "audi",
+      "name": "AUDI",
+      "logo": "asset/Audi-Logo_2016.svg"
+    },
+    {
+      "id": "isuzu",
+      "name": "ISUZU",
+      "logo": "asset/Isuzu.svg.png"
+    },
+    {
+      "id": "byd",
+      "name": "BYD",
+      "logo": "asset/BYD_Auto_2022_logo.svg"
+    },
+    {
+      "id": "changan-deepal",
+      "name": "CHANGAN (DEEPAL)",
+      "logo": "asset/deepal-site-image.png"
+    },
+    {
+      "id": "gac-aion",
+      "name": "GAC (AION)",
+      "logo": "asset/gac_motor_logo-freelogovectors.net_.png"
+    },
+    {
+      "id": "greatwall-haval",
+      "name": "GREATWALL / HAVAL",
+      "logo": "asset/Great-Wall-logo.png"
+    },
+    {
+      "id": "hozon-neta",
+      "name": "HOZON / NETA",
+      "logo": "asset/Hozon_Auto_logo.png"
+    },
+    {
+      "id": "wuling",
+      "name": "Wuling",
+      "logo": "asset/wuling-logo.png"
+    },
+    {
+      "id": "chery-omodaand-jaecoo",
+      "name": "CHERY (OMODA & JAECOO)",
+      "logo": "asset/Chery_logo.svg"
+    }
+  ],
+  "colors": [
+    {
+      "brand": "toyota",
+      "code": "040",
+      "name": "Super White",
+      "color": "#F8F8F6",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova, Raize, Veloz"
+    },
+    {
+      "brand": "toyota",
+      "code": "058",
+      "name": "Warm White",
+      "color": "#FBF5E6",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "070",
+      "name": "White Crystal Shine",
+      "color": "#EDF4FB",
+      "finish": "pearl",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "089",
+      "name": "Platinum White Pearl",
+      "color": "#F2F0EA",
+      "finish": "pearl",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1A0",
+      "name": "Bluish Silver",
+      "color": "#8FA8BF",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1C0",
+      "name": "Silver Ash",
+      "color": "#A9A4A0",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1C3",
+      "name": "Dark Grey",
+      "color": "#525252",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1D0",
+      "name": "Liquid Silver",
+      "color": "#BFC3C8",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1D4",
+      "name": "Silver Ash",
+      "color": "#A0A0A2",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1D6",
+      "name": "Silver",
+      "color": "#B4B4B6",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1E7",
+      "name": "Silver",
+      "color": "#A8A8AA",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1E9",
+      "name": "Dark Grey",
+      "color": "#484848",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1F8",
+      "name": "Medium Silver",
+      "color": "#9C9C9E",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1F9",
+      "name": "Slate",
+      "color": "#70808C",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1G3",
+      "name": "Magnetic Grey",
+      "color": "#56595E",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1H2",
+      "name": "Dark Steel",
+      "color": "#24282E",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1K0",
+      "name": "Metal Stream",
+      "color": "#C4C8CC",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "1K3",
+      "name": "Celestite Grey",
+      "color": "#B2B6BC",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "209",
+      "name": "Night Time Black",
+      "color": "#101214",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "218",
+      "name": "Attitude Black",
+      "color": "#1A1A1C",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "X12",
+      "name": "Black",
+      "color": "#0D0D0F",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "343",
+      "name": "Red",
+      "color": "#D42020",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3G9",
+      "name": "Wine Red",
+      "color": "#6B2030",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3K4",
+      "name": "Red",
+      "color": "#CC1A1A",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3P0",
+      "name": "Super Red",
+      "color": "#E01010",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3P1",
+      "name": "Impulse Red",
+      "color": "#C82010",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3Q2",
+      "name": "Dark Red",
+      "color": "#7A1020",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3R3",
+      "name": "Barcelona Red",
+      "color": "#C41020",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3S1",
+      "name": "Red",
+      "color": "#D61616",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "3T6",
+      "name": "Crimson Spark Red",
+      "color": "#CC1030",
+      "finish": "pearl",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4P9",
+      "name": "Angora Beige",
+      "color": "#E2CFAA",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4Q2",
+      "name": "Beige",
+      "color": "#CEBD9E",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4Q8",
+      "name": "Beige",
+      "color": "#C6B494",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4R0",
+      "name": "Beige",
+      "color": "#CCBA98",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4R8",
+      "name": "Orange",
+      "color": "#E07020",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4U3",
+      "name": "Sunset Bronze",
+      "color": "#C07840",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4W0",
+      "name": "Quartz Brown",
+      "color": "#7A5838",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4W1",
+      "name": "Silky Beige",
+      "color": "#DCC9A0",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "4W9",
+      "name": "Phantom Brown",
+      "color": "#5A4030",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "574",
+      "name": "Pale Yellow Opal",
+      "color": "#F0E880",
+      "finish": "opal",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "586",
+      "name": "Champagne",
+      "color": "#EEE0C0",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "5B7",
+      "name": "Champagne",
+      "color": "#EAD8B0",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "5A7",
+      "name": "Silky Gold",
+      "color": "#C09820",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "6S0",
+      "name": "Light Green",
+      "color": "#4CA860",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "6S3",
+      "name": "Dark Green",
+      "color": "#1A5C28",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "741",
+      "name": "Teal Blue",
+      "color": "#00888A",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8L2",
+      "name": "Dark Blue",
+      "color": "#0C2060",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8L4",
+      "name": "Atlantis Blue",
+      "color": "#1660C0",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8M6",
+      "name": "Blue",
+      "color": "#1878D0",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8N8",
+      "name": "Dark Blue",
+      "color": "#0A1E58",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8P1",
+      "name": "Blue",
+      "color": "#1A50BC",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8P4",
+      "name": "Dark Blue",
+      "color": "#0C3078",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8R3",
+      "name": "Greyish Blue",
+      "color": "#6A8CAA",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8S7",
+      "name": "Light Blue",
+      "color": "#8CCAE0",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8S9",
+      "name": "Light Blue",
+      "color": "#80C8E8",
+      "finish": "pearl",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8T7",
+      "name": "Blue Streak",
+      "color": "#1870C4",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8U8",
+      "name": "Light Blue",
+      "color": "#78C4DE",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8W1",
+      "name": "True Blue",
+      "color": "#1C50C0",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8W8",
+      "name": "Frozen Blue",
+      "color": "#5898D4",
+      "finish": "pearl",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8W9",
+      "name": "Cyan Splash",
+      "color": "#90D4DC",
+      "finish": "pearl",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8X2",
+      "name": "Nebula Blue",
+      "color": "#1E4898",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "8X7",
+      "name": "Pure Blue",
+      "color": "#0048AA",
+      "finish": "solid",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "toyota",
+      "code": "926",
+      "name": "Cool Steel",
+      "color": "#889AA8",
+      "finish": "metallic",
+      "models": "Vios, Yaris, Corolla, Corolla Cross, Camry, Hilux Revo, Fortuner, Innova"
+    },
+    {
+      "brand": "honda",
+      "code": "B506M",
+      "name": "Ice Blue",
+      "color": "#A0D0E8",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B520P",
+      "name": "Vivid Blue",
+      "color": "#1565C0",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B538M",
+      "name": "Blueish Silver",
+      "color": "#8898A8",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B558M",
+      "name": "Deep Lapis Blue",
+      "color": "#0E2468",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B561P",
+      "name": "New Teal Blue",
+      "color": "#007E88",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B569M",
+      "name": "Energetic Blue",
+      "color": "#1878D0",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B570M",
+      "name": "Twilight Blue",
+      "color": "#6A9EC0",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B593M",
+      "name": "New Sporty Blue",
+      "color": "#1A5898",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B594P",
+      "name": "Morpho Blue",
+      "color": "#2840A0",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B607M",
+      "name": "Cosmic Blue",
+      "color": "#183470",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B92P",
+      "name": "Nighthawk Black",
+      "color": "#0A0C10",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B95P",
+      "name": "Electron Blue",
+      "color": "#0038D8",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "B96P",
+      "name": "Eternal Blue",
+      "color": "#183888",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "BG53M",
+      "name": "Brilliant Sky",
+      "color": "#88CEE8",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "GY27M",
+      "name": "Fresh Lime",
+      "color": "#80B400",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "N-11-OP",
+      "name": "Micro White Silver",
+      "color": "#EAEAEA",
+      "finish": "opal",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH537M",
+      "name": "Pewter Grey",
+      "color": "#8C8C8C",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH578",
+      "name": "Taffeta White",
+      "color": "#F8F2E8",
+      "finish": "solid",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH612M",
+      "name": "Regent Silver",
+      "color": "#ACAFB4",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH623M",
+      "name": "Satin Silver",
+      "color": "#BCC0C4",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH630M",
+      "name": "Silverstone",
+      "color": "#A4AEB8",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH636P",
+      "name": "Brilliant White",
+      "color": "#F8F8F8",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH658P",
+      "name": "Graphite",
+      "color": "#282828",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH663M",
+      "name": "Satellite Silver",
+      "color": "#AEBABE",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH684P",
+      "name": "Sparkle Grey",
+      "color": "#9CA8B0",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH691M",
+      "name": "Silver Moss",
+      "color": "#8A9888",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH700M",
+      "name": "Alabaster Silver",
+      "color": "#C8C8C4",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH731P",
+      "name": "Crystal Black",
+      "color": "#080A0C",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH737M",
+      "name": "Polished Metal",
+      "color": "#C4C8CC",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH787M",
+      "name": "New Frosty White",
+      "color": "#ECF3F8",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH788P",
+      "name": "White Orchid Pearl",
+      "color": "#F5F0EC",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH797M",
+      "name": "Modern Steel",
+      "color": "#7A8890",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH830M",
+      "name": "Lunar Silver",
+      "color": "#B8BCBE",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH877P",
+      "name": "Sonic Grey",
+      "color": "#CCCCD0",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "NH883P",
+      "name": "Platinum White Pearl",
+      "color": "#F0F0EE",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "PB79M",
+      "name": "Purplish Blue",
+      "color": "#3840A8",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "RP31M",
+      "name": "Signet Silver",
+      "color": "#A4A8AC",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "RP32P",
+      "name": "Vintage Plum",
+      "color": "#72288C",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "RP40P",
+      "name": "Misty Violet",
+      "color": "#B898C0",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R507P",
+      "name": "New Firepepper Red",
+      "color": "#E42020",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R513",
+      "name": "Liberty Rally Red",
+      "color": "#C41028",
+      "finish": "solid",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R516P",
+      "name": "Iris Red",
+      "color": "#C01428",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R522P",
+      "name": "Royal Ruby Red",
+      "color": "#880C20",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R543P",
+      "name": "Carnelian Red",
+      "color": "#B01E1E",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R560P",
+      "name": "Burgundy Night",
+      "color": "#18060A",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R575M",
+      "name": "Ignite Red",
+      "color": "#CE0E1C",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "R96P",
+      "name": "Inza Red",
+      "color": "#D41414",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "Y54",
+      "name": "Carnival Yellow",
+      "color": "#FFCC00",
+      "finish": "solid",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "Y72P",
+      "name": "Attract Yellow",
+      "color": "#FFC000",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR505M",
+      "name": "Cashmere Silver",
+      "color": "#C8BCB0",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR524M",
+      "name": "Naples Gold",
+      "color": "#C09C28",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR525M",
+      "name": "Titanium",
+      "color": "#6C5C48",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR538M",
+      "name": "Desert Mist",
+      "color": "#C4B090",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR557P",
+      "name": "Habanero Red",
+      "color": "#C22028",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR574M",
+      "name": "Bold Beige",
+      "color": "#C4A880",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR576M",
+      "name": "Brilliant Orange",
+      "color": "#E27020",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR578M",
+      "name": "Urban Titanium",
+      "color": "#786050",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR591P",
+      "name": "New Seashell",
+      "color": "#E8E0D4",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR595M",
+      "name": "Sparkling Brown",
+      "color": "#885840",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR604M",
+      "name": "Golden Brown",
+      "color": "#C09028",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR614P",
+      "name": "Copper Sunset",
+      "color": "#CC7038",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR628M",
+      "name": "Premium Amber",
+      "color": "#CC8020",
+      "finish": "metallic",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "honda",
+      "code": "YR639P",
+      "name": "Phoenix Orange",
+      "color": "#DC6418",
+      "finish": "pearl",
+      "models": "City, Jazz/Fit, Civic, Accord, CR-V, HR-V, BR-V, WR-V, Freed"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A02",
+      "name": "Eisen Grey",
+      "color": "#2C2C2C",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A36",
+      "name": "Medium Silver",
+      "color": "#8C8A78",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A39",
+      "name": "Medium Purplish Grey",
+      "color": "#3C3840",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A63",
+      "name": "Gray",
+      "color": "#4A5260",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A65",
+      "name": "Hamilton Silver",
+      "color": "#A2A2A2",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A66",
+      "name": "Cool Silver",
+      "color": "#B8B8B8",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A67",
+      "name": "Titanium Grey",
+      "color": "#787878",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A70",
+      "name": "Ocean Silver",
+      "color": "#6A7868",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A72",
+      "name": "Dark Grey",
+      "color": "#2A2A2A",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "A75",
+      "name": "Medium Grey",
+      "color": "#5C5C5C",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "C06",
+      "name": "Greyish Brown",
+      "color": "#4A3828",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "C17",
+      "name": "Deep Brown",
+      "color": "#2A1A0E",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "D23",
+      "name": "Blue",
+      "color": "#1A3C8C",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "F24",
+      "name": "Pop Green",
+      "color": "#78CC10",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "F27",
+      "name": "Dark Green",
+      "color": "#2A3820",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "F50",
+      "name": "Blue Green",
+      "color": "#0A3828",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "F89",
+      "name": "Light Green",
+      "color": "#3A8870",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "G60",
+      "name": "Timber Green",
+      "color": "#1C2A1A",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "H22",
+      "name": "Cryolite Silver",
+      "color": "#C8D4C8",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "H82",
+      "name": "Chromatic Silver",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "M09",
+      "name": "Orange",
+      "color": "#CC6600",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "P17",
+      "name": "Medium Red",
+      "color": "#8C1A1A",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "P19",
+      "name": "Red",
+      "color": "#CC1A1A",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "P57",
+      "name": "Bluish Red",
+      "color": "#8C1A28",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "P78",
+      "name": "Cambridge Red",
+      "color": "#8A2020",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "R20",
+      "name": "Rio Red",
+      "color": "#CC2020",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "R59",
+      "name": "Palma Red",
+      "color": "#AA2020",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "S15",
+      "name": "Beige",
+      "color": "#F5F0E0",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "S18",
+      "name": "Platinum Beige",
+      "color": "#C8B898",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "S22",
+      "name": "Wheat Beige",
+      "color": "#C8B880",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "S74",
+      "name": "Fraser Beige",
+      "color": "#AA9870",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "T32",
+      "name": "Anadamaron",
+      "color": "#1A1A3C",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "T38",
+      "name": "Mars Blue",
+      "color": "#1A2A6A",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "T64",
+      "name": "Sapphire Blue",
+      "color": "#1C3C7C",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "T69",
+      "name": "Cerulean Blue",
+      "color": "#3A9ACC",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "T83",
+      "name": "Blue",
+      "color": "#1A4A9A",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "T86",
+      "name": "Malacca Blue",
+      "color": "#1A2A4C",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "T88",
+      "name": "Balboa Blue",
+      "color": "#0A1A3A",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "U17",
+      "name": "Titanium Grey",
+      "color": "#6A6A78",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "U25",
+      "name": "Silver",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "U28",
+      "name": "Graphite Gray",
+      "color": "#3A3A3A",
+      "finish": "metallic",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "V08",
+      "name": "Purple",
+      "color": "#CC88CC",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "V73",
+      "name": "Adelie Purple",
+      "color": "#2A1A3C",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "W32",
+      "name": "Alpine White",
+      "color": "#F0F0F0",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "W54",
+      "name": "White",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "W85",
+      "name": "White",
+      "color": "#F8F8F8",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "X08",
+      "name": "Pyrenees Black",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "X37",
+      "name": "Jet Black",
+      "color": "#080808",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "Y25",
+      "name": "Yellow",
+      "color": "#DDCC00",
+      "finish": "solid",
+      "models": "Mirage, Attrage, Xpander, Triton, Pajero Sport, Eclipse Cross"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "12K",
+      "name": "Twilight Blue",
+      "color": "#1A2848",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "12R",
+      "name": "Aquarius Blue",
+      "color": "#1A3464",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "16W/38A",
+      "name": "Black",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "18G/38C",
+      "name": "Highlight Silver",
+      "color": "#B0B8B8",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "18N",
+      "name": "Dusk Green",
+      "color": "#2A3A28",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "24M",
+      "name": "Spruce Green",
+      "color": "#384840",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "24N",
+      "name": "Amber",
+      "color": "#B87828",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "25D",
+      "name": "Snowflake White",
+      "color": "#F8F8F8",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "26P",
+      "name": "Starry Blue",
+      "color": "#1A3A78",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "28N/37Y",
+      "name": "Gloaming Silver",
+      "color": "#A0A898",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "30B",
+      "name": "Titanium Gray",
+      "color": "#787878",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "30D",
+      "name": "Blue Pacific",
+      "color": "#1A3A7A",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "30E",
+      "name": "Medium Blue",
+      "color": "#284888",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "32C",
+      "name": "Phantom Blue",
+      "color": "#1A2850",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "32K",
+      "name": "Strato Blue",
+      "color": "#1A2440",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "32L",
+      "name": "Andaman Blue",
+      "color": "#1A3870",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "33J",
+      "name": "Chilli Orange",
+      "color": "#B83A18",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "33Y",
+      "name": "Icy Blue",
+      "color": "#7AAAC8",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "34E",
+      "name": "Sparkling Gold",
+      "color": "#A89040",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "34N",
+      "name": "Phantom Purple",
+      "color": "#382848",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "36A",
+      "name": "Spirited Green",
+      "color": "#3AA828",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "36C",
+      "name": "Metropolitan Grey",
+      "color": "#686870",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "37L/4CC",
+      "name": "Winning Blue",
+      "color": "#284898",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "37M",
+      "name": "Copper Red",
+      "color": "#882820",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "37P",
+      "name": "Desert Bronze",
+      "color": "#786048",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "37R",
+      "name": "Lagoon Blue",
+      "color": "#1A4878",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "38J",
+      "name": "Celestial Blue",
+      "color": "#3A78C8",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "38L",
+      "name": "Gunmetal Blue",
+      "color": "#383C48",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "38P",
+      "name": "Aluminum",
+      "color": "#A8A8A8",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "39A",
+      "name": "Aurora Blue",
+      "color": "#1A3888",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "3DTCWWA",
+      "name": "Tonic",
+      "color": "#181818",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "3QNCWWA",
+      "name": "Platinum",
+      "color": "#C8C8C8",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "41B",
+      "name": "Sky Blue",
+      "color": "#5AAAD8",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "41L",
+      "name": "Aquatic Blue",
+      "color": "#285888",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "41V",
+      "name": "Soul Red",
+      "color": "#AA1818",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "41W",
+      "name": "Jet Black",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "42A",
+      "name": "Meteor Grey",
+      "color": "#484848",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "42M",
+      "name": "Deep Crystal Blue",
+      "color": "#0A2068",
+      "finish": "pearl",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "42S",
+      "name": "Titanium Flash",
+      "color": "#787880",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "46G",
+      "name": "Machine Grey",
+      "color": "#585858",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "46V",
+      "name": "Soul Red Crystal",
+      "color": "#C81818",
+      "finish": "pearl",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CA",
+      "name": "Frozen White",
+      "color": "#F8F8F8",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CD",
+      "name": "Lunar Sky",
+      "color": "#484850",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CG",
+      "name": "Ingot Silver",
+      "color": "#A0A0A0",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CH",
+      "name": "Midnight Sky",
+      "color": "#101018",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CN",
+      "name": "Candy Red",
+      "color": "#C01828",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CS",
+      "name": "Mustard Olive",
+      "color": "#786820",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "6QTCWWA",
+      "name": "Magnetic Silver",
+      "color": "#888888",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "7412",
+      "name": "Performance Blue",
+      "color": "#102878",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "A1T",
+      "name": "Nifty Red",
+      "color": "#881818",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "A2W",
+      "name": "Cool White",
+      "color": "#F0F0F0",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "A4A",
+      "name": "True Red",
+      "color": "#CC1818",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "A4D",
+      "name": "Arctic White",
+      "color": "#FAFAFA",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "EJ6",
+      "name": "Mars Red",
+      "color": "#A01818",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "FCC",
+      "name": "Blue Reflex",
+      "color": "#0A1878",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "FLQ",
+      "name": "Pride Orange",
+      "color": "#C87830",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "FSQ",
+      "name": "Sunset",
+      "color": "#C85030",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "JAYAWWA",
+      "name": "Panther Black",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "JE5",
+      "name": "Saber",
+      "color": "#706850",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "JMW",
+      "name": "Conquer Grey",
+      "color": "#585858",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "WVS",
+      "name": "Absolute Black",
+      "color": "#080808",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "ZAFAWWA",
+      "name": "Diamond White",
+      "color": "#F8F8F8",
+      "finish": "solid",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "ZJNCWWA",
+      "name": "Moondust Silver",
+      "color": "#A8A8A8",
+      "finish": "metallic",
+      "models": "Ranger, Everest, Focus, Mazda2, Mazda3, CX-3, CX-30, CX-5, BT-50"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "06U",
+      "name": "Impulse Blue",
+      "color": "#1A3A9A",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "07U",
+      "name": "Iceberge Blue",
+      "color": "#486880",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "08U",
+      "name": "Light Sky Blue",
+      "color": "#60A8C8",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "0CU",
+      "name": "Pewter",
+      "color": "#889088",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "2AU",
+      "name": "Star Silver",
+      "color": "#A8A8A8",
+      "finish": "metallic",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "2HU",
+      "name": "Black Sapphire",
+      "color": "#101820",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "3SU",
+      "name": "Gold Silver",
+      "color": "#B0A878",
+      "finish": "metallic",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "3TU",
+      "name": "Polar Sea Blue",
+      "color": "#183A68",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "42U",
+      "name": "White Pearl",
+      "color": "#F5F5F0",
+      "finish": "pearl",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "49U",
+      "name": "Sterling Silver",
+      "color": "#9898A0",
+      "finish": "metallic",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "5AU",
+      "name": "Cape Blue",
+      "color": "#1A50A0",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "5DU",
+      "name": "Light Quartz Gray",
+      "color": "#B8B8B8",
+      "finish": "metallic",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "5EU",
+      "name": "Sandalwood",
+      "color": "#C8B890",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "5HU",
+      "name": "Denim Blue",
+      "color": "#2A4878",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "5KU",
+      "name": "Shanghai Red",
+      "color": "#981818",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "61U",
+      "name": "Sparkling Tan",
+      "color": "#A88A60",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "90U/GQQ",
+      "name": "Royal Grey",
+      "color": "#606068",
+      "finish": "metallic",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "94L",
+      "name": "Mirage",
+      "color": "#A0A0A0",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "96U",
+      "name": "Alpine White",
+      "color": "#F0F0F0",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "C7U",
+      "name": "Citrus Green",
+      "color": "#A8D048",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "G6V",
+      "name": "Orange Rock",
+      "color": "#C85020",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "G8P",
+      "name": "Blue Me Away",
+      "color": "#1A3890",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GAN",
+      "name": "Switchblade Silver",
+      "color": "#909090",
+      "finish": "metallic",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GAR",
+      "name": "Carbon Flash",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GAZ",
+      "name": "Olympic White",
+      "color": "#F8F8F8",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GB0",
+      "name": "Black Meet Kettle",
+      "color": "#101010",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GCW",
+      "name": "Misty Lake",
+      "color": "#78A0A8",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GG2",
+      "name": "Pull Me Over Red",
+      "color": "#C01818",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GGJ",
+      "name": "Sizzle",
+      "color": "#A81818",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GP5",
+      "name": "Abalone White",
+      "color": "#F0EEE8",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GVX",
+      "name": "Auburn Brown",
+      "color": "#683820",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GVY",
+      "name": "Mountain Blue",
+      "color": "#1848A8",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GVZ",
+      "name": "Oceanic Blue",
+      "color": "#1A5090",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "GYM",
+      "name": "Satin Steel Grey",
+      "color": "#707070",
+      "finish": "metallic",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "chevrolet",
+      "code": "ODU",
+      "name": "Imperial Blond",
+      "color": "#D4BC80",
+      "finish": "solid",
+      "models": "Colorado, Trailblazer, Captiva, Silverado"
+    },
+    {
+      "brand": "mg",
+      "code": "JSJ",
+      "name": "Marina Blue",
+      "color": "#1A3898",
+      "finish": "solid",
+      "models": "MG3, MG5, MG ZS, MG HS, MG GT, MG4"
+    },
+    {
+      "brand": "mg",
+      "code": "LMA",
+      "name": "Metal Grey",
+      "color": "#505058",
+      "finish": "metallic",
+      "models": "MG3, MG5, MG ZS, MG HS, MG GT, MG4"
+    },
+    {
+      "brand": "mg",
+      "code": "NDW",
+      "name": "Arctic White",
+      "color": "#F8F8F8",
+      "finish": "solid",
+      "models": "MG3, MG5, MG ZS, MG HS, MG GT, MG4"
+    },
+    {
+      "brand": "mg",
+      "code": "PBC",
+      "name": "Black Knight",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "MG3, MG5, MG ZS, MG HS, MG GT, MG4"
+    },
+    {
+      "brand": "mg",
+      "code": "RSK",
+      "name": "Ruby Red",
+      "color": "#8A1818",
+      "finish": "solid",
+      "models": "MG3, MG5, MG ZS, MG HS, MG GT, MG4"
+    },
+    {
+      "brand": "mg",
+      "code": "SSA",
+      "name": "Silver",
+      "color": "#B8B8B8",
+      "finish": "metallic",
+      "models": "MG3, MG5, MG ZS, MG HS, MG GT, MG4"
+    },
+    {
+      "brand": "mg",
+      "code": "YSA",
+      "name": "Yellow",
+      "color": "#DDB800",
+      "finish": "solid",
+      "models": "MG3, MG5, MG ZS, MG HS, MG GT, MG4"
+    },
+    {
+      "brand": "bmw",
+      "code": "300",
+      "name": "Alpinweiss",
+      "color": "#F2F2F0",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "416",
+      "name": "Carbonschwarz",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "475",
+      "name": "Saphirschwarz",
+      "color": "#101018",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "668",
+      "name": "Schwarz",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A52",
+      "name": "Spacegrau",
+      "color": "#707078",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A72",
+      "name": "Kaschmirsilber",
+      "color": "#A8A8A8",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A73",
+      "name": "Melbournerot",
+      "color": "#882018",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A83",
+      "name": "Glaciersilber",
+      "color": "#C8C8C8",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A90",
+      "name": "Sophistograu",
+      "color": "#383838",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A96",
+      "name": "Mineralweiss",
+      "color": "#F0F0EE",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B39",
+      "name": "Mineralgrau",
+      "color": "#484848",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B44",
+      "name": "Valencia Orange",
+      "color": "#C06020",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B45",
+      "name": "Estorilblau",
+      "color": "#1A3888",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B53",
+      "name": "Sparkling Brown",
+      "color": "#503020",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "040",
+      "name": "Schwarz",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "149",
+      "name": "Polar White",
+      "color": "#F5F5F5",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "191",
+      "name": "Kosmosschwarz",
+      "color": "#101010",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "197",
+      "name": "Obsidianschwarz",
+      "color": "#080808",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "755",
+      "name": "Tenoritgrau",
+      "color": "#404040",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "761",
+      "name": "Polarsilber",
+      "color": "#B0B0B0",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "775",
+      "name": "Iridiumsilber",
+      "color": "#A0A0A0",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "787",
+      "name": "Mountain Grey",
+      "color": "#686868",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "792",
+      "name": "Palladiumsilber",
+      "color": "#989898",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "796",
+      "name": "Citrinbraun",
+      "color": "#604828",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "799",
+      "name": "Diamantweiss",
+      "color": "#F8F8F8",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "890",
+      "name": "Cavansitblau",
+      "color": "#1A2870",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "988",
+      "name": "Diamantsilber",
+      "color": "#B8B8B8",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "992",
+      "name": "Selenite Grey",
+      "color": "#787878",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "subaru",
+      "code": "37J",
+      "name": "Satin White",
+      "color": "#F0F4F2",
+      "finish": "solid",
+      "models": "Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
+    },
+    {
+      "brand": "subaru",
+      "code": "61K",
+      "name": "Dark Grey",
+      "color": "#3A3C3E",
+      "finish": "metallic",
+      "models": "Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
+    },
+    {
+      "brand": "subaru",
+      "code": "D4S",
+      "name": "Crystal Black Silica",
+      "color": "#111111",
+      "finish": "pearl",
+      "models": "Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
+    },
+    {
+      "brand": "subaru",
+      "code": "F9H",
+      "name": "Marine Blue",
+      "color": "#1F2C44",
+      "finish": "solid",
+      "models": "Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
+    },
+    {
+      "brand": "subaru",
+      "code": "G1U",
+      "name": "Ice Silver",
+      "color": "#A5A9A8",
+      "finish": "metallic",
+      "models": "Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
+    },
+    {
+      "brand": "subaru",
+      "code": "G2U",
+      "name": "Tangerine Orange",
+      "color": "#D75C29",
+      "finish": "solid",
+      "models": "Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
+    },
+    {
+      "brand": "subaru",
+      "code": "H2Q",
+      "name": "Venetian Red",
+      "color": "#8C2724",
+      "finish": "solid",
+      "models": "Impreza, Legacy, Forester, Outback, Crosstrek, WRX"
+    },
+    {
+      "brand": "hyundai",
+      "code": "GF",
+      "name": "Matte Grey",
+      "color": "#6E6F6C",
+      "finish": "metallic",
+      "models": "i10, i20, i30, Elantra, Sonata, Tucson, Santa Fe, Creta, Palisade"
+    },
+    {
+      "brand": "hyundai",
+      "code": "N9N",
+      "name": "Arabian Mocha",
+      "color": "#2E2D2B",
+      "finish": "solid",
+      "models": "i10, i20, i30, Elantra, Sonata, Tucson, Santa Fe, Creta, Palisade"
+    },
+    {
+      "brand": "hyundai",
+      "code": "NCA",
+      "name": "Sleek Silver",
+      "color": "#B7B9B8",
+      "finish": "metallic",
+      "models": "i10, i20, i30, Elantra, Sonata, Tucson, Santa Fe, Creta, Palisade"
+    },
+    {
+      "brand": "hyundai",
+      "code": "P2S",
+      "name": "Hyper Metallic",
+      "color": "#7A7C7B",
+      "finish": "metallic",
+      "models": "i10, i20, i30, Elantra, Sonata, Tucson, Santa Fe, Creta, Palisade"
+    },
+    {
+      "brand": "hyundai",
+      "code": "RB5",
+      "name": "Timeless Black",
+      "color": "#141515",
+      "finish": "solid",
+      "models": "i10, i20, i30, Elantra, Sonata, Tucson, Santa Fe, Creta, Palisade"
+    },
+    {
+      "brand": "hyundai",
+      "code": "YAC",
+      "name": "Creamy White",
+      "color": "#F1F2ED",
+      "finish": "solid",
+      "models": "i10, i20, i30, Elantra, Sonata, Tucson, Santa Fe, Creta, Palisade"
+    },
+    {
+      "brand": "hyundai",
+      "code": "ZBF",
+      "name": "Bronze",
+      "color": "#8E867E",
+      "finish": "solid",
+      "models": "i10, i20, i30, Elantra, Sonata, Tucson, Santa Fe, Creta, Palisade"
+    },
+    {
+      "brand": "kia",
+      "code": "3D",
+      "name": "Bright Silver",
+      "color": "#C3C6C5",
+      "finish": "metallic",
+      "models": "Rio, Cerato, Seltos, Sportage, Sorento, Carnival, Stonic"
+    },
+    {
+      "brand": "kia",
+      "code": "ABP",
+      "name": "Aurora Black",
+      "color": "#151616",
+      "finish": "solid",
+      "models": "Rio, Cerato, Seltos, Sportage, Sorento, Carnival, Stonic"
+    },
+    {
+      "brand": "kia",
+      "code": "D3",
+      "name": "Silky Beige",
+      "color": "#9A998B",
+      "finish": "solid",
+      "models": "Rio, Cerato, Seltos, Sportage, Sorento, Carnival, Stonic"
+    },
+    {
+      "brand": "kia",
+      "code": "D7U",
+      "name": "Planet Blue",
+      "color": "#1C2534",
+      "finish": "solid",
+      "models": "Rio, Cerato, Seltos, Sportage, Sorento, Carnival, Stonic"
+    },
+    {
+      "brand": "kia",
+      "code": "K3G",
+      "name": "Glittering Metal",
+      "color": "#3B3E40",
+      "finish": "metallic",
+      "models": "Rio, Cerato, Seltos, Sportage, Sorento, Carnival, Stonic"
+    },
+    {
+      "brand": "kia",
+      "code": "SWP",
+      "name": "Snow White",
+      "color": "#EAEBEB",
+      "finish": "solid",
+      "models": "Rio, Cerato, Seltos, Sportage, Sorento, Carnival, Stonic"
+    },
+    {
+      "brand": "kia",
+      "code": "UD",
+      "name": "Clear White",
+      "color": "#F1F2F2",
+      "finish": "solid",
+      "models": "Rio, Cerato, Seltos, Sportage, Sorento, Carnival, Stonic"
+    },
+    {
+      "brand": "suzuki",
+      "code": "Z2S",
+      "name": "Silky Silver",
+      "color": "#B8BABC",
+      "finish": "metallic",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZBD",
+      "name": "Cool Black",
+      "color": "#18191B",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZKB",
+      "name": "Radiant Red",
+      "color": "#922724",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZLL",
+      "name": "Burgundy Red",
+      "color": "#551F22",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZNQ",
+      "name": "Energy Green",
+      "color": "#55A03A",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZPJ",
+      "name": "Pearl White",
+      "color": "#EAECE8",
+      "finish": "pearl",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZQE",
+      "name": "Cerulean Blue",
+      "color": "#1F659C",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZQF",
+      "name": "Sunshine Yellow",
+      "color": "#D1A522",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZQG",
+      "name": "Raspberry Pink",
+      "color": "#7C353E",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZQU",
+      "name": "Dignity Brown",
+      "color": "#4A3530",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZTR",
+      "name": "Snow White",
+      "color": "#EAEBEB",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZTS",
+      "name": "Star Silver",
+      "color": "#919391",
+      "finish": "metallic",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZTT",
+      "name": "Super Black",
+      "color": "#111212",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZTU",
+      "name": "Mineral Grey",
+      "color": "#5C5E60",
+      "finish": "metallic",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZTV",
+      "name": "Boost Blue",
+      "color": "#173C7A",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZTW",
+      "name": "Ablaze Red",
+      "color": "#9B2222",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZTZ",
+      "name": "Sunlight Copper",
+      "color": "#853625",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZUH",
+      "name": "Serena Blue",
+      "color": "#7B8893",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZUJ",
+      "name": "Met Dusky Brown",
+      "color": "#4E443C",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZYH",
+      "name": "Speedy Blue",
+      "color": "#1C469D",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "suzuki",
+      "code": "ZYG",
+      "name": "Pure White",
+      "color": "#EDEEEE",
+      "finish": "solid",
+      "models": "Swift, Ciaz, Ertiga, Vitara, Jimny, Ignis, Baleno, XL7"
+    },
+    {
+      "brand": "proton",
+      "code": "A0081",
+      "name": "Energy Orange",
+      "color": "#C4402A",
+      "finish": "solid",
+      "models": "Saga, Persona, Iriz, X50, X70, X90"
+    },
+    {
+      "brand": "proton",
+      "code": "A0082",
+      "name": "Proton White",
+      "color": "#E8E9E7",
+      "finish": "solid",
+      "models": "Saga, Persona, Iriz, X50, X70, X90"
+    },
+    {
+      "brand": "proton",
+      "code": "A0090",
+      "name": "Metal Grey",
+      "color": "#3F4344",
+      "finish": "metallic",
+      "models": "Saga, Persona, Iriz, X50, X70, X90"
+    },
+    {
+      "brand": "proton",
+      "code": "A0093",
+      "name": "Iridescent White",
+      "color": "#B8BABC",
+      "finish": "solid",
+      "models": "Saga, Persona, Iriz, X50, X70, X90"
+    },
+    {
+      "brand": "proton",
+      "code": "A0100",
+      "name": "Tranquility Black",
+      "color": "#191E21",
+      "finish": "solid",
+      "models": "Saga, Persona, Iriz, X50, X70, X90"
+    },
+    {
+      "brand": "proton",
+      "code": "A0101",
+      "name": "Passion Blue",
+      "color": "#1A53A9",
+      "finish": "solid",
+      "models": "Saga, Persona, Iriz, X50, X70, X90"
+    },
+    {
+      "brand": "proton",
+      "code": "A0128",
+      "name": "Genetic Silver",
+      "color": "#BDC0C1",
+      "finish": "metallic",
+      "models": "Saga, Persona, Iriz, X50, X70, X90"
+    },
+    {
+      "brand": "nissan",
+      "code": "55P",
+      "name": "Samarard Green",
+      "color": "#142938",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "A55",
+      "name": "Orange",
+      "color": "#984A22",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "AX5",
+      "name": "Roma Red",
+      "color": "#8A2222",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "AX6",
+      "name": "Red",
+      "color": "#A51C20",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "B51",
+      "name": "Blue",
+      "color": "#1D388E",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BB1M",
+      "name": "Glimmer Gold",
+      "color": "#908C82",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BB1",
+      "name": "Blue",
+      "color": "#1F264A",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BE12",
+      "name": "Light Gold",
+      "color": "#8B8262",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BE2M",
+      "name": "Bluish Silver",
+      "color": "#737B85",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BE32",
+      "name": "Greenish Gold",
+      "color": "#7D8365",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BE3M",
+      "name": "Brown",
+      "color": "#6C594A",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BG42",
+      "name": "Black",
+      "color": "#131415",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BG4M",
+      "name": "Blue",
+      "color": "#191A2A",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BI1M",
+      "name": "Beige",
+      "color": "#9C907A",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BI2P",
+      "name": "Blue",
+      "color": "#25256E",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BI3M",
+      "name": "Blue",
+      "color": "#212F5A",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BJ1M",
+      "name": "Champagne Gold",
+      "color": "#78776B",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BK21",
+      "name": "Twilight Grey",
+      "color": "#4F5052",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BK23",
+      "name": "Brilliant Silver",
+      "color": "#9D9FA2",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BK32",
+      "name": "Yellowish Silver",
+      "color": "#8F908A",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BKR4",
+      "name": "Silver",
+      "color": "#A4A6A8",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BKW5",
+      "name": "Silver",
+      "color": "#AEB0AC",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BQM1",
+      "name": "White Solid",
+      "color": "#EBEDEC",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BQX1",
+      "name": "White",
+      "color": "#EDEEE9",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BRWO",
+      "name": "Red",
+      "color": "#6A2222",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "BX7",
+      "name": "Bright Blue",
+      "color": "#284A8E",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "C20",
+      "name": "Bronzee Gold",
+      "color": "#866442",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "CAQ",
+      "name": "Dark Brown",
+      "color": "#382C27",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "EAH",
+      "name": "Gold",
+      "color": "#AE9B40",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "EAN",
+      "name": "Dark Olive",
+      "color": "#272A26",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "EAQ",
+      "name": "Light Greenish Yellow",
+      "color": "#C3C669",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "EAU",
+      "name": "Orange",
+      "color": "#985925",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "GAB",
+      "name": "Nightshade",
+      "color": "#27262A",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "GE1P",
+      "name": "Dark Green",
+      "color": "#232E2E",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "GG2M",
+      "name": "Silver",
+      "color": "#B2B4B3",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "GI1M",
+      "name": "Silver",
+      "color": "#9A9D99",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "GI2M",
+      "name": "Magicron",
+      "color": "#575B49",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "JAD",
+      "name": "Yellow Green",
+      "color": "#97AA34",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "KAC",
+      "name": "Desert Shadow",
+      "color": "#6D675F",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "KAS",
+      "name": "Purplish Silver",
+      "color": "#B7B2B6",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "KBD",
+      "name": "Dark Gray",
+      "color": "#4E5256",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "KF1M",
+      "name": "Black",
+      "color": "#131415",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "KH3",
+      "name": "Super Black",
+      "color": "#111212",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "KY0",
+      "name": "Silver",
+      "color": "#A7A9AA",
+      "finish": "metallic",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "LAA",
+      "name": "Dark Violet",
+      "color": "#2F2633",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "NAH",
+      "name": "Force Red",
+      "color": "#842223",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "NAR",
+      "name": "Pink",
+      "color": "#B47171",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "QAB",
+      "name": "Storm White",
+      "color": "#E8E9E4",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "RA1S",
+      "name": "Red",
+      "color": "#AD2A2D",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "RAA",
+      "name": "Dark Blue",
+      "color": "#1F3173",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "RBH",
+      "name": "Dark Blue",
+      "color": "#222E42",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "RBS",
+      "name": "Light Blue",
+      "color": "#2F6A9F",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "RC1P",
+      "name": "Red",
+      "color": "#6B2222",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "RD1S",
+      "name": "Red",
+      "color": "#8F2426",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "YF1P",
+      "name": "Oral Yellow",
+      "color": "#DED3A4",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "nissan",
+      "code": "YI1M",
+      "name": "Light Yellowish Blue",
+      "color": "#B6BDC2",
+      "finish": "solid",
+      "models": "Almera, Terra, Navara, Kicks, X-Trail, Serena, Magnite"
+    },
+    {
+      "brand": "volvo",
+      "code": "426",
+      "name": "Silver",
+      "color": "#A4A6A8",
+      "finish": "metallic",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "477",
+      "name": "Electric Silver",
+      "color": "#8C8E90",
+      "finish": "metallic",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "487",
+      "name": "Ember Black",
+      "color": "#1A1C1D",
+      "finish": "solid",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "614",
+      "name": "Ice White",
+      "color": "#E8EAEC",
+      "finish": "solid",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "700",
+      "name": "Twilight Bronze",
+      "color": "#554C43",
+      "finish": "solid",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "707",
+      "name": "Crystal White",
+      "color": "#EAECEE",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "710",
+      "name": "Misty Blue",
+      "color": "#C0C4C8",
+      "finish": "solid",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volkswagen",
+      "code": "1B",
+      "name": "Mojawebeige",
+      "color": "#7F7D74",
+      "finish": "solid",
+      "models": "Polo, Golf, Jetta, Passat, Tiguan, T-Cross, T-Roc"
+    },
+    {
+      "brand": "volkswagen",
+      "code": "2T",
+      "name": "Deepblack",
+      "color": "#131415",
+      "finish": "solid",
+      "models": "Polo, Golf, Jetta, Passat, Tiguan, T-Cross, T-Roc"
+    },
+    {
+      "brand": "volkswagen",
+      "code": "8E",
+      "name": "Reflexsilber",
+      "color": "#A7A9AA",
+      "finish": "solid",
+      "models": "Polo, Golf, Jetta, Passat, Tiguan, T-Cross, T-Roc"
+    },
+    {
+      "brand": "volkswagen",
+      "code": "B4",
+      "name": "Candyweiss",
+      "color": "#EAEBEB",
+      "finish": "solid",
+      "models": "Polo, Golf, Jetta, Passat, Tiguan, T-Cross, T-Roc"
+    },
+    {
+      "brand": "volkswagen",
+      "code": "M4",
+      "name": "Natural Grey",
+      "color": "#727475",
+      "finish": "metallic",
+      "models": "Polo, Golf, Jetta, Passat, Tiguan, T-Cross, T-Roc"
+    },
+    {
+      "brand": "volkswagen",
+      "code": "P3",
+      "name": "Dark Wood",
+      "color": "#373330",
+      "finish": "solid",
+      "models": "Polo, Golf, Jetta, Passat, Tiguan, T-Cross, T-Roc"
+    },
+    {
+      "brand": "volkswagen",
+      "code": "P8",
+      "name": "Sandbeige",
+      "color": "#D2D1CB",
+      "finish": "solid",
+      "models": "Polo, Golf, Jetta, Passat, Tiguan, T-Cross, T-Roc"
+    },
+    {
+      "brand": "mini",
+      "code": "850",
+      "name": "Pepper White",
+      "color": "#DFE0DC",
+      "finish": "solid",
+      "models": "Cooper, Clubman, Countryman, John Cooper Works"
+    },
+    {
+      "brand": "mini",
+      "code": "851",
+      "name": "Chili Red",
+      "color": "#B32A22",
+      "finish": "solid",
+      "models": "Cooper, Clubman, Countryman, John Cooper Works"
+    },
+    {
+      "brand": "mini",
+      "code": "A62",
+      "name": "White Silver",
+      "color": "#BCC1C2",
+      "finish": "metallic",
+      "models": "Cooper, Clubman, Countryman, John Cooper Works"
+    },
+    {
+      "brand": "mini",
+      "code": "A94",
+      "name": "Midnight Black",
+      "color": "#111212",
+      "finish": "solid",
+      "models": "Cooper, Clubman, Countryman, John Cooper Works"
+    },
+    {
+      "brand": "mini",
+      "code": "B17",
+      "name": "Bright Yellow",
+      "color": "#DFD321",
+      "finish": "solid",
+      "models": "Cooper, Clubman, Countryman, John Cooper Works"
+    },
+    {
+      "brand": "mini",
+      "code": "B60",
+      "name": "Brillant Copper",
+      "color": "#724B2C",
+      "finish": "solid",
+      "models": "Cooper, Clubman, Countryman, John Cooper Works"
+    },
+    {
+      "brand": "mini",
+      "code": "B70",
+      "name": "Volcanic Orange Uni",
+      "color": "#DE851D",
+      "finish": "solid",
+      "models": "Cooper, Clubman, Countryman, John Cooper Works"
+    },
+    {
+      "brand": "audi",
+      "code": "0C",
+      "name": "Monsun Grau",
+      "color": "#5F6264",
+      "finish": "solid",
+      "models": "A3, A4, A6, Q5, Q7"
+    },
+    {
+      "brand": "audi",
+      "code": "0E",
+      "name": "Mythosschwarz",
+      "color": "#151616",
+      "finish": "solid",
+      "models": "A3, A4, A5, Q3, Q5, e-tron"
+    },
+    {
+      "brand": "audi",
+      "code": "2Y",
+      "name": "Gletscherweiss",
+      "color": "#E0E2E3",
+      "finish": "solid",
+      "models": "A3, A4, Q3, TT"
+    },
+    {
+      "brand": "audi",
+      "code": "L5",
+      "name": "Florettsilber",
+      "color": "#A3A5A7",
+      "finish": "solid",
+      "models": "A4, A6, Q5, Q7"
+    },
+    {
+      "brand": "audi",
+      "code": "Q2",
+      "name": "Tornadograu",
+      "color": "#858889",
+      "finish": "solid",
+      "models": "A3, A4, Q5"
+    },
+    {
+      "brand": "audi",
+      "code": "W1",
+      "name": "Mondscheinblau",
+      "color": "#1C2331",
+      "finish": "solid",
+      "models": "A5, A7, Q8"
+    },
+    {
+      "brand": "audi",
+      "code": "W3",
+      "name": "Argusbraun",
+      "color": "#3F3631",
+      "finish": "solid",
+      "models": "A6, Q7, Q8"
+    },
+    {
+      "brand": "isuzu",
+      "code": "501",
+      "name": "Topaz Gold",
+      "color": "#8B7147",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "504",
+      "name": "Tornado Red",
+      "color": "#652222",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "505",
+      "name": "Royal Grey",
+      "color": "#333537",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "506",
+      "name": "Dune Grey",
+      "color": "#5C5E60",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "511",
+      "name": "Chardonnay Gold",
+      "color": "#A3A092",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "512",
+      "name": "Lapis Blue",
+      "color": "#20418A",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "520",
+      "name": "Nebula Grey",
+      "color": "#5E646A",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "521",
+      "name": "Nautilus Blue",
+      "color": "#17233B",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "523",
+      "name": "Cosmic Black",
+      "color": "#141516",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "526",
+      "name": "Baltic Blue",
+      "color": "#637081",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "527",
+      "name": "Splash White",
+      "color": "#EBECED",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "528",
+      "name": "Garnet Red",
+      "color": "#4A2020",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "529",
+      "name": "Titanium Silver",
+      "color": "#B7B9BA",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "530",
+      "name": "Mineral Grey",
+      "color": "#727679",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "531",
+      "name": "Silky White",
+      "color": "#E8EAE6",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "541",
+      "name": "Ash Beige",
+      "color": "#6F6851",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "545",
+      "name": "Fjord Blue",
+      "color": "#264983",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "546",
+      "name": "Venetian Red",
+      "color": "#862828",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "553",
+      "name": "Quartz Blue",
+      "color": "#48597E",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "554",
+      "name": "Obsidian Grey",
+      "color": "#565759",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "563",
+      "name": "Zermatt Silver",
+      "color": "#95999A",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "575",
+      "name": "Dolomite White",
+      "color": "#E2E4E4",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "588",
+      "name": "Islay Gray",
+      "color": "#333537",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "612",
+      "name": "Cape Blue",
+      "color": "#14223A",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "641",
+      "name": "Steel Black",
+      "color": "#1A1B1C",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "642",
+      "name": "Lt Quartz Gray",
+      "color": "#56575A",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "643",
+      "name": "Sandalwood",
+      "color": "#B4AD97",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "644",
+      "name": "Chamonix Green",
+      "color": "#296058",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "645",
+      "name": "Glacier Blue",
+      "color": "#687C87",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "646",
+      "name": "Zenith Blue",
+      "color": "#1C2E55",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "647",
+      "name": "Rigid Blue",
+      "color": "#1C283F",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "648",
+      "name": "Sahara Beige",
+      "color": "#998E75",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "658",
+      "name": "Foxfire Red",
+      "color": "#482323",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "682",
+      "name": "Cosmic Grey",
+      "color": "#707376",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "683",
+      "name": "Krypt Nite",
+      "color": "#E1E2E4",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "687",
+      "name": "Moonstone Blue",
+      "color": "#325E9E",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "688",
+      "name": "Imperial Blond",
+      "color": "#B79C61",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "692",
+      "name": "Omega White",
+      "color": "#DFE2DC",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "718",
+      "name": "Astral Silver",
+      "color": "#ACAFB0",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "877",
+      "name": "Alpine White",
+      "color": "#EAEBEB",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "935",
+      "name": "Starry Black",
+      "color": "#1A1C1D",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "936",
+      "name": "Sterling Silver",
+      "color": "#406E7A",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "937",
+      "name": "Crystal Blue",
+      "color": "#688698",
+      "finish": "pearl",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "950",
+      "name": "Silver",
+      "color": "#BCBEBD",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT030",
+      "name": "Red",
+      "color": "#5A1C1C",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT036",
+      "name": "Sparkling Silver",
+      "color": "#8A8D8F",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT038",
+      "name": "White",
+      "color": "#DFE1E1",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT040",
+      "name": "Hazy Grey",
+      "color": "#545758",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT042",
+      "name": "Green",
+      "color": "#29858E",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT047",
+      "name": "Silver",
+      "color": "#8E9193",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT048",
+      "name": "Red",
+      "color": "#571F1F",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT056",
+      "name": "Sea Blue",
+      "color": "#213650",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT057",
+      "name": "Cabernet",
+      "color": "#411A1B",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT059",
+      "name": "Beige",
+      "color": "#A49C8C",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT060",
+      "name": "Forest Green",
+      "color": "#1B6A68",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT061",
+      "name": "Light Green",
+      "color": "#68A2A8",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT064",
+      "name": "White",
+      "color": "#EBECED",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT066",
+      "name": "Silver",
+      "color": "#8B8E8F",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT069",
+      "name": "Satin Gold",
+      "color": "#8D8469",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT070",
+      "name": "Chanti Red",
+      "color": "#5F1920",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT071",
+      "name": "Cypress Green",
+      "color": "#183531",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT072",
+      "name": "Cascade Blue",
+      "color": "#3A87B7",
+      "finish": "solid",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "isuzu",
+      "code": "PT073",
+      "name": "Kaiser Silver",
+      "color": "#AFB3B5",
+      "finish": "metallic",
+      "models": "D-Max, MU-X, N-Series"
+    },
+    {
+      "brand": "bmw",
+      "code": "329",
+      "name": "Vulkan Gray",
+      "color": "#4A4A48",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A17",
+      "name": "Brown Pearl Met.",
+      "color": "#4B3621",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A38",
+      "name": "Moonlight Blue Pearl Met.",
+      "color": "#1E2A44",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "309",
+      "name": "Arktissilber Met.",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "400",
+      "name": "Stahlgrau Pearl Met.",
+      "color": "#6E7B8B",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "481",
+      "name": "Beige Met.Opal",
+      "color": "#D8CAB8",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "897",
+      "name": "Technoviolett Pearl Met.",
+      "color": "#6A0DAD",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A32",
+      "name": "Sparkling Silver Met.",
+      "color": "#D3D3D3",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "372",
+      "name": "Stahlblau Met.Opal",
+      "color": "#4682B4",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "869",
+      "name": "Vertex Met.",
+      "color": "#3B3B3B",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A22",
+      "name": "Sparkling Graphite Pearl Met.",
+      "color": "#4B4B4B",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A30",
+      "name": "Brightness",
+      "color": "#B0B0B0",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "354",
+      "name": "Titansilber Met.",
+      "color": "#C8C8C8",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "851",
+      "name": "Red",
+      "color": "#B22222",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A18",
+      "name": "Quartz Blue Met.",
+      "color": "#5F9EA0",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B19",
+      "name": "Coffee",
+      "color": "#4B3621",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A75",
+      "name": "Flamenco Red Pearl",
+      "color": "#B22222",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B35",
+      "name": "King Brown Pearl",
+      "color": "#5C4033",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B21",
+      "name": "Mango Yellow",
+      "color": "#FFD700",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A76",
+      "name": "Deep Sea Blue Pearl",
+      "color": "#003366",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A53",
+      "name": "Lunar Bronze Met.Opal",
+      "color": "#8B7355",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B88",
+      "name": "Marina Blue Pearl Met.",
+      "color": "#4682B4",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B06",
+      "name": "Sparkling Bronze Pearl Met.",
+      "color": "#8B5A2B",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A43",
+      "name": "Glacier Silver Met.",
+      "color": "#DCDCDC",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A61",
+      "name": "Korallenrot",
+      "color": "#FF4040",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B94",
+      "name": "Blau Pearl Met.",
+      "color": "#1C39BB",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "B09",
+      "name": "Dark Chestnut Brown Pearl",
+      "color": "#654321",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A92",
+      "name": "Orion Silver Met.",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "A70",
+      "name": "Mineral Green Met.Opal",
+      "color": "#3CB371",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "U98",
+      "name": "Speed Gelb",
+      "color": "#FFD700",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C1D",
+      "name": "Tetrapol Blau Pearl Met",
+      "color": "#1E3F66",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C1L",
+      "name": "Mediterrane Blau Pearl Met",
+      "color": "#2E4A7D",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C06",
+      "name": "Flamingo Rot Brilliant Pearl",
+      "color": "#DC143C",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "WC1M",
+      "name": "Portimao Blau Pearl Met",
+      "color": "#4169E1",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C3E",
+      "name": "Sanremo GrüN Pearl",
+      "color": "#2E8B57",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C1P",
+      "name": "Galvanic Gold Pearl Met",
+      "color": "#DAA520",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C29",
+      "name": "Kastanien Bronze Pearl",
+      "color": "#8B4513",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C07",
+      "name": "Phoenix Storm Brilliant Pearl",
+      "color": "#708090",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "VC15",
+      "name": "Indian Green Pearl Met",
+      "color": "#006400",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C3G",
+      "name": "Toronto Rot Pearl",
+      "color": "#B22222",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C15",
+      "name": "Copper Pearl Met",
+      "color": "#B87333",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C1G",
+      "name": "Snapper Rocks Blue Met",
+      "color": "#4682B4",
+      "finish": "solid",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C08",
+      "name": "Platin Silver Met",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "VC31",
+      "name": "Portimao Blau Pearl Met",
+      "color": "#4169E1",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "U83",
+      "name": "Oxidgrau Grey Pearl Met",
+      "color": "#696969",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C1X",
+      "name": "Sunset Orange Pearl",
+      "color": "#FF4500",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C1H",
+      "name": "Sakhir Orange Pearl",
+      "color": "#FF6347",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "bmw",
+      "code": "C09",
+      "name": "Atlantic Grau Pearl Oral",
+      "color": "#708090",
+      "finish": "pearl",
+      "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "559",
+      "name": "Fire Opal Red",
+      "color": "#B22222",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "359",
+      "name": "Tansanite Blue Pearl",
+      "color": "#0F52BA",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "049",
+      "name": "Designo Magno Kashmir White",
+      "color": "#F5F5F5",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "650",
+      "name": "Calciumiss",
+      "color": "#DCDCDC",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "368",
+      "name": "Flint Gray Pearl Met",
+      "color": "#6C7B8B",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "230",
+      "name": "Indigo Lite Blue Met",
+      "color": "#4682B4",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "278",
+      "name": "Solar Beam",
+      "color": "#FFD700",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "144",
+      "name": "Designo Magno Silver",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "667",
+      "name": "Blue Line Pearl Met",
+      "color": "#1E90FF",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "497",
+      "name": "Caprite Brown Pearl",
+      "color": "#5C4033",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "19",
+      "name": "Cosmos Black Pearl",
+      "color": "#0A0A0A",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "633",
+      "name": "Travertine Beige Met",
+      "color": "#D2B48C",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "589",
+      "name": "Patriot Red Pearl",
+      "color": "#8B0000",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "177",
+      "name": "Mag.Galactic Beam",
+      "color": "#DAA520",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "957",
+      "name": "Galaxite Silver Met",
+      "color": "#A9A9A9",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "989",
+      "name": "Smaragd Green Pearl",
+      "color": "#2E8B57",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "831",
+      "name": "Cavansite Blue Pearl",
+      "color": "#1E3F66",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "919",
+      "name": "Orient Brown Pearl Met",
+      "color": "#5C4033",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "932",
+      "name": "Selenite Grey Met",
+      "color": "#708090",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "914",
+      "name": "Sun Yellow Eleb",
+      "color": "#FFD700",
+      "finish": "solid",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "794",
+      "name": "Pearl Beige Met Opal",
+      "color": "#F5DEB3",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "745",
+      "name": "Crystal Silver Met",
+      "color": "#D3D3D3",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "786",
+      "name": "Sparkling Grey Pearl Met",
+      "color": "#A9A9A9",
+      "finish": "pearl",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "723",
+      "name": "Palladium Silver Met",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "737",
+      "name": "Asphalt Grey",
+      "color": "#696969",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "mercedes-benz",
+      "code": "744",
+      "name": "Brilliant Silver Met",
+      "color": "#DCDCDC",
+      "finish": "metallic",
+      "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
+    },
+    {
+      "brand": "volvo",
+      "code": "019",
+      "name": "Blackstone",
+      "color": "#0A0A0A",
+      "finish": "solid",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "415",
+      "name": "Helium Met.",
+      "color": "#D3D3D3",
+      "finish": "metallic",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "409",
+      "name": "Burgundy Red Pearl Met.",
+      "color": "#800020",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "412",
+      "name": "Green Pearl Met.",
+      "color": "#2E8B57",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "418",
+      "name": "Red Pearl",
+      "color": "#B22222",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "444",
+      "name": "Arctic Dawn Pearl Met.",
+      "color": "#F0F8FF",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "414",
+      "name": "Luminous Grey Pearl Met.",
+      "color": "#A9A9A9",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "725",
+      "name": "Passion Red Pearl",
+      "color": "#FF2400",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "717",
+      "name": "Onyx Black Pearl Met.",
+      "color": "#0F0F0F",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "720",
+      "name": "Thunder Grey Pearl Met.",
+      "color": "#4B4B4B",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "722",
+      "name": "Maple Brown Pearl",
+      "color": "#5C4033",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "711",
+      "name": "Bright Silver Met.",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "714",
+      "name": "Luminous Grey Pearl Met.",
+      "color": "#A9A9A9",
+      "finish": "pearl",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "volvo",
+      "code": "731",
+      "name": "Black Met.",
+      "color": "#1C1C1C",
+      "finish": "metallic",
+      "models": "S60, S90, V60, XC40, XC60, XC90, C40"
+    },
+    {
+      "brand": "byd",
+      "code": "AA1",
+      "name": "Quantum Black",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "Atto 3, Dolphin, Seal, Han, Tang, Sealion"
+    },
+    {
+      "brand": "byd",
+      "code": "CA2",
+      "name": "Floral Purple",
+      "color": "#9B8EB0",
+      "finish": "solid",
+      "models": "Atto 3, Dolphin"
+    },
+    {
+      "brand": "byd",
+      "code": "HAN",
+      "name": "Graphite Alaskan Grey",
+      "color": "#5E5E5E",
+      "finish": "metallic",
+      "models": "Han, Tang"
+    },
+    {
+      "brand": "byd",
+      "code": "HB5",
+      "name": "Mafic Grey",
+      "color": "#2C3A4A",
+      "finish": "metallic",
+      "models": "Seal, Sealion"
+    },
+    {
+      "brand": "byd",
+      "code": "HB6",
+      "name": "Space Grey",
+      "color": "#2C2C3A",
+      "finish": "metallic",
+      "models": "Seal, Sealion"
+    },
+    {
+      "brand": "byd",
+      "code": "KW",
+      "name": "Coral Pink",
+      "color": "#B38B6E",
+      "finish": "solid",
+      "models": "Dolphin, Atto 3"
+    },
+    {
+      "brand": "byd",
+      "code": "LAP",
+      "name": "Lagoon Blue",
+      "color": "#2A6A9E",
+      "finish": "solid",
+      "models": "Atto 3, Seal"
+    },
+    {
+      "brand": "byd",
+      "code": "LAQ",
+      "name": "Solar Red",
+      "color": "#C8102E",
+      "finish": "solid",
+      "models": "Atto 3, Dolphin, Seal"
+    },
+    {
+      "brand": "byd",
+      "code": "LAT",
+      "name": "Velocity Blue",
+      "color": "#7A8A96",
+      "finish": "solid",
+      "models": "Seal, Sealion"
+    },
+    {
+      "brand": "byd",
+      "code": "UA6",
+      "name": "Emerald Green",
+      "color": "#4A6B4F",
+      "finish": "solid",
+      "models": "Atto 3"
+    },
+    {
+      "brand": "byd",
+      "code": "WA2",
+      "name": "Horizon White",
+      "color": "#F5F5F5",
+      "finish": "solid",
+      "models": "Atto 3, Dolphin, Seal, Han, Tang, Sealion"
+    },
+    {
+      "brand": "byd",
+      "code": "WAC",
+      "name": "Frost White",
+      "color": "#D9D9D9",
+      "finish": "solid",
+      "models": "Atto 3, Dolphin, Seal, Han"
+    },
+    {
+      "brand": "byd",
+      "code": "YB1",
+      "name": "Coastal Cream",
+      "color": "#F0E8D8",
+      "finish": "solid",
+      "models": "Atto 3, Sealion"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "C05",
+      "name": "Comet White",
+      "color": "#F5F5EB",
+      "finish": "solid",
+      "models": "Deepal S07, L07, SL03"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y08",
+      "name": "Stellar Blue",
+      "color": "#1F2A44",
+      "finish": "solid",
+      "models": "Deepal S07, L07, SL03"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y19",
+      "name": "Moss Green",
+      "color": "#7CA38E",
+      "finish": "solid",
+      "models": "Deepal S07"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y25",
+      "name": "Lunar Gray",
+      "color": "#2F2F2F",
+      "finish": "metallic",
+      "models": "Deepal S07, L07, SL03"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y65",
+      "name": "Magpie Gray",
+      "color": "#8A8C7E",
+      "finish": "metallic",
+      "models": "Deepal L07, SL03"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y66",
+      "name": "Nebula Cyan",
+      "color": "#5F7A6F",
+      "finish": "solid",
+      "models": "Deepal S07"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y74",
+      "name": "Wheat Yellow",
+      "color": "#D9C38A",
+      "finish": "solid",
+      "models": "Deepal S07"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y75",
+      "name": "Sunset Orange",
+      "color": "#E36B4A",
+      "finish": "solid",
+      "models": "Deepal S07"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y77",
+      "name": "Eclipse Black",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "Deepal S07, L07, SL03"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y78",
+      "name": "Cosmic Yellow",
+      "color": "#EDE53C",
+      "finish": "solid",
+      "models": "Deepal S07"
+    },
+    {
+      "brand": "changan-deepal",
+      "code": "Y81",
+      "name": "Sakura Pink",
+      "color": "#E0B8A0",
+      "finish": "solid",
+      "models": "Deepal S07"
+    },
+    {
+      "brand": "gac-aion",
+      "code": "B09",
+      "name": "Vitality Green",
+      "color": "#9CC3B5",
+      "finish": "solid",
+      "models": "Aion S, V, Y, LX Plus"
+    },
+    {
+      "brand": "gac-aion",
+      "code": "B1",
+      "name": "Glamour Black",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "Aion S, V, Y, LX Plus"
+    },
+    {
+      "brand": "gac-aion",
+      "code": "B6H",
+      "name": "Pure White",
+      "color": "#F5F5F5",
+      "finish": "solid",
+      "models": "Aion S, V, Y, LX Plus"
+    },
+    {
+      "brand": "gac-aion",
+      "code": "B8G",
+      "name": "Liberty Ash",
+      "color": "#5A5A5A",
+      "finish": "solid",
+      "models": "Aion S, V, Y, LX Plus"
+    },
+    {
+      "brand": "gac-aion",
+      "code": "B81",
+      "name": "Elegant Gray",
+      "color": "#A8A8A8",
+      "finish": "metallic",
+      "models": "Aion S, V, Y, LX Plus"
+    },
+    {
+      "brand": "gac-aion",
+      "code": "B9A",
+      "name": "Speedy Silver",
+      "color": "#7F7F7A",
+      "finish": "metallic",
+      "models": "Aion S, V, Y, LX Plus"
+    },
+    {
+      "brand": "gac-aion",
+      "code": "B9Y",
+      "name": "Lucky Gold",
+      "color": "#E0C55C",
+      "finish": "solid",
+      "models": "Aion Y, LX Plus"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "1B",
+      "name": "Hazel Wood Beige",
+      "color": "#E8D9C2",
+      "finish": "solid",
+      "models": "Haval H6, Jolion, H9, Dargo"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "1Y",
+      "name": "Mars Red",
+      "color": "#A02C2C",
+      "finish": "solid",
+      "models": "Haval Jolion, H6"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "20",
+      "name": "Crystal Purple",
+      "color": "#6A6A7A",
+      "finish": "pearl",
+      "models": "Haval Jolion"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "2Y",
+      "name": "Orange",
+      "color": "#E05C2C",
+      "finish": "solid",
+      "models": "Haval Jolion"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "40",
+      "name": "Amethyst Gray",
+      "color": "#5A6A7A",
+      "finish": "metallic",
+      "models": "Haval H6, Jolion, H9"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "6Y",
+      "name": "Swarovski Blue",
+      "color": "#2A4A8A",
+      "finish": "solid",
+      "models": "Haval H6, H9"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "7T",
+      "name": "Verdant Green",
+      "color": "#1A4A4A",
+      "finish": "solid",
+      "models": "Haval H9, Dargo"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "8T",
+      "name": "Sun Black",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "Haval H6, Jolion, H9, Dargo"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "9C",
+      "name": "Hamilton White",
+      "color": "#F5F5F0",
+      "finish": "solid",
+      "models": "Haval H6, Jolion, H9, Dargo"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "9F",
+      "name": "Jade White",
+      "color": "#F0F0E8",
+      "finish": "solid",
+      "models": "Haval H6, H9"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "C0C",
+      "name": "Crystal Gray Ultra",
+      "color": "#5A5A5A",
+      "finish": "pearl",
+      "models": "Haval Jolion, H6"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "D2",
+      "name": "Wisdom Brown",
+      "color": "#3A2C2C",
+      "finish": "solid",
+      "models": "Haval H9"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "F3",
+      "name": "Ayers Grey",
+      "color": "#7A7A7A",
+      "finish": "metallic",
+      "models": "Haval H6, H9, Dargo"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "G7",
+      "name": "Burgundy Red",
+      "color": "#5A2C2C",
+      "finish": "solid",
+      "models": "Haval H9"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "HR",
+      "name": "Coral Blue",
+      "color": "#7A9EB8",
+      "finish": "solid",
+      "models": "Haval Jolion"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "KU",
+      "name": "Aqua Grey",
+      "color": "#5A6A7A",
+      "finish": "metallic",
+      "models": "Haval Jolion, H6"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "LB",
+      "name": "Pistachio Green",
+      "color": "#9EB88A",
+      "finish": "solid",
+      "models": "Haval Jolion"
+    },
+    {
+      "brand": "greatwall-haval",
+      "code": "N1",
+      "name": "Black",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "Haval H6, Jolion, H9"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TBL",
+      "name": "Glacier Blue",
+      "color": "#2A4A8A",
+      "finish": "solid",
+      "models": "Neta V, U, S, X"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TBQ",
+      "name": "Baby Blue",
+      "color": "#7AB8E0",
+      "finish": "solid",
+      "models": "Neta V, U"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TBS",
+      "name": "Milk Tea",
+      "color": "#E0C8A8",
+      "finish": "solid",
+      "models": "Neta V, U, S"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TCA",
+      "name": "Sakura Pink",
+      "color": "#E8A88A",
+      "finish": "solid",
+      "models": "Neta U, S"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TCC",
+      "name": "Midnight Gray",
+      "color": "#2C2C3A",
+      "finish": "metallic",
+      "models": "Neta V, U, S, X"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TCD",
+      "name": "Sky Blue",
+      "color": "#4A7AB8",
+      "finish": "solid",
+      "models": "Neta V, U, S, X"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TCF",
+      "name": "Moonlight Green",
+      "color": "#7A9E8A",
+      "finish": "solid",
+      "models": "Neta U, S"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TCQ",
+      "name": "Cyan",
+      "color": "#6A9E9E",
+      "finish": "solid",
+      "models": "Neta S, X"
+    },
+    {
+      "brand": "hozon-neta",
+      "code": "TCR",
+      "name": "White Storm",
+      "color": "#F5F5E8",
+      "finish": "solid",
+      "models": "Neta V, U, S, X"
+    },
+    {
+      "brand": "wuling",
+      "code": "C2",
+      "name": "Pristine White",
+      "color": "#F5F5EB",
+      "finish": "solid",
+      "models": "Almaz, Air EV, BinguoEV"
+    },
+    {
+      "brand": "wuling",
+      "code": "WL9",
+      "name": "Avocado Green",
+      "color": "#9EB88A",
+      "finish": "solid",
+      "models": "Air EV, BinguoEV"
+    },
+    {
+      "brand": "wuling",
+      "code": "WL10",
+      "name": "Peach Pink",
+      "color": "#E8C8B8",
+      "finish": "solid",
+      "models": "Air EV, BinguoEV"
+    },
+    {
+      "brand": "wuling",
+      "code": "WL12",
+      "name": "Lemon Yellow",
+      "color": "#E8D82C",
+      "finish": "solid",
+      "models": "Air EV"
+    },
+    {
+      "brand": "wuling",
+      "code": "WL16",
+      "name": "Milk Coffee",
+      "color": "#A88A6A",
+      "finish": "solid",
+      "models": "Almaz, Air EV"
+    },
+    {
+      "brand": "wuling",
+      "code": "WL23",
+      "name": "Mousse Green",
+      "color": "#8A9E8A",
+      "finish": "solid",
+      "models": "BinguoEV"
+    },
+    {
+      "brand": "chery-omodaand-jaecoo",
+      "code": "BW",
+      "name": "Arctic White",
+      "color": "#F5F5EB",
+      "finish": "solid",
+      "models": "Omoda 5, Omoda C5, Jaecoo 7"
+    },
+    {
+      "brand": "chery-omodaand-jaecoo",
+      "code": "CL",
+      "name": "Night Black",
+      "color": "#1C1C1C",
+      "finish": "solid",
+      "models": "Omoda 5, Omoda C5, Jaecoo 7"
+    },
+    {
+      "brand": "chery-omodaand-jaecoo",
+      "code": "GV",
+      "name": "Coin Grey",
+      "color": "#5A5A5A",
+      "finish": "metallic",
+      "models": "Omoda 5, Jaecoo 7"
+    },
+    {
+      "brand": "chery-omodaand-jaecoo",
+      "code": "KH",
+      "name": "Lunar Silver",
+      "color": "#A8A8A8",
+      "finish": "metallic",
+      "models": "Omoda 5, Omoda C5, Jaecoo 7"
+    },
+    {
+      "brand": "chery-omodaand-jaecoo",
+      "code": "NL",
+      "name": "Volcanic Red",
+      "color": "#A02C2C",
+      "finish": "solid",
+      "models": "Omoda 5, Omoda C5"
+    },
+    {
+      "brand": "chery-omodaand-jaecoo",
+      "code": "SJ",
+      "name": "Forest Green",
+      "color": "#1A3A3A",
+      "finish": "solid",
+      "models": "Jaecoo 7"
+    },
+    {
+      "brand": "chery-omodaand-jaecoo",
+      "code": "SK",
+      "name": "Mint Green",
+      "color": "#9EB88A",
+      "finish": "solid",
+      "models": "Omoda 5"
+    }
+  ]
+}

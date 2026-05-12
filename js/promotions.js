@@ -1,15 +1,23 @@
 (function() {
     'use strict';
     function updateCountdown() {
+        const dEl = document.getElementById('cd-days');
+        if (!dEl) return;
+        const endStr = dEl.dataset.end;
+        let endDate;
+        if (endStr) {
+            endDate = new Date(endStr);
+        } else {
+            const now = new Date();
+            endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 3, 23, 59, 59);
+        }
         const now = new Date();
-        const endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 3, 23, 59, 59);
         const diff = endDate - now;
         if (diff <= 0) return;
         const d = Math.floor(diff / (1000 * 60 * 60 * 24));
         const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const s = Math.floor((diff % (1000 * 60)) / 1000);
-        const dEl = document.getElementById('cd-days');
         const hEl = document.getElementById('cd-hours');
         const mEl = document.getElementById('cd-minutes');
         const sEl = document.getElementById('cd-seconds');
@@ -18,8 +26,9 @@
         if (mEl) mEl.textContent = String(m).padStart(2, '0');
         if (sEl) sEl.textContent = String(s).padStart(2, '0');
     }
+    let countdownIntervalId = null;
     if (document.getElementById('cd-days')) {
-        setInterval(updateCountdown, 1000);
+        countdownIntervalId = setInterval(updateCountdown, 1000);
         updateCountdown();
     }
     function updateFlashTimer() {
@@ -36,11 +45,20 @@
         if (mEl) mEl.textContent = String(m).padStart(2, '0');
         if (sEl) sEl.textContent = String(s).padStart(2, '0');
     }
+    let flashIntervalId = null;
     if (document.getElementById('ft-hours')) {
-        setInterval(updateFlashTimer, 1000);
+        flashIntervalId = setInterval(updateFlashTimer, 1000);
         updateFlashTimer();
     }
-    window.copyCode = function(btn, code) {
+    window.destroyPromotionTimers = function() {
+        if (countdownIntervalId) clearInterval(countdownIntervalId);
+        if (flashIntervalId) clearInterval(flashIntervalId);
+    };
+    window.copyCode = function(e, btn, code) {
+        if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
         navigator.clipboard.writeText(code).then(() => {
             btn.innerHTML = '<i class="fas fa-check"></i> ก๊อปปี้แล้ว';
             btn.classList.add('copied');
@@ -49,13 +67,9 @@
                 btn.innerHTML = '<i class="fas fa-copy"></i> ก๊อปปี้';
                 btn.classList.remove('copied');
             }, 2500);
-        }).catch(() => {
-            const el = document.createElement('textarea');
-            el.value = code;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
+        }).catch((err) => {
+            console.error('Failed to copy text: ', err);
+            alert('ไม่สามารถก๊อปปี้ได้ โปรดคัดลอกด้วยตนเอง: ' + code);
             btn.innerHTML = '<i class="fas fa-check"></i> ก๊อปปี้แล้ว';
             btn.classList.add('copied');
             showToast(code);
