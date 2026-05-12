@@ -18,7 +18,7 @@
             colorGrid.innerHTML = '<div class="loading-spinner" style="width:100%;text-align:center;padding:40px;color:#cbd5e1;"><i class="fas fa-spinner fa-spin fa-2x"></i><p style="margin-top:10px;">กำลังโหลดข้อมูลสี...</p></div>';
         }
 
-        fetch('/asset/colors-data.json', { cache: 'force-cache' })
+        fetch('asset/colors-data.json', { cache: 'force-cache' })
             .then(res => res.json())
             .then(data => {
                 BRANDS = data.brands || [];
