@@ -406,4 +406,44 @@
     updateSliderFill();
     updatePriceDisplay();
     updateFilters();
+
+    // Lightbox Logic
+    const lightbox = document.getElementById('productLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    if (lightbox && lightboxImg && closeLightbox) {
+        function openLightbox(src, caption) {
+            lightboxImg.src = src;
+            lightboxCaption.textContent = caption;
+            lightbox.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hideLightbox() {
+            lightbox.classList.remove('show');
+            document.body.style.overflow = '';
+            setTimeout(() => { if (!lightbox.classList.contains('show')) lightboxImg.src = ''; }, 300);
+        }
+
+        closeLightbox.addEventListener('click', hideLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-content-wrap')) hideLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('show')) hideLightbox();
+        });
+
+        document.querySelectorAll('.product-card').forEach(card => {
+            const img = card.querySelector('.product-img-box img');
+            const name = card.dataset.name || card.querySelector('.product-title')?.textContent || 'Product Image';
+            if (img) {
+                img.addEventListener('click', () => {
+                    openLightbox(img.src, name);
+                });
+            }
+        });
+    }
 })();
