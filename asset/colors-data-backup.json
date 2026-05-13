@@ -4177,7 +4177,7 @@
       "code": "A17",
       "name": "Brown Pearl Met.",
       "color": "#4B3621",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4185,7 +4185,7 @@
       "code": "A38",
       "name": "Moonlight Blue Pearl Met.",
       "color": "#1E2A44",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4201,7 +4201,7 @@
       "code": "400",
       "name": "Stahlgrau Pearl Met.",
       "color": "#6E7B8B",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4217,7 +4217,7 @@
       "code": "897",
       "name": "Technoviolett Pearl Met.",
       "color": "#6A0DAD",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4249,7 +4249,7 @@
       "code": "A22",
       "name": "Sparkling Graphite Pearl Met.",
       "color": "#4B4B4B",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4337,7 +4337,7 @@
       "code": "B88",
       "name": "Marina Blue Pearl Met.",
       "color": "#4682B4",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4345,7 +4345,7 @@
       "code": "B06",
       "name": "Sparkling Bronze Pearl Met.",
       "color": "#8B5A2B",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4369,7 +4369,7 @@
       "code": "B94",
       "name": "Blau Pearl Met.",
       "color": "#1C39BB",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4409,7 +4409,7 @@
       "code": "C1D",
       "name": "Tetrapol Blau Pearl Met",
       "color": "#1E3F66",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4417,7 +4417,7 @@
       "code": "C1L",
       "name": "Mediterrane Blau Pearl Met",
       "color": "#2E4A7D",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4433,7 +4433,7 @@
       "code": "WC1M",
       "name": "Portimao Blau Pearl Met",
       "color": "#4169E1",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4449,7 +4449,7 @@
       "code": "C1P",
       "name": "Galvanic Gold Pearl Met",
       "color": "#DAA520",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4473,7 +4473,7 @@
       "code": "VC15",
       "name": "Indian Green Pearl Met",
       "color": "#006400",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4489,7 +4489,7 @@
       "code": "C15",
       "name": "Copper Pearl Met",
       "color": "#B87333",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4497,7 +4497,7 @@
       "code": "C1G",
       "name": "Snapper Rocks Blue Met",
       "color": "#4682B4",
-      "finish": "metallic",
+      "finish": "solid",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4513,7 +4513,7 @@
       "code": "VC31",
       "name": "Portimao Blau Pearl Met",
       "color": "#4169E1",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4521,7 +4521,7 @@
       "code": "U83",
       "name": "Oxidgrau Grey Pearl Met",
       "color": "#696969",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "1 Series, 2 Series, 3 Series, 4 Series, 5 Series, 7 Series, X1, X3, X5, X6, Z4"
     },
     {
@@ -4553,7 +4553,7 @@
       "code": "559",
       "name": "Fire Opal Red",
       "color": "#B22222",
-      "finish": "pearl",
+      "finish": "solid",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4585,7 +4585,7 @@
       "code": "368",
       "name": "Flint Gray Pearl Met",
       "color": "#6C7B8B",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4593,7 +4593,7 @@
       "code": "230",
       "name": "Indigo Lite Blue Met",
       "color": "#4682B4",
-      "finish": "metallic",
+      "finish": "solid",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4617,7 +4617,7 @@
       "code": "667",
       "name": "Blue Line Pearl Met",
       "color": "#1E90FF",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4641,7 +4641,7 @@
       "code": "633",
       "name": "Travertine Beige Met",
       "color": "#D2B48C",
-      "finish": "metallic",
+      "finish": "solid",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4689,7 +4689,7 @@
       "code": "919",
       "name": "Orient Brown Pearl Met",
       "color": "#5C4033",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4713,7 +4713,7 @@
       "code": "794",
       "name": "Pearl Beige Met Opal",
       "color": "#F5DEB3",
-      "finish": "opal",
+      "finish": "pearl",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4721,7 +4721,7 @@
       "code": "745",
       "name": "Crystal Silver Met",
       "color": "#D3D3D3",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4729,7 +4729,7 @@
       "code": "786",
       "name": "Sparkling Grey Pearl Met",
       "color": "#A9A9A9",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "A-Class, B-Class, C-Class, E-Class, S-Class, CLA, GLA, GLB, GLC, GLE, GLS"
     },
     {
@@ -4777,7 +4777,7 @@
       "code": "409",
       "name": "Burgundy Red Pearl Met.",
       "color": "#800020",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "S60, S90, V60, XC40, XC60, XC90, C40"
     },
     {
@@ -4785,7 +4785,7 @@
       "code": "412",
       "name": "Green Pearl Met.",
       "color": "#2E8B57",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "S60, S90, V60, XC40, XC60, XC90, C40"
     },
     {
@@ -4801,7 +4801,7 @@
       "code": "444",
       "name": "Arctic Dawn Pearl Met.",
       "color": "#F0F8FF",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "S60, S90, V60, XC40, XC60, XC90, C40"
     },
     {
@@ -4809,7 +4809,7 @@
       "code": "414",
       "name": "Luminous Grey Pearl Met.",
       "color": "#A9A9A9",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "S60, S90, V60, XC40, XC60, XC90, C40"
     },
     {
@@ -4825,7 +4825,7 @@
       "code": "717",
       "name": "Onyx Black Pearl Met.",
       "color": "#0F0F0F",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "S60, S90, V60, XC40, XC60, XC90, C40"
     },
     {
@@ -4833,7 +4833,7 @@
       "code": "720",
       "name": "Thunder Grey Pearl Met.",
       "color": "#4B4B4B",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "S60, S90, V60, XC40, XC60, XC90, C40"
     },
     {
@@ -4857,7 +4857,7 @@
       "code": "714",
       "name": "Luminous Grey Pearl Met.",
       "color": "#A9A9A9",
-      "finish": "metallic",
+      "finish": "pearl",
       "models": "S60, S90, V60, XC40, XC60, XC90, C40"
     },
     {

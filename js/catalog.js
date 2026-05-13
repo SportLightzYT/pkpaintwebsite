@@ -4,13 +4,24 @@
     let COLORS = [];
     let brandMap = {};
 
+    // Finish type configuration
+    const FINISH_TYPES = [
+        { id: 'all', label: 'ทุกประเภทสี', icon: 'fa-palette' },
+        { id: 'solid', label: 'สีทึบ (Solid)', icon: 'fa-circle', color: '#888' },
+        { id: 'metallic', label: 'เมทัลลิก (Metallic)', icon: 'fa-star', color: '#c0a060' },
+        { id: 'pearl', label: 'เพิร์ล (Pearl)', icon: 'fa-gem', color: '#d4a5d4' },
+        { id: 'opal', label: 'โอปอล (Opal)', icon: 'fa-prism', color: '#5ab8a8' }
+    ];
+
     function initCatalogData() {
         const brandTrigger = document.getElementById('brandTrigger');
+        const finishTrigger = document.getElementById('finishTrigger');
         const searchInput = document.getElementById('searchInput');
         const viewBtns = document.querySelectorAll('.view-btn');
         const colorGrid = document.getElementById('colorGrid');
 
         if (brandTrigger) brandTrigger.style.pointerEvents = 'none';
+        if (finishTrigger) finishTrigger.style.pointerEvents = 'none';
         if (searchInput) searchInput.disabled = true;
         viewBtns.forEach(btn => btn.style.pointerEvents = 'none');
 
@@ -24,13 +35,15 @@
                 BRANDS = data.brands || [];
                 COLORS = data.colors || [];
                 BRANDS.forEach(b => { brandMap[b.id] = b; });
-                
+
                 setupBrandPanel();
-                
+                setupFinishPanel();
+
                 if (brandTrigger) brandTrigger.style.pointerEvents = '';
+                if (finishTrigger) finishTrigger.style.pointerEvents = '';
                 if (searchInput) searchInput.disabled = false;
                 viewBtns.forEach(btn => btn.style.pointerEvents = '');
-                
+
                 checkUrlParams();
                 filterAndRender();
             })
@@ -41,6 +54,7 @@
                 }
             });
     }
+
     function finishLabel(finish) {
         switch (finish) {
             case 'metallic': return { text: 'เมทัลลิก', cls: 'badge-metallic' };
@@ -49,6 +63,7 @@
             default: return null;
         }
     }
+
     function makeSwatchSVG(hex, finish) {
         const r = parseInt(hex.slice(1, 3), 16);
         const g = parseInt(hex.slice(3, 5), 16);
@@ -67,6 +82,8 @@
         const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><defs><linearGradient id="base" x1="0.1" y1="0" x2="0.3" y2="1"><stop offset="0%" stop-color="${lighter}"/><stop offset="100%" stop-color="${darker}"/></linearGradient>${extraLayers}</defs><rect width="${w}" height="${h}" fill="url(#base)"/><rect width="${w}" height="${h}" fill="url(#sheen)"/></svg>`;
         return `data:image/svg+xml,${encodeURIComponent(svg)}`;
     }
+
+    // ========== BRAND FILTER ==========
     function setupBrandPanel() {
         const brandCounts = {};
         COLORS.forEach(c => { brandCounts[c.brand] = (brandCounts[c.brand] || 0) + 1; });
@@ -81,8 +98,10 @@
             brandPanel.innerHTML = items;
         }
     }
+
     let selectedBrand = 'all';
     const brandTrigger = document.getElementById('brandTrigger');
+    const brandPanel = document.getElementById('brandPanel');
     if (brandTrigger && brandPanel) {
         brandTrigger.addEventListener('click', e => { e.stopPropagation(); brandTrigger.classList.toggle('open'); brandPanel.classList.toggle('open'); });
         document.addEventListener('click', () => { brandTrigger.classList.remove('open'); brandPanel.classList.remove('open'); });
@@ -109,6 +128,55 @@
             brandTrigger.classList.remove('open'); brandPanel.classList.remove('open'); filterAndRender();
         });
     }
+
+    // ========== FINISH FILTER ==========
+    function setupFinishPanel() {
+        const finishCounts = {};
+        COLORS.forEach(c => { finishCounts[c.finish] = (finishCounts[c.finish] || 0) + 1; });
+        const finishPanel = document.getElementById('finishPanel');
+        if (finishPanel) {
+            let items = `<div class="dropdown-item active" data-finish="all"><div class="dropdown-item-left"><i class="fas fa-palette"></i> ทุกประเภทสี</div><span class="dropdown-item-count">${COLORS.length}</span></div>`;
+            FINISH_TYPES.forEach(ft => {
+                if (ft.id === 'all') return;
+                const cnt = finishCounts[ft.id] || 0;
+                if (cnt === 0) return;
+                items += `<div class="dropdown-item" data-finish="${ft.id}"><div class="dropdown-item-left"><i class="fas ${ft.icon}" style="color:${ft.color}"></i>${ft.label}</div><span class="dropdown-item-count">${cnt}</span></div>`;
+            });
+            finishPanel.innerHTML = items;
+        }
+    }
+
+    let selectedFinish = 'all';
+    const finishTrigger = document.getElementById('finishTrigger');
+    const finishPanel = document.getElementById('finishPanel');
+    if (finishTrigger && finishPanel) {
+        finishTrigger.addEventListener('click', e => { e.stopPropagation(); finishTrigger.classList.toggle('open'); finishPanel.classList.toggle('open'); });
+        document.addEventListener('click', () => { finishTrigger.classList.remove('open'); finishPanel.classList.remove('open'); });
+        finishPanel.addEventListener('click', e => {
+            const item = e.target.closest('.dropdown-item');
+            if (!item) return;
+            finishPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            selectedFinish = item.dataset.finish;
+            const ft = FINISH_TYPES.find(f => f.id === selectedFinish);
+            const text = ft ? ft.label : 'ทุกประเภทสี';
+            const triggerText = document.getElementById('finishTriggerText');
+            if (triggerText) triggerText.textContent = text;
+            const triggerLeft = document.querySelector('#finishTrigger .dropdown-trigger-left');
+            if (triggerLeft) {
+                const oldIcon = triggerLeft.querySelector('.finish-icon');
+                if (oldIcon) oldIcon.remove();
+                if (selectedFinish !== 'all' && ft) {
+                    const icon = document.createElement('i');
+                    icon.className = `fas ${ft.icon} finish-icon`;
+                    icon.style.cssText = `color:${ft.color};font-size:15px;`;
+                    triggerLeft.insertBefore(icon, triggerLeft.querySelector('.dropdown-trigger-text'));
+                }
+            }
+            finishTrigger.classList.remove('open'); finishPanel.classList.remove('open'); filterAndRender();
+        });
+    }
+
     const colorGrid = document.getElementById('colorGrid');
     const showingCount = document.getElementById('showingCount');
     const noResults = document.getElementById('noResults');
@@ -124,19 +192,24 @@
         if (listBtn) listBtn.classList.remove('active');
         if (gridBtn) gridBtn.classList.add('active');
     }
+
     function filterAndRender() {
         const searchInput = document.getElementById('searchInput');
         const search = searchInput ? searchInput.value.toLowerCase().trim() : '';
         currentFiltered = COLORS.filter(c => {
             const matchBrand = selectedBrand === 'all' || c.brand === selectedBrand;
+            const matchFinish = selectedFinish === 'all' || c.finish === selectedFinish;
             const matchSearch = !search || c.name.toLowerCase().includes(search) || c.code.toLowerCase().includes(search) || (brandMap[c.brand] && brandMap[c.brand].name.toLowerCase().includes(search));
-            return matchBrand && matchSearch;
+            return matchBrand && matchFinish && matchSearch;
         });
         if (showingCount) showingCount.textContent = currentFiltered.length;
         const brandCountEl = document.getElementById('brandCount');
         if (brandCountEl) brandCountEl.textContent = currentFiltered.length;
+        const finishCountEl = document.getElementById('finishCount');
+        if (finishCountEl) finishCountEl.textContent = currentFiltered.length;
         renderPage(1);
     }
+
     function renderPage(page) {
         currentPage = page;
         const start = (currentPage - 1) * itemsPerPage;
@@ -173,6 +246,7 @@
         renderPagination(); renderChips();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
     function renderPagination() {
         if (!paginationEl) return;
         paginationEl.innerHTML = '';
@@ -202,6 +276,7 @@
         next.addEventListener('click', () => currentPage < totalPages && renderPage(currentPage + 1));
         paginationEl.appendChild(next);
     }
+
     function createPageLink(num) {
         const link = document.createElement('a');
         link.className = `page-link ${num === currentPage ? 'active' : ''}`;
@@ -209,27 +284,68 @@
         link.addEventListener('click', () => renderPage(num));
         return link;
     }
+
     function renderChips() {
         if (!activeFiltersEl) return;
         activeFiltersEl.innerHTML = '';
-        if (selectedBrand === 'all') { activeFiltersEl.style.display = 'none'; return; }
+        const hasBrandFilter = selectedBrand !== 'all';
+        const hasFinishFilter = selectedFinish !== 'all';
+        if (!hasBrandFilter && !hasFinishFilter) { activeFiltersEl.style.display = 'none'; return; }
         activeFiltersEl.style.display = 'flex';
-        const chip = document.createElement('span');
-        chip.className = 'filter-chip';
-        chip.innerHTML = `${brandMap[selectedBrand].name} <i class="fas fa-times"></i>`;
-        chip.addEventListener('click', () => {
-            selectedBrand = 'all';
-            if (brandPanel) { brandPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const allItem = brandPanel.querySelector('[data-brand="all"]'); if (allItem) allItem.classList.add('active'); }
-            const triggerText = document.getElementById('brandTriggerText'); if (triggerText) triggerText.textContent = 'ยี่ห้อรถทั้งหมด';
-            const triggerLeft = document.querySelector('#brandTrigger .dropdown-trigger-left'); if (triggerLeft) { const old = triggerLeft.querySelector('.dropdown-item-logo'); if (old) old.remove(); }
-            filterAndRender();
-        });
-        activeFiltersEl.appendChild(chip);
+
+        if (hasBrandFilter) {
+            const chip = document.createElement('span');
+            chip.className = 'filter-chip';
+            chip.innerHTML = `${brandMap[selectedBrand].name} <i class="fas fa-times"></i>`;
+            chip.addEventListener('click', () => {
+                selectedBrand = 'all';
+                if (brandPanel) { brandPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const allItem = brandPanel.querySelector('[data-brand="all"]'); if (allItem) allItem.classList.add('active'); }
+                const triggerText = document.getElementById('brandTriggerText'); if (triggerText) triggerText.textContent = 'ยี่ห้อรถทั้งหมด';
+                const triggerLeft = document.querySelector('#brandTrigger .dropdown-trigger-left'); if (triggerLeft) { const old = triggerLeft.querySelector('.dropdown-item-logo'); if (old) old.remove(); }
+                filterAndRender();
+            });
+            activeFiltersEl.appendChild(chip);
+        }
+
+        if (hasFinishFilter) {
+            const ft = FINISH_TYPES.find(f => f.id === selectedFinish);
+            const chip = document.createElement('span');
+            chip.className = 'filter-chip';
+            chip.innerHTML = `${ft ? ft.label : selectedFinish} <i class="fas fa-times"></i>`;
+            chip.addEventListener('click', () => {
+                selectedFinish = 'all';
+                if (finishPanel) { finishPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const allItem = finishPanel.querySelector('[data-finish="all"]'); if (allItem) allItem.classList.add('active'); }
+                const triggerText = document.getElementById('finishTriggerText'); if (triggerText) triggerText.textContent = 'ทุกประเภทสี';
+                const triggerLeft = document.querySelector('#finishTrigger .dropdown-trigger-left'); if (triggerLeft) { const oldIcon = triggerLeft.querySelector('.finish-icon'); if (oldIcon) oldIcon.remove(); }
+                filterAndRender();
+            });
+            activeFiltersEl.appendChild(chip);
+        }
+
+        if (hasBrandFilter || hasFinishFilter) {
+            const clearChip = document.createElement('span');
+            clearChip.className = 'filter-chip clear-all';
+            clearChip.innerHTML = 'ล้างตัวกรองทั้งหมด <i class="fas fa-times"></i>';
+            clearChip.addEventListener('click', () => {
+                selectedBrand = 'all';
+                selectedFinish = 'all';
+                if (brandPanel) { brandPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const allItem = brandPanel.querySelector('[data-brand="all"]'); if (allItem) allItem.classList.add('active'); }
+                if (finishPanel) { finishPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const allItem = finishPanel.querySelector('[data-finish="all"]'); if (allItem) allItem.classList.add('active'); }
+                const brandTriggerText = document.getElementById('brandTriggerText'); if (brandTriggerText) brandTriggerText.textContent = 'ยี่ห้อรถทั้งหมด';
+                const finishTriggerText = document.getElementById('finishTriggerText'); if (finishTriggerText) finishTriggerText.textContent = 'ทุกประเภทสี';
+                const brandTriggerLeft = document.querySelector('#brandTrigger .dropdown-trigger-left'); if (brandTriggerLeft) { const old = brandTriggerLeft.querySelector('.dropdown-item-logo'); if (old) old.remove(); }
+                const finishTriggerLeft = document.querySelector('#finishTrigger .dropdown-trigger-left'); if (finishTriggerLeft) { const oldIcon = finishTriggerLeft.querySelector('.finish-icon'); if (oldIcon) oldIcon.remove(); }
+                filterAndRender();
+            });
+            activeFiltersEl.appendChild(clearChip);
+        }
     }
+
     const searchInput = document.getElementById('searchInput');
     const searchClearBtn = document.getElementById('searchClear');
     if (searchInput) searchInput.addEventListener('input', function () { if (searchClearBtn) searchClearBtn.style.display = this.value ? 'block' : 'none'; filterAndRender(); });
     if (searchClearBtn) searchClearBtn.addEventListener('click', function () { if (searchInput) { searchInput.value = ''; searchInput.focus(); } this.style.display = 'none'; filterAndRender(); });
+
     function checkUrlParams() {
         const params = new URLSearchParams(window.location.search);
         const brandParam = params.get('brand');
@@ -240,12 +356,25 @@
             const triggerLeft = document.querySelector('#brandTrigger .dropdown-trigger-left');
             if (triggerLeft) { const old = triggerLeft.querySelector('.dropdown-item-logo'); if (old) old.remove(); const wrap = document.createElement('div'); wrap.className = 'dropdown-item-logo'; wrap.innerHTML = `<img src="${brandMap[selectedBrand].logo}" alt="${brandMap[selectedBrand].name}">`; triggerLeft.insertBefore(wrap, triggerLeft.querySelector('.dropdown-trigger-text')); }
         }
+        const finishParam = params.get('finish');
+        if (finishParam) {
+            const ft = FINISH_TYPES.find(f => f.id === finishParam);
+            if (ft) {
+                selectedFinish = finishParam;
+                if (finishPanel) { finishPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const targetItem = finishPanel.querySelector(`[data-finish="${finishParam}"]`); if (targetItem) targetItem.classList.add('active'); }
+                const triggerText = document.getElementById('finishTriggerText'); if (triggerText) triggerText.textContent = ft.label;
+                const triggerLeft = document.querySelector('#finishTrigger .dropdown-trigger-left');
+                if (triggerLeft) { const oldIcon = triggerLeft.querySelector('.finish-icon'); if (oldIcon) oldIcon.remove(); const icon = document.createElement('i'); icon.className = `fas ${ft.icon} finish-icon`; icon.style.cssText = `color:${ft.color};font-size:15px;`; triggerLeft.insertBefore(icon, triggerLeft.querySelector('.dropdown-trigger-text')); }
+            }
+        }
         const searchParam = params.get('search');
         if (searchParam) { const searchIn = document.getElementById('searchInput'); if (searchIn) { searchIn.value = searchParam; if (searchClearBtn) searchClearBtn.style.display = 'block'; } }
         filterAndRender();
     }
+
     initCatalogData();
     document.querySelectorAll('.view-btn').forEach(btn => { btn.addEventListener('click', () => { document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); if (colorGrid) colorGrid.classList.toggle('list-view', btn.dataset.view === 'list'); }); });
+
     const lightbox = document.getElementById('lightbox');
     const lightboxSwatch = document.getElementById('lightboxSwatch');
     const lightboxBrand = document.getElementById('lightboxBrand');
