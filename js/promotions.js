@@ -68,14 +68,10 @@
                 btn.classList.remove('copied');
             }, 2500);
         }).catch((err) => {
-            console.error('Failed to copy text: ', err);
             alert('ไม่สามารถก๊อปปี้ได้ โปรดคัดลอกด้วยตนเอง: ' + code);
-            btn.innerHTML = '<i class="fas fa-check"></i> ก๊อปปี้แล้ว';
-            btn.classList.add('copied');
-            showToast(code);
+            btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> ก๊อปปี้ไม่สำเร็จ';
             setTimeout(() => {
                 btn.innerHTML = '<i class="fas fa-copy"></i> ก๊อปปี้';
-                btn.classList.remove('copied');
             }, 2500);
         });
     };

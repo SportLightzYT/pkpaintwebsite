@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+    <meta charset="UTF-8">
     <style>
         .skip-link {
             position: absolute;
@@ -15,8 +16,8 @@
         .skip-link:focus {
             top: 0;
         }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     </style>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="view-transition" content="same-origin" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +28,8 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="icon" type="image/png" href="asset/pklogosvg.png">
-    <title>PK Paint & Supply - โปรโมชั่น</title>
-    <meta name="description" content="โปรโมชั่นพิเศษ สีพ่นรถยนต์ อุปกรณ์พ่นสี ส่วนลดและของแถมจาก PK Paint & Supply รังสิต ปทุมธานี">
+    <title>PK Paint &amp; Supply - โปรโมชั่น</title>
+    <meta name="description" content="โปรโมชั่นพิเศษ สีพ่นรถยนต์ อุปกรณ์พ่นสี ส่วนลดและของแถมจาก PK Paint &amp; Supply รังสิต ปทุมธานี">
     <meta property="og:title" content="PK Paint & Supply - โปรโมชั่น">
     <meta property="og:description" content="อัปเดตโปรโมชั่นและส่วนลดสุดคุ้ม สีพ่นรถยนต์คุณภาพสูง">
     <meta property="og:type" content="website">
@@ -67,7 +68,7 @@
             </button>
         </div>
     </nav>
-    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="เมนูหลัก">
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="เมนูหลัก">
         <a href="index.html">หน้าแรก</a>
         <a href="products.html">สินค้า</a>
         <a href="catalog.html">แคตตาล็อค</a>
@@ -81,7 +82,8 @@
             <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
         </div>
     </div>
-    <section class="promo-hero" id="main-content">
+    <main id="main-content">
+    <section class="promo-hero">
         <div class="promo-hero-content">
             <div class="breadcrumb" style="justify-content: center; margin-bottom: 24px;">
                 <a href="index.html">หน้าแรก</a> / <span>โปรโมชั่น</span>
@@ -90,7 +92,7 @@
             <h1>ลดสูงสุด 50% ทุกสินค้า</h1>
             <p>โปรโมชั่นจำกัดเวลา สั่งซื้อก่อนหมดโปร รับส่วนลดสูงสุดพร้อมของแถมมูลค่า</p>
             <div class="countdown-box" id="countdown">
-                <div class="countdown-item"><span class="num" id="cd-days">03</span><span class="label">วัน</span></div>
+                <div class="countdown-item"><span class="num" id="cd-days" data-end="2026-05-31T23:59:59">03</span><span class="label">วัน</span></div>
                 <div class="countdown-sep">:</div>
                 <div class="countdown-item"><span class="num" id="cd-hours">14</span><span class="label">ชั่วโมง</span></div>
                 <div class="countdown-sep">:</div>
@@ -319,6 +321,7 @@
             </div>
         </div>
     </section>
+    </main>
     <div class="toast" id="toast" role="alert" aria-live="polite">
         <i class="fas fa-check-circle"></i>
         <div class="toast-text">ก๊อปปี้โค้ด <span class="toast-code" id="toastCode"></span> สำเร็จ!</div>
@@ -327,7 +330,7 @@
         <div class="footer-content">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <img src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img">
+                    <img src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img" width="112" height="38">
                     <div>
                         <div style="font-size:14px;font-weight:600;color:#fff;">PAINT &amp; SUPPLY</div>
                         <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
@@ -361,8 +364,6 @@
                 <h4 class="footer-title">ติดตามเรา</h4>
                 <div class="footer-social">
                     <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
                     <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a>
                 </div>
             </div>
@@ -374,6 +375,6 @@
     </button>
     <script src="js/promotions.js" defer></script>
     <script src="js/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyQsSR1OYvSB2kM7RLMhfC4YJOqT1fCTzykGMNVbsZSsviQnCOFIhUhN7OCSF" crossorigin="anonymous"></script>
 </body>
 </html>

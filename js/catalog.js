@@ -30,7 +30,10 @@
         }
 
         fetch('asset/colors-data.json', { cache: 'force-cache' })
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                return res.json();
+            })
             .then(data => {
                 BRANDS = data.brands || [];
                 COLORS = data.colors || [];
@@ -48,7 +51,6 @@
                 filterAndRender();
             })
             .catch(err => {
-                console.error('Failed to load colors data:', err);
                 if (colorGrid) {
                     colorGrid.innerHTML = '<div style="width:100%;text-align:center;padding:40px;color:#ef4444;"><i class="fas fa-exclamation-triangle fa-2x"></i><p style="margin-top:10px;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p></div>';
                 }
@@ -369,7 +371,6 @@
         }
         const searchParam = params.get('search');
         if (searchParam) { const searchIn = document.getElementById('searchInput'); if (searchIn) { searchIn.value = searchParam; if (searchClearBtn) searchClearBtn.style.display = 'block'; } }
-        filterAndRender();
     }
 
     initCatalogData();

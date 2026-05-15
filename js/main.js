@@ -1,6 +1,5 @@
 (function() {
     'use strict';
-    // DevTools prevention removed.
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
     const navbar = document.querySelector('.navbar');
@@ -42,8 +41,7 @@
             navbar.classList.remove('scrolled');
         }
     }
-    window.addEventListener('scroll', handleNavbarScroll);
-    handleNavbarScroll();
+    
     function updateScrollProgress() {
         if (!scrollProgress) return;
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -51,8 +49,7 @@
         const progress = (scrollTop / scrollHeight) * 100;
         scrollProgress.style.width = progress + '%';
     }
-    window.addEventListener('scroll', updateScrollProgress);
-    updateScrollProgress();
+    
     function handleScrollTopVisibility() {
         if (!scrollTopBtn) return;
         if (window.scrollY > 300) {
@@ -69,8 +66,24 @@
             });
         });
     }
-    window.addEventListener('scroll', handleScrollTopVisibility);
+
+    let isScrolling = false;
+    window.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                handleNavbarScroll();
+                updateScrollProgress();
+                handleScrollTopVisibility();
+                isScrolling = false;
+            });
+            isScrolling = true;
+        }
+    }, { passive: true });
+
+    handleNavbarScroll();
+    updateScrollProgress();
     handleScrollTopVisibility();
+
     function animateCounters() {
         const counters = document.querySelectorAll('.stat-number[data-target]');
         if (counters.length === 0) return;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+    <meta charset="UTF-8">
     <style>
         .skip-link {
             position: absolute;
@@ -15,8 +16,8 @@
         .skip-link:focus {
             top: 0;
         }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     </style>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="view-transition" content="same-origin" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,11 +37,34 @@
         content="จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง รังสิต ปทุมธานี">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="th_TH">
+    <meta property="og:url" content="https://pkpaintandsupply.com/index.html">
+    <meta property="og:image" content="asset/Cover.jpg">
+    <link rel="canonical" href="https://pkpaintandsupply.com/index.html">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "PK Paint & Supply",
+        "description": "จำหน่ายสีพ่นรถยนต์คุณภาพสูง อุปกรณ์พ่นสีครบวงจร",
+        "image": "asset/Cover.jpg",
+        "telephone": "092-852-8535",
+        "email": "pkpaintandsupply@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "249/3 ม.6 ถ.รังสิต",
+            "addressLocality": "ต.บางพูน อ.เมือง",
+            "addressRegion": "ปทุมธานี",
+            "addressCountry": "TH"
+        },
+        "openingHours": "Mo-Sa 08:30-18:00",
+        "url": "https://pkpaintandsupply.com"
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
@@ -72,7 +96,7 @@
             </button>
         </div>
     </nav>
-    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="เมนูหลัก">
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="เมนูหลัก">
         <a href="index.html" class="active">หน้าแรก</a>
         <a href="products.html">สินค้า</a>
         <a href="catalog.html">แคตตาล็อค</a>
@@ -86,6 +110,7 @@
             <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
         </div>
     </div>
+    <main id="main-content">
     <section class="hero">
         <div class="hero-content">
             <div class="hero-subtitle">PK PAINT & SUPPLY</div>
@@ -239,6 +264,7 @@
         </div>
     </section>
     <section class="brands">
+        <h2 class="sr-only">แบรนด์พันธมิตร</h2>
         <img src="asset/PGL-01.png" alt="NIPPON PAINT" class="brand-logo" loading="lazy" decoding="async">
         <img src="asset/PPG_Logo.svg.png" alt="PPG" class="brand-logo" loading="lazy" decoding="async">
         <img src="asset/AIKKA.jpg" alt="Aikka" class="brand-logo" loading="lazy" decoding="async">
@@ -349,6 +375,7 @@
             <div class="review-card"><div class="review-author-header"><div class="review-avatar" style="background-color:#fbbc04;color:#000;">S</div><div class="review-author-info"><div class="review-name">Supamas Yuenying <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"ร้านจำหน่ายอุปกรณ์และวัสดุพ่นสีรถยนต์ครบวงจร เจ้าของร้านใจดี ให้คำปรึกษาเกี่ยวกับด้านสีได้ ผสมสีเหมือน และมีความรู้ความชำนาญมาก เปิดให้บริการมามากกว่า 10 ปี ส่วนใหญ่จำหน่ายสียี่ห้อ RGB มาไม่เคยผิดหวัง ..."</div><div class="review-footer"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
         </div>
     </section>
+    </main>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-col">
@@ -357,7 +384,7 @@
             </div>
             <div class="footer-col"><h4 class="footer-title">เมนู</h4><ul class="footer-links"><li><a href="index.html">หน้าแรก</a></li><li><a href="products.html">สินค้า</a></li><li><a href="catalog.html">แคตตาล็อค</a></li><li><a href="promotions.html">โปรโมชั่น</a></li><li><a href="review.html">รีวิว</a></li><li><a href="about.html">เกี่ยวกับเรา</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></div>
             <div class="footer-col"><h4 class="footer-title">ติดต่อเรา</h4><div class="footer-contact"><div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div><div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></div><div><i class="fas fa-envelope"></i><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div><div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6 ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บางพูน อ.เมือง จ.ปทุมธานี</div><div style="margin-top:6px;"><a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions" style="margin-right:4px;"></i>เปิดนำทาง Google Maps</a></div></div></div>
-            <div class="footer-col"><h4 class="footer-title">ติดตามเรา</h4><div class="footer-social"><a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" title="YouTube"><i class="fab fa-youtube"></i></a><a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a></div></div>
+            <div class="footer-col"><h4 class="footer-title">ติดตามเรา</h4><div class="footer-social"><a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a></div></div>
         </div>
         <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint &amp; Supply. All Rights Reserved.</div>
     </footer>
@@ -366,6 +393,6 @@
     </button>
     <script src="js/index.js" defer></script>
     <script src="js/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyQsSR1OYvSB2kM7RLMhfC4YJOqT1fCTzykGMNVbsZSsviQnCOFIhUhN7OCSF" crossorigin="anonymous"></script>
 </body>
 </html>
