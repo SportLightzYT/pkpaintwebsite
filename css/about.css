@@ -664,6 +664,9 @@
             visibility: hidden;
             transition: all 0.3s;
         }
+        .scroll-top i {
+            color: #fff !important;
+        }
         .scroll-top.visible {
             opacity: 1;
             visibility: visible;

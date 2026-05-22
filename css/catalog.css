@@ -1238,3 +1238,8 @@
         transform: translateX(100%);
     }
 }
+
+/* --- Scroll to Top Button Chevron White Color --- */
+.scroll-top i {
+    color: #fff !important;
+}

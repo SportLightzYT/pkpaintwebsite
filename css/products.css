@@ -1141,3 +1141,9 @@ input[type="range"].dual-slider::-moz-range-track {
     }
 }
 
+
+
+/* --- Scroll to Top Button Chevron White Color --- */
+.scroll-top i {
+    color: #fff !important;
+}
