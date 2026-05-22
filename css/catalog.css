@@ -1050,3 +1050,191 @@
     margin-top: 0;
     min-width: 180px;
 }
+
+/* ===== SPLIT LOGO (FORD/MAZDA) IN DROPDOWN & ACTIVE SELECTOR ===== */
+.dropdown-item-logo.split-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.dropdown-item-logo.split-logo img {
+    width: 44% !important;
+    height: 100% !important;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+/* Premium micro-animations on hover */
+.dropdown-item:hover .dropdown-item-logo.split-logo img.logo-left,
+.dropdown-trigger:hover .dropdown-item-logo.split-logo img.logo-left {
+    transform: scale(1.1) rotate(-5deg);
+}
+.dropdown-item:hover .dropdown-item-logo.split-logo img.logo-right,
+.dropdown-trigger:hover .dropdown-item-logo.split-logo img.logo-right {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* ===== INLINE SPLIT LOGO FOR COLOR CARDS & LIGHTBOX ===== */
+.split-logo-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    vertical-align: middle;
+}
+.color-card-brand .split-logo-inline img {
+    height: 16px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+/* Card Hover Micro-animations */
+.color-card:hover .split-logo-inline img:first-child {
+    transform: scale(1.15) rotate(-5deg);
+}
+.color-card:hover .split-logo-inline img:last-child {
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* Lightbox specific styling (inverted purely white logo) */
+.lightbox-info .lb-brand .split-logo-inline img {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.25s ease;
+}
+
+/* Emoji style sizing for finish dropdown filter */
+.finish-emoji {
+    font-size: 14px;
+    width: 18px;
+    display: inline-block;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Skeleton Loader Styling */
+.skeleton-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.color-grid.list-view .skeleton-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.skeleton-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.color-grid.list-view .skeleton-card {
+    flex-direction: row;
+}
+
+.skeleton-swatch {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.color-grid.list-view .skeleton-swatch {
+    width: 160px;
+    min-width: 160px;
+    aspect-ratio: 16 / 10;
+}
+
+.skeleton-body {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.color-grid.list-view .skeleton-body {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 24px;
+}
+
+.skeleton-line {
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 4px;
+}
+
+.skeleton-brand {
+    width: 40%;
+    height: 10px;
+}
+
+.color-grid.list-view .skeleton-brand {
+    min-width: 140px;
+    width: 140px;
+    margin-bottom: 0;
+}
+
+.skeleton-name {
+    width: 70%;
+    height: 14px;
+}
+
+.color-grid.list-view .skeleton-name {
+    flex: 1;
+    width: auto;
+    margin-bottom: 0;
+}
+
+.skeleton-code {
+    width: 50%;
+    height: 12px;
+}
+
+.color-grid.list-view .skeleton-code {
+    min-width: 120px;
+    width: 120px;
+    margin-bottom: 0;
+}
+
+/* GPU Accelerated Shimmer Animation */
+.shimmer {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 20%,
+        rgba(255, 255, 255, 0.6) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: shimmer 1.5s infinite;
+    content: '';
+    will-change: transform;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}

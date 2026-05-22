@@ -345,3 +345,28 @@
         .hero {
             background: #050a10 url('../asset/Cover.jpg') no-repeat center center / cover !important;
         }
+
+        /* ===== SPLIT LOGO (FORD/MAZDA) ===== */
+        .car-brand-logo-wrap.split-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            width: 80px;
+            height: 80px;
+            position: relative;
+            z-index: 1;
+        }
+        .car-brand-logo-wrap.split-logo img {
+            width: 42%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .car-brand-card:hover .car-brand-logo-wrap.split-logo img.logo-left {
+            transform: scale(1.12) rotate(-5deg);
+        }
+        .car-brand-card:hover .car-brand-logo-wrap.split-logo img.logo-right {
+            transform: scale(1.12) rotate(5deg);
+        }

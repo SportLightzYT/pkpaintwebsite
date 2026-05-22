@@ -1,52 +1,69 @@
 (function() {
     'use strict';
-    function updateCountdown() {
-        const dEl = document.getElementById('cd-days');
-        if (!dEl) return;
-        const endStr = dEl.dataset.end;
-        let endDate;
+    const cdDaysEl = document.getElementById('cd-days');
+    const cdHoursEl = document.getElementById('cd-hours');
+    const cdMinutesEl = document.getElementById('cd-minutes');
+    const cdSecondsEl = document.getElementById('cd-seconds');
+
+    let endDate;
+    if (cdDaysEl) {
+        const endStr = cdDaysEl.dataset.end;
         if (endStr) {
             endDate = new Date(endStr);
         } else {
             const now = new Date();
             endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 3, 23, 59, 59);
         }
+    }
+
+    function updateCountdown() {
+        if (!cdDaysEl) return;
         const now = new Date();
         const diff = endDate - now;
-        if (diff <= 0) return;
+        if (diff <= 0) {
+            cdDaysEl.textContent = '00';
+            if (cdHoursEl) cdHoursEl.textContent = '00';
+            if (cdMinutesEl) cdMinutesEl.textContent = '00';
+            if (cdSecondsEl) cdSecondsEl.textContent = '00';
+            return;
+        }
         const d = Math.floor(diff / (1000 * 60 * 60 * 24));
         const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const s = Math.floor((diff % (1000 * 60)) / 1000);
-        const hEl = document.getElementById('cd-hours');
-        const mEl = document.getElementById('cd-minutes');
-        const sEl = document.getElementById('cd-seconds');
-        if (dEl) dEl.textContent = String(d).padStart(2, '0');
-        if (hEl) hEl.textContent = String(h).padStart(2, '0');
-        if (mEl) mEl.textContent = String(m).padStart(2, '0');
-        if (sEl) sEl.textContent = String(s).padStart(2, '0');
+        
+        cdDaysEl.textContent = String(d).padStart(2, '0');
+        if (cdHoursEl) cdHoursEl.textContent = String(h).padStart(2, '0');
+        if (cdMinutesEl) cdMinutesEl.textContent = String(m).padStart(2, '0');
+        if (cdSecondsEl) cdSecondsEl.textContent = String(s).padStart(2, '0');
     }
+    
     let countdownIntervalId = null;
-    if (document.getElementById('cd-days')) {
+    if (cdDaysEl) {
         countdownIntervalId = setInterval(updateCountdown, 1000);
         updateCountdown();
     }
+    
+    const ftHoursEl = document.getElementById('ft-hours');
+    const ftMinutesEl = document.getElementById('ft-minutes');
+    const ftSecondsEl = document.getElementById('ft-seconds');
+
     function updateFlashTimer() {
+        if (!ftHoursEl) return;
         const now = new Date();
         const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
         const diff = midnight - now;
         const h = Math.floor(diff / (1000 * 60 * 60));
         const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const s = Math.floor((diff % (1000 * 60)) / 1000);
-        const hEl = document.getElementById('ft-hours');
-        const mEl = document.getElementById('ft-minutes');
-        const sEl = document.getElementById('ft-seconds');
-        if (hEl) hEl.textContent = String(h).padStart(2, '0');
-        if (mEl) mEl.textContent = String(m).padStart(2, '0');
-        if (sEl) sEl.textContent = String(s).padStart(2, '0');
+        
+        ftHoursEl.textContent = String(h).padStart(2, '0');
+        if (ftMinutesEl) ftMinutesEl.textContent = String(m).padStart(2, '0');
+        if (ftSecondsEl) ftSecondsEl.textContent = String(s).padStart(2, '0');
     }
+    
     let flashIntervalId = null;
-    if (document.getElementById('ft-hours')) {
+    if (ftHoursEl) {
         flashIntervalId = setInterval(updateFlashTimer, 1000);
         updateFlashTimer();
     }

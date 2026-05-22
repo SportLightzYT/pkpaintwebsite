@@ -4,13 +4,20 @@
     let COLORS = [];
     let brandMap = {};
 
+    function getBrandLogoHTML(b) {
+        if (b.id === 'ford-mazda') {
+            return `<span class="split-logo-inline"><img src="asset/Ford_logo_flat.svg.png" alt="FORD"><img src="asset/mazda_PNG86.png" alt="MAZDA"></span>`;
+        }
+        return `<img src="${b.logo}" alt="${b.name}">`;
+    }
+
     // Finish type configuration
     const FINISH_TYPES = [
-        { id: 'all', label: 'ทุกประเภทสี', icon: 'fa-palette' },
-        { id: 'solid', label: 'สีทึบ (Solid)', icon: 'fa-circle', color: '#888' },
-        { id: 'metallic', label: 'เมทัลลิก (Metallic)', icon: 'fa-star', color: '#c0a060' },
-        { id: 'pearl', label: 'เพิร์ล (Pearl)', icon: 'fa-gem', color: '#d4a5d4' },
-        { id: 'opal', label: 'โอปอล (Opal)', icon: 'fa-prism', color: '#5ab8a8' }
+        { id: 'all', label: 'ทุกประเภทสี', emoji: '🎨' },
+        { id: 'solid', label: 'สีทึบ (Solid)', emoji: '⚫' },
+        { id: 'metallic', label: 'เมทัลลิก (Metallic)', emoji: '⭐' },
+        { id: 'pearl', label: 'เพิร์ล (Pearl)', emoji: '💎' },
+        { id: 'opal', label: 'โอปอล (Opal)', emoji: '🔮' }
     ];
 
     function initCatalogData() {
@@ -26,7 +33,19 @@
         viewBtns.forEach(btn => btn.style.pointerEvents = 'none');
 
         if (colorGrid) {
-            colorGrid.innerHTML = '<div class="loading-spinner" style="width:100%;text-align:center;padding:40px;color:#cbd5e1;"><i class="fas fa-spinner fa-spin fa-2x"></i><p style="margin-top:10px;">กำลังโหลดข้อมูลสี...</p></div>';
+            let skeletons = '';
+            for (let i = 0; i < 8; i++) {
+                skeletons += `
+                <div class="skeleton-card">
+                    <div class="skeleton-swatch shimmer"></div>
+                    <div class="skeleton-body">
+                        <div class="skeleton-line skeleton-brand shimmer"></div>
+                        <div class="skeleton-line skeleton-name shimmer"></div>
+                        <div class="skeleton-line skeleton-code shimmer"></div>
+                    </div>
+                </div>`;
+            }
+            colorGrid.innerHTML = `<div class="skeleton-grid">${skeletons}</div>`;
         }
 
         fetch('asset/colors-data.json', { cache: 'force-cache' })
@@ -41,6 +60,17 @@
 
                 setupBrandPanel();
                 setupFinishPanel();
+
+                const finishTriggerLeft = document.querySelector('#finishTrigger .dropdown-trigger-left');
+                if (finishTriggerLeft) {
+                    const oldDefault = finishTriggerLeft.querySelector('.fa-paint-brush');
+                    if (oldDefault) oldDefault.style.display = 'none';
+                    const emojiSpan = document.createElement('span');
+                    emojiSpan.className = 'finish-emoji finish-icon';
+                    emojiSpan.textContent = '🎨';
+                    emojiSpan.style.cssText = `font-size:15px; margin-right: 8px;`;
+                    finishTriggerLeft.insertBefore(emojiSpan, finishTriggerLeft.querySelector('.dropdown-trigger-text'));
+                }
 
                 if (brandTrigger) brandTrigger.style.pointerEvents = '';
                 if (finishTrigger) finishTrigger.style.pointerEvents = '';
@@ -66,22 +96,27 @@
         }
     }
 
-    function makeSwatchSVG(hex, finish) {
+    function makeSwatchSVG(hex, finish, code) {
         const r = parseInt(hex.slice(1, 3), 16);
         const g = parseInt(hex.slice(3, 5), 16);
         const b = parseInt(hex.slice(5, 7), 16);
         const lighter = `rgb(${Math.min(255, r + 40)}, ${Math.min(255, g + 40)}, ${Math.min(255, b + 40)})`;
         const darker = `rgb(${Math.max(0, r - 30)}, ${Math.max(0, g - 30)}, ${Math.max(0, b - 30)})`;
+        
+        const safeCode = (code || hex).replace(/[^a-zA-Z0-9]/g, '-');
+        const baseId = `base-${safeCode}`;
+        const sheenId = `sheen-${safeCode}`;
+        
         let extraLayers = '';
         if (finish === 'metallic') {
-            extraLayers = `<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="white" stop-opacity="0.22"/><stop offset="45%" stop-color="white" stop-opacity="0.04"/><stop offset="55%" stop-color="white" stop-opacity="0.18"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient>`;
+            extraLayers = `<linearGradient id="${sheenId}" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="white" stop-opacity="0.22"/><stop offset="45%" stop-color="white" stop-opacity="0.04"/><stop offset="55%" stop-color="white" stop-opacity="0.18"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient>`;
         } else if (finish === 'pearl' || finish === 'opal') {
-            extraLayers = `<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0.8"><stop offset="0%" stop-color="white" stop-opacity="0.30"/><stop offset="40%" stop-color="#c8e8ff" stop-opacity="0.12"/><stop offset="70%" stop-color="white" stop-opacity="0.22"/><stop offset="100%" stop-color="white" stop-opacity="0.05"/></linearGradient>`;
+            extraLayers = `<linearGradient id="${sheenId}" x1="0" y1="0" x2="1" y2="0.8"><stop offset="0%" stop-color="white" stop-opacity="0.30"/><stop offset="40%" stop-color="#c8e8ff" stop-opacity="0.12"/><stop offset="70%" stop-color="white" stop-opacity="0.22"/><stop offset="100%" stop-color="white" stop-opacity="0.05"/></linearGradient>`;
         } else {
-            extraLayers = `<linearGradient id="sheen" x1="0" y1="0" x2="0" y2="0.5"><stop offset="0%" stop-color="white" stop-opacity="0.15"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient>`;
+            extraLayers = `<linearGradient id="${sheenId}" x1="0" y1="0" x2="0" y2="0.5"><stop offset="0%" stop-color="white" stop-opacity="0.15"/><stop offset="100%" stop-color="white" stop-opacity="0"/></linearGradient>`;
         }
         const w = 400, h = 300;
-        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><defs><linearGradient id="base" x1="0.1" y1="0" x2="0.3" y2="1"><stop offset="0%" stop-color="${lighter}"/><stop offset="100%" stop-color="${darker}"/></linearGradient>${extraLayers}</defs><rect width="${w}" height="${h}" fill="url(#base)"/><rect width="${w}" height="${h}" fill="url(#sheen)"/></svg>`;
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><defs><linearGradient id="${baseId}" x1="0.1" y1="0" x2="0.3" y2="1"><stop offset="0%" stop-color="${lighter}"/><stop offset="100%" stop-color="${darker}"/></linearGradient>${extraLayers}</defs><rect width="${w}" height="${h}" fill="url(#${baseId})"/><rect width="${w}" height="${h}" fill="url(#${sheenId})"/></svg>`;
         return `data:image/svg+xml,${encodeURIComponent(svg)}`;
     }
 
@@ -95,7 +130,11 @@
             BRANDS.forEach(b => {
                 const cnt = brandCounts[b.id] || 0;
                 if (cnt === 0) return;
-                items += `<div class="dropdown-item" data-brand="${b.id}"><div class="dropdown-item-left"><div class="dropdown-item-logo"><img src="${b.logo}" alt="${b.name}"></div>${b.name}</div><span class="dropdown-item-count">${cnt}</span></div>`;
+                if (b.id === 'ford-mazda') {
+                    items += `<div class="dropdown-item" data-brand="${b.id}"><div class="dropdown-item-left"><div class="dropdown-item-logo split-logo"><img src="asset/Ford_logo_flat.svg.png" alt="FORD" class="logo-left"><img src="asset/mazda_PNG86.png" alt="MAZDA" class="logo-right"></div>${b.name}</div><span class="dropdown-item-count">${cnt}</span></div>`;
+                } else {
+                    items += `<div class="dropdown-item" data-brand="${b.id}"><div class="dropdown-item-left"><div class="dropdown-item-logo"><img src="${b.logo}" alt="${b.name}"></div>${b.name}</div><span class="dropdown-item-count">${cnt}</span></div>`;
+                }
             });
             brandPanel.innerHTML = items;
         }
@@ -122,8 +161,13 @@
                 if (old) old.remove();
                 if (selectedBrand !== 'all' && brandMap[selectedBrand]) {
                     const wrap = document.createElement('div');
-                    wrap.className = 'dropdown-item-logo';
-                    wrap.innerHTML = `<img src="${brandMap[selectedBrand].logo}" alt="${brandMap[selectedBrand].name}">`;
+                    if (selectedBrand === 'ford-mazda') {
+                        wrap.className = 'dropdown-item-logo split-logo';
+                        wrap.innerHTML = `<img src="asset/Ford_logo_flat.svg.png" alt="FORD" class="logo-left"><img src="asset/mazda_PNG86.png" alt="MAZDA" class="logo-right">`;
+                    } else {
+                        wrap.className = 'dropdown-item-logo';
+                        wrap.innerHTML = `<img src="${brandMap[selectedBrand].logo}" alt="${brandMap[selectedBrand].name}">`;
+                    }
                     triggerLeft.insertBefore(wrap, triggerLeft.querySelector('.dropdown-trigger-text'));
                 }
             }
@@ -137,12 +181,12 @@
         COLORS.forEach(c => { finishCounts[c.finish] = (finishCounts[c.finish] || 0) + 1; });
         const finishPanel = document.getElementById('finishPanel');
         if (finishPanel) {
-            let items = `<div class="dropdown-item active" data-finish="all"><div class="dropdown-item-left"><i class="fas fa-palette"></i> ทุกประเภทสี</div><span class="dropdown-item-count">${COLORS.length}</span></div>`;
+            let items = `<div class="dropdown-item active" data-finish="all"><div class="dropdown-item-left"><span class="finish-emoji">🎨</span> ทุกประเภทสี</div><span class="dropdown-item-count">${COLORS.length}</span></div>`;
             FINISH_TYPES.forEach(ft => {
                 if (ft.id === 'all') return;
                 const cnt = finishCounts[ft.id] || 0;
                 if (cnt === 0) return;
-                items += `<div class="dropdown-item" data-finish="${ft.id}"><div class="dropdown-item-left"><i class="fas ${ft.icon}" style="color:${ft.color}"></i>${ft.label}</div><span class="dropdown-item-count">${cnt}</span></div>`;
+                items += `<div class="dropdown-item" data-finish="${ft.id}"><div class="dropdown-item-left"><span class="finish-emoji">${ft.emoji}</span>${ft.label}</div><span class="dropdown-item-count">${cnt}</span></div>`;
             });
             finishPanel.innerHTML = items;
         }
@@ -168,11 +212,14 @@
             if (triggerLeft) {
                 const oldIcon = triggerLeft.querySelector('.finish-icon');
                 if (oldIcon) oldIcon.remove();
-                if (selectedFinish !== 'all' && ft) {
-                    const icon = document.createElement('i');
-                    icon.className = `fas ${ft.icon} finish-icon`;
-                    icon.style.cssText = `color:${ft.color};font-size:15px;`;
-                    triggerLeft.insertBefore(icon, triggerLeft.querySelector('.dropdown-trigger-text'));
+                const oldDefault = triggerLeft.querySelector('.fa-paint-brush');
+                if (oldDefault) oldDefault.style.display = 'none';
+                if (ft) {
+                    const emojiSpan = document.createElement('span');
+                    emojiSpan.className = 'finish-emoji finish-icon';
+                    emojiSpan.textContent = ft.emoji;
+                    emojiSpan.style.cssText = `font-size:15px; margin-right: 8px;`;
+                    triggerLeft.insertBefore(emojiSpan, triggerLeft.querySelector('.dropdown-trigger-text'));
                 }
             }
             finishTrigger.classList.remove('open'); finishPanel.classList.remove('open'); filterAndRender();
@@ -219,9 +266,12 @@
         const pageItems = currentFiltered.slice(start, end);
         if (colorGrid) {
             colorGrid.innerHTML = '';
+            const fragment = document.createDocumentFragment();
+            const cardsToAnimate = [];
+            
             pageItems.forEach((c, i) => {
                 const b = brandMap[c.brand];
-                const swatch = makeSwatchSVG(c.color, c.finish);
+                const swatch = makeSwatchSVG(c.color, c.finish, c.code);
                 const badge = finishLabel(c.finish);
                 const modelsHtml = c.models ? `<div class="color-card-models">รุ่นที่รองรับ: ${c.models}</div>` : '';
                 const card = document.createElement('div');
@@ -233,15 +283,25 @@
                     <div class="zoom-icon"><i class="fas fa-expand"></i></div>
                 </div>
                 <div class="color-card-body">
-                    <div class="color-card-brand"><img src="${b.logo}" alt="${b.name}"> ${b.name}</div>
+                    <div class="color-card-brand">${getBrandLogoHTML(b)} ${b.name}</div>
                     <div class="color-card-name">${c.name}</div>
                     <div class="color-card-code"><span class="color-dot" style="background:${c.color};"></span> ${c.code}</div>
                     ${modelsHtml}
                     <div class="color-disclaimer">* สีที่แสดงเป็นค่าอ้างอิงเท่านั้น</div>
                 </div>`;
                 card.addEventListener('click', () => openColorLightbox(card, currentFiltered, start + i));
-                colorGrid.appendChild(card);
-                setTimeout(() => card.classList.add('visible'), (i + 1) * 30);
+                fragment.appendChild(card);
+                cardsToAnimate.push({ card, delay: (i + 1) * 30 });
+            });
+            
+            // Single DOM write
+            colorGrid.appendChild(fragment);
+            
+            // Orchestrate visual fade-in without layout thrashing
+            requestAnimationFrame(() => {
+                cardsToAnimate.forEach(({ card, delay }) => {
+                    setTimeout(() => card.classList.add('visible'), delay);
+                });
             });
         }
         if (noResults) noResults.classList.toggle('show', currentFiltered.length === 0);
@@ -356,7 +416,19 @@
             if (brandPanel) { brandPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const targetItem = brandPanel.querySelector(`[data-brand="${brandParam}"]`); if (targetItem) targetItem.classList.add('active'); }
             const triggerText = document.getElementById('brandTriggerText'); if (triggerText) triggerText.textContent = brandMap[brandParam].name;
             const triggerLeft = document.querySelector('#brandTrigger .dropdown-trigger-left');
-            if (triggerLeft) { const old = triggerLeft.querySelector('.dropdown-item-logo'); if (old) old.remove(); const wrap = document.createElement('div'); wrap.className = 'dropdown-item-logo'; wrap.innerHTML = `<img src="${brandMap[selectedBrand].logo}" alt="${brandMap[selectedBrand].name}">`; triggerLeft.insertBefore(wrap, triggerLeft.querySelector('.dropdown-trigger-text')); }
+            if (triggerLeft) {
+                const old = triggerLeft.querySelector('.dropdown-item-logo');
+                if (old) old.remove();
+                const wrap = document.createElement('div');
+                if (selectedBrand === 'ford-mazda') {
+                    wrap.className = 'dropdown-item-logo split-logo';
+                    wrap.innerHTML = `<img src="asset/Ford_logo_flat.svg.png" alt="FORD" class="logo-left"><img src="asset/mazda_PNG86.png" alt="MAZDA" class="logo-right">`;
+                } else {
+                    wrap.className = 'dropdown-item-logo';
+                    wrap.innerHTML = `<img src="${brandMap[selectedBrand].logo}" alt="${brandMap[selectedBrand].name}">`;
+                }
+                triggerLeft.insertBefore(wrap, triggerLeft.querySelector('.dropdown-trigger-text'));
+            }
         }
         const finishParam = params.get('finish');
         if (finishParam) {
@@ -366,7 +438,17 @@
                 if (finishPanel) { finishPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const targetItem = finishPanel.querySelector(`[data-finish="${finishParam}"]`); if (targetItem) targetItem.classList.add('active'); }
                 const triggerText = document.getElementById('finishTriggerText'); if (triggerText) triggerText.textContent = ft.label;
                 const triggerLeft = document.querySelector('#finishTrigger .dropdown-trigger-left');
-                if (triggerLeft) { const oldIcon = triggerLeft.querySelector('.finish-icon'); if (oldIcon) oldIcon.remove(); const icon = document.createElement('i'); icon.className = `fas ${ft.icon} finish-icon`; icon.style.cssText = `color:${ft.color};font-size:15px;`; triggerLeft.insertBefore(icon, triggerLeft.querySelector('.dropdown-trigger-text')); }
+                if (triggerLeft) {
+                    const oldIcon = triggerLeft.querySelector('.finish-icon');
+                    if (oldIcon) oldIcon.remove();
+                    const oldDefault = triggerLeft.querySelector('.fa-paint-brush');
+                    if (oldDefault) oldDefault.style.display = 'none';
+                    const emojiSpan = document.createElement('span');
+                    emojiSpan.className = 'finish-emoji finish-icon';
+                    emojiSpan.textContent = ft.emoji;
+                    emojiSpan.style.cssText = `font-size:15px; margin-right: 8px;`;
+                    triggerLeft.insertBefore(emojiSpan, triggerLeft.querySelector('.dropdown-trigger-text'));
+                }
             }
         }
         const searchParam = params.get('search');
@@ -391,7 +473,7 @@
     function showLB(idx) {
         const c = lbData[idx]; const b = brandMap[c.brand]; const badge = finishLabel(c.finish);
         if (lightboxSwatch) lightboxSwatch.style.background = `linear-gradient(135deg, ${lightenHex(c.color, 30)} 0%, ${c.color} 50%, ${darkenHex(c.color, 20)} 100%)`;
-        if (lightboxBrand) lightboxBrand.innerHTML = `<img src="${b.logo}" alt="${b.name}"> ${b.name}`;
+        if (lightboxBrand) lightboxBrand.innerHTML = `${getBrandLogoHTML(b)} ${b.name}`;
         if (lightboxName) lightboxName.textContent = c.name;
         if (lightboxCode) {
             lightboxCode.innerHTML = `โค้ดสี: <strong>${c.code}</strong>${badge ? ` &nbsp;<span class="finish-badge ${badge.cls}">${badge.text}</span>` : ''}`;

@@ -42,11 +42,23 @@
         }
     }
     
+    let cachedScrollHeight = 0;
+    let cachedClientHeight = 0;
+
+    function updateCachedDimensions() {
+        cachedScrollHeight = document.documentElement.scrollHeight;
+        cachedClientHeight = document.documentElement.clientHeight;
+    }
+
+    window.addEventListener('load', updateCachedDimensions);
+    window.addEventListener('resize', updateCachedDimensions);
+
     function updateScrollProgress() {
         if (!scrollProgress) return;
+        if (!cachedScrollHeight) updateCachedDimensions();
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const progress = (scrollTop / scrollHeight) * 100;
+        const scrollHeight = cachedScrollHeight - cachedClientHeight;
+        const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
         scrollProgress.style.width = progress + '%';
     }
     
@@ -141,15 +153,19 @@
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
                 if (href === '#' || href === '#!') return;
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    const navbarHeight = navbar ? navbar.offsetHeight : 0;
-                    const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
+                try {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                } catch (err) {
+                    console.warn(`Invalid CSS selector for smooth scroll: ${href}`);
                 }
             });
         });

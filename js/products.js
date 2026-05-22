@@ -9,6 +9,7 @@
     let currentPage = 1;
     const ITEMS_PER_PAGE = 20;
     let filteredCards = [];
+    let allCards = [];
     const SLIDER_ABS_MIN = 0;
     const SLIDER_ABS_MAX = 15000;
     const SLIDER_STEP = 100;
@@ -63,13 +64,13 @@
         syncInputsFromState();
         applyPriceToUI();
     };
-    window.clearPriceFilter = function () {
+    window.clearPriceFilter = function (shouldFilter = true) {
         priceMin = SLIDER_ABS_MIN;
         priceMax = SLIDER_ABS_MAX;
         priceActive = false;
         syncSliderFromState();
         syncInputsFromState();
-        applyPriceToUI();
+        applyPriceToUI(shouldFilter);
     };
     function syncSliderFromState() {
         const sMin = document.getElementById('sliderMin');
@@ -92,7 +93,7 @@
         const maxStr = priceMax >= SLIDER_ABS_MAX ? 'ไม่จำกัด' : '฿' + priceMax.toLocaleString();
         display.textContent = minStr + ' - ' + maxStr;
     }
-    function applyPriceToUI() {
+    function applyPriceToUI(shouldFilter = true) {
         const triggerText = document.getElementById('priceTriggerText');
         const countEl = document.getElementById('priceCount');
         if (!triggerText || !countEl) return;
@@ -106,7 +107,9 @@
             triggerText.textContent = 'ช่วงราคา';
             countEl.style.display = 'none';
         }
-        updateFilters();
+        if (shouldFilter) {
+            updateFilters();
+        }
     }
     const sliderMin = document.getElementById('sliderMin');
     const sliderMax = document.getElementById('sliderMax');
@@ -164,7 +167,6 @@
         });
     }
     function updateFilters() {
-        const allCards = Array.from(document.querySelectorAll('#productGrid .product-card'));
         filteredCards = allCards.filter(card => {
             const cat = card.dataset.category;
             const brand = card.dataset.brand;
@@ -325,21 +327,21 @@
         span.appendChild(icon);
         return span;
     }
-    window.removeCategory = function () {
+    window.removeCategory = function (shouldFilter = true) {
         selectedCategory = '';
         document.querySelectorAll('#categoryPanel .dropdown-item').forEach(i => i.classList.remove('active'));
-        updateFilters();
+        if (shouldFilter) updateFilters();
     };
-    window.removeBrand = function () {
+    window.removeBrand = function (shouldFilter = true) {
         selectedBrand = '';
         document.querySelectorAll('#brandPanel .brand-item').forEach(i => i.classList.remove('active'));
-        updateFilters();
+        if (shouldFilter) updateFilters();
     };
-    window.removePrice = function () { window.clearPriceFilter(); };
+    window.removePrice = function (shouldFilter = true) { window.clearPriceFilter(shouldFilter); };
     window.clearAll = function () {
-        window.removeCategory();
-        window.removeBrand();
-        window.clearPriceFilter();
+        window.removeCategory(false);
+        window.removeBrand(false);
+        window.clearPriceFilter(false);
         const searchInput = document.getElementById('searchInput');
         if (searchInput) searchInput.value = '';
         const searchClear = document.getElementById('searchClear');
@@ -371,43 +373,96 @@
             if (!grid) return;
             const cards = Array.from(grid.querySelectorAll('.product-card'));
             cards.sort((a, b) => {
+                const nameA = a.dataset.name || '';
+                const nameB = b.dataset.name || '';
+                const priceA = parseInt(a.dataset.price) || 0;
+                const priceB = parseInt(b.dataset.price) || 0;
                 switch (sortSelect.value) {
-                    case 'price-low': return parseInt(a.dataset.price) - parseInt(b.dataset.price);
-                    case 'price-high': return parseInt(b.dataset.price) - parseInt(a.dataset.price);
-                    case 'name': return a.dataset.name.localeCompare(b.dataset.name, 'th');
+                    case 'price-low': return priceA - priceB;
+                    case 'price-high': return priceB - priceA;
+                    case 'name': return nameA.localeCompare(nameB, 'th');
                     default: return 0;
                 }
             });
             const fragment = document.createDocumentFragment();
             cards.forEach(card => fragment.appendChild(card));
             grid.appendChild(fragment);
+            allCards = cards; // Update cached allCards
             currentPage = 1;
             updateFilters();
         });
     }
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!prefersReducedMotion) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    observer.unobserve(entry.target);
-                }
+    function initAfterLoad() {
+        allCards = Array.from(document.querySelectorAll('#productGrid .product-card'));
+        
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!prefersReducedMotion) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            
+            allCards.forEach((el, i) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = `opacity 0.4s ease ${(i % ITEMS_PER_PAGE) * 0.03}s, transform 0.4s ease ${(i % ITEMS_PER_PAGE) * 0.03}s`;
+                observer.observe(el);
             });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        document.querySelectorAll('.product-card').forEach((el, i) => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = `opacity 0.4s ease ${(i % ITEMS_PER_PAGE) * 0.03}s, transform 0.4s ease ${(i % ITEMS_PER_PAGE) * 0.03}s`;
-            observer.observe(el);
-        });
+        }
+        
+        updateSliderFill();
+        updatePriceDisplay();
+        updateFilters();
     }
-    updateSliderFill();
-    updatePriceDisplay();
-    updateFilters();
 
-    // Lightbox Logic
+    async function loadProductsData() {
+        try {
+            const response = await fetch('asset/products-data.json?v=1.0.1');
+            if (!response.ok) throw new Error('Failed to fetch product data');
+            const data = await response.json();
+            
+            const grid = document.getElementById('productGrid');
+            if (!grid) return;
+            
+            let html = '';
+            data.forEach(p => {
+                const escapedName = (p.name || '').replace(/"/g, '&quot;');
+                const escapedCategory = (p.category || '').replace(/"/g, '&quot;');
+                const escapedBrand = (p.brand || '').replace(/"/g, '&quot;');
+                const escapedTitle = (p.title || '').replace(/"/g, '&quot;');
+                
+                html += `
+                <div class="product-card" data-category="${escapedCategory}" data-brand="${escapedBrand}" data-price="${p.price}" data-name="${escapedName}">
+                    <div class="product-img-box">
+                        <img src="${p.img}" alt="${escapedTitle}" loading="lazy">
+                    </div>
+                    <div class="product-title">${p.title}</div>
+                    <div class="price-row">
+                        <span class="product-price">${p.price_text}</span>
+                    </div>
+                    <a href="${p.shopee_url}" class="btn-shopee" target="_blank">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อได้บน Shopee
+                    </a>
+                </div>`;
+            });
+            grid.innerHTML = html;
+            
+            initAfterLoad();
+        } catch (error) {
+            console.error('Error loading products dynamic data:', error);
+            const grid = document.getElementById('productGrid');
+            if (grid) {
+                grid.innerHTML = `<div class="no-results" style="display:block;"><i class="fas fa-exclamation-circle"></i> เกิดข้อผิดพลาดในการโหลดข้อมูลสินค้า กรุณาลองใหม่อีกครั้ง</div>`;
+            }
+        }
+    }
+
+    // Lightbox Logic using Event Delegation
     const lightbox = document.getElementById('productLightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const lightboxCaption = document.getElementById('lightboxCaption');
@@ -436,14 +491,21 @@
             if (e.key === 'Escape' && lightbox.classList.contains('show')) hideLightbox();
         });
 
-        document.querySelectorAll('.product-card').forEach(card => {
-            const img = card.querySelector('.product-img-box img');
-            const name = card.dataset.name || card.querySelector('.product-title')?.textContent || 'Product Image';
-            if (img) {
-                img.addEventListener('click', () => {
-                    openLightbox(img.src, name);
-                });
-            }
-        });
+        const grid = document.getElementById('productGrid');
+        if (grid) {
+            grid.addEventListener('click', (e) => {
+                const img = e.target.closest('.product-img-box img');
+                if (img) {
+                    const card = img.closest('.product-card');
+                    if (card) {
+                        const name = card.dataset.name || card.querySelector('.product-title')?.textContent || 'Product Image';
+                        openLightbox(img.src, name);
+                    }
+                }
+            });
+        }
     }
+
+    // Load dynamic data on init
+    loadProductsData();
 })();
