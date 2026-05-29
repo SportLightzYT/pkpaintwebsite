@@ -5435,6 +5435,686 @@
       "color": "#9EB88A",
       "finish": "solid",
       "models": "Omoda 5"
+    },
+    {
+      "brand": "nissan",
+      "code": "G42",
+      "name": "Black (สีดำ)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "Sylphy"
+    },
+    {
+      "brand": "nissan",
+      "code": "K23",
+      "name": "Silver (สีเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Sylphy"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47C",
+      "name": "Grey (สีเทานม)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "CX-3"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "45B",
+      "name": "Light Blue (สีฟ้า)",
+      "color": "#87CEEB",
+      "finish": "solid",
+      "models": "CX-3"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47S",
+      "name": "Bronze (สีบรอนซ์)",
+      "color": "#CD853F",
+      "finish": "metallic",
+      "models": "CX-3"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47A",
+      "name": "White (สีขาวเทา)",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "CX-3"
+    },
+    {
+      "brand": "honda",
+      "code": "R539P",
+      "name": "Red Pearl (สีแดงมุก)",
+      "color": "#CC0033",
+      "finish": "pearl",
+      "models": "BR-V"
+    },
+    {
+      "brand": "honda",
+      "code": "NH902P",
+      "name": "Sunlight White (สีขาวซันไลท์)",
+      "color": "#FFFFE0",
+      "finish": "solid",
+      "models": "BR-V"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47N",
+      "name": "Silver (สีเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "BT50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47J",
+      "name": "Silver (สีน้ำเงินกัน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "BT50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47R",
+      "name": "Black (สีดำ)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "BT50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47M",
+      "name": "Grey (สีเทานม)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "BT50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "A7Y",
+      "name": "White (สีขาวไอซ์)",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "BT50"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "47F",
+      "name": "Red (สีแดงวอลเดโบ)",
+      "color": "#FF0000",
+      "finish": "solid",
+      "models": "BT50"
+    },
+    {
+      "brand": "mg",
+      "code": "WSB",
+      "name": "White (สีขาว)",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "ES"
+    },
+    {
+      "brand": "mg",
+      "code": "RSJ",
+      "name": "Red (สีแดง)",
+      "color": "#FF0000",
+      "finish": "solid",
+      "models": "ES"
+    },
+    {
+      "brand": "toyota",
+      "code": "1H5",
+      "name": "Grey (สีเทาซีเมน)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "Cross"
+    },
+    {
+      "brand": "toyota",
+      "code": "4X7",
+      "name": "Brown (สีน้ำตาล)",
+      "color": "#8B4513",
+      "finish": "solid",
+      "models": "Cross"
+    },
+    {
+      "brand": "toyota",
+      "code": "3U5",
+      "name": "Red (สีแดง)",
+      "color": "#FF0000",
+      "finish": "solid",
+      "models": "Hilux, Revo, รีโว่"
+    },
+    {
+      "brand": "toyota",
+      "code": "6X1",
+      "name": "Grey (สีเทาเขียว)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "Hilux, Revo, รีโว่"
+    },
+    {
+      "brand": "toyota",
+      "code": "1L0",
+      "name": "Silver (สีเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Hilux, Revo, รีโว่"
+    },
+    {
+      "brand": "honda",
+      "code": "NH904M",
+      "name": "Dark Grey (สีเทาดำ)",
+      "color": "#333333",
+      "finish": "solid",
+      "models": "Accord, แอคคอร์ด"
+    },
+    {
+      "brand": "isuzu",
+      "code": "401",
+      "name": "Grey (สีเทาเอลบรุส)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "MAX"
+    },
+    {
+      "brand": "toyota",
+      "code": "3Q3",
+      "name": "Red (สีแดง)",
+      "color": "#FF0000",
+      "finish": "solid",
+      "models": "Veloz"
+    },
+    {
+      "brand": "nissan",
+      "code": "QM1",
+      "name": "White (สีขาว)",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "Livina, ลิวิน่า"
+    },
+    {
+      "brand": "nissan",
+      "code": "K21",
+      "name": "Grey (สีเทา)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "Livina, ลิวิน่า"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "HCS",
+      "name": "Silver (น้ำเงินไลท์ติ้ง)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Everest"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "JTQ",
+      "name": "Bronze (สีบรอนซ์)",
+      "color": "#CD853F",
+      "finish": "metallic",
+      "models": "Everest"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "G9Z",
+      "name": "Black (สีดำแอบโซลูท)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "Everest"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "16W",
+      "name": "Black (สีดำ)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "Everest"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "W81",
+      "name": "White Pearl (สีขาวมุก)",
+      "color": "#F5F5DC",
+      "finish": "pearl",
+      "models": "Xpander"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "U33",
+      "name": "Silver (สีเงินเบลด)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Xpander"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "C31",
+      "name": "Green (สีเขียวบรอนซ์)",
+      "color": "#008000",
+      "finish": "solid",
+      "models": "Xpander"
+    },
+    {
+      "brand": "mg",
+      "code": "MA",
+      "name": "Grey (สีเทา)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "Extender"
+    },
+    {
+      "brand": "toyota",
+      "code": "W09",
+      "name": "White (สีขาว)",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "Avanza, อแวนซ่า"
+    },
+    {
+      "brand": "honda",
+      "code": "G546M",
+      "name": "Green (สีเขียวดาร์ก)",
+      "color": "#008000",
+      "finish": "solid",
+      "models": "CR-V"
+    },
+    {
+      "brand": "honda",
+      "code": "B640M",
+      "name": "Silver (สีน้ำเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "CR-V"
+    },
+    {
+      "brand": "honda",
+      "code": "NH543P",
+      "name": "Red Pearl (สีแดงมุก)",
+      "color": "#CC0033",
+      "finish": "pearl",
+      "models": "City"
+    },
+    {
+      "brand": "honda",
+      "code": "B588P",
+      "name": "Silver (น้ำเงินออบซิ)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "City"
+    },
+    {
+      "brand": "isuzu",
+      "code": "568",
+      "name": "Silver (สีเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "MU-X"
+    },
+    {
+      "brand": "isuzu",
+      "code": "593",
+      "name": "Light Blue (สีฟ้า)",
+      "color": "#87CEEB",
+      "finish": "solid",
+      "models": "MU-X"
+    },
+    {
+      "brand": "isuzu",
+      "code": "576",
+      "name": "Brown (สีน้ำตาล)",
+      "color": "#8B4513",
+      "finish": "solid",
+      "models": "MU-X"
+    },
+    {
+      "brand": "isuzu",
+      "code": "560",
+      "name": "Brown (สีน้ำตาลฮาวานา)",
+      "color": "#8B4513",
+      "finish": "solid",
+      "models": "MU-X"
+    },
+    {
+      "brand": "isuzu",
+      "code": "400",
+      "name": "Grey (สีเทา Eiger)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "MU-X"
+    },
+    {
+      "brand": "isuzu",
+      "code": "569",
+      "name": "Black (สีดำ)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "MU-X"
+    },
+    {
+      "brand": "isuzu",
+      "code": "564",
+      "name": "Red (สีแดง)",
+      "color": "#FF0000",
+      "finish": "solid",
+      "models": "MU-X"
+    },
+    {
+      "brand": "nissan",
+      "code": "K32",
+      "name": "Bronze (สีบรอนซ์ซ่อมทอง)",
+      "color": "#CD853F",
+      "finish": "metallic",
+      "models": "Navara"
+    },
+    {
+      "brand": "nissan",
+      "code": "E12",
+      "name": "Gold Bronze (สีบรอนซ์ทอง)",
+      "color": "#DAA520",
+      "finish": "metallic",
+      "models": "Navara"
+    },
+    {
+      "brand": "nissan",
+      "code": "KBY",
+      "name": "Grey (สีเทานม)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "Navara"
+    },
+    {
+      "brand": "nissan",
+      "code": "QX1",
+      "name": "White Pearl (สีขาวมุก)",
+      "color": "#F5F5DC",
+      "finish": "pearl",
+      "models": "Navara"
+    },
+    {
+      "brand": "nissan",
+      "code": "EBB",
+      "name": "Orange (สีส้ม)",
+      "color": "#FFA500",
+      "finish": "solid",
+      "models": "Almera, อัลเมร่า"
+    },
+    {
+      "brand": "nissan",
+      "code": "KCH",
+      "name": "Grey (สีเทา)",
+      "color": "#808080",
+      "finish": "solid",
+      "models": "Almera, อัลเมร่า"
+    },
+    {
+      "brand": "nissan",
+      "code": "KAD",
+      "name": "Dark Grey (สีเทาดำ)",
+      "color": "#333333",
+      "finish": "solid",
+      "models": "Almera, อัลเมร่า"
+    },
+    {
+      "brand": "toyota",
+      "code": "9AE",
+      "name": "Purple (สีม่วง)",
+      "color": "#800080",
+      "finish": "solid",
+      "models": "Fortuner, ฟอร์จูนเนอร์"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "45P",
+      "name": "Silver (สีเงินโซนิค)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "มาสด้า Mazda 2"
+    },
+    {
+      "brand": "toyota",
+      "code": "042",
+      "name": "White Pearl (สีขาวมุก)",
+      "color": "#F5F5DC",
+      "finish": "pearl",
+      "models": "Alphard, อัลพาร์ด"
+    },
+    {
+      "brand": "toyota",
+      "code": "4X1",
+      "name": "Silver Bronze (สีบรอนซ์เงิน)",
+      "color": "#A9A9A9",
+      "finish": "metallic",
+      "models": "Alphard, อัลพาร์ด"
+    },
+    {
+      "brand": "toyota",
+      "code": "222",
+      "name": "Black (สีดำเบิร์นนิ่ง)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "Alphard, อัลพาร์ด"
+    },
+    {
+      "brand": "toyota",
+      "code": "086",
+      "name": "White Pearl (ขาวมุกลักชัวลี่)",
+      "color": "#F5F5DC",
+      "finish": "pearl",
+      "models": "Alphard, อัลพาร์ด"
+    },
+    {
+      "brand": "toyota",
+      "code": "202",
+      "name": "Black (สีดำ)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "Alphard, อัลพาร์ด"
+    },
+    {
+      "brand": "mg",
+      "code": "NWD",
+      "name": "White (สีขาว)",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "Maxus9"
+    },
+    {
+      "brand": "nissan",
+      "code": "NAW",
+      "name": "Red (สีแดง)",
+      "color": "#FF0000",
+      "finish": "solid",
+      "models": "Terra, เทอร์ร่า"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "18G",
+      "name": "Silver (สีเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Fiesta"
+    },
+    {
+      "brand": "honda",
+      "code": "NH0",
+      "name": "White (สีขาวแชมเปี้ยน)",
+      "color": "#FFFFFF",
+      "finish": "solid",
+      "models": "Civic"
+    },
+    {
+      "brand": "honda",
+      "code": "B618M",
+      "name": "Light Blue (สีฟ้า)",
+      "color": "#87CEEB",
+      "finish": "solid",
+      "models": "Civic"
+    },
+    {
+      "brand": "honda",
+      "code": "B637P",
+      "name": "Light Blue (สีฟ้าแรซชิ่ง)",
+      "color": "#87CEEB",
+      "finish": "solid",
+      "models": "Civic"
+    },
+    {
+      "brand": "toyota",
+      "code": "6W2",
+      "name": "Green (สีเขียว)",
+      "color": "#008000",
+      "finish": "solid",
+      "models": "Sienta"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "HCSEWHA",
+      "name": "Silver (สีน้ำเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Ranger, Raptor"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "PH",
+      "name": "Yellow (สีเหลือง)",
+      "color": "#FFFF00",
+      "finish": "solid",
+      "models": "Ranger, Raptor"
+    },
+    {
+      "brand": "toyota",
+      "code": "6W9",
+      "name": "Green (สีเขียว)",
+      "color": "#008000",
+      "finish": "solid",
+      "models": "C-HR"
+    },
+    {
+      "brand": "toyota",
+      "code": "2MU",
+      "name": "Light Blue (สีฟ้า)",
+      "color": "#87CEEB",
+      "finish": "solid",
+      "models": "C-HR"
+    },
+    {
+      "brand": "toyota",
+      "code": "3T3",
+      "name": "Red (สีแดงพรีเมี่ยม)",
+      "color": "#FF0000",
+      "finish": "solid",
+      "models": "C-HR"
+    },
+    {
+      "brand": "honda",
+      "code": "NH821M",
+      "name": "Dark Purple (สีดำม่วง)",
+      "color": "#301934",
+      "finish": "solid",
+      "models": "HR-V"
+    },
+    {
+      "brand": "honda",
+      "code": "YR656P",
+      "name": "Brown Pearl (สีน้ำตาลมุก)",
+      "color": "#5C4033",
+      "finish": "pearl",
+      "models": "HR-V"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CF",
+      "name": "Black (สีดำ)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "EcoSport, เอคโค่สปอร์ต"
+    },
+    {
+      "brand": "mg",
+      "code": "MBB",
+      "name": "Silver (สีเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "GS"
+    },
+    {
+      "brand": "mg",
+      "code": "DSF",
+      "name": "Brown (สีน้ำตาล)",
+      "color": "#8B4513",
+      "finish": "solid",
+      "models": "GS"
+    },
+    {
+      "brand": "mg",
+      "code": "NSC",
+      "name": "Orange (สีส้ม)",
+      "color": "#FFA500",
+      "finish": "solid",
+      "models": "GS"
+    },
+    {
+      "brand": "mg",
+      "code": "PBB",
+      "name": "Black (สีดำ)",
+      "color": "#000000",
+      "finish": "solid",
+      "models": "GS"
+    },
+    {
+      "brand": "toyota",
+      "code": "S44",
+      "name": "Dark Grey (สีเทาดำ)",
+      "color": "#333333",
+      "finish": "solid",
+      "models": "Ativ, Cross, ยาริส"
+    },
+    {
+      "brand": "toyota",
+      "code": "B88",
+      "name": "Dark Blue (สีน้ำเงินเข้ม)",
+      "color": "#00008B",
+      "finish": "solid",
+      "models": "Ativ, Cross, ยาริส"
+    },
+    {
+      "brand": "toyota",
+      "code": "R77",
+      "name": "Spice Orange (สีส้มสไปซ์)",
+      "color": "#D95319",
+      "finish": "solid",
+      "models": "Ativ, Cross, ยาริส"
+    },
+    {
+      "brand": "toyota",
+      "code": "8W7",
+      "name": "Silver (สีน้ำเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Ativ, Cross, ยาริส"
+    },
+    {
+      "brand": "mitsubishi",
+      "code": "M08",
+      "name": "Orange (สีส้ม)",
+      "color": "#FFA500",
+      "finish": "solid",
+      "models": "Triton, ไทรทัน"
+    },
+    {
+      "brand": "ford-mazda",
+      "code": "4CC",
+      "name": "Silver (สีน้ำเงิน)",
+      "color": "#C0C0C0",
+      "finish": "metallic",
+      "models": "Focus"
     }
   ]
 }

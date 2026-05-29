@@ -4,7 +4,7 @@
         "brand": "3M",
         "price": 120,
         "name": "แผ่นกรองหน้ากาก 3M 5N11",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnktq9dfsdtw8e",
+        "img": "pics/เบ็ดเตล็ด/51138464646_แผ่นกรองหน้ากาก 3M 5N11.jpg",
         "title": "แผ่นกรองหน้ากาก 3M 5N11",
         "price_text": "฿120",
         "shopee_url": "https://shopee.co.th/product/569384179/24048125146"
@@ -14,17 +14,17 @@
         "brand": "CLEAR GUARD",
         "price": 1020,
         "name": "แลคเกอร์ CLEAR GUARD",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo3nouhzr01wdd",
+        "img": "pics/แลคเกอร์/458050_แลคเกอร์ CLEAR GUARD.jpg",
         "title": "แลคเกอร์ CLEAR GUARD",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/24198113898"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up A-42 Primer Surfacer Grey",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo9617xjpn2ca1",
+        "img": "pics/สีสเปรย์ Leyland/26944826456.jpg",
         "title": "Leyland Auto Spray Touch-Up A-42 Primer Surfacer Grey",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/26944826456"
@@ -34,7 +34,7 @@
         "brand": "3M",
         "price": 18,
         "name": "กระดาษทรายจาน 3M GOLD P120 OA",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo7zrp9ji9l2d6",
+        "img": "pics/กระดาษทราย/26994698344.jpg",
         "title": "กระดาษทรายจาน 3M GOLD P120 OA",
         "price_text": "฿18",
         "shopee_url": "https://shopee.co.th/product/569384179/26994698344"
@@ -44,7 +44,7 @@
         "brand": "PK PAINT",
         "price": 240,
         "name": "แผ่นยางมะตอย คุณภาพดี สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-modlshgh728f72",
+        "img": "pics/เบ็ดเตล็ด/1280_แผ่นยางมะตอย.jpg",
         "title": "แผ่นยางมะตอย คุณภาพดี สินค้าพร้อมจัดส่ง",
         "price_text": "฿240",
         "shopee_url": "https://shopee.co.th/product/569384179/27094697741"
@@ -54,7 +54,7 @@
         "brand": "TOA",
         "price": 20,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 80 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo7rqcedvr42dd",
+        "img": "pics/กระดาษทราย/27244684496.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 80 CC-CW",
         "price_text": "฿20",
         "shopee_url": "https://shopee.co.th/product/569384179/27244684496"
@@ -62,20 +62,20 @@
     {
         "category": "แลคเกอร์",
         "brand": "PK PAINT",
-        "price": 2220,
+        "price": 1900,
         "name": "แลคเกอร์ NORBIN ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo3o1qcdo8w064",
+        "img": "pics/แลคเกอร์/15102_แลคเกอร์ NORBIN.jpg",
         "title": "แลคเกอร์ NORBIN ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿2,220",
+        "price_text": "฿1900",
         "shopee_url": "https://shopee.co.th/product/569384179/27344664791"
     },
     {
-        "category": "กระดาษกาว",
-        "brand": "HAMMER",
+        "category": "เทป",
+        "brand": "KURUMA",
         "price": 228,
-        "name": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film) - 140 ซม. x 20 ม.",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-modhsnsgnb4d24",
-        "title": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film) - 140 ซม. x 20 ม.",
+        "name": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film)",
+        "img": "pics/กระดาษกาว/27594688945.jpg",
+        "title": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film)",
         "price_text": "฿228",
         "shopee_url": "https://shopee.co.th/product/569384179/27594688945"
     },
@@ -84,7 +84,7 @@
         "brand": "PK PAINT",
         "price": 420,
         "name": "PK PAINT สีสเปรย์ บรอนซ์มุกม่วงประกาย 2K Base Coat",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mmfoyln8iwaqf6",
+        "img": "pics/เบ็ดเตล็ด/27694485121.jpg",
         "title": "PK PAINT สีสเปรย์ บรอนซ์มุกม่วงประกาย 2K Base Coat",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/27694485121"
@@ -94,17 +94,17 @@
         "brand": "PK PAINT",
         "price": 108,
         "name": "ยาขัด  Cana ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo3k95y07y11c5",
+        "img": "pics/น้ำยาเคมี/8854620000108_ยาขัด Cana.jpg",
         "title": "ยาขัด  Cana ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿108",
         "shopee_url": "https://shopee.co.th/product/569384179/27794683479"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up สีสเปรย์อเนกประสงค์พ่นรถยนต์ (รหัส F-14 สีดำเงา)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mohrw1ki3xu1bb",
+        "img": "pics/สีสเปรย์ Leyland/28194869580.jpg",
         "title": "Leyland Auto Spray Touch-Up สีสเปรย์อเนกประสงค์พ่นรถยนต์ (รหัส F-14 สีดำเงา)",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/28194869580"
@@ -114,7 +114,7 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 600 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo7rk2c8a3gg77",
+        "img": "pics/กระดาษทราย/29294698322.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 600 CC-CW",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/29294698322"
@@ -122,11 +122,11 @@
     {
         "category": "สีโป๊ว",
         "brand": "PK PAINT",
-        "price": 240,
+        "price": 456,
         "name": "สีโป๊วจับรอย HB Body Nitro Soft 241 / F980",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mo6nvg0pygapb1",
+        "img": "pics/สีโป๊ว/29486619457.jpg",
         "title": "สีโป๊วจับรอย HB Body Nitro Soft 241 / F980",
-        "price_text": "฿240 - ฿456",
+        "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/29486619457"
     },
     {
@@ -134,17 +134,17 @@
         "brand": "3M",
         "price": 216,
         "name": "ตลับกรองเคมี 3M กลม ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mnktbc8lmpl25f",
+        "img": "pics/เบ็ดเตล็ด/8887719283526_ตลับกรองเคมี 3M กลม.jpg",
         "title": "ตลับกรองเคมี 3M กลม ของแท้",
         "price_text": "฿216",
         "shopee_url": "https://shopee.co.th/product/569384179/29494697592"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 390,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี 3396-S ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo9fz10wwe8a5a",
+        "img": "pics/สี Pylac/40030912709.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี 3396-S ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/40030912709"
@@ -154,17 +154,17 @@
         "brand": "SHOPPER",
         "price": 192,
         "name": "สีอุตสาหกรรม SHOPPER สีเหลือง 32-6011",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo7tow1aqsco74",
+        "img": "pics/เบ็ดเตล็ด/40180441209.jpg",
         "title": "สีอุตสาหกรรม SHOPPER สีเหลือง 32-6011",
         "price_text": "฿192 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/40180441209"
     },
     {
-        "category": "กระดาษกาว",
+        "category": "เทป",
         "brand": "3M",
         "price": 216,
         "name": "เทปสองหน้า 3M 4229 ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mngzfeybt346b3",
+        "img": "pics/กระดาษกาว/3M180_เทปสองหน้า 3M 4229.jpg",
         "title": "เทปสองหน้า 3M 4229 ของแท้",
         "price_text": "฿216",
         "shopee_url": "https://shopee.co.th/product/569384179/40430367926"
@@ -174,7 +174,7 @@
         "brand": "PK PAINT",
         "price": 12,
         "name": "กระชอนกรองสี คุณภาพ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mnkvs6ufnvut81",
+        "img": "pics/เบ็ดเตล็ด/110_กระชอนกรองสี.jpg",
         "title": "กระชอนกรองสี คุณภาพ สินค้าพร้อมจัดส่ง",
         "price_text": "฿12",
         "shopee_url": "https://shopee.co.th/product/569384179/40430427440"
@@ -184,7 +184,7 @@
         "brand": "SOLAR",
         "price": 216,
         "name": "ยาขัด SOLAR No.404 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mo3k7ocfylfl19",
+        "img": "pics/น้ำยาเคมี/110019_ยาขัด Solar.jpg",
         "title": "ยาขัด SOLAR No.404 ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿216",
         "shopee_url": "https://shopee.co.th/product/569384179/40580367535"
@@ -194,7 +194,7 @@
         "brand": "BIC BEN",
         "price": 240,
         "name": "สีโป๊วเหลือง บีบีพี BBP พร้อมน้ำยา",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo6l5evutpfo1c",
+        "img": "pics/สีโป๊ว/41300898107.jpg",
         "title": "สีโป๊วเหลือง บีบีพี BBP พร้อมน้ำยา",
         "price_text": "฿240 - ฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/41300898107"
@@ -204,9 +204,9 @@
         "brand": "BIC BEN",
         "price": 1500,
         "name": "สีพ่นรถยนต์ BIC BEN ระบบ 2K 47-ไลน์ รหัส 47-8038L Clearcoat Semi-Gloss",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mo7ylb496ubn83",
+        "img": "pics/แลคเกอร์/41330428876.jpg",
         "title": "สีพ่นรถยนต์ BIC BEN ระบบ 2K 47-ไลน์ รหัส 47-8038L Clearcoat Semi-Gloss",
-        "price_text": "฿1,500",
+        "price_text": "฿1500",
         "shopee_url": "https://shopee.co.th/product/569384179/41330428876"
     },
     {
@@ -214,17 +214,17 @@
         "brand": "FORTUNE",
         "price": 1020,
         "name": "แลคเกอร์ FORTUNE ชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mo3nryohjqww91",
+        "img": "pics/แลคเกอร์/198035_แลคเกอร์ FORTUNE ชุดใหญ่.jpg",
         "title": "แลคเกอร์ FORTUNE ชุดใหญ่",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/41380375101"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "RGB",
         "price": 420,
         "name": "RGB colour ฮาร์ดดินเนอร์ สีรองพื้น 2K (HARDENER 2K PRIMER รหัส 21-41)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mohpbuv0stfwb9",
+        "img": "pics/สีรองพื้น/41581062894.jpg",
         "title": "RGB colour ฮาร์ดดินเนอร์ สีรองพื้น 2K (HARDENER 2K PRIMER รหัส 21-41)",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/41581062894"
@@ -234,7 +234,7 @@
         "brand": "HIT",
         "price": 390,
         "name": "สีโป๊วเหลือง HIT 2K Ultra Putty",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo6ls1i5io7446",
+        "img": "pics/สีโป๊ว/41601166590.jpg",
         "title": "สีโป๊วเหลือง HIT 2K Ultra Putty",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/41601166590"
@@ -244,9 +244,9 @@
         "brand": "PK PAINT",
         "price": 1020,
         "name": "ยาขัด Nexus D-800 แกลลอน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3k61eglon4be",
+        "img": "pics/น้ำยาเคมี/008D800_ยาขัด Nexus D-800.jpg",
         "title": "ยาขัด Nexus D-800 แกลลอน",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/41980375446"
     },
     {
@@ -254,7 +254,7 @@
         "brand": "DINCO",
         "price": 216,
         "name": "ยาขัดเบาะ DINCO ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mo3jyfa219fof1",
+        "img": "pics/น้ำยาเคมี/803_ยาขัดเบาะ DINCO.jpg",
         "title": "ยาขัดเบาะ DINCO ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿216",
         "shopee_url": "https://shopee.co.th/product/569384179/42180363907"
@@ -264,17 +264,17 @@
         "brand": "PK PAINT",
         "price": 336,
         "name": "PK PAINT สีสเปรย์รถยนต์ สีแดงสด 2K Base Coat",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mgj0k9aphafe65",
+        "img": "pics/เบ็ดเตล็ด/42376046757.jpg",
         "title": "PK PAINT สีสเปรย์รถยนต์ สีแดงสด 2K Base Coat",
         "price_text": "฿336",
         "shopee_url": "https://shopee.co.th/product/569384179/42376046757"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 192,
         "name": "Leyland Auto Spray Under Coating L-61 สีดำ",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo85cg6w8gzob7",
+        "img": "pics/สีสเปรย์ Leyland/42430872337.jpg",
         "title": "Leyland Auto Spray Under Coating L-61 สีดำ",
         "price_text": "฿192",
         "shopee_url": "https://shopee.co.th/product/569384179/42430872337"
@@ -284,9 +284,9 @@
         "brand": "KURUMA",
         "price": 1080,
         "name": "สีรองพื้น 2K KURUMA ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo3iisxm9k3s08",
+        "img": "pics/สีรองพื้น/TOA900_สีรองพื้น 2K KURUMA.jpg",
         "title": "สีรองพื้น 2K KURUMA ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿1,080",
+        "price_text": "฿1080",
         "shopee_url": "https://shopee.co.th/product/569384179/42680371756"
     },
     {
@@ -294,7 +294,7 @@
         "brand": "PK PAINT",
         "price": 180,
         "name": "สีโป๊วน้ำยาชมพู PK488 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mo3ni8gi91508b",
+        "img": "pics/สีโป๊ว/PK488_สีโป๊วน้ำยาชมพู PK488.jpg",
         "title": "สีโป๊วน้ำยาชมพู PK488 ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿180",
         "shopee_url": "https://shopee.co.th/product/569384179/42730366372"
@@ -304,9 +304,9 @@
         "brand": "PK PAINT",
         "price": 16800,
         "name": "กาพ่นสี SAGOLA 3300 1.4",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mnky0kd92io823",
+        "img": "pics/กาพ่นสี/SA3300_กาพ่นสี SAGOLA 3300 1.4.jpg",
         "title": "กาพ่นสี SAGOLA 3300 1.4",
-        "price_text": "฿16,800",
+        "price_text": "฿16800",
         "shopee_url": "https://shopee.co.th/product/569384179/42730424136"
     },
     {
@@ -314,17 +314,17 @@
         "brand": "3M",
         "price": 18,
         "name": "กระดาษทรายจาน 3M GOLD P150 OH",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo7zu86fvx1cd4",
+        "img": "pics/กระดาษทราย/42780437842.jpg",
         "title": "กระดาษทรายจาน 3M GOLD P150 OH",
         "price_text": "฿18",
         "shopee_url": "https://shopee.co.th/product/569384179/42780437842"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "BIC BEN",
         "price": 420,
         "name": "BIG BEN HARDENER 2K ฮาร์ดดินเนอร์ สีรองพื้น 2K (รหัส 21-20)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mohpb1n12k97fb",
+        "img": "pics/สีรองพื้น/2120_2120.jpg",
         "title": "BIG BEN HARDENER 2K ฮาร์ดดินเนอร์ สีรองพื้น 2K (รหัส 21-20)",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/42881058154"
@@ -334,7 +334,7 @@
         "brand": "PK PAINT",
         "price": 420,
         "name": "PK PAINT สีสเปรย์พ่นรถยนต์ ม่วงแก้วพิเศษ 2K Base Coat",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mnfu63kp5b0ma4",
+        "img": "pics/เบ็ดเตล็ด/43080356538.jpg",
         "title": "PK PAINT สีสเปรย์พ่นรถยนต์ ม่วงแก้วพิเศษ 2K Base Coat",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/43080356538"
@@ -344,17 +344,17 @@
         "brand": "BIC BEN",
         "price": 1500,
         "name": "สีรองพื้นอีพ็อกซี่ BICBEN สีเขียวชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo3ioutt3abl5f",
+        "img": "pics/สีรองพื้น/583016_สีรองพื้นอีพ็อกซี่ BICBEN สีเขียว ชุดใหญ่.jpg",
         "title": "สีรองพื้นอีพ็อกซี่ BICBEN สีเขียวชุดใหญ่",
-        "price_text": "฿1,500",
+        "price_text": "฿1500",
         "shopee_url": "https://shopee.co.th/product/569384179/43330363173"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "PK PAINT",
         "price": 420,
         "name": "PK Paint PK-999 เคลียร์ใส 2K Crystal Clear 4:1 (Ultra Premium) พร้อมตัวเร่ง H-99",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mo3oatd99erm39",
+        "img": "pics/ฮาร์ดดินเนอร์/43330781544.jpg",
         "title": "PK Paint PK-999 เคลียร์ใส 2K Crystal Clear 4:1 (Ultra Premium) พร้อมตัวเร่ง H-99",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/43330781544"
@@ -364,7 +364,7 @@
         "brand": "AICA",
         "price": 420,
         "name": "AICA ทินเนอร์อะคริลิค (ACRYLIC) รหัส 3303 ขนาดแกลลอน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-moeu1igpdlog20",
+        "img": "pics/ทินเนอร์/43380998833.jpg",
         "title": "AICA ทินเนอร์อะคริลิค (ACRYLIC) รหัส 3303 ขนาดแกลลอน",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/43380998833"
@@ -374,7 +374,7 @@
         "brand": "PK PAINT",
         "price": 550,
         "name": "สีโป๊วน้ำยาชมพู เลซซอน Lezzon RE-749",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo6nsr6p3wg402",
+        "img": "pics/สีโป๊ว/43551166787.jpg",
         "title": "สีโป๊วน้ำยาชมพู เลซซอน Lezzon RE-749",
         "price_text": "฿550",
         "shopee_url": "https://shopee.co.th/product/569384179/43551166787"
@@ -384,7 +384,7 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทรายน้ำ TOA TDCC 400 รุ่น Waterproof Abrasive Paper",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo7rhqsttgxu01",
+        "img": "pics/กระดาษทราย/43630854160.jpg",
         "title": "กระดาษทรายน้ำ TOA TDCC 400 รุ่น Waterproof Abrasive Paper",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/43630854160"
@@ -394,27 +394,27 @@
         "brand": "PK PAINT",
         "price": 456,
         "name": "สีโป๊วไฟเบอร์ HB BODY F250 – BODYFIBER",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo6nwh5jdqthe6",
+        "img": "pics/สีโป๊ว/43851041132.jpg",
         "title": "สีโป๊วไฟเบอร์ HB BODY F250 – BODYFIBER",
         "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/43851041132"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up F-76 Clear Acrylic Auto Lacquer Matt Clear",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mohro47vqeq6ae",
+        "img": "pics/สีสเปรย์ Leyland/43880875900.jpg",
         "title": "Leyland Auto Spray Touch-Up F-76 Clear Acrylic Auto Lacquer Matt Clear",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/43880875900"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up L-19",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo83qdvqydq810",
+        "img": "pics/สีสเปรย์ Leyland/43930872055.jpg",
         "title": "Leyland Auto Spray Touch-Up L-19",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/43930872055"
@@ -422,11 +422,11 @@
     {
         "category": "สีรองพื้น",
         "brand": "BIC BEN",
-        "price": 420,
+        "price": 216,
         "name": "เอสไพร์เมอร์ BICBEN ชุดเล็ก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo3jluizeigy4b",
+        "img": "pics/สีรองพื้น/82300L_เอสไพร์เมอร์ BICBEN ชุดเล็ก.jpg",
         "title": "เอสไพร์เมอร์ BICBEN ชุดเล็ก",
-        "price_text": "฿420",
+        "price_text": "฿216 - ฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/44230363103"
     },
     {
@@ -434,9 +434,9 @@
         "brand": "AICA",
         "price": 1320,
         "name": "AICA ทินเนอร์อะคริลิค (ACRYLIC) รหัส 3303 ขนาดปี๊บ",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-moev2eg3kcni4e",
+        "img": "pics/ทินเนอร์/44280999021.jpg",
         "title": "AICA ทินเนอร์อะคริลิค (ACRYLIC) รหัส 3303 ขนาดปี๊บ",
-        "price_text": "฿1,320",
+        "price_text": "฿1320",
         "shopee_url": "https://shopee.co.th/product/569384179/44280999021"
     },
     {
@@ -444,7 +444,7 @@
         "brand": "PK PAINT",
         "price": 216,
         "name": "ใบขัดสนิม TIERCEL ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mnh06eqnn85k17",
+        "img": "pics/เบ็ดเตล็ด/TC180_ใบขัดสนิม TIERCEL.jpg",
         "title": "ใบขัดสนิม TIERCEL ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿216",
         "shopee_url": "https://shopee.co.th/product/569384179/44430367983"
@@ -452,11 +452,11 @@
     {
         "category": "สีรองพื้น",
         "brand": "BIC BEN",
-        "price": 1380,
+        "price": 780,
         "name": "เอสไพร์เมอร์ BICBEN ชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3jmt65vvut0a",
+        "img": "pics/สีรองพื้น/823000_เอสไพร์เมอร์ BICBEN ชุดใหญ่.jpg",
         "title": "เอสไพร์เมอร์ BICBEN ชุดใหญ่",
-        "price_text": "฿1,380",
+        "price_text": "฿780 - ฿1380",
         "shopee_url": "https://shopee.co.th/product/569384179/44609487983"
     },
     {
@@ -464,7 +464,7 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 320 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo7rf8jghmh423",
+        "img": "pics/กระดาษทราย/44659629757.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 320 CC-CW",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/44659629757"
@@ -474,37 +474,37 @@
         "brand": "PK PAINT",
         "price": 36,
         "name": "ยางรองขัด สีดำ คุณภาพดี พร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mnkw9jet648y03",
+        "img": "pics/เบ็ดเตล็ด/12_ยางรองขัด.jpg",
         "title": "ยางรองขัด สีดำ คุณภาพดี พร้อมจัดส่ง",
         "price_text": "฿36",
         "shopee_url": "https://shopee.co.th/product/569384179/44709612193"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up F-11 Fluorescent Bright Rose",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo835ayjafi837",
+        "img": "pics/สีสเปรย์ Leyland/44810512120.jpg",
         "title": "Leyland Auto Spray Touch-Up F-11 Fluorescent Bright Rose",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/44810512120"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "RGB",
         "price": 420,
         "name": "RGB colour 2K Automotive Polyurethane Hardener (รหัส 21-33/8) สูตรแห้งช้า",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mohpd2p2abrga7",
+        "img": "pics/ฮาร์ดดินเนอร์/45060910925.jpg",
         "title": "RGB colour 2K Automotive Polyurethane Hardener (รหัส 21-33/8) สูตรแห้งช้า",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/45060910925"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "PK PAINT",
         "price": 924,
         "name": "ฮาร์ดเดนเนอร์ GLASURIT 929-94",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mohqbu6lliwx29",
+        "img": "pics/ฮาร์ดดินเนอร์/92994_ฮาร์ดเดนเนอร์ GLASURIT 929-94.jpg",
         "title": "ฮาร์ดเดนเนอร์ GLASURIT 929-94",
         "price_text": "฿924",
         "shopee_url": "https://shopee.co.th/product/569384179/45109484122"
@@ -514,9 +514,9 @@
         "brand": "PK PAINT",
         "price": 2940,
         "name": "สีโป๊ว ROCK ของแท้ พร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo3nb9p9l34523",
+        "img": "pics/สีโป๊ว/290112_สีโป๊ว ROCK.jpg",
         "title": "สีโป๊ว ROCK ของแท้ พร้อมจัดส่ง",
-        "price_text": "฿2,940",
+        "price_text": "฿2940",
         "shopee_url": "https://shopee.co.th/product/569384179/45259626720"
     },
     {
@@ -524,7 +524,7 @@
         "brand": "TATENO",
         "price": 264,
         "name": "แผ่นซอฟต์รองขัดกระดาษทราย TATENO",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mnh0ddlhazns68",
+        "img": "pics/กระดาษทราย/A66_แผ่นซอฟต์รองขัดกระดาษทราย TATENO.jpg",
         "title": "แผ่นซอฟต์รองขัดกระดาษทราย TATENO",
         "price_text": "฿264",
         "shopee_url": "https://shopee.co.th/product/569384179/45359496098"
@@ -534,9 +534,9 @@
         "brand": "BIC BEN",
         "price": 1140,
         "name": "สีพ่นรถยนต์ BIC BEN สีน้ำเงินประกาย รหัส 56-1916 (Acrylic Basecoat)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo7zbcpdli4mb8",
+        "img": "pics/เบ็ดเตล็ด/45409627864.jpg",
         "title": "สีพ่นรถยนต์ BIC BEN สีน้ำเงินประกาย รหัส 56-1916 (Acrylic Basecoat)",
-        "price_text": "฿1,140",
+        "price_text": "฿1140",
         "shopee_url": "https://shopee.co.th/product/569384179/45409627864"
     },
     {
@@ -544,7 +544,7 @@
         "brand": "BIC BEN",
         "price": 696,
         "name": "สีโคลทาร์อีพ็อกซี่ BBP ชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo3jhqfijzes59",
+        "img": "pics/สีรองพื้น/430001_สีโคลทาร์อีพ็อกซี่ BBP ชุดใหญ่.jpg",
         "title": "สีโคลทาร์อีพ็อกซี่ BBP ชุดใหญ่",
         "price_text": "฿696",
         "shopee_url": "https://shopee.co.th/product/569384179/45459490175"
@@ -554,17 +554,17 @@
         "brand": "SHOPPER",
         "price": 192,
         "name": "สีอุตสาหกรรม SHOPPER สีดำด้าน 33-0003",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo7tfuchi96r5f",
+        "img": "pics/เบ็ดเตล็ด/45459617470.jpg",
         "title": "สีอุตสาหกรรม SHOPPER สีดำด้าน 33-0003",
         "price_text": "฿192 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/45459617470"
     },
     {
-        "category": "สี Nakoya",
+        "category": "สีอุตสาหกรรม",
         "brand": "NAKOYA",
         "price": 204,
         "name": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 914 สีดำด้าน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo7setnewk5kbe",
+        "img": "pics/สี Nakoya/45509628141.jpg",
         "title": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 914 สีดำด้าน",
         "price_text": "฿204 - ฿600",
         "shopee_url": "https://shopee.co.th/product/569384179/45509628141"
@@ -574,7 +574,7 @@
         "brand": "SHOPPER",
         "price": 192,
         "name": "สีอุตสาหกรรม SHOPPER สีแดง 32-4013",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo7t6g2itedd24",
+        "img": "pics/เบ็ดเตล็ด/45559617312.jpg",
         "title": "สีอุตสาหกรรม SHOPPER สีแดง 32-4013",
         "price_text": "฿192 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/45559617312"
@@ -584,17 +584,17 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 120 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo7qqxg6emmae8",
+        "img": "pics/กระดาษทราย/45559640587.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 120 CC-CW",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/45559640587"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "BIC BEN",
         "price": 900,
         "name": "BBP 2K Primer 80-0047 สีรองพื้น 2K สีเทา อัตราส่วน 4:1 พร้อมตัวเร่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo3onxtm5cecf5",
+        "img": "pics/สีรองพื้น/45560309785.jpg",
         "title": "BBP 2K Primer 80-0047 สีรองพื้น 2K สีเทา อัตราส่วน 4:1 พร้อมตัวเร่ง",
         "price_text": "฿900",
         "shopee_url": "https://shopee.co.th/product/569384179/45560309785"
@@ -604,9 +604,9 @@
         "brand": "3M",
         "price": 1200,
         "name": "3M Perfect-It EX น้ำยาขัดสีรถยนต์ เกรดพรีเมียม ครบ 3 ขั้นตอน (PN36060 / PN06094 / PN06068) ขนาด 946 ml. ขัดหยาบ ขัดละเอี",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo3kgp2achz9cb",
+        "img": "pics/น้ำยาเคมี/45609484700.jpg",
         "title": "3M Perfect-It EX น้ำยาขัดสีรถยนต์ เกรดพรีเมียม ครบ 3 ขั้นตอน (PN36060 / PN06094 / PN06068) ขนาด 946 ml. ขัดหยาบ ขัดละเอี",
-        "price_text": "฿1,200",
+        "price_text": "฿1200",
         "shopee_url": "https://shopee.co.th/product/569384179/45609484700"
     },
     {
@@ -614,7 +614,7 @@
         "brand": "PK PAINT",
         "price": 264,
         "name": "กาวอุดตะเข็บ BODY 999",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnkx1c0su39i2d",
+        "img": "pics/น้ำยาเคมี/45709616326.jpg",
         "title": "กาวอุดตะเข็บ BODY 999",
         "price_text": "฿264",
         "shopee_url": "https://shopee.co.th/product/569384179/45709616326"
@@ -624,7 +624,7 @@
         "brand": "PK PAINT",
         "price": 108,
         "name": "มีดโป๊ว 4นิ้ว คุณภาพดี พร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnkw4f07gf7o77",
+        "img": "pics/เบ็ดเตล็ด/14_มีดโป๊ว 4นิ้ว.jpg",
         "title": "มีดโป๊ว 4นิ้ว คุณภาพดี พร้อมจัดส่ง",
         "price_text": "฿108",
         "shopee_url": "https://shopee.co.th/product/569384179/45759625041"
@@ -634,9 +634,9 @@
         "brand": "PK PAINT",
         "price": 1080,
         "name": "Nippon Paint NAX 2200 2K Primer Grey (3L + 0.8L) สีรองพื้นกลบตัว 2K สีเทา",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mo3olsbu9zwgd1",
+        "img": "pics/สีรองพื้น/45760318414.jpg",
         "title": "Nippon Paint NAX 2200 2K Primer Grey (3L + 0.8L) สีรองพื้นกลบตัว 2K สีเทา",
-        "price_text": "฿1,080",
+        "price_text": "฿1080",
         "shopee_url": "https://shopee.co.th/product/569384179/45760318414"
     },
     {
@@ -644,7 +644,7 @@
         "brand": "3M",
         "price": 984,
         "name": "ใบขัดขนแกะ 3M สีเหลือง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mnh0jzne4y6ga3",
+        "img": "pics/เบ็ดเตล็ด/46009496121.jpg",
         "title": "ใบขัดขนแกะ 3M สีเหลือง",
         "price_text": "฿984",
         "shopee_url": "https://shopee.co.th/product/569384179/46009496121"
@@ -654,9 +654,9 @@
         "brand": "CROMAX",
         "price": 1020,
         "name": "Cromax ทินเนอร์แห้งช้า MS Hi-Temp Thinner รหัส AB385 ขนาด 5 ลิตร",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-moev3h016g3x19",
+        "img": "pics/ทินเนอร์/46010791079.jpg",
         "title": "Cromax ทินเนอร์แห้งช้า MS Hi-Temp Thinner รหัส AB385 ขนาด 5 ลิตร",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/46010791079"
     },
     {
@@ -664,7 +664,7 @@
         "brand": "PK PAINT",
         "price": 18,
         "name": "กระดาษทรายจานเซรามิก TERCEL CERAMIC VELCRO DISC P100",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo80wp9zdkht63",
+        "img": "pics/กระดาษทราย/46059645651.jpg",
         "title": "กระดาษทรายจานเซรามิก TERCEL CERAMIC VELCRO DISC P100",
         "price_text": "฿18",
         "shopee_url": "https://shopee.co.th/product/569384179/46059645651"
@@ -674,7 +674,7 @@
         "brand": "3M",
         "price": 936,
         "name": "หน้ากากกรองเดี่ยว 3M 3200",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo982t65t4arf2",
+        "img": "pics/เบ็ดเตล็ด/8887719311489_หน้ากากกรองเดี่ยว 3M 3200.jpg",
         "title": "หน้ากากกรองเดี่ยว 3M 3200",
         "price_text": "฿936",
         "shopee_url": "https://shopee.co.th/product/569384179/46109501053"
@@ -684,29 +684,29 @@
         "brand": "PK PAINT",
         "price": 1850,
         "name": "แลคเกอร์ INNOVA ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo3nul30r284bb",
+        "img": "pics/แลคเกอร์/468007_แลคเกอร์ INNOVA.jpg",
         "title": "แลคเกอร์ INNOVA ของแท้",
-        "price_text": "฿1,850",
+        "price_text": "฿1850",
         "shopee_url": "https://shopee.co.th/product/569384179/46209479421"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up W-6 White (Hi-Temp 1200°F)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo95ya4bwwlfe0",
+        "img": "pics/สีสเปรย์ Leyland/46210512641.jpg",
         "title": "Leyland Auto Spray Touch-Up W-6 White (Hi-Temp 1200°F)",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/46210512641"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "GLASURIT",
         "price": 2100,
         "name": "Glasurit ชุดเคลียร์เคลือบเงา 2K HS Multi Clear Coat (ชุดเคลียร์ 923-255 + ตัวเร่ง 929-94)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mohqdjp7zd3gbc",
+        "img": "pics/ฮาร์ดดินเนอร์/46310910738.jpg",
         "title": "Glasurit ชุดเคลียร์เคลือบเงา 2K HS Multi Clear Coat (ชุดเคลียร์ 923-255 + ตัวเร่ง 929-94)",
-        "price_text": "฿2,100",
+        "price_text": "฿2100",
         "shopee_url": "https://shopee.co.th/product/569384179/46310910738"
     },
     {
@@ -714,7 +714,7 @@
         "brand": "NASON",
         "price": 456,
         "name": "สีรองพื้นพลาสติก NASON",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo3ivp8sgsg363",
+        "img": "pics/สีรองพื้น/NS421004_สีรองพื้นพลาสติก NASON.jpg",
         "title": "สีรองพื้นพลาสติก NASON",
         "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/46409478681"
@@ -724,7 +724,7 @@
         "brand": "TOA",
         "price": 20,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 2000 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo7rnacd5a8591",
+        "img": "pics/กระดาษทราย/46409640651.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 2000 CC-CW",
         "price_text": "฿20",
         "shopee_url": "https://shopee.co.th/product/569384179/46409640651"
@@ -734,7 +734,7 @@
         "brand": "TATENO",
         "price": 540,
         "name": "กาพ่นสี TATENO ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mnkylvktccn592",
+        "img": "pics/กาพ่นสี/3_กาพ่นสี TATENO.jpg",
         "title": "กาพ่นสี TATENO ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/46509621903"
@@ -744,19 +744,19 @@
         "brand": "BIC BEN",
         "price": 1500,
         "name": "สีรองพื้นอีพ็อกซี่ BICBEN สีขาวชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo3io5mzgb9g1c",
+        "img": "pics/สีรองพื้น/585200_สีรองพื้นอีพ็อกซี่ BICBEN สีขาว ชุดใหญ่.jpg",
         "title": "สีรองพื้นอีพ็อกซี่ BICBEN สีขาวชุดใหญ่",
-        "price_text": "฿1,500",
+        "price_text": "฿1500",
         "shopee_url": "https://shopee.co.th/product/569384179/46559490107"
     },
     {
         "category": "กาพ่นสี",
         "brand": "TATENO",
-        "price": 1080,
+        "price": 3480,
         "name": "กาพ่นสี TATENO 1.5 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mnkxr09jkgld1f",
+        "img": "pics/กาพ่นสี/TA15_กาพ่นสี TATENO 1.5.jpg",
         "title": "กาพ่นสี TATENO 1.5 ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿1,080",
+        "price_text": "฿3480",
         "shopee_url": "https://shopee.co.th/product/569384179/46609612766"
     },
     {
@@ -764,7 +764,7 @@
         "brand": "3M",
         "price": 48,
         "name": "SCOTCH BRITE 3M ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mnkv1y4ank7c06",
+        "img": "pics/เบ็ดเตล็ด/3M25_SCOTCH BRITE 3M.jpg",
         "title": "SCOTCH BRITE 3M ของแท้",
         "price_text": "฿48",
         "shopee_url": "https://shopee.co.th/product/569384179/46709609677"
@@ -774,9 +774,9 @@
         "brand": "CROMAX",
         "price": 1320,
         "name": "Cromax XB387 ทินเนอร์แห้งช้า (Hi-Temp Thinner) คุณภาพสูง แบรนด์ Axalta",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-moeucena75zh04",
+        "img": "pics/ทินเนอร์/46760783156.jpg",
         "title": "Cromax XB387 ทินเนอร์แห้งช้า (Hi-Temp Thinner) คุณภาพสูง แบรนด์ Axalta",
-        "price_text": "฿1,320",
+        "price_text": "฿1320",
         "shopee_url": "https://shopee.co.th/product/569384179/46760783156"
     },
     {
@@ -784,7 +784,7 @@
         "brand": "TOP",
         "price": 420,
         "name": "TOP น้ำยาลอกสี PAINT REMOVER ALL-PURPOSE (ชนิดแกลลอน)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-moho843gawow90",
+        "img": "pics/น้ำยาเคมี/46760906281.jpg",
         "title": "TOP น้ำยาลอกสี PAINT REMOVER ALL-PURPOSE (ชนิดแกลลอน)",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/46760906281"
@@ -793,28 +793,28 @@
         "category": "สีโป๊ว",
         "brand": "PK PAINT",
         "price": 456,
-        "name": "สีโป๊ว BODY F250 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo3nhclfo1ds52",
-        "title": "สีโป๊ว BODY F250 ของแท้ สินค้าพร้อมจัดส่ง",
+        "name": "สีโป๊ว BODY F222 ของแท้ สินค้าพร้อมจัดส่ง",
+        "img": "pics/สีโป๊ว/46859482641.jpg",
+        "title": "สีโป๊ว BODY F222 ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/46859482641"
     },
     {
-        "category": "กระดาษกาว",
-        "brand": "HAMMER",
+        "category": "เทป",
+        "brand": "KURUMA",
         "price": 144,
-        "name": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film) - 110 ซม. x 20 ม.",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-modhlogfnbbjc1",
-        "title": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film) - 110 ซม. x 20 ม.",
+        "name": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film)",
+        "img": "pics/กระดาษกาว/46959621135.jpg",
+        "title": "KURUMA พลาสติกปิดพ่น ชนิดมีเทปกาวในตัว (Kuruma Pre-Taped Masking Film)",
         "price_text": "฿144",
         "shopee_url": "https://shopee.co.th/product/569384179/46959621135"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up L-01 White",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo842n7swb2c70",
+        "img": "pics/สีสเปรย์ Leyland/47010499674.jpg",
         "title": "Leyland Auto Spray Touch-Up L-01 White",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/47010499674"
@@ -824,37 +824,37 @@
         "brand": "CO-ROCK",
         "price": 500,
         "name": "CO-ROCK น้ำยาเช็ดคราบ PRE SOLVENT (รหัส 016-0080)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mohpcl55my9se7",
+        "img": "pics/เบ็ดเตล็ด/47160899934.jpg",
         "title": "CO-ROCK น้ำยาเช็ดคราบ PRE SOLVENT (รหัส 016-0080)",
         "price_text": "฿500",
         "shopee_url": "https://shopee.co.th/product/569384179/47160899934"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "BIC BEN",
         "price": 420,
         "name": "BIG BEN AUTOMOTIVE REFINISH HARDENER EPOXY (รหัส 21-17)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mohpbm7ooaocab",
+        "img": "pics/สีรองพื้น/2117_2117.jpg",
         "title": "BIG BEN AUTOMOTIVE REFINISH HARDENER EPOXY (รหัส 21-17)",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/47160911016"
     },
     {
-        "category": "กระดาษกาว",
+        "category": "เทป",
         "brand": "INTER",
         "price": 360,
         "name": "กระดาษกาว INTER แพ็ค",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-modic628abdbac",
+        "img": "pics/กระดาษกาว/12470636_กระดาษกาว.jpg",
         "title": "กระดาษกาว INTER แพ็ค",
         "price_text": "฿360",
         "shopee_url": "https://shopee.co.th/product/569384179/47209611749"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 288,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีดำ (รหัส 3314) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo9djnqa17urd5",
+        "img": "pics/สี Pylac/47260567391.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีดำ (รหัส 3314) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿288",
         "shopee_url": "https://shopee.co.th/product/569384179/47260567391"
@@ -864,9 +864,9 @@
         "brand": "STAR",
         "price": 2160,
         "name": "กาพ่นสี STAR น้ำเงิน 1.5",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mnkybyznfsarf9",
+        "img": "pics/กาพ่นสี/47309625934.jpg",
         "title": "กาพ่นสี STAR น้ำเงิน 1.5",
-        "price_text": "฿2,160",
+        "price_text": "฿2160",
         "shopee_url": "https://shopee.co.th/product/569384179/47309625934"
     },
     {
@@ -874,7 +874,7 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 240 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo7rafss48hw53",
+        "img": "pics/กระดาษทราย/47409631732.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 240 CC-CW",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/47409631732"
@@ -884,7 +884,7 @@
         "brand": "PK PAINT",
         "price": 240,
         "name": "ยาขัด Nexus D-2000 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3k55sblxj986",
+        "img": "pics/น้ำยาเคมี/008D2000_ยาขัด Nexus D-2000.jpg",
         "title": "ยาขัด Nexus D-2000 ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿240",
         "shopee_url": "https://shopee.co.th/product/569384179/47459491374"
@@ -894,7 +894,7 @@
         "brand": "BIC BEN",
         "price": 468,
         "name": "สีพ่นรถยนต์ BIC BEN 30 ไลน์ รหัส 30-5801 สีบรอนซ์หยาบ (Nitrocellulose)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo7yw0eqou1001",
+        "img": "pics/เบ็ดเตล็ด/47459618785.jpg",
         "title": "สีพ่นรถยนต์ BIC BEN 30 ไลน์ รหัส 30-5801 สีบรอนซ์หยาบ (Nitrocellulose)",
         "price_text": "฿468",
         "shopee_url": "https://shopee.co.th/product/569384179/47459618785"
@@ -904,7 +904,7 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 100 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo7qtzkd6fba96",
+        "img": "pics/กระดาษทราย/47459635618.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 100 CC-CW",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/47459635618"
@@ -914,7 +914,7 @@
         "brand": "NIPPON",
         "price": 540,
         "name": "NIPPON PAINT nax SILICONE OFF น้ำยาเช็ดคราบ (ขนาด 4 ลิตร)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mohpc66z83r522",
+        "img": "pics/เบ็ดเตล็ด/47510894904.jpg",
         "title": "NIPPON PAINT nax SILICONE OFF น้ำยาเช็ดคราบ (ขนาด 4 ลิตร)",
         "price_text": "฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/47510894904"
@@ -924,7 +924,7 @@
         "brand": "BIC BEN",
         "price": 336,
         "name": "สีรองพื้น 2K BICBEN ชุดเล็ก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3ix3btbo5hdd",
+        "img": "pics/สีรองพื้น/800094L_สีรองพื้น 2K BICBEN ชุดเล็ก.jpg",
         "title": "สีรองพื้น 2K BICBEN ชุดเล็ก",
         "price_text": "฿336",
         "shopee_url": "https://shopee.co.th/product/569384179/47609474865"
@@ -934,7 +934,7 @@
         "brand": "PK PAINT",
         "price": 540,
         "name": "น้ำยากันสีเป็นรู 285-202",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mnl03by5kk5hb9",
+        "img": "pics/เบ็ดเตล็ด/285202_น้ำยากันสีเป็นรู.jpg",
         "title": "น้ำยากันสีเป็นรู 285-202",
         "price_text": "฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/47659613768"
@@ -944,17 +944,17 @@
         "brand": "RGB",
         "price": 480,
         "name": "สีพ่นรถยนต์ RGB 2K FINISH ISUZU PT064 WHITE สีขาว",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo7yj3vlxr0h05",
+        "img": "pics/เบ็ดเตล็ด/47709627788.jpg",
         "title": "สีพ่นรถยนต์ RGB 2K FINISH ISUZU PT064 WHITE สีขาว",
         "price_text": "฿480",
         "shopee_url": "https://shopee.co.th/product/569384179/47709627788"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up P-9 Gold",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mo82wp5bhcee7f",
+        "img": "pics/สีสเปรย์ Leyland/47710511807.jpg",
         "title": "Leyland Auto Spray Touch-Up P-9 Gold",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/47710511807"
@@ -964,17 +964,17 @@
         "brand": "STAR",
         "price": 3480,
         "name": "กาพ่นสี STAR 1.5 Star",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mnkxjx59ps7695",
+        "img": "pics/กาพ่นสี/710N15_กาพ่นสี STAR 1.5.jpg",
         "title": "กาพ่นสี STAR 1.5 Star",
-        "price_text": "฿3,480",
+        "price_text": "฿3480",
         "shopee_url": "https://shopee.co.th/product/569384179/47759616662"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 312,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีดำด้าน (รหัส 3314F) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo9e5zx8d8gf30",
+        "img": "pics/สี Pylac/47810571110.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีดำด้าน (รหัส 3314F) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿312",
         "shopee_url": "https://shopee.co.th/product/569384179/47810571110"
@@ -984,27 +984,27 @@
         "brand": "AICA",
         "price": 360,
         "name": "Aica VANDO SILICONE OFF น้ำยาทำความสะอาดพื้นผิว",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mohpdzphf8y367",
+        "img": "pics/เบ็ดเตล็ด/47860902199.jpg",
         "title": "Aica VANDO SILICONE OFF น้ำยาทำความสะอาดพื้นผิว",
         "price_text": "฿360",
         "shopee_url": "https://shopee.co.th/product/569384179/47860902199"
     },
     {
-        "category": "กระดาษกาว",
+        "category": "เทป",
         "brand": "INTER",
         "price": 3516,
         "name": "กระดาษกาว INTER ลัง ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-modi29ygqtji1e",
+        "img": "pics/กระดาษกาว/12470636_กระดาษกาว.jpg",
         "title": "กระดาษกาว INTER ลัง ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿3,516",
+        "price_text": "฿3516",
         "shopee_url": "https://shopee.co.th/product/569384179/48259611977"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "DINCO",
         "price": 445,
         "name": "DINCO Poly Putty Lite สีโป๊วรถยนต์ สูตรบาง ขัดง่าย แห้งไว ขนาด 3.5 กก. (พร้อมน้ำยา สีโป๊ว Hardener)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo6mo8x80i6ga5",
+        "img": "pics/สีโป๊ว/48310450499.jpg",
         "title": "DINCO Poly Putty Lite สีโป๊วรถยนต์ สูตรบาง ขัดง่าย แห้งไว ขนาด 3.5 กก. (พร้อมน้ำยา สีโป๊ว Hardener)",
         "price_text": "฿445",
         "shopee_url": "https://shopee.co.th/product/569384179/48310450499"
@@ -1014,17 +1014,17 @@
         "brand": "3M",
         "price": 72,
         "name": "กระดาษทรายซ้อน 3M ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mngztwuc2scha5",
+        "img": "pics/กระดาษทราย/8850304177913_กระดาษทรายซ้อน 3M.jpg",
         "title": "กระดาษทรายซ้อน 3M ของแท้",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/48409500778"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 390,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี H-2 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo9fe4kfs556e4",
+        "img": "pics/สี Pylac/48460568014.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี H-2 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/48460568014"
@@ -1034,9 +1034,9 @@
         "brand": "SOLAR",
         "price": 1140,
         "name": "ยาขัด Solar แกลลอน ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo3kdvw1qadh96",
+        "img": "pics/น้ำยาเคมี/110019_ยาขัด Solar.jpg",
         "title": "ยาขัด Solar แกลลอน ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿1,140",
+        "price_text": "฿1140",
         "shopee_url": "https://shopee.co.th/product/569384179/48659489140"
     },
     {
@@ -1044,7 +1044,7 @@
         "brand": "SOLAR",
         "price": 420,
         "name": "ฟองน้ำขัดเงา SOLAR ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mnh0glzhx43m33",
+        "img": "pics/น้ำยาเคมี/20002_ฟองน้ำขัดเงา SOLAR.jpg",
         "title": "ฟองน้ำขัดเงา SOLAR ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/48659492232"
@@ -1053,9 +1053,9 @@
         "category": "เบ็ดเตล็ด",
         "brand": "SHOPPER",
         "price": 192,
-        "name": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015 (สีเคลือบเงาแอลคีด)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo7tuv2evklg3c",
-        "title": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015 (สีเคลือบเงาแอลคีด)",
+        "name": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015",
+        "img": "pics/เบ็ดเตล็ด/48710495692.jpg",
+        "title": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015",
         "price_text": "฿192 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/48710495692"
     },
@@ -1064,7 +1064,7 @@
         "brand": "PK PAINT",
         "price": 636,
         "name": "PK PAINT ทินเนอร์ 2K สูตรแห้งช้าพิเศษ รหัส 009-999 (Special Edition) 2K Automotive Thinner Slow Drying",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-modv1rlcfkzwbb",
+        "img": "pics/ทินเนอร์/48760743940.jpg",
         "title": "PK PAINT ทินเนอร์ 2K สูตรแห้งช้าพิเศษ รหัส 009-999 (Special Edition) 2K Automotive Thinner Slow Drying",
         "price_text": "฿636",
         "shopee_url": "https://shopee.co.th/product/569384179/48760743940"
@@ -1074,9 +1074,9 @@
         "brand": "GLASURIT",
         "price": 1590,
         "name": "Glasurit (ตรานกแก้ว) ทินเนอร์แห้งช้า 352-216 (Reducer Slow) ขนาด 5 ลิตร",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-moeuqkyk1amj89",
+        "img": "pics/ทินเนอร์/48860795888.jpg",
         "title": "Glasurit (ตรานกแก้ว) ทินเนอร์แห้งช้า 352-216 (Reducer Slow) ขนาด 5 ลิตร",
-        "price_text": "฿1,590",
+        "price_text": "฿1590",
         "shopee_url": "https://shopee.co.th/product/569384179/48860795888"
     },
     {
@@ -1084,27 +1084,27 @@
         "brand": "3M",
         "price": 18,
         "name": "กระดาษทรายจาน 3M 255P P600 SE1",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo80n7izsikmb5",
+        "img": "pics/กระดาษทราย/48909632630.jpg",
         "title": "กระดาษทรายจาน 3M 255P P600 SE1",
         "price_text": "฿18",
         "shopee_url": "https://shopee.co.th/product/569384179/48909632630"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 156,
         "name": "Leyland Auto Spray Touch-Up R2000 Plastic Primer",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mohrby01n7r421",
+        "img": "pics/สีสเปรย์ Leyland/48910508729.jpg",
         "title": "Leyland Auto Spray Touch-Up R2000 Plastic Primer",
         "price_text": "฿156",
         "shopee_url": "https://shopee.co.th/product/569384179/48910508729"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "RGB",
         "price": 300,
         "name": "RGB colour 2K Automotive Polyurethane Hardener (รหัส 21-33) สูตรแห้งเร็ว",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mohpeor03soxa8",
+        "img": "pics/ฮาร์ดดินเนอร์/49060910765.jpg",
         "title": "RGB colour 2K Automotive Polyurethane Hardener (รหัส 21-33) สูตรแห้งเร็ว",
         "price_text": "฿300",
         "shopee_url": "https://shopee.co.th/product/569384179/49060910765"
@@ -1114,7 +1114,7 @@
         "brand": "PK PAINT",
         "price": 720,
         "name": "แลคเกอร์ด้าน NOKOYA ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo3nufbwu1om71",
+        "img": "pics/แลคเกอร์/49109488637.jpg",
         "title": "แลคเกอร์ด้าน NOKOYA ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿720",
         "shopee_url": "https://shopee.co.th/product/569384179/49109488637"
@@ -1124,9 +1124,9 @@
         "brand": "CROMAX",
         "price": 2136,
         "name": "แลคเกอร์ CROMAX 1200S",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo3o0u60o9vq0d",
+        "img": "pics/แลคเกอร์/1200s_แลคเกอร์ CROMAX 1200S.jpg",
         "title": "แลคเกอร์ CROMAX 1200S",
-        "price_text": "฿2,136",
+        "price_text": "฿2136",
         "shopee_url": "https://shopee.co.th/product/569384179/49259490517"
     },
     {
@@ -1134,17 +1134,17 @@
         "brand": "PK PAINT",
         "price": 1176,
         "name": "ชุดแลคเกอร์ GLASURIT 923-255",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mohqb9bbdnnw43",
+        "img": "pics/แลคเกอร์/923255_แลคเกอร์ GLASURIT 923-255.jpg",
         "title": "ชุดแลคเกอร์ GLASURIT 923-255",
-        "price_text": "฿1,176",
+        "price_text": "฿1176",
         "shopee_url": "https://shopee.co.th/product/569384179/49309490318"
     },
     {
-        "category": "กระดาษกาว",
+        "category": "เทป",
         "brand": "PK PAINT",
         "price": 144,
         "name": "กระดาษกาว TOKYU ขนาดแถว",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnkvji13aps61f",
+        "img": "pics/กระดาษกาว/12470636_กระดาษกาว.jpg",
         "title": "กระดาษกาว TOKYU ขนาดแถว",
         "price_text": "฿144",
         "shopee_url": "https://shopee.co.th/product/569384179/49409609718"
@@ -1154,28 +1154,28 @@
         "brand": "BIC BEN",
         "price": 660,
         "name": "BIC BEN สีทองคำ 913G (Royal Premium Grade)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo7wp9qy8ohw59",
+        "img": "pics/เบ็ดเตล็ด/49509617616.jpg",
         "title": "BIC BEN สีทองคำ 913G (Royal Premium Grade)",
         "price_text": "฿660",
         "shopee_url": "https://shopee.co.th/product/569384179/49509617616"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up L-02 Black",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo83ukavznd0d0",
+        "img": "pics/สีสเปรย์ Leyland/49510503696.jpg",
         "title": "Leyland Auto Spray Touch-Up L-02 Black",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/49510503696"
     },
     {
-        "category": "สีรองพื้น",
+        "category": "เบ็ดเตล็ด",
         "brand": "RGB",
         "price": 180,
-        "name": "รองพื้นเทา RGB กระป๋อง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mngu0k3wyqrm27",
-        "title": "รองพื้นเทา RGB กระป๋อง",
+        "name": "รองพื้นเทา RGB ขนาด 1 KGS.",
+        "img": "pics/เบ็ดเตล็ด/49559479046.jpg",
+        "title": "รองพื้นเทา RGB ขนาด 1 KGS.",
         "price_text": "฿180",
         "shopee_url": "https://shopee.co.th/product/569384179/49559479046"
     },
@@ -1184,9 +1184,9 @@
         "brand": "PK PAINT",
         "price": 1080,
         "name": "ยาขัด KOMAK PRO1000 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo3k26d3w83pa5",
+        "img": "pics/น้ำยาเคมี/49709495198.jpg",
         "title": "ยาขัด KOMAK PRO1000 ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿1,080",
+        "price_text": "฿1080",
         "shopee_url": "https://shopee.co.th/product/569384179/49709495198"
     },
     {
@@ -1194,27 +1194,27 @@
         "brand": "3M",
         "price": 18,
         "name": "กระดาษทรายจาน 3M GOLD P240 OG",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mo80lnraggzsf9",
+        "img": "pics/กระดาษทราย/49709636078.jpg",
         "title": "กระดาษทรายจาน 3M GOLD P240 OG",
         "price_text": "฿18",
         "shopee_url": "https://shopee.co.th/product/569384179/49709636078"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 390,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียวแท็กซี่สุวรรณภูมิ ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mo9elouuxzikba",
+        "img": "pics/สี Pylac/49910567203.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียวแท็กซี่สุวรรณภูมิ ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/49910567203"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "BBP",
         "price": 420,
         "name": "BBP HARDENER FOR 2K PRIMER ตัวเร่งสำหรับสีรองพื้น 2K (รหัส 21-47)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mohpe96mpn9o83",
+        "img": "pics/สีรองพื้น/50010881162.jpg",
         "title": "BBP HARDENER FOR 2K PRIMER ตัวเร่งสำหรับสีรองพื้น 2K (รหัส 21-47)",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/50010881162"
@@ -1224,7 +1224,7 @@
         "brand": "3M",
         "price": 96,
         "name": "ฝาครอบกรองกลม 3M 774",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mnktv7linz7k08",
+        "img": "pics/เบ็ดเตล็ด/774_ฝาครอบกรองกลม 3M 774.jpg",
         "title": "ฝาครอบกรองกลม 3M 774",
         "price_text": "฿96",
         "shopee_url": "https://shopee.co.th/product/569384179/50059595193"
@@ -1234,17 +1234,17 @@
         "brand": "BIC BEN",
         "price": 700,
         "name": "BIG BEN ทินเนอร์ 2K ชนิดแห้งช้า (Slow Drying) รหัส 86-120L ขนาดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-moeuhvv39xc057",
+        "img": "pics/ทินเนอร์/50160775724.jpg",
         "title": "BIG BEN ทินเนอร์ 2K ชนิดแห้งช้า (Slow Drying) รหัส 86-120L ขนาดใหญ่",
         "price_text": "฿700",
         "shopee_url": "https://shopee.co.th/product/569384179/50160775724"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up L-18 Maroon",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo839hjdy6tf9b",
+        "img": "pics/สีสเปรย์ Leyland/50210492137.jpg",
         "title": "Leyland Auto Spray Touch-Up L-18 Maroon",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/50210492137"
@@ -1254,7 +1254,7 @@
         "brand": "RGB",
         "price": 540,
         "name": "แลคเกอร์ RGB ชุดเล็ก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3nsiu2wv7mc7",
+        "img": "pics/แลคเกอร์/468077L_แลคเกอร์ RGB ชุดเล็ก.jpg",
         "title": "แลคเกอร์ RGB ชุดเล็ก",
         "price_text": "฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/50309470560"
@@ -1264,7 +1264,7 @@
         "brand": "TOA",
         "price": 20,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 1200 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo7qw3rb6ghs6e",
+        "img": "pics/กระดาษทราย/50359611862.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 1200 CC-CW",
         "price_text": "฿20",
         "shopee_url": "https://shopee.co.th/product/569384179/50359611862"
@@ -1274,9 +1274,9 @@
         "brand": "STAR",
         "price": 3480,
         "name": "กาพ่นสี STAR 1.3 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mnkxjx59ps7695",
+        "img": "pics/กาพ่นสี/3710N13_กาพ่นสี STAR 1.3.jpg",
         "title": "กาพ่นสี STAR 1.3 ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿3,480",
+        "price_text": "฿3480",
         "shopee_url": "https://shopee.co.th/product/569384179/50409592659"
     },
     {
@@ -1284,9 +1284,9 @@
         "brand": "TATENO",
         "price": 1080,
         "name": "กาพ่นสี TATENO 1.3 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mnkxr09jkgld1f",
+        "img": "pics/กาพ่นสี/TA13_กาพ่นสี TATENO 1.3.jpg",
         "title": "กาพ่นสี TATENO 1.3 ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿1,080",
+        "price_text": "฿1080",
         "shopee_url": "https://shopee.co.th/product/569384179/50459592808"
     },
     {
@@ -1294,7 +1294,7 @@
         "brand": "RGB",
         "price": 900,
         "name": "สีรองพื้น 2K RGB ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo3irka4h0cm1b",
+        "img": "pics/สีรองพื้น/800041_สีรองพื้น 2K RGB.jpg",
         "title": "สีรองพื้น 2K RGB ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿900",
         "shopee_url": "https://shopee.co.th/product/569384179/50509454927"
@@ -1304,7 +1304,7 @@
         "brand": "PK PAINT",
         "price": 300,
         "name": "ตัวดักน้ำ คุณภาพดี สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mnkyjfq8dkaqa2",
+        "img": "pics/เบ็ดเตล็ด/TK28U_ตัวดักน้ำ.jpg",
         "title": "ตัวดักน้ำ คุณภาพดี สินค้าพร้อมจัดส่ง",
         "price_text": "฿300",
         "shopee_url": "https://shopee.co.th/product/569384179/50509593038"
@@ -1314,7 +1314,7 @@
         "brand": "D-TWO",
         "price": 192,
         "name": "ยาขัด 2K D-TWO ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mo3kd25do83p06",
+        "img": "pics/น้ำยาเคมี/802_ยาขัด 2K D-TWO.jpg",
         "title": "ยาขัด 2K D-TWO ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿192",
         "shopee_url": "https://shopee.co.th/product/569384179/50559464886"
@@ -1324,9 +1324,9 @@
         "brand": "SUMO",
         "price": 1045,
         "name": "SUMO ทินเนอร์ 100% เกรด AAA (Super Thinner) ขนาดปี๊บ 12 กก.",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-moev8aeb3jep30",
+        "img": "pics/ทินเนอร์/50560772066.jpg",
         "title": "SUMO ทินเนอร์ 100% เกรด AAA (Super Thinner) ขนาดปี๊บ 12 กก.",
-        "price_text": "฿1,045",
+        "price_text": "฿1045",
         "shopee_url": "https://shopee.co.th/product/569384179/50560772066"
     },
     {
@@ -1334,9 +1334,9 @@
         "brand": "STAR",
         "price": 6240,
         "name": "กาพ่นสี STAR ทอง 1.3",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnky45x3q7lvd4",
+        "img": "pics/กาพ่นสี/EVOT1F135G_กาพ่นสี STAR ทอง 1.3.jpg",
         "title": "กาพ่นสี STAR ทอง 1.3",
-        "price_text": "฿6,240",
+        "price_text": "฿6240",
         "shopee_url": "https://shopee.co.th/product/569384179/50609596793"
     },
     {
@@ -1344,9 +1344,9 @@
         "brand": "NASON",
         "price": 1020,
         "name": "แลคเกอร์ NASON 495-00",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo3ntw22wlqg25",
+        "img": "pics/แลคเกอร์/NS49500_แลคเกอร์ NASON 495-00.jpg",
         "title": "แลคเกอร์ NASON 495-00",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/50659459653"
     },
     {
@@ -1354,27 +1354,27 @@
         "brand": "PK PAINT",
         "price": 1740,
         "name": "PK PAINT ทินเนอร์ 2K ชนิดแห้งช้า (Slow Drying) รุ่น Special Edition รหัส 009-999 ขนาดปี๊บ",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-moetzuck77yj5e",
+        "img": "pics/ทินเนอร์/50810758296.jpg",
         "title": "PK PAINT ทินเนอร์ 2K ชนิดแห้งช้า (Slow Drying) รุ่น Special Edition รหัส 009-999 ขนาดปี๊บ",
-        "price_text": "฿1,740",
+        "price_text": "฿1740",
         "shopee_url": "https://shopee.co.th/product/569384179/50810758296"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up L-40 ISUZU 868E",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo83kd7rauire6",
+        "img": "pics/สีสเปรย์ Leyland/50860484586.jpg",
         "title": "Leyland Auto Spray Touch-Up L-40 ISUZU 868E",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/50860484586"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up L-17 Lexus Silver Original Color",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo83gx59gykhbf",
+        "img": "pics/สีสเปรย์ Leyland/50860497229.jpg",
         "title": "Leyland Auto Spray Touch-Up L-17 Lexus Silver Original Color",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/50860497229"
@@ -1384,7 +1384,7 @@
         "brand": "PK PAINT",
         "price": 780,
         "name": "หัวเชื้อด้าน ยูนิเวอร์แซล 17-8002",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo7yy2vrompv73",
+        "img": "pics/เบ็ดเตล็ด/50959593886.jpg",
         "title": "หัวเชื้อด้าน ยูนิเวอร์แซล 17-8002",
         "price_text": "฿780",
         "shopee_url": "https://shopee.co.th/product/569384179/50959593886"
@@ -1394,7 +1394,7 @@
         "brand": "CROMAX",
         "price": 780,
         "name": "สีโป๊ว CROMAX 759R ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mo6mfrab0dmq4c",
+        "img": "pics/สีโป๊ว/759R_สีโป๊ว CROMAX 759R.jpg",
         "title": "สีโป๊ว CROMAX 759R ของแท้",
         "price_text": "฿780",
         "shopee_url": "https://shopee.co.th/product/569384179/51009466473"
@@ -1404,17 +1404,17 @@
         "brand": "SHOPPER",
         "price": 192,
         "name": "สีอุตสาหกรรม SHOPPER สีขาว 32-5001",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mo7tcqowrx1fcc",
+        "img": "pics/เบ็ดเตล็ด/51009606335.jpg",
         "title": "สีอุตสาหกรรม SHOPPER สีขาว 32-5001",
         "price_text": "฿192 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/51009606335"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 390,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียว (รหัส 3377) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo9e7ev6hwcse8",
+        "img": "pics/สี Pylac/51010542517.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียว (รหัส 3377) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/51010542517"
@@ -1424,7 +1424,7 @@
         "brand": "PK PAINT",
         "price": 468,
         "name": "PK PAINT แลคเกอร์มุกประกายพิเศษ 2K 4:1 / 2K 2:1",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mng0liyfohz9de",
+        "img": "pics/แลคเกอร์/51059446534.jpg",
         "title": "PK PAINT แลคเกอร์มุกประกายพิเศษ 2K 4:1 / 2K 2:1",
         "price_text": "฿468 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/51059446534"
@@ -1434,9 +1434,9 @@
         "brand": "NASON",
         "price": 1380,
         "name": "แลคเกอร์ NASON 499-00",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo3nxgjpyww8e0",
+        "img": "pics/แลคเกอร์/NS49900_แลคเกอร์ NASON 499-00.jpg",
         "title": "แลคเกอร์ NASON 499-00",
-        "price_text": "฿1,380",
+        "price_text": "฿1380",
         "shopee_url": "https://shopee.co.th/product/569384179/51159459410"
     },
     {
@@ -1444,17 +1444,17 @@
         "brand": "3M",
         "price": 264,
         "name": "ยาขัด 3M CREAM WAX ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo3kifof5beo0b",
+        "img": "pics/น้ำยาเคมี/8850304100294_ยาขัด 3M CREAM WAX.jpg",
         "title": "ยาขัด 3M CREAM WAX ของแท้",
         "price_text": "฿264",
         "shopee_url": "https://shopee.co.th/product/569384179/51359469047"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up L-12 Ivory",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mo83d24ww9hde1",
+        "img": "pics/สีสเปรย์ Leyland/51460483565.jpg",
         "title": "Leyland Auto Spray Touch-Up L-12 Ivory",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/51460483565"
@@ -1464,7 +1464,7 @@
         "brand": "AICA",
         "price": 300,
         "name": "AICA ทินเนอร์ เกรด AAA 100% (Super Thinner) ขนาดแกลลอน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-moeu5pxob7rf46",
+        "img": "pics/ทินเนอร์/51460770598.jpg",
         "title": "AICA ทินเนอร์ เกรด AAA 100% (Super Thinner) ขนาดแกลลอน",
         "price_text": "฿300",
         "shopee_url": "https://shopee.co.th/product/569384179/51460770598"
@@ -1474,17 +1474,17 @@
         "brand": "PK PAINT",
         "price": 240,
         "name": "ยาขัด Nexus D-800 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo3k6q4f18g44f",
+        "img": "pics/น้ำยาเคมี/008D800_ยาขัด Nexus D-800.jpg",
         "title": "ยาขัด Nexus D-800 ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿240",
         "shopee_url": "https://shopee.co.th/product/569384179/51509471331"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up P-4 Yamaha",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo831yiwmh3516",
+        "img": "pics/สีสเปรย์ Leyland/51810479263.jpg",
         "title": "Leyland Auto Spray Touch-Up P-4 Yamaha",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/51810479263"
@@ -1494,7 +1494,7 @@
         "brand": "PK PAINT",
         "price": 54,
         "name": "แผ่นกรองหน้ากาก CA-104",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mnkuakpr4kjn6b",
+        "img": "pics/เบ็ดเตล็ด/4959382026015_แผ่นกรองหน้ากาก CA-104.jpg",
         "title": "แผ่นกรองหน้ากาก CA-104",
         "price_text": "฿54",
         "shopee_url": "https://shopee.co.th/product/569384179/51859595389"
@@ -1504,7 +1504,7 @@
         "brand": "3M",
         "price": 528,
         "name": "ตลับกรองเคมี 3M เหลี่ยม",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mnktg9w4en0l9f",
+        "img": "pics/เบ็ดเตล็ด/8801230109240_ตลับกรองเคมี 3M เหลี่ยม.jpg",
         "title": "ตลับกรองเคมี 3M เหลี่ยม",
         "price_text": "฿528",
         "shopee_url": "https://shopee.co.th/product/569384179/51909584834"
@@ -1514,7 +1514,7 @@
         "brand": "PK PAINT",
         "price": 144,
         "name": "มีดโป๊ว 6นิ้ว คุณภาพดีพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mnkw5y71n8js54",
+        "img": "pics/เบ็ดเตล็ด/16_มีดโป๊ว 6นิ้ว.jpg",
         "title": "มีดโป๊ว 6นิ้ว คุณภาพดีพร้อมจัดส่ง",
         "price_text": "฿144",
         "shopee_url": "https://shopee.co.th/product/569384179/51959600889"
@@ -1524,7 +1524,7 @@
         "brand": "BIC BEN",
         "price": 900,
         "name": "แลคเกอร์ BBP SUPER CLEAR",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo3nraesqr5yf7",
+        "img": "pics/แลคเกอร์/478085_แลคเกอร์ BBP SUPER CLEAR.jpg",
         "title": "แลคเกอร์ BBP SUPER CLEAR",
         "price_text": "฿900",
         "shopee_url": "https://shopee.co.th/product/569384179/52009470884"
@@ -1534,7 +1534,7 @@
         "brand": "SOLAR",
         "price": 264,
         "name": "ยาขัด Solar ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mo3kcbrb04xv63",
+        "img": "pics/น้ำยาเคมี/110019_ยาขัด Solar.jpg",
         "title": "ยาขัด Solar ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿264",
         "shopee_url": "https://shopee.co.th/product/569384179/52059459933"
@@ -1544,7 +1544,7 @@
         "brand": "TOA",
         "price": 20,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 1000 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo7qzum58mboc0",
+        "img": "pics/กระดาษทราย/52059609673.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 1000 CC-CW",
         "price_text": "฿20",
         "shopee_url": "https://shopee.co.th/product/569384179/52059609673"
@@ -1554,7 +1554,7 @@
         "brand": "SHOPPER",
         "price": 192,
         "name": "สีอุตสาหกรรม SHOPPER สีดำเงา 32-0002",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mof611fe0ff02c",
+        "img": "pics/เบ็ดเตล็ด/52060786473.jpg",
         "title": "สีอุตสาหกรรม SHOPPER สีดำเงา 32-0002",
         "price_text": "฿192 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/52060786473"
@@ -1564,7 +1564,7 @@
         "brand": "3M",
         "price": 18,
         "name": "กระดาษทรายจาน 3M GOLD P400 MT",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mo7zx03nfym87b",
+        "img": "pics/กระดาษทราย/52109616025.jpg",
         "title": "กระดาษทรายจาน 3M GOLD P400 MT",
         "price_text": "฿18",
         "shopee_url": "https://shopee.co.th/product/569384179/52109616025"
@@ -1574,7 +1574,7 @@
         "brand": "SOLAR",
         "price": 180,
         "name": "ยาขัด i-SOLAR ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo3k8of3gv0icb",
+        "img": "pics/น้ำยาเคมี/1200_ยาขัด i-SOLAR.jpg",
         "title": "ยาขัด i-SOLAR ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿180",
         "shopee_url": "https://shopee.co.th/product/569384179/52209469103"
@@ -1584,7 +1584,7 @@
         "brand": "BIC BEN",
         "price": 240,
         "name": "BIG BEN น้ำยาเช็ดคราบสกปรก (Degreaser Wiping Solvent) ชนิดแห้งเร็ว รหัส 85-7",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-moeujh3i46iz9d",
+        "img": "pics/เบ็ดเตล็ด/52260766833.jpg",
         "title": "BIG BEN น้ำยาเช็ดคราบสกปรก (Degreaser Wiping Solvent) ชนิดแห้งเร็ว รหัส 85-7",
         "price_text": "฿240",
         "shopee_url": "https://shopee.co.th/product/569384179/52260766833"
@@ -1594,19 +1594,19 @@
         "brand": "3M",
         "price": 60,
         "name": "แผ่นกรองหน้ากาก 3M กลม",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mnktngi50t1gf8",
+        "img": "pics/เบ็ดเตล็ด/7711_แผ่นกรองหน้ากาก 3M กลม.jpg",
         "title": "แผ่นกรองหน้ากาก 3M กลม",
         "price_text": "฿60",
         "shopee_url": "https://shopee.co.th/product/569384179/52309595104"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 1656,
         "name": "วอชไพร์เซอร์ LEYLAND ชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo3j5ysmqha8e9",
+        "img": "pics/สีสเปรย์ Leyland/52509459034.jpg",
         "title": "วอชไพร์เซอร์ LEYLAND ชุดใหญ่",
-        "price_text": "฿1,656",
+        "price_text": "฿1656",
         "shopee_url": "https://shopee.co.th/product/569384179/52509459034"
     },
     {
@@ -1614,17 +1614,17 @@
         "brand": "CROMAX",
         "price": 6480,
         "name": "สีรองพื้น CROMAX 840R",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo3i7sdr4iyo86",
+        "img": "pics/สีรองพื้น/840R_สีรองพื้น CROMAX 840R.jpg",
         "title": "สีรองพื้น CROMAX 840R",
-        "price_text": "฿6,480",
+        "price_text": "฿6480",
         "shopee_url": "https://shopee.co.th/product/569384179/52609458531"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 348,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียวแท็กซี่สุวรรณภูมิ 2 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo9emqqzzg97a9",
+        "img": "pics/สี Pylac/52610538562.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียวแท็กซี่สุวรรณภูมิ 2 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿348",
         "shopee_url": "https://shopee.co.th/product/569384179/52610538562"
@@ -1634,7 +1634,7 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 150 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mo7r2lzjaz9kbc",
+        "img": "pics/กระดาษทราย/52759611716.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 150 CC-CW",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/52759611716"
@@ -1644,7 +1644,7 @@
         "brand": "3M",
         "price": 420,
         "name": "ยาขัด 3M Finesse-it ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo3kfscgxekh77",
+        "img": "pics/น้ำยาเคมี/8850304001928_ยาขัด 3M Finesse-it.jpg",
         "title": "ยาขัด 3M Finesse-it ของแท้",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/52809468931"
@@ -1654,7 +1654,7 @@
         "brand": "3M",
         "price": 192,
         "name": "ใบขัดสนิม 3M 4นิ้ว สว่าน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mngzn6ps5yx0c3",
+        "img": "pics/เบ็ดเตล็ด/8850304207085_ใบขัดสนิม 3M 4นิ้ว สว่าน.jpg",
         "title": "ใบขัดสนิม 3M 4นิ้ว สว่าน",
         "price_text": "฿192",
         "shopee_url": "https://shopee.co.th/product/569384179/52809472036"
@@ -1664,7 +1664,7 @@
         "brand": "TOA",
         "price": 20,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 1500 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mo7r5k0knrpec9",
+        "img": "pics/กระดาษทราย/52859611844.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 1500 CC-CW",
         "price_text": "฿20",
         "shopee_url": "https://shopee.co.th/product/569384179/52859611844"
@@ -1674,9 +1674,9 @@
         "brand": "STAR",
         "price": 6240,
         "name": "กาพ่นสี STAR ทอง 1.4",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnky45x3q7lvd4",
+        "img": "pics/กาพ่นสี/EVOT1F145G_กาพ่นสี STAR ทอง 1.4.jpg",
         "title": "กาพ่นสี STAR ทอง 1.4",
-        "price_text": "฿6,240",
+        "price_text": "฿6240",
         "shopee_url": "https://shopee.co.th/product/569384179/52909592912"
     },
     {
@@ -1684,9 +1684,9 @@
         "brand": "3M",
         "price": 1380,
         "name": "ยาขัด 3M No.1 แกลลอน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo3kfb4mmqyrfc",
+        "img": "pics/น้ำยาเคมี/3M190_ยาขัด 3M No.1.jpg",
         "title": "ยาขัด 3M No.1 แกลลอน",
-        "price_text": "฿1,380",
+        "price_text": "฿1380",
         "shopee_url": "https://shopee.co.th/product/569384179/53159459829"
     },
     {
@@ -1694,7 +1694,7 @@
         "brand": "PK PAINT",
         "price": 300,
         "name": "ตลับกรองเคมี CA-104 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mnku0bke2fba09",
+        "img": "pics/เบ็ดเตล็ด/53259591318.jpg",
         "title": "ตลับกรองเคมี CA-104 ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿300",
         "shopee_url": "https://shopee.co.th/product/569384179/53259591318"
@@ -1704,17 +1704,17 @@
         "brand": "PK PAINT",
         "price": 720,
         "name": "ยาขัด L-3000 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo3k17ogw6bkf8",
+        "img": "pics/น้ำยาเคมี/L30000_ยาขัด L-3000.jpg",
         "title": "ยาขัด L-3000 ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿720",
         "shopee_url": "https://shopee.co.th/product/569384179/53459480155"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 390,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี Y-1/1 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mo9fvvbsuf4cb8",
+        "img": "pics/สี Pylac/53510551817.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี Y-1/1 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/53510551817"
@@ -1724,17 +1724,17 @@
         "brand": "PK PAINT",
         "price": 30,
         "name": "แปรงทาสี 1นิ้ว คุณภาพดี สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mnkwlged9blt88",
+        "img": "pics/เบ็ดเตล็ด/125_แปรงทาสี 1นิ้ว.jpg",
         "title": "แปรงทาสี 1นิ้ว คุณภาพดี สินค้าพร้อมจัดส่ง",
         "price_text": "฿30",
         "shopee_url": "https://shopee.co.th/product/569384179/53559605247"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "INNOVA",
         "price": 456,
         "name": "INNOVA 2K HIGH SOLID Hardener 2:1 (รหัส 21-07)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mohpcx12nxmz94",
+        "img": "pics/ฮาร์ดดินเนอร์/53660881233.jpg",
         "title": "INNOVA 2K HIGH SOLID Hardener 2:1 (รหัส 21-07)",
         "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/53660881233"
@@ -1744,9 +1744,9 @@
         "brand": "BIC BEN",
         "price": 1080,
         "name": "สีรองพื้น 2K BICBEN ชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo3isdbrebd1d4",
+        "img": "pics/สีรองพื้น/800094_สีรองพื้น 2K BICBEN ชุดใหญ่.jpg",
         "title": "สีรองพื้น 2K BICBEN ชุดใหญ่",
-        "price_text": "฿1,080",
+        "price_text": "฿1080",
         "shopee_url": "https://shopee.co.th/product/569384179/53709454825"
     },
     {
@@ -1754,17 +1754,17 @@
         "brand": "AICA",
         "price": 1140,
         "name": "AICA อะคริลิค แลคเกอร์ ทินเนอร์ (Acrylic Lacquer Thinner) รหัส 3602 S ขนาดปี๊บ",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-moevbqo2mgow74",
+        "img": "pics/ทินเนอร์/53910767148.jpg",
         "title": "AICA อะคริลิค แลคเกอร์ ทินเนอร์ (Acrylic Lacquer Thinner) รหัส 3602 S ขนาดปี๊บ",
-        "price_text": "฿1,140",
+        "price_text": "฿1140",
         "shopee_url": "https://shopee.co.th/product/569384179/53910767148"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 456,
         "name": "วอชไพร์เซอร์ LEYLAND ชุดเล็ก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3j4m7w9urq6d",
+        "img": "pics/สีสเปรย์ Leyland/53959468275.jpg",
         "title": "วอชไพร์เซอร์ LEYLAND ชุดเล็ก",
         "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/53959468275"
@@ -1774,9 +1774,9 @@
         "brand": "BIC BEN",
         "price": 1500,
         "name": "สีรองพื้นอีพ็อกซี่ BICBEN สีเทาชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo3inlo2d43pc5",
+        "img": "pics/สีรองพื้น/580109_สีรองพื้นอีพ็อกซี่ BICBEN สีเทา ชุดใหญ่.jpg",
         "title": "สีรองพื้นอีพ็อกซี่ BICBEN สีเทาชุดใหญ่",
-        "price_text": "฿1,500",
+        "price_text": "฿1500",
         "shopee_url": "https://shopee.co.th/product/569384179/53959470092"
     },
     {
@@ -1784,7 +1784,7 @@
         "brand": "BIC BEN",
         "price": 300,
         "name": "สีโคลทาร์อีพ็อกซี่ BBP ชุดเล็ก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mo3j7t86esxte2",
+        "img": "pics/สีรองพื้น/430001L_สีโคลทาร์อีพ็อกซี่ BBP ชุดเล็ก.jpg",
         "title": "สีโคลทาร์อีพ็อกซี่ BBP ชุดเล็ก",
         "price_text": "฿300",
         "shopee_url": "https://shopee.co.th/product/569384179/54109470039"
@@ -1794,9 +1794,9 @@
         "brand": "3M",
         "price": 1776,
         "name": "หน้ากาก 3M 6200 ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mnh0lv3idfyd9c",
+        "img": "pics/เบ็ดเตล็ด/51131070257_หน้ากาก 3M 6200.jpg",
         "title": "หน้ากาก 3M 6200 ของแท้",
-        "price_text": "฿1,776",
+        "price_text": "฿1776",
         "shopee_url": "https://shopee.co.th/product/569384179/54159472282"
     },
     {
@@ -1804,17 +1804,17 @@
         "brand": "STAR",
         "price": 3060,
         "name": "กาพ่นสี STAR 0.13 ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mnkxvo80lzpfdd",
+        "img": "pics/กาพ่นสี/9APCRO3_กาพ่นสี STAR 0.13.jpg",
         "title": "กาพ่นสี STAR 0.13 ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿3,060",
+        "price_text": "฿3060",
         "shopee_url": "https://shopee.co.th/product/569384179/54159601577"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up C-75 Clear Acrylic Auto Lacquer Hi Gloss",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mohrn500cljde1",
+        "img": "pics/สีสเปรย์ Leyland/54160495056.jpg",
         "title": "Leyland Auto Spray Touch-Up C-75 Clear Acrylic Auto Lacquer Hi Gloss",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/54160495056"
@@ -1824,9 +1824,9 @@
         "brand": "PK PAINT",
         "price": 1020,
         "name": "PK Paint Crystal Clear 2K Automotive Polyurethane Lacquer 4:1 แล็คเกอร์พ่นรถยนต์คุณภาพสูง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3ogezi4r2g37",
+        "img": "pics/แลคเกอร์/54260284735.jpg",
         "title": "PK Paint Crystal Clear 2K Automotive Polyurethane Lacquer 4:1 แล็คเกอร์พ่นรถยนต์คุณภาพสูง",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/54260284735"
     },
     {
@@ -1834,9 +1834,9 @@
         "brand": "STAR",
         "price": 2640,
         "name": "แอร์บรัช STAR ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mnkyh2a693i99f",
+        "img": "pics/เบ็ดเตล็ด/AIRBUS2100_แอร์บรัช STAR.jpg",
         "title": "แอร์บรัช STAR ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿2,640",
+        "price_text": "฿2640",
         "shopee_url": "https://shopee.co.th/product/569384179/54359593146"
     },
     {
@@ -1844,7 +1844,7 @@
         "brand": "TATENO",
         "price": 540,
         "name": "กาพ่นสี TATENO ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mnkynpto2txhb3",
+        "img": "pics/กาพ่นสี/3_กาพ่นสี TATENO.jpg",
         "title": "กาพ่นสี TATENO ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/54859601855"
@@ -1853,9 +1853,9 @@
         "category": "สีรองพื้น",
         "brand": "RGB",
         "price": 576,
-        "name": "สีรองพื้นเทา RGB แกลลอน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mo3ik6yrkvlua1",
-        "title": "สีรองพื้นเทา RGB แกลลอน",
+        "name": "สีรองพื้นเทา RGB ขนาด 3.9 KGS.",
+        "img": "pics/สีรองพื้น/54909463817.jpg",
+        "title": "สีรองพื้นเทา RGB ขนาด 3.9 KGS.",
         "price_text": "฿576",
         "shopee_url": "https://shopee.co.th/product/569384179/54909463817"
     },
@@ -1864,9 +1864,9 @@
         "brand": "BIC BEN",
         "price": 1500,
         "name": "สีรองพื้นอีพ็อกซี่ BICBEN สีดำชุดใหญ่",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo3im6fdllab68",
+        "img": "pics/สีรองพื้น/580001_สีรองพื้นอีพ็อกซี่ BICBEN สีดำ ชุดใหญ่.jpg",
         "title": "สีรองพื้นอีพ็อกซี่ BICBEN สีดำชุดใหญ่",
-        "price_text": "฿1,500",
+        "price_text": "฿1500",
         "shopee_url": "https://shopee.co.th/product/569384179/54959458885"
     },
     {
@@ -1874,7 +1874,7 @@
         "brand": "FORTUNE",
         "price": 420,
         "name": "แลคเกอร์ FORTUNE ชุดเล็ก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo3nyqji7ls5c8",
+        "img": "pics/แลคเกอร์/198035L_แลคเกอร์ FORTUNE ชุดเล็ก.jpg",
         "title": "แลคเกอร์ FORTUNE ชุดเล็ก",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/55009470507"
@@ -1884,7 +1884,7 @@
         "brand": "TATENO",
         "price": 456,
         "name": "แป้นรองกระดาษทราย TATENO",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnh08qiggjr407",
+        "img": "pics/กระดาษทราย/TK380_แป้นรองกระดาษทราย TATENO.jpg",
         "title": "แป้นรองกระดาษทราย TATENO",
         "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/55009472204"
@@ -1894,17 +1894,17 @@
         "brand": "BBP",
         "price": 1499,
         "name": "สีโป๊วเหลือง BBP เบอร์ 6200 แบรนด์ BIC BEN (จำหน่ายแบบยกลัง)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-modj46lv3rbj55",
+        "img": "pics/สีโป๊ว/836200_สีโป๊วเหลือง BBP.jpg",
         "title": "สีโป๊วเหลือง BBP เบอร์ 6200 แบรนด์ BIC BEN (จำหน่ายแบบยกลัง)",
-        "price_text": "฿1,499",
+        "price_text": "฿1499",
         "shopee_url": "https://shopee.co.th/product/569384179/55010707532"
     },
     {
-        "category": "ฮาร์ดดินเนอร์",
+        "category": "ฮาร์ดเดนเนอร์",
         "brand": "RGB",
         "price": 180,
         "name": "RGB colour 2K Automotive Polyurethane Hardener (รหัส 21-33)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mohpccax75ds34",
+        "img": "pics/ฮาร์ดดินเนอร์/55010881301.jpg",
         "title": "RGB colour 2K Automotive Polyurethane Hardener (รหัส 21-33)",
         "price_text": "฿180",
         "shopee_url": "https://shopee.co.th/product/569384179/55010881301"
@@ -1914,17 +1914,17 @@
         "brand": "3M",
         "price": 240,
         "name": "กาวอุดตะเข็บ 3M ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mnkwzdda3ymbfb",
+        "img": "pics/น้ำยาเคมี/8850304001980_กาวอุดตะเข็บ 3M.jpg",
         "title": "กาวอุดตะเข็บ 3M ของแท้",
         "price_text": "฿240",
         "shopee_url": "https://shopee.co.th/product/569384179/55059601223"
     },
     {
-        "category": "สี Nakoya",
+        "category": "สีอุตสาหกรรม",
         "brand": "NAKOYA",
         "price": 204,
         "name": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 901 สีขาว",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mo7s931v203m39",
+        "img": "pics/สี Nakoya/55109610181.jpg",
         "title": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 901 สีขาว",
         "price_text": "฿204 - ฿600",
         "shopee_url": "https://shopee.co.th/product/569384179/55109610181"
@@ -1934,7 +1934,7 @@
         "brand": "GLASURIT",
         "price": 780,
         "name": "Glasurit 1109-1240-4 น้ำยาพ่นกันสนิมและกันกระแทกใต้ท้องรถ สีดำ (Black)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mohpe3s4m9zd57",
+        "img": "pics/แลคเกอร์/55160885677.jpg",
         "title": "Glasurit 1109-1240-4 น้ำยาพ่นกันสนิมและกันกระแทกใต้ท้องรถ สีดำ (Black)",
         "price_text": "฿780",
         "shopee_url": "https://shopee.co.th/product/569384179/55160885677"
@@ -1944,7 +1944,7 @@
         "brand": "RGB",
         "price": 600,
         "name": "สีพ่นรถยนต์ RGB BASE COAT TOYOTA 1CO SILVER MET. สีเงินเมทัลลิก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mo7zessfemfc8a",
+        "img": "pics/เบ็ดเตล็ด/55409607933.jpg",
         "title": "สีพ่นรถยนต์ RGB BASE COAT TOYOTA 1CO SILVER MET. สีเงินเมทัลลิก",
         "price_text": "฿600",
         "shopee_url": "https://shopee.co.th/product/569384179/55409607933"
@@ -1954,7 +1954,7 @@
         "brand": "TOA",
         "price": 20,
         "name": "TOA กระดาษทรายน้ำ TDCC 800 รุ่น CC-Cw กระดาษทรายขัดสี งานละเอียด ผิวเรียบ เนียน ขัดน้ำได้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo7qdxrhkow4ae",
+        "img": "pics/กระดาษทราย/55410467995.jpg",
         "title": "TOA กระดาษทรายน้ำ TDCC 800 รุ่น CC-Cw กระดาษทรายขัดสี งานละเอียด ผิวเรียบ เนียน ขัดน้ำได้",
         "price_text": "฿20",
         "shopee_url": "https://shopee.co.th/product/569384179/55410467995"
@@ -1964,7 +1964,7 @@
         "brand": "BIC BEN",
         "price": 345,
         "name": "สีโป๊วแดง BBP ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo6ntqh694ar7c",
+        "img": "pics/สีโป๊ว/834002_สีโป๊วแดง BBP.jpg",
         "title": "สีโป๊วแดง BBP ของแท้",
         "price_text": "฿345 - ฿850",
         "shopee_url": "https://shopee.co.th/product/569384179/55459462413"
@@ -1974,7 +1974,7 @@
         "brand": "D-TWO",
         "price": 936,
         "name": "ยาขัด 2K D-TWO แกลลอน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo3k9x1tqf456a",
+        "img": "pics/น้ำยาเคมี/802_ยาขัด 2K D-TWO.jpg",
         "title": "ยาขัด 2K D-TWO แกลลอน",
         "price_text": "฿936",
         "shopee_url": "https://shopee.co.th/product/569384179/55559469064"
@@ -1984,7 +1984,7 @@
         "brand": "PK PAINT",
         "price": 24,
         "name": "ฟองน้ำรองขัด อุปกรณ์เสริม",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mnkw80o0gdfp3f",
+        "img": "pics/เบ็ดเตล็ด/13_ฟองน้ำรองขัด.jpg",
         "title": "ฟองน้ำรองขัด อุปกรณ์เสริม",
         "price_text": "฿24",
         "shopee_url": "https://shopee.co.th/product/569384179/55559600881"
@@ -1994,9 +1994,9 @@
         "brand": "NASON",
         "price": 1080,
         "name": "สีรองพื้น NASON 4210-02",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo3iwh806rcz85",
+        "img": "pics/สีรองพื้น/NS421002_สีรองพื้น NASON 4210-02.jpg",
         "title": "สีรองพื้น NASON 4210-02",
-        "price_text": "฿1,080",
+        "price_text": "฿1080",
         "shopee_url": "https://shopee.co.th/product/569384179/55609467639"
     },
     {
@@ -2004,37 +2004,37 @@
         "brand": "TOP",
         "price": 170,
         "name": "TOP น้ำยาลอกสี PAINT REMOVER ALL-PURPOSE (ชนิดกระป๋อง)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mohpditx1tdta1",
+        "img": "pics/น้ำยาเคมี/55660881233.jpg",
         "title": "TOP น้ำยาลอกสี PAINT REMOVER ALL-PURPOSE (ชนิดกระป๋อง)",
         "price_text": "฿170",
         "shopee_url": "https://shopee.co.th/product/569384179/55660881233"
     },
     {
-        "category": "กระดาษกาว",
+        "category": "เทป",
         "brand": "HAMMER",
         "price": 108,
         "name": "เทปกระดาษกาวพ่นสี KURUMA (KURUMA Masking Tape)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-modhj694vs3yc9",
+        "img": "pics/กระดาษกาว/12470636_กระดาษกาว.jpg",
         "title": "เทปกระดาษกาวพ่นสี KURUMA (KURUMA Masking Tape)",
         "price_text": "฿108",
         "shopee_url": "https://shopee.co.th/product/569384179/55759592369"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 390,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีแดง Taxi Red (รหัส TX-9943) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo9edflvf9cf5a",
+        "img": "pics/สี Pylac/55760542659.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีแดง Taxi Red (รหัส TX-9943) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/55760542659"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 318,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียวแท็กซี่ ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo9f7ii53hfzd3",
+        "img": "pics/สี Pylac/55860547554.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเขียวแท็กซี่ ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿318",
         "shopee_url": "https://shopee.co.th/product/569384179/55860547554"
@@ -2044,7 +2044,7 @@
         "brand": "BIC BEN",
         "price": 120,
         "name": "ผลิตภัณฑ์ครีมขัดเคลือบเงาลบรอย BIC BEN รหัส 900-1000/0.5 ครีมขัด BB",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo964tlf0f7p8e",
+        "img": "pics/น้ำยาเคมี/55909610024.jpg",
         "title": "ผลิตภัณฑ์ครีมขัดเคลือบเงาลบรอย BIC BEN รหัส 900-1000/0.5 ครีมขัด BB",
         "price_text": "฿120",
         "shopee_url": "https://shopee.co.th/product/569384179/55909610024"
@@ -2054,7 +2054,7 @@
         "brand": "PK PAINT",
         "price": 42,
         "name": "แปรงทาสี 1.5นิ้ว คุณภาพดี พร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mnkwom0xqjuoe6",
+        "img": "pics/เบ็ดเตล็ด/130_แปรงทาสี 1.5นิ้ว.jpg",
         "title": "แปรงทาสี 1.5นิ้ว คุณภาพดี พร้อมจัดส่ง",
         "price_text": "฿42",
         "shopee_url": "https://shopee.co.th/product/569384179/55959596205"
@@ -2064,7 +2064,7 @@
         "brand": "BIC BEN",
         "price": 300,
         "name": "BIC BEN ทินเนอร์ 2K บิ๊กเบน สูตรแห้งช้า รหัส 86-120 (2K Automotive Thinner Slow Drying) ขนาด 0.90 kg.",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-modur6yvnbbgad",
+        "img": "pics/ทินเนอร์/55960722874.jpg",
         "title": "BIC BEN ทินเนอร์ 2K บิ๊กเบน สูตรแห้งช้า รหัส 86-120 (2K Automotive Thinner Slow Drying) ขนาด 0.90 kg.",
         "price_text": "฿300",
         "shopee_url": "https://shopee.co.th/product/569384179/55960722874"
@@ -2074,7 +2074,7 @@
         "brand": "PK PAINT",
         "price": 240,
         "name": "PK PAINT ทินเนอร์ AAA สำหรับสีรถยนต์ (Automotive Thinner) เกรดพรีเมียม รหัส 009-AAA ขนาดแกลลอน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-moeu9s2pjpcdb9",
+        "img": "pics/ทินเนอร์/55960770654.jpg",
         "title": "PK PAINT ทินเนอร์ AAA สำหรับสีรถยนต์ (Automotive Thinner) เกรดพรีเมียม รหัส 009-AAA ขนาดแกลลอน",
         "price_text": "฿240",
         "shopee_url": "https://shopee.co.th/product/569384179/55960770654"
@@ -2084,17 +2084,17 @@
         "brand": "3M",
         "price": 120,
         "name": "ฝาครอบกรองเหลี่ยม 3M 501",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-mnktx7g6wr9f3c",
+        "img": "pics/เบ็ดเตล็ด/51138176686_ฝาครอบกรองเหลี่ยม 3M 501.jpg",
         "title": "ฝาครอบกรองเหลี่ยม 3M 501",
         "price_text": "฿120",
         "shopee_url": "https://shopee.co.th/product/569384179/56059589160"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 318,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเหลืองแท๊กซี่ ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo9enw5svk7h86",
+        "img": "pics/สี Pylac/56110547209.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเหลืองแท๊กซี่ ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿318",
         "shopee_url": "https://shopee.co.th/product/569384179/56110547209"
@@ -2104,17 +2104,17 @@
         "brand": "TOA",
         "price": 15,
         "name": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 280 CC-CW",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mo7rct5qvu2rda",
+        "img": "pics/กระดาษทราย/56209609663.jpg",
         "title": "กระดาษทราย TOA WATERPROOF ABRASIVE PAPER TDCC 280 CC-CW",
         "price_text": "฿15",
         "shopee_url": "https://shopee.co.th/product/569384179/56209609663"
     },
     {
-        "category": "สี Nakoya",
+        "category": "สีอุตสาหกรรม",
         "brand": "NAKOYA",
         "price": 204,
         "name": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 919 สีซิลเวอร์",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mo7sifnwov7k5f",
+        "img": "pics/สี Nakoya/56259599144.jpg",
         "title": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 919 สีซิลเวอร์",
         "price_text": "฿204 - ฿600",
         "shopee_url": "https://shopee.co.th/product/569384179/56259599144"
@@ -2124,7 +2124,7 @@
         "brand": "TOA",
         "price": 20,
         "name": "TOA กระดาษทรายน้ำ TDCC 3000 รุ่น CC-Cw กระดาษทรายขัดสี งานละเอียด ผิวเรียบ เนียน ขัดน้ำได้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mo7qjis96cxube",
+        "img": "pics/กระดาษทราย/56260463401.jpg",
         "title": "TOA กระดาษทรายน้ำ TDCC 3000 รุ่น CC-Cw กระดาษทรายขัดสี งานละเอียด ผิวเรียบ เนียน ขัดน้ำได้",
         "price_text": "฿20",
         "shopee_url": "https://shopee.co.th/product/569384179/56260463401"
@@ -2134,7 +2134,7 @@
         "brand": "3M",
         "price": 780,
         "name": "ใบขัดขนแกะ 3M ขาว ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mnh0hobzo5c5ee",
+        "img": "pics/เบ็ดเตล็ด/3M550_ใบขัดขนแกะ 3M ขาว.jpg",
         "title": "ใบขัดขนแกะ 3M ขาว ของแท้",
         "price_text": "฿780",
         "shopee_url": "https://shopee.co.th/product/569384179/56409480868"
@@ -2144,9 +2144,9 @@
         "brand": "KURUMA",
         "price": 1020,
         "name": "แลคเกอร์ KURUMA 2K ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3ntbngpnnqad",
+        "img": "pics/แลคเกอร์/TOA850_แลคเกอร์ KURUMA 2K.jpg",
         "title": "แลคเกอร์ KURUMA 2K ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/56459470752"
     },
     {
@@ -2154,9 +2154,9 @@
         "brand": "CROMAX",
         "price": 3600,
         "name": "สีรองพื้น CROMAX LE2001",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-mo3ihjxh2h3ccc",
+        "img": "pics/สีรองพื้น/LE2100_สีรองพื้น CROMAX LE2001.jpg",
         "title": "สีรองพื้น CROMAX LE2001",
-        "price_text": "฿3,600",
+        "price_text": "฿3600",
         "shopee_url": "https://shopee.co.th/product/569384179/56609458455"
     },
     {
@@ -2164,7 +2164,7 @@
         "brand": "DINCO",
         "price": 360,
         "name": "น้ำยาเคลือบแก้ว DINCO",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo94h8vpatc2cc",
+        "img": "pics/น้ำยาเคมี/805_เคลือบแก้ว DINCO.jpg",
         "title": "น้ำยาเคลือบแก้ว DINCO",
         "price_text": "฿360",
         "shopee_url": "https://shopee.co.th/product/569384179/56659469434"
@@ -2174,17 +2174,17 @@
         "brand": "PK PAINT",
         "price": 42,
         "name": "ผ้าสำลี สีขาว คุณภาพดี",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mnkx4yqy874267",
+        "img": "pics/เบ็ดเตล็ด/56659596306.jpg",
         "title": "ผ้าสำลี สีขาว คุณภาพดี",
         "price_text": "฿42",
         "shopee_url": "https://shopee.co.th/product/569384179/56659596306"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "NIPPON",
         "price": 290,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีขาว (รหัส 3300) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mof4wq7sy3uz39",
+        "img": "pics/สี Pylac/56660774974.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีขาว (รหัส 3300) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿290",
         "shopee_url": "https://shopee.co.th/product/569384179/56660774974"
@@ -2194,9 +2194,9 @@
         "brand": "CROMAX",
         "price": 3600,
         "name": "สีรองพื้น CROMAX LE2004",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3ie9gui1vn14",
+        "img": "pics/สีรองพื้น/LE2004_สีรองพื้น CROMAX LE2004.jpg",
         "title": "สีรองพื้น CROMAX LE2004",
-        "price_text": "฿3,600",
+        "price_text": "฿3600",
         "shopee_url": "https://shopee.co.th/product/569384179/56809454702"
     },
     {
@@ -2204,7 +2204,7 @@
         "brand": "VINCO",
         "price": 336,
         "name": "VINCO AUTO UNDER COAT น้ำยาพ่นใต้ท้องรถ กันสนิม ลดเสียงสะท้อน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo7yp5xdbeo6b2",
+        "img": "pics/เบ็ดเตล็ด/56810481417.jpg",
         "title": "VINCO AUTO UNDER COAT น้ำยาพ่นใต้ท้องรถ กันสนิม ลดเสียงสะท้อน",
         "price_text": "฿336",
         "shopee_url": "https://shopee.co.th/product/569384179/56810481417"
@@ -2214,7 +2214,7 @@
         "brand": "PK PAINT",
         "price": 24,
         "name": "มีดโป๊วพลาสติก คุณภาพดี",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mnkw1i1rnxfq50",
+        "img": "pics/เบ็ดเตล็ด/1101_มีดโป๊วพลาสติก.jpg",
         "title": "มีดโป๊วพลาสติก คุณภาพดี",
         "price_text": "฿24",
         "shopee_url": "https://shopee.co.th/product/569384179/56859592109"
@@ -2224,27 +2224,27 @@
         "brand": "HIT",
         "price": 1020,
         "name": "แลคเกอร์ HIT 2K ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo3nwksunsw455",
+        "img": "pics/แลคเกอร์/HIT850_แลคเกอร์ HIT 2K.jpg",
         "title": "แลคเกอร์ HIT 2K ของแท้ สินค้าพร้อมจัดส่ง",
-        "price_text": "฿1,020",
+        "price_text": "฿1020",
         "shopee_url": "https://shopee.co.th/product/569384179/56909464503"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 390,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี 3325 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo9gaxexrqj23c",
+        "img": "pics/สี Pylac/56960538976.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สี 3325 ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿390",
         "shopee_url": "https://shopee.co.th/product/569384179/56960538976"
     },
     {
-        "category": "กระดาษกาว",
+        "category": "เทป",
         "brand": "INTER",
         "price": 42,
         "name": "กระดาษกาว INTER แถว ของแท้ สินค้าพร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-modicdarnn65c9",
+        "img": "pics/กระดาษกาว/12470636_กระดาษกาว.jpg",
         "title": "กระดาษกาว INTER แถว ของแท้ สินค้าพร้อมจัดส่ง",
         "price_text": "฿42",
         "shopee_url": "https://shopee.co.th/product/569384179/57059589589"
@@ -2253,18 +2253,18 @@
         "category": "เบ็ดเตล็ด",
         "brand": "SHOPPER",
         "price": 192,
-        "name": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015 (สีพ่นแห้งเร็ว ไนโตรเซลลูโลส)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mo7tke69aqyo54",
-        "title": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015 (สีพ่นแห้งเร็ว ไนโตรเซลลูโลส)",
+        "name": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015",
+        "img": "pics/เบ็ดเตล็ด/57309606384.jpg",
+        "title": "สีอุตสาหกรรม SHOPPER สีน้ำเงิน 32-1015",
         "price_text": "฿192 - ฿540",
         "shopee_url": "https://shopee.co.th/product/569384179/57309606384"
     },
     {
-        "category": "สี Pylac",
+        "category": "สีไพแลค",
         "brand": "PK PAINT",
         "price": 318,
         "name": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเงิน (รหัส 3315) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mo9ec0oar5sf00",
+        "img": "pics/สี Pylac/57510551169.jpg",
         "title": "สีพ่นรถยนต์ Nippon Paint Pylac 3000 – สีเงิน (รหัส 3315) ขนาด 1/4 แกลลอน [ของแท้ 100%]",
         "price_text": "฿318",
         "shopee_url": "https://shopee.co.th/product/569384179/57510551169"
@@ -2274,7 +2274,7 @@
         "brand": "3M",
         "price": 240,
         "name": "ใบขัดสนิม 3M 6นิ้ว ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mngzra542pz936",
+        "img": "pics/เบ็ดเตล็ด/8850304207061_ใบขัดสนิม 3M 6นิ้ว.jpg",
         "title": "ใบขัดสนิม 3M 6นิ้ว ของแท้",
         "price_text": "฿240",
         "shopee_url": "https://shopee.co.th/product/569384179/57609472009"
@@ -2284,9 +2284,9 @@
         "brand": "3M",
         "price": 1850,
         "name": "หน้ากากครึ่งหน้า 3M 7502 ชนิดไส้กรองคู่ ขนาดกลาง (Size M) ผลิตจากซิลิโคน",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mo97e2o7dix008",
+        "img": "pics/เบ็ดเตล็ด/57659476188.jpg",
         "title": "หน้ากากครึ่งหน้า 3M 7502 ชนิดไส้กรองคู่ ขนาดกลาง (Size M) ผลิตจากซิลิโคน",
-        "price_text": "฿1,850",
+        "price_text": "฿1850",
         "shopee_url": "https://shopee.co.th/product/569384179/57659476188"
     },
     {
@@ -2294,7 +2294,7 @@
         "brand": "3M",
         "price": 300,
         "name": "ยาขัด 3M No.1 ของแท้",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-mo3keluku39gdc",
+        "img": "pics/น้ำยาเคมี/3M190_ยาขัด 3M No.1.jpg",
         "title": "ยาขัด 3M No.1 ของแท้",
         "price_text": "฿300",
         "shopee_url": "https://shopee.co.th/product/569384179/57709468771"
@@ -2304,7 +2304,7 @@
         "brand": "PK PAINT",
         "price": 420,
         "name": "แป้นรองฟองน้ำ LK-DY3",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mnh0edgz92iu29",
+        "img": "pics/เบ็ดเตล็ด/TK350_แป้นรองฟองน้ำ LK-DY3.jpg",
         "title": "แป้นรองฟองน้ำ LK-DY3",
         "price_text": "฿420",
         "shopee_url": "https://shopee.co.th/product/569384179/57759480918"
@@ -2314,17 +2314,17 @@
         "brand": "STAR",
         "price": 2160,
         "name": "กาพ่นสี STAR น้ำเงิน 1.4",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-mnkybyznfsarf9",
+        "img": "pics/กาพ่นสี/57759601732.jpg",
         "title": "กาพ่นสี STAR น้ำเงิน 1.4",
-        "price_text": "฿2,160",
+        "price_text": "฿2160",
         "shopee_url": "https://shopee.co.th/product/569384179/57759601732"
     },
     {
-        "category": "สีสเปรย์ Leyland",
+        "category": "สีสเปรย์",
         "brand": "LEYLAND",
         "price": 72,
         "name": "Leyland Auto Spray Touch-Up สีสเปรย์เลย์แลนด์ พ่นรถยนต์ รถมอเตอร์ไซค์ รหัส L-06 Sky Blue (สีฟ้า)",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mo82imrgqeiu51",
+        "img": "pics/สีสเปรย์ Leyland/57810479056.jpg",
         "title": "Leyland Auto Spray Touch-Up สีสเปรย์เลย์แลนด์ พ่นรถยนต์ รถมอเตอร์ไซค์ รหัส L-06 Sky Blue (สีฟ้า)",
         "price_text": "฿72",
         "shopee_url": "https://shopee.co.th/product/569384179/57810479056"
@@ -2334,7 +2334,7 @@
         "brand": "3M",
         "price": 18,
         "name": "กระดาษทรายจาน 3M GOLD P80 MT",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mo7zzazchs045c",
+        "img": "pics/กระดาษทราย/57959620665.jpg",
         "title": "กระดาษทรายจาน 3M GOLD P80 MT",
         "price_text": "฿18",
         "shopee_url": "https://shopee.co.th/product/569384179/57959620665"
@@ -2344,7 +2344,7 @@
         "brand": "BIC BEN",
         "price": 456,
         "name": "สีรองพื้นอีพ็อกซี่ BICBEN สีเขียวชุดเล็ก",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mo3iq4pab5s82f",
+        "img": "pics/สีรองพื้น/583016L_สีรองพื้นอีพ็อกซี่ BICBEN สีเขียว ชุดเล็ก.jpg",
         "title": "สีรองพื้นอีพ็อกซี่ BICBEN สีเขียวชุดเล็ก",
         "price_text": "฿456",
         "shopee_url": "https://shopee.co.th/product/569384179/58059467983"
@@ -2354,9 +2354,739 @@
         "brand": "PK PAINT",
         "price": 60,
         "name": "ผ้าเช็ดฝุ่น คุณภาพดี พร้อมจัดส่ง",
-        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mnkvpoi5g9aa05",
+        "img": "pics/เบ็ดเตล็ด/150_ผ้าเช็ดฝุ่น.jpg",
         "title": "ผ้าเช็ดฝุ่น คุณภาพดี พร้อมจัดส่ง",
         "price_text": "฿60",
         "shopee_url": "https://shopee.co.th/product/569384179/58059591975"
+    },
+    {
+        "category": "สีอุตสาหกรรม",
+        "brand": "NAKOYA",
+        "price": 204,
+        "name": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 902 สีดำ",
+        "img": "pics/สี Nakoya/58159603887.jpg",
+        "title": "สีแลคเกอร์อุตสาหกรรม NAKOYA INDUSTRIAL LACQUER 902 สีดำ",
+        "price_text": "฿204 - ฿600",
+        "shopee_url": "https://shopee.co.th/product/569384179/58159603887"
+    },
+    {
+        "category": "เบ็ดเตล็ด",
+        "brand": "HAMMER",
+        "price": 3360,
+        "name": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W101-HP รุ่นโปร ขนาด 1.3 mm. (Industrial Grade)",
+        "img": "pics/เบ็ดเตล็ด/56511081289.jpg",
+        "title": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W101-HP รุ่นโปร ขนาด 1.3 mm. (Industrial Grade)",
+        "price_text": "฿3360",
+        "shopee_url": "https://shopee.co.th/product/569384179/56511081289"
+    },
+    {
+        "category": "เบ็ดเตล็ด",
+        "brand": "HAMMER",
+        "price": 1080,
+        "name": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W71 รุ่นเบสิค ขนาด 1.5 mm. (Elementary Grade) เกรดอุตสาหกรรม",
+        "img": "pics/เบ็ดเตล็ด/50011077711.jpg",
+        "title": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W71 รุ่นเบสิค ขนาด 1.5 mm. (Elementary Grade) เกรดอุตสาหกรรม",
+        "price_text": "฿1080",
+        "shopee_url": "https://shopee.co.th/product/569384179/50011077711"
+    },
+    {
+        "category": "เบ็ดเตล็ด",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีภายในรถยนต์ PK PAINT",
+        "img": "pics/เบ็ดเตล็ด/46560972513.jpg",
+        "title": "สีภายในรถยนต์ PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/46560972513"
+    },
+    {
+        "category": "สีรองพื้น",
+        "brand": "BIC BEN",
+        "price": 456,
+        "name": "สีรองพื้นอีพ็อกซี่ BICBEN สีเทาชุดเล็ก",
+        "img": "pics/สีรองพื้น/44761107058.jpg",
+        "title": "สีรองพื้นอีพ็อกซี่ BICBEN สีเทาชุดเล็ก",
+        "price_text": "฿456",
+        "shopee_url": "https://shopee.co.th/product/569384179/44761107058"
+    },
+    {
+        "category": "เบ็ดเตล็ด",
+        "brand": "HAMMER",
+        "price": 1080,
+        "name": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W71 รุ่นเบสิค ขนาด 1.3 mm. (Elementary Grade) เกรดอุตสาหกรรม",
+        "img": "pics/เบ็ดเตล็ด/44711101608.jpg",
+        "title": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W71 รุ่นเบสิค ขนาด 1.3 mm. (Elementary Grade) เกรดอุตสาหกรรม",
+        "price_text": "฿1080",
+        "shopee_url": "https://shopee.co.th/product/569384179/44711101608"
+    },
+    {
+        "category": "เบ็ดเตล็ด",
+        "brand": "HAMMER",
+        "price": 3360,
+        "name": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W101-HP รุ่นโปร ขนาด 1.5 mm. (Industrial Grade)",
+        "img": "pics/เบ็ดเตล็ด/42381162241.jpg",
+        "title": "🛠️ ปืนพ่นสี แฮมเมอร์ HAMMER W101-HP รุ่นโปร ขนาด 1.5 mm. (Industrial Grade)",
+        "price_text": "฿3360",
+        "shopee_url": "https://shopee.co.th/product/569384179/42381162241"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มิตซูบิชิ มิราจ / แอททราจ Mirage Attrage | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mos4rzb4zv2j27",
+        "title": "สีแต้มรถยนต์ มิตซูบิชิ มิราจ / แอททราจ Mirage Attrage | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/58011295475"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า อินโนวา Innova Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-moro4mug8wsgcb",
+        "title": "สีแต้มรถยนต์ โตโยต้า อินโนวา Innova Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/57961262969"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG4 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mormm658b4lpef",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG4 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/57661258720"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสันซิลฟี่ Sylphy Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-morsc3xcpgjw5c",
+        "title": "สีแต้มรถยนต์ นิสสันซิลฟี่ Sylphy Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/57411269237"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มาสด้า Mazda CX-3 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-morttdn1oqa31f",
+        "title": "สีแต้มรถยนต์ มาสด้า Mazda CX-3 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/56661276955"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้า BR-V Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-moryjirw80e82c",
+        "title": "สีแต้มรถยนต์ ฮอนด้า BR-V Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/56561286586"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มาสด้า Mazda BT50 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mortdwacqg3wea",
+        "title": "สีแต้มรถยนต์ มาสด้า Mazda BT50 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/56411269709"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG ES | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-morqbi1f5oume1",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG ES | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/56411268581"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้าครอส Cross Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mos3lik5knbhe5",
+        "title": "สีแต้มรถยนต์ โตโยต้าครอส Cross Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/56061283737"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า รีโว่ Hilux Revo Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mos3uqla06q6be",
+        "title": "สีแต้มรถยนต์ โตโยต้า รีโว่ Hilux Revo Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/55961295221"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG VS | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-morpt6k3gefh60",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG VS | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/55911268485"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้าแจ๊ซ Jazz Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mos0vtaaujgh15",
+        "title": "สีแต้มรถยนต์ ฮอนด้าแจ๊ซ Jazz Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/55811291424"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้า แอคคอร์ด Accord Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mory3jc747wg09",
+        "title": "สีแต้มรถยนต์ ฮอนด้า แอคคอร์ด Accord Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/55811277766"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ Isuzu D'MAX | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-motaq8vqqe4v30",
+        "title": "สีแต้มรถยนต์ Isuzu D'MAX | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/55561323815"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มาสด้า Mazda CX-8 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-morw59njrea398",
+        "title": "สีแต้มรถยนต์ มาสด้า Mazda CX-8 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/55561274383"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้าเวลอส Veloz Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-mos3gvrcfswf6f",
+        "title": "สีแต้มรถยนต์ โตโยต้าเวลอส Veloz Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/55111292265"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสัน ลิวิน่า Livina Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mormtbwrzxn03a",
+        "title": "สีแต้มรถยนต์ นิสสัน ลิวิน่า Livina Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/54911258694"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฟอร์ดเอเวอเรสต์ Everest Ford | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-morofixt3wg2e9",
+        "title": "สีแต้มรถยนต์ ฟอร์ดเอเวอเรสต์ Everest Ford | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/54311263084"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มาสด้า Mazda CX-30 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mortbn4iqmtddc",
+        "title": "สีแต้มรถยนต์ มาสด้า Mazda CX-30 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/54161264775"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มิตซูบิชิ Xpander Mitsubishi | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-motfiy74llhp00",
+        "title": "สีแต้มรถยนต์ มิตซูบิชิ Xpander Mitsubishi | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/53961221376"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ กระบะเอ็มจี MG Extender | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-morq9ru8yups57",
+        "title": "สีแต้มรถยนต์ กระบะเอ็มจี MG Extender | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/53861275107"
+    },
+    {
+        "category": "สีโป๊ว",
+        "brand": "PK PAINT",
+        "price": 240,
+        "name": "🚗 สีโป๊วละเอียด 1K เอชบี บอดี้ HB BODY Pro Series F980 1K Fine Filler (สีเขียว)",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mo3nd5w3ny802c",
+        "title": "🚗 สีโป๊วละเอียด 1K เอชบี บอดี้ HB BODY Pro Series F980 1K Fine Filler (สีเขียว)",
+        "price_text": "฿240",
+        "shopee_url": "https://shopee.co.th/product/569384179/53361141504"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า อแวนซ่า Avanza Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-mos3cc0ymby82e",
+        "title": "สีแต้มรถยนต์ โตโยต้า อแวนซ่า Avanza Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/53211283618"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า วีออส Vios Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mos3sv8ic5c02b",
+        "title": "สีแต้มรถยนต์ โตโยต้า วีออส Vios Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/53111292490"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้า CR-V Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-morxkisexwci48",
+        "title": "สีแต้มรถยนต์ ฮอนด้า CR-V Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/52811286251"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสันจู๊ค Juke Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-morod92kr5e6ae",
+        "title": "สีแต้มรถยนต์ นิสสันจู๊ค Juke Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/52761267789"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มิตซูบิชิ Outlander Mitsubishi | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-mos4faw3sgzmf5",
+        "title": "สีแต้มรถยนต์ มิตซูบิชิ Outlander Mitsubishi | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/52411283999"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มิตซูบิชิ แลนเซอร์ Lancer EX Mitsubishi | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mos59d7f2vpr8a",
+        "title": "สีแต้มรถยนต์ มิตซูบิชิ แลนเซอร์ Lancer EX Mitsubishi | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/51661289262"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้าซิตี้ City Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-morzrrzsvoxufc",
+        "title": "สีแต้มรถยนต์ ฮอนด้าซิตี้ City Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/51661282518"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า อัลติส Altis Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mos3xcnnuo006e",
+        "title": "สีแต้มรถยนต์ โตโยต้า อัลติส Altis Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/51511295143"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ อีซูซุ MU-X Isuzu | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-moqpo9t6z8jv20",
+        "title": "สีแต้มรถยนต์ อีซูซุ MU-X Isuzu | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/51161234802"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้าบริโอ้ Brio Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-morxjd5cx9u78c",
+        "title": "สีแต้มรถยนต์ ฮอนด้าบริโอ้ Brio Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/51061282600"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG ZS | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-morpri7vwidp12",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG ZS | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50961273473"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า รถตู้ Commuter (Hiace) Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-mos3kgutzx8ve1",
+        "title": "สีแต้มรถยนต์ โตโยต้า รถตู้ Commuter (Hiace) Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50911295009"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสันนาวาร่า Navara Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-morsuvd54dtu5b",
+        "title": "สีแต้มรถยนต์ นิสสันนาวาร่า Navara Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50811276107"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสัน อัลเมร่า Almera Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-morsebzp9d70b0",
+        "title": "สีแต้มรถยนต์ นิสสัน อัลเมร่า Almera Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50561278407"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG5 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztq-morqd2370f7k71",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG5 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50411263705"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสันเทียน่า Teana Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-morqzt6fzdvm31",
+        "title": "สีแต้มรถยนต์ นิสสันเทียน่า Teana Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50261280676"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า ฟอร์จูนเนอร์ Fortuner Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mos3zhgddr7w61",
+        "title": "สีแต้มรถยนต์ โตโยต้า ฟอร์จูนเนอร์ Fortuner Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50111283951"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มาสด้า Mazda 2 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztf-morwg8g34rnm14",
+        "title": "สีแต้มรถยนต์ มาสด้า Mazda 2 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/50061286026"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสันคิกส์ Kicks Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-morrshn2z1fyd6",
+        "title": "สีแต้มรถยนต์ นิสสันคิกส์ Kicks Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/49811289296"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า อัลพาร์ด รถตู้ Alphard Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mos3id01xsle9b",
+        "title": "สีแต้มรถยนต์ โตโยต้า อัลพาร์ด รถตู้ Alphard Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/49011315056"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า มาเจสตี้ Majesty Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mos3e097zmksb1",
+        "title": "สีแต้มรถยนต์ โตโยต้า มาเจสตี้ Majesty Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/48811312363"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี รถตู้ MG Maxus9 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-morpnpdcf6rveb",
+        "title": "สีแต้มรถยนต์ เอ็มจี รถตู้ MG Maxus9 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/48511292208"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสัน เทอร์ร่า Terra Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-morn5uljajgt85",
+        "title": "สีแต้มรถยนต์ นิสสัน เทอร์ร่า Terra Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/48461296582"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มาสด้า Mazda CX-5 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-morwc06x91c0b2",
+        "title": "สีแต้มรถยนต์ มาสด้า Mazda CX-5 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/48361305826"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฟอร์ดเฟียสต้า Fiesta Ford | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztd-morp1f6dnmrw49",
+        "title": "สีแต้มรถยนต์ ฟอร์ดเฟียสต้า Fiesta Ford | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/47961293061"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้าซีวิค Civic Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztc-mos1hdl4fg9827",
+        "title": "สีแต้มรถยนต์ ฮอนด้าซีวิค Civic Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/47711308258"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้าเซียนต้า Sienta Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mos3f1a7g0zl47",
+        "title": "สีแต้มรถยนต์ โตโยต้าเซียนต้า Sienta Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/47611308470"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ กระบะฟอร์ด Ranger Raptor Ford | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-morphp3skl586e",
+        "title": "สีแต้มรถยนต์ กระบะฟอร์ด Ranger Raptor Ford | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/47511279773"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า C-HR Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztm-mos3o9kjottue4",
+        "title": "สีแต้มรถยนต์ โตโยต้า C-HR Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/46961320123"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้า HR-V Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-morz2l2zchs2e2",
+        "title": "สีแต้มรถยนต์ ฮอนด้า HR-V Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/46861315815"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้าคัมรี่ Camry Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-mos3qq7bojk0b8",
+        "title": "สีแต้มรถยนต์ โตโยต้าคัมรี่ Camry Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/46611308613"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสัน พัลซ่า Pulsar Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztk-mors9e1gjwnjea",
+        "title": "สีแต้มรถยนต์ นิสสัน พัลซ่า Pulsar Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/46561298233"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฟอร์ด เอคโค่สปอร์ต EcoSport Ford | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zte-morntzepyxoga5",
+        "title": "สีแต้มรถยนต์ ฟอร์ด เอคโค่สปอร์ต EcoSport Ford | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/46261284210"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสัน เอ็กซ์เทรล X-Trail Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-morqjv6rlr7wf4",
+        "title": "สีแต้มรถยนต์ นิสสัน เอ็กซ์เทรล X-Trail Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/45761293844"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG GS | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztl-morq0kp4h7gve6",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG GS | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/45611292369"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มาสด้าสาม Mazda 3 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-mortt242ku8f6d",
+        "title": "สีแต้มรถยนต์ มาสด้าสาม Mazda 3 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/45461302618"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ โตโยต้า ยาริส / Ativ / Cross Toyota | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mos42vu4xiiz0d",
+        "title": "สีแต้มรถยนต์ โตโยต้า ยาริส / Ativ / Cross Toyota | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/45261314031"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฮอนด้า WR-V Honda | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zti-morz2l2zchs2e2",
+        "title": "สีแต้มรถยนต์ ฮอนด้า WR-V Honda | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/43831256984"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG HS | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zth-moqpskx3f3t79f",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG HS | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/43681236346"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ เอ็มจี MG3 | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztn-morq2cyh38r070",
+        "title": "สีแต้มรถยนต์ เอ็มจี MG3 | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/43081251967"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มิตซูบิชิ ไทรทัน Triton Mitsubishi | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztp-mos568im3p5877",
+        "title": "สีแต้มรถยนต์ มิตซูบิชิ ไทรทัน Triton Mitsubishi | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/41681266383"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ ฟอร์ดโฟกัส Focus Ford | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81zto-moj765ir9dkx10",
+        "title": "สีแต้มรถยนต์ ฟอร์ดโฟกัส Focus Ford | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/40731251757"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ นิสสันโน๊ต Note Nissan | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztg-morqt9y8llhp3d",
+        "title": "สีแต้มรถยนต์ นิสสันโน๊ต Note Nissan | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/26744926862"
+    },
+    {
+        "category": "สีแต้มรถ",
+        "brand": "PK PAINT",
+        "price": 180,
+        "name": "สีแต้มรถยนต์ มิตซูบิชิ ปาเจโร่ Pajero Mitsubishi | PK PAINT",
+        "img": "https://cf.shopee.co.th/file/th-11134207-81ztj-mos4ty9lymml96",
+        "title": "สีแต้มรถยนต์ มิตซูบิชิ ปาเจโร่ Pajero Mitsubishi | PK PAINT",
+        "price_text": "฿180 - ฿380",
+        "shopee_url": "https://shopee.co.th/product/569384179/26444918298"
     }
 ]

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="view-transition" content="same-origin" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +22,8 @@
     <meta property="og:type" content="website">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css?v=1.0.2">
-    <link rel="stylesheet" href="css/products.css?v=1.0.2">
+    <link rel="stylesheet" href="css/main.css?v=1.1.3">
+    <link rel="stylesheet" href="css/products.css?v=1.0.3">
 </head>
 
 <body>
@@ -31,8 +32,8 @@
     <nav class="navbar">
         <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
             <div class="logo-section">
-                <img src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
-                <div class="logo-text">PAINT & SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
+                <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
+                <div class="logo-text">PK PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
             </div>
         </a>
         <ul class="nav-links">
@@ -45,6 +46,7 @@
             <li><a href="contact.html">ติดต่อเรา</a></li>
         </ul>
         <div class="nav-right">
+            
             <div class="phone">
                 <i class="fas fa-phone-alt"></i>
                 <a href="tel:0928528535">092-852-8535</a>
@@ -71,8 +73,8 @@
     </div>
 
     <main class="page-container" id="main-content">
-        <div class="breadcrumb" style="margin-bottom: 20px; color: #888; font-size: 14px;">
-            <a href="index.html" style="color:#666; text-decoration:none;">หน้าแรก</a> / สินค้าทั้งหมด
+        <div class="breadcrumb">
+            <a href="index.html">หน้าแรก</a> / <span>สินค้าทั้งหมด</span>
         </div>
 
         <div class="toolbar">
@@ -90,118 +92,121 @@
 
         <div class="filter-row">
             <div class="dropdown-wrap" id="categoryDropdown">
-                <div class="dropdown-trigger" onclick="toggleDropdown('categoryDropdown')">
+                <div role="button" tabindex="0" class="dropdown-trigger" onclick="toggleDropdown('categoryDropdown')">
                     <div class="dropdown-trigger-left"><i class="fas fa-th-large"></i><span
                             class="dropdown-trigger-text">หมวดหมู่สินค้า</span></div>
                     <span class="dropdown-trigger-count" id="categoryCount" style="display:none;">1</span>
                     <i class="fas fa-chevron-down chevron"></i>
                 </div>
                 <div class="dropdown-panel" id="categoryPanel">
-                    <div class="dropdown-item" data-value="น้ำยาเคมี" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-flask"></i>น้ำยาเคมี</div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="ยาขัด" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-wand-magic-sparkles"></i>ยาขัด</div>
                     </div>
-                    <div class="dropdown-item" data-value="ฮาร์ดดินเนอร์" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-vial"></i>ฮาร์ดดินเนอร์</div>
-                    </div>
-                    <div class="dropdown-item" data-value="ทินเนอร์" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-droplet"></i>ทินเนอร์</div>
-                    </div>
-                    <div class="dropdown-item" data-value="สีสเปรย์ Leyland" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-spray-can"></i>สีสเปรย์ Leyland</div>
-                    </div>
-                    <div class="dropdown-item" data-value="สี Nakoya" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-palette"></i>สี Nakoya</div>
-                    </div>
-                    <div class="dropdown-item" data-value="สี Pylac" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-brush"></i>สี Pylac</div>
-                    </div>
-                    <div class="dropdown-item" data-value="กระดาษทราย" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-scroll"></i>กระดาษทราย</div>
-                    </div>
-                    <div class="dropdown-item" data-value="เบ็ดเตล็ด" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-cubes"></i>เบ็ดเตล็ด</div>
-                    </div>
-                    <div class="dropdown-item" data-value="สีรองพื้น" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-paint-roller"></i>สีรองพื้น</div>
-                    </div>
-                    <div class="dropdown-item" data-value="กระดาษกาว" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-tape"></i>กระดาษกาว</div>
-                    </div>
-                    <div class="dropdown-item" data-value="กาพ่นสี" onclick="selectCategory(this)">
-                        <div class="dropdown-item-left"><i class="fa-solid fa-fill"></i>กาพ่นสี</div>
-                    </div>
-                    <div class="dropdown-item" data-value="แลคเกอร์" onclick="selectCategory(this)">
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="แลคเกอร์" onclick="selectCategory(this)">
                         <div class="dropdown-item-left"><i class="fa-solid fa-fill-drip"></i>แลคเกอร์</div>
                     </div>
-                    <div class="dropdown-item" data-value="สีโป๊ว" onclick="selectCategory(this)">
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="สีรองพื้น" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-paint-roller"></i>สีรองพื้น</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="สีโป๊ว" onclick="selectCategory(this)">
                         <div class="dropdown-item-left"><i class="fa-solid fa-trowel"></i>สีโป๊ว</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="ทินเนอร์" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-droplet"></i>ทินเนอร์</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="สีอุตสาหกรรม" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-industry"></i>สีอุตสาหกรรม</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="สีไพแลค" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-brush"></i>สีไพแลค</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="ฮาร์ดเดนเนอร์" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-vial"></i>ฮาร์ดเดนเนอร์</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="น้ำยาเคมี" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-flask"></i>น้ำยาเคมี</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="สีสเปรย์" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-spray-can"></i>สีสเปรย์</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="กระดาษทราย" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-scroll"></i>กระดาษทราย</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="เบ็ดเตล็ด" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-cubes"></i>เบ็ดเตล็ด</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="เทป" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-tape"></i>เทป</div>
+                    </div>
+                    <div role="button" tabindex="0" class="dropdown-item" data-value="กาพ่นสี" onclick="selectCategory(this)">
+                        <div class="dropdown-item-left"><i class="fa-solid fa-fill"></i>กาพ่นสี</div>
                     </div>
                 </div>
             </div>
 
             <div class="dropdown-wrap" id="brandDropdown">
-                <div class="brand-dropdown-trigger" onclick="toggleDropdown('brandDropdown')">
+                <div role="button" tabindex="0" class="brand-dropdown-trigger" onclick="toggleDropdown('brandDropdown')">
                     <div class="dropdown-trigger-left"><i class="fas fa-tags"></i><span
                             class="dropdown-trigger-text">แบรนด์สินค้า</span></div>
                     <span class="dropdown-trigger-count" id="brandCount" style="display:none;">1</span>
                     <i class="fas fa-chevron-down chevron"></i>
                 </div>
                 <div class="brand-panel" id="brandPanel">
-                    <div class="brand-item" data-value="PK PAINT" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="PK PAINT" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/PK Logo-06.png" alt="PK">PK PAINT
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/PK Logo-06.png" alt="PK">PK PAINT
                         </div>
                     </div>
-                    <div class="brand-item" data-value="3M" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="3M" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/3M_wordmark.svg.png" alt="3M">3M
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/3M_wordmark.svg.png" alt="3M">3M
                         </div>
                     </div>
-                    <div class="brand-item" data-value="BIC BEN" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="BIC BEN" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/bbplogo.png" alt="BBP">BIC BEN
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/bbplogo.png" alt="BBP">BIC BEN
                         </div>
                     </div>
-                    <div class="brand-item" data-value="CROMAX" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="CROMAX" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/cromaxlogo.jpg" alt="CROMAX">CROMAX
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/cromaxlogo.jpg" alt="CROMAX">CROMAX
                         </div>
                     </div>
-                    <div class="brand-item" data-value="NASON" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="NASON" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/nason-logo-480x320-2.jpg" alt="NASON">NASON
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/nason-logo-480x320-2.jpg" alt="NASON">NASON
                         </div>
                     </div>
-                    <div class="brand-item" data-value="RGB" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="RGB" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/rgblogo.png" alt="RGB">RGB
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/rgblogo.png" alt="RGB">RGB
                         </div>
                     </div>
-                    <div class="brand-item" data-value="STAR" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="STAR" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/starlogo.png" alt="STAR">STAR
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/starlogo.png" alt="STAR">STAR
                         </div>
                     </div>
-                    <div class="brand-item" data-value="TATENO" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="TATENO" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/tateno.png" alt="TATENO">TATENO
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/tateno.png" alt="TATENO">TATENO
                         </div>
                     </div>
-                    <div class="brand-item" data-value="TOA" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="TOA" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/toa.png" alt="TOA">TOA
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/toa.png" alt="TOA">TOA
                         </div>
                     </div>
-                    <div class="brand-item" data-value="SOLAR" onclick="selectBrand(this)">
+                    <div role="button" tabindex="0" class="brand-item" data-value="SOLAR" onclick="selectBrand(this)">
                         <div class="brand-item-left">
-                            <img class="brand-logo" src="asset/solarlogo.png" alt="SOLAR">SOLAR
+                            <img decoding="async" loading="lazy" class="brand-logo" src="asset/solarlogo.png" alt="SOLAR">SOLAR
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="dropdown-wrap" id="priceDropdown">
-                <div class="dropdown-trigger" onclick="toggleDropdown('priceDropdown')">
+                <div role="button" tabindex="0" class="dropdown-trigger" onclick="toggleDropdown('priceDropdown')">
                     <div class="dropdown-trigger-left"><i class="fas fa-baht-sign"></i><span
                             class="dropdown-trigger-text" id="priceTriggerText">ช่วงราคา</span></div>
                     <span class="dropdown-trigger-count" id="priceCount" style="display:none;">1</span>
@@ -315,9 +320,9 @@
         <div class="footer-content">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <img src="asset/PK Logo-05.png" alt="PK Paint & Supply Logo" class="footer-logo-img">
+                    <img decoding="async" loading="lazy" src="asset/PK Logo-05.png" alt="PK Paint & Supply Logo" class="footer-logo-img">
                     <div>
-                        <div style="font-size:14px;font-weight:600;color:#fff;">PAINT &amp; SUPPLY</div>
+                        <div style="font-size:14px;font-weight:600;color:#fff;">PK PAINT &amp; SUPPLY</div>
                         <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
                     </div>
                 </div>
@@ -359,7 +364,7 @@
     <div id="productLightbox" class="product-lightbox">
         <span class="lightbox-close" id="closeLightbox">&times;</span>
         <div class="lightbox-content-wrap">
-            <img class="lightbox-content" id="lightboxImg" src="" alt="รูปสินค้า">
+            <img decoding="async" loading="lazy" class="lightbox-content" id="lightboxImg" src="" alt="รูปสินค้า">
             <div id="lightboxCaption" class="lightbox-caption"></div>
         </div>
     </div>
@@ -370,6 +375,35 @@
     <script src="js/products.js?v=1.0.2" defer></script>
     <script src="js/main.js?v=1.0.2" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyQsSR1OYvSB2kM7RLMhfC4YJOqT1fCTzykGMNVbsZSsviQnCOFIhUhN7OCSF" crossorigin="anonymous"></script>
+
+<script>
+    const themeToggle = document.getElementById('themeToggle');
+    const icon = themeToggle ? themeToggle.querySelector('i') : null;
+    
+    function applyTheme(isDark) {
+        if(isDark) {
+            document.documentElement.classList.add('dark-mode');
+            if(icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
+            localStorage.setItem('pk_theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+            if(icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
+            localStorage.setItem('pk_theme', 'light');
+        }
+    }
+
+    // Init
+    if (localStorage.getItem('pk_theme') === 'dark') {
+        applyTheme(true);
+    }
+    
+    if(themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.contains('dark-mode');
+            applyTheme(!isDark);
+        });
+    }
+</script>
 </body>
 
 </html>

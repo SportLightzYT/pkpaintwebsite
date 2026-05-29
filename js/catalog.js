@@ -48,7 +48,7 @@
             colorGrid.innerHTML = `<div class="skeleton-grid">${skeletons}</div>`;
         }
 
-        fetch('asset/colors-data.json', { cache: 'force-cache' })
+        fetch('api/colors.php')
             .then(res => {
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 return res.json();
@@ -469,6 +469,18 @@
         lbData = dataArr; lbIndex = absIdx !== undefined ? absIdx : parseInt(card.dataset.index);
         if (isNaN(lbIndex)) return;
         showLB(lbIndex); lightbox.classList.add('open'); document.body.style.overflow = 'hidden';
+        
+        // Log view/search click to backend colors API
+        const colorItem = lbData[lbIndex];
+        if (colorItem && colorItem.id) {
+            fetch('api/colors.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'search', id: colorItem.id })
+            }).catch(err => {
+                // Ignore logging error
+            });
+        }
     };
     function showLB(idx) {
         const c = lbData[idx]; const b = brandMap[c.brand]; const badge = finishLabel(c.finish);

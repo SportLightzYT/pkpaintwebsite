@@ -1,5 +1,54 @@
+
+// Phase 8: XSS Protection Helper
+function escapeHTML(str) {
+    if (typeof str !== 'string') return str;
+    return str.replace(/[&<>'"]/g, 
+        tag => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            "'": '&#39;',
+            '"': '&quot;'
+        }[tag] || tag)
+    );
+}
+
 (function() {
     'use strict';
+
+    // Track page visit (once per session per page)
+    (function trackPageVisit() {
+        const pageKey = 'pk_visited_' + window.location.pathname;
+        if (!sessionStorage.getItem(pageKey)) {
+            sessionStorage.setItem(pageKey, '1');
+            
+            // Get friendly Thai page title based on path
+            let pageTitle = 'เข้าชมเว็บไซต์';
+            const path = window.location.pathname;
+            if (path.includes('products.html')) {
+                pageTitle = 'เข้าชมหน้าสินค้า';
+            } else if (path.includes('catalog.html')) {
+                pageTitle = 'เข้าชมหน้าแคตตาล็อค';
+            } else if (path.includes('promotions.html')) {
+                pageTitle = 'เข้าชมหน้าโปรโมชั่น';
+            } else if (path.includes('review.html')) {
+                pageTitle = 'เข้าชมหน้าดูรีวิว';
+            } else if (path.includes('about.html')) {
+                pageTitle = 'เข้าชมหน้าเกี่ยวกับเรา';
+            } else if (path.includes('contact.html')) {
+                pageTitle = 'เข้าชมหน้าติดต่อเรา';
+            } else if (path === '/' || path.endsWith('index.html') || path.endsWith('pkpaint/') || path.endsWith('pkpaint')) {
+                pageTitle = 'เข้าชมหน้าหลัก';
+            }
+            
+            fetch('api/stats.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'visit', page: pageTitle })
+            }).catch(() => {});
+        }
+    })();
+
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
     const navbar = document.querySelector('.navbar');

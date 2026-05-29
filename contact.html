@@ -18,6 +18,7 @@
         }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     </style>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <title>PK Paint &amp; Supply - ติดต่อเรา</title>
     <meta name="description"
@@ -37,7 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css?v=1.0.2">
+    <link rel="stylesheet" href="css/main.css?v=1.1.1">
     <link rel="stylesheet" href="css/contact.css?v=1.0.2">
 </head>
 <body>
@@ -46,8 +47,8 @@
     <nav class="navbar">
         <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
             <div class="logo-section">
-                <img src="asset/PK Logo-06.png" alt="PK Paint &amp; Supply Logo" class="logo-img" fetchpriority="high" width="124" height="42">
-                <div class="logo-text">PAINT & SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
+                <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint &amp; Supply Logo" class="logo-img" fetchpriority="high" width="124" height="42">
+                <div class="logo-text">PK PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
             </div>
         </a>
         <ul class="nav-links">
@@ -60,6 +61,7 @@
             <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
         </ul>
         <div class="nav-right">
+            
             <div class="phone"><i class="fas fa-phone-alt"></i> <a href="tel:0928528535">092-852-8535</a></div>
             <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
             <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
@@ -86,7 +88,7 @@
     <section class="page-hero">
         <div class="hero-inner">
             <div class="hero-copy">
-                <div class="breadcrumb" style="justify-content: center; margin-bottom: 24px;">
+                <div class="breadcrumb">
                     <a href="index.html">หน้าแรก</a> / <span>ติดต่อเรา</span>
                 </div>
                 <div class="hero-kicker"><i class="fas fa-headset"></i> Get in touch</div>
@@ -228,9 +230,9 @@
         <div class="footer-content">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <img src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img" width="112" height="38">
+                    <img decoding="async" loading="lazy" src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img" width="112" height="38">
                     <div>
-                        <div style="font-size:14px;font-weight:600;color:#fff;">PAINT &amp; SUPPLY</div>
+                        <div style="font-size:14px;font-weight:600;color:#fff;">PK PAINT &amp; SUPPLY</div>
                         <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
                     </div>
                 </div>
@@ -283,5 +285,34 @@
     <script src="js/contact.js?v=1.0.2" defer></script>
     <script src="js/main.js?v=1.0.2" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyQsSR1OYvSB2kM7RLMhfC4YJOqT1fCTzykGMNVbsZSsviQnCOFIhUhN7OCSF" crossorigin="anonymous"></script>
+
+<script>
+    const themeToggle = document.getElementById('themeToggle');
+    const icon = themeToggle ? themeToggle.querySelector('i') : null;
+    
+    function applyTheme(isDark) {
+        if(isDark) {
+            document.documentElement.classList.add('dark-mode');
+            if(icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
+            localStorage.setItem('pk_theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+            if(icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
+            localStorage.setItem('pk_theme', 'light');
+        }
+    }
+
+    // Init
+    if (localStorage.getItem('pk_theme') === 'dark') {
+        applyTheme(true);
+    }
+    
+    if(themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.contains('dark-mode');
+            applyTheme(!isDark);
+        });
+    }
+</script>
 </body>
 </html>

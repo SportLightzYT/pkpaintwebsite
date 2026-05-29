@@ -9,11 +9,11 @@
     max-width: 1400px;
     margin: 0 auto 24px;
     position: relative;
-    z-index: 2;
+    z-index: 100;
 }
 
 .filter-wrap {
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 20px;
     padding: 24px 28px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    background: #fff;
+    background: var(--card-bg);
     border: 1.5px solid #e0e0e0;
     border-radius: 12px;
     padding: 12px 18px;
@@ -118,7 +118,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--card-bg);
     border: 1.5px solid #1e90ff;
     border-top: none;
     border-radius: 0 0 12px 12px;
@@ -309,7 +309,7 @@
 }
 
 .view-btn.active {
-    background: #fff;
+    background: var(--card-bg);
     color: #1e90ff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -321,7 +321,7 @@
 }
 
 .color-card {
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -497,13 +497,13 @@
     flex-wrap: wrap;
 }
 
-.page-link {
+button.page-link, button.page-link[onclick] {
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: var(--card-bg);
     border: 1.5px solid #e0e0e0;
     border-radius: 10px;
     color: #555;
@@ -1128,7 +1128,7 @@
 }
 
 .skeleton-card {
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.06);

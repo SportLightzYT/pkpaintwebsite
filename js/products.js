@@ -422,7 +422,7 @@
 
     async function loadProductsData() {
         try {
-            const response = await fetch('asset/products-data.json?v=1.0.1');
+            const response = await fetch('api/products.php?active_only=true');
             if (!response.ok) throw new Error('Failed to fetch product data');
             const data = await response.json();
             
@@ -437,7 +437,7 @@
                 const escapedTitle = (p.title || '').replace(/"/g, '&quot;');
                 
                 html += `
-                <div class="product-card" data-category="${escapedCategory}" data-brand="${escapedBrand}" data-price="${p.price}" data-name="${escapedName}">
+                <div class="product-card" data-id="${p.id}" data-category="${escapedCategory}" data-brand="${escapedBrand}" data-price="${p.price}" data-name="${escapedName}">
                     <div class="product-img-box">
                         <img src="${p.img}" alt="${escapedTitle}" loading="lazy">
                     </div>
@@ -454,7 +454,7 @@
             
             initAfterLoad();
         } catch (error) {
-            console.error('Error loading products dynamic data:', error);
+            // console.error('Error loading products dynamic data:', error);
             const grid = document.getElementById('productGrid');
             if (grid) {
                 grid.innerHTML = `<div class="no-results" style="display:block;"><i class="fas fa-exclamation-circle"></i> เกิดข้อผิดพลาดในการโหลดข้อมูลสินค้า กรุณาลองใหม่อีกครั้ง</div>`;
@@ -500,6 +500,28 @@
                     if (card) {
                         const name = card.dataset.name || card.querySelector('.product-title')?.textContent || 'Product Image';
                         openLightbox(img.src, name);
+                        
+                        // Increment product views in database
+                        if (card.dataset.id) {
+                            fetch('api/products.php', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ action: 'view', id: parseInt(card.dataset.id) })
+                            }).catch(err => { /* console.error('Error logging view tracking:', err) */ });
+                        }
+                    }
+                }
+                
+                // Track Shopee Click Conversion
+                const btn = e.target.closest('.btn-shopee');
+                if (btn) {
+                    const card = btn.closest('.product-card');
+                    if (card && card.dataset.id) {
+                        fetch('api/products.php', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ action: 'click', id: parseInt(card.dataset.id) })
+                        }).catch(err => { /* console.error('Error logging click tracking:', err) */ });
                     }
                 }
             });

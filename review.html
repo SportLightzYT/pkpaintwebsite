@@ -18,6 +18,7 @@
         }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     </style>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="view-transition" content="same-origin" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,8 +36,8 @@
     <meta property="og:type" content="website">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css?v=1.0.2">
-    <link rel="stylesheet" href="css/review.css?v=1.0.2">
+    <link rel="stylesheet" href="css/main.css?v=1.1.1">
+    <link rel="stylesheet" href="css/review.css?v=2.1.1">
 </head>
 <body>
     <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
@@ -44,8 +45,8 @@
     <nav class="navbar">
         <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
             <div class="logo-section">
-                <img src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
-                <div class="logo-text">PAINT & SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
+                <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
+                <div class="logo-text">PK PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
             </div>
         </a>
         <ul class="nav-links">
@@ -58,6 +59,7 @@
             <li><a href="contact.html">ติดต่อเรา</a></li>
         </ul>
         <div class="nav-right">
+            
             <div class="phone">
                 <i class="fas fa-phone-alt"></i>
                 <a href="tel:0928528535">092-852-8535</a>
@@ -85,10 +87,10 @@
     <main id="main-content">
     <section class="page-hero">
         <div class="page-hero-content">
-            <div class="breadcrumb" style="justify-content: center; margin-bottom: 24px;">
+            <div class="breadcrumb">
                 <a href="index.html">หน้าแรก</a> / <span>รีวิวผลงาน</span>
             </div>
-            <h1>รีวิวผลงานระดับมืออาชีพ</h1>
+            <h1>รีวิวผลงาน</h1>
             <p>รวบรวมรีวิวการซ่อมสีและพ่นสีรถยนต์จากลูกค้าที่ไว้วางใจใช้ผลิตภัณฑ์ PK Paint &amp; Supply</p>
             <div class="stats-row">
                 <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">คันที่ทำสี</span></div>
@@ -101,99 +103,257 @@
         <div class="filter-tabs">
             <button class="filter-tab active" onclick="filterGallery(this, 'all')">ทั้งหมด</button>
             <button class="filter-tab" onclick="filterGallery(this, 'sedan')">รถเก๋ง</button>
-            <button class="filter-tab" onclick="filterGallery(this, 'pickup')">รถกระบะ</button>
             <button class="filter-tab" onclick="filterGallery(this, 'motorcycle')">มอเตอร์ไซค์</button>
             <button class="filter-tab" onclick="filterGallery(this, 'custom')">งาน Custom</button>
-            <button class="filter-tab" onclick="filterGallery(this, 'repair')">งานซ่อม</button>
+            <button class="filter-tab" onclick="filterGallery(this, 'repair')">สีเบอร์ตรงรุ่น</button>
         </div>
     </section>
     <section class="gallery-masonry" id="galleryMasonry">
-        <div class="gallery-item" data-cat="sedan" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/494743795_1240103011454271_4658974262208746630_n.jpg" alt="รีวิวผลงานสีพ่นรถยนต์" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+        <!-- 1. งานสีผสมตามตัวอย่าง McLaren Blue -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494743795_1240103011454271_4658974262208746630_n.jpg" alt="งานสีผสมตามตัวอย่าง McLaren Blue" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">งานสีผสมตามตัวอย่าง McLaren Blue</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="sedan" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/492244505_1232379788893260_5066965055526679066_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 2. สีเบอร์ตรงรุ่น ทุกสี ทุกแบรนด์ มอเตอร์ไซค์ยันซูเปอร์คาร์ -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="repair" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/492244505_1232379788893260_5066965055526679066_n.jpg" alt="สีเบอร์ตรงรุ่น ทุกสี ทุกแบรนด์" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีเบอร์ตรงรุ่น ทุกสี ทุกแบรนด์</div>
+                <div class="gallery-tags"><span class="gallery-tag">สีเบอร์ตรงรุ่น</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="sedan" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/492331505_1232379835559922_1367311580705007340_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 3. สีพ่นปั๊มเบรก Brembo สีเขียวนีออน -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/492331505_1232379835559922_1367311580705007340_n.jpg" alt="สีพ่นปั๊มเบรก สีแจ่มโดดเด่น ทนความร้อน" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีพ่นปั๊มเบรก สีแจ่มโดดเด่น ทนความร้อน</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="pickup" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/492570707_1232379832226589_1516774163565544080_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 4. สีพ่นล้อแม็ก Volk Racing TE37 เงา-ด้าน-กึ่งเงากึ่งด้าน -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/492570707_1232379832226589_1516774163565544080_n.jpg" alt="สีพ่นล้อแม็ก เงา-ด้าน-กึ่งเงากึ่งด้าน สั่งได้" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีพ่นล้อแม็ก เงา-ด้าน-กึ่งเงากึ่งด้าน สั่งได้</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="motorcycle" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/494386956_1240290031435569_5943475713169683896_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 5. สีเขียวแลมโบกินี Verde Viper (ผสมสีตามตัวอย่าง) -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="repair" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494386956_1240290031435569_5943475713169683896_n.jpg" alt="เขียวแลมโบกินี Verde Viper ผสมสีตามตัวอย่าง" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">เขียวแลมโบกินี Verde Viper</div>
+                <div class="gallery-tags"><span class="gallery-tag">สีเบอร์ตรงรุ่น</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="sedan" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/494423187_1240103241454248_5408589520389952270_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 6. สีฟ้าเบรมโบ Brembo Blue -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494423187_1240103241454248_5408589520389952270_n.jpg" alt="สีฟ้าเบรมโบ Brembo Blue พ่นปั๊มเบรก" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีฟ้าเบรมโบ Brembo Blue</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/494517101_1240104194787486_2540033925222435701_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 7. สีเทากันด้าน เบรมโบ Gun Metal Grey -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494517101_1240104194787486_2540033925222435701_n.jpg" alt="สีเทากันด้าน เบรมโบ Gun Metal Grey" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีเทากันด้าน เบรมโบ Gun Metal Grey</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="repair" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/494550493_1240479438083295_6754623534495991420_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 8. สีโครเมียม กระจังหน้า BMW M Performance -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494550493_1240479438083295_6754623534495991420_n.jpg" alt="สีโครเมียม กระจังหน้า BMW M Performance" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีโครเมียม กระจังหน้า BMW M Performance</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/494563172_1241425457988693_4610767065080850713_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 9. ผสมตามตัวอย่างได้ทุกแบบ ขอให้บอก! -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494563172_1241425457988693_4610767065080850713_n.jpg" alt="ผสมตามตัวอย่างได้ทุกแบบ ขอให้บอก!" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">ผสมตามตัวอย่างได้ทุกแบบ ขอให้บอก!</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
         </div>
-        <div class="gallery-item" data-cat="repair" onclick="openGalleryLightbox(this)">
-            <img src="asset/review/494571101_1240113684786537_8450207804436232076_n.jpg" alt="รีวิวผลงาน" loading="lazy" decoding="async">
-            <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+
+        <!-- 10. รีวิวสีมอเตอร์ไซค์ ลูกค้าชอบเลย สวยมาก -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="motorcycle" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494571101_1240113684786537_8450207804436232076_n.jpg" alt="รีวิวสีมอเตอร์ไซค์ ลูกค้าชอบเลย สวยมาก" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">รีวิวสีมอเตอร์ไซค์ ลูกค้าชอบเลยสวยมาก</div>
+                <div class="gallery-tags"><span class="gallery-tag">มอเตอร์ไซค์</span></div>
+            </div>
+        </div>
+
+        <!-- 11. สีเบอร์ตรงรุ่น แดงเฟอรารี Ferrari Red Rosso Corsa -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="repair" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/494972287_1240102828120956_2785556886397984785_n.jpg" alt="สีเบอร์ตรงรุ่น แดงเฟอรารี Ferrari Red Rosso Corsa" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีเบอร์ตรงรุ่น แดงเฟอรารี Ferrari Red</div>
+                <div class="gallery-tags"><span class="gallery-tag">สีเบอร์ตรงรุ่น</span></div>
+            </div>
+        </div>
+
+        <!-- 12. ผสมตามตัวอย่าง ฝาครอบเครื่อง RB26 -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="custom" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/495160651_1241425417988697_925933714454432874_n.jpg" alt="ผสมตามตัวอย่าง ฝาครอบเครื่อง RB26" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">ผสมตามตัวอย่าง ฝาครอบเครื่อง RB26</div>
+                <div class="gallery-tags"><span class="gallery-tag">งาน Custom</span></div>
+            </div>
+        </div>
+
+        <!-- 13. สีเบอร์ตรงรุ่น Lancer Evo Rally Red (Mitsubishi P23) -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="sedan" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/495388421_1241425464655359_5141824224873491522_n.jpg" alt="สีเบอร์ตรงรุ่น Lancer Evo Rally Red" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">สีเบอร์ตรงรุ่น Lancer Evo Rally Red</div>
+                <div class="gallery-tags"><span class="gallery-tag">รถเก๋ง</span></div>
+            </div>
+        </div>
+
+        <!-- 14. ผสมสีตามตัวอย่างและอัดสเปรย์ Vintage Beetle -->
+        <div role="button" tabindex="0" class="gallery-item" data-cat="sedan" onclick="openGalleryLightbox(this)">
+            <div class="gallery-img-container">
+                <img src="asset/review/495952934_1247921980672374_4334518499302370172_n.jpg" alt="ผสมสีตามตัวอย่างและอัดสเปรย์ Vintage Beetle" loading="lazy" decoding="async">
+                <div class="gallery-img-overlay">
+                    <div class="gallery-zoom"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="gallery-info">
+                <div class="gallery-title">ผสมสีตามตัวอย่างและอัดสเปรย์ Vintage Beetle</div>
+                <div class="gallery-tags"><span class="gallery-tag">รถเก๋ง</span></div>
+            </div>
         </div>
     </section>
+
+    <!-- ========== SHOWCASE: สีเบอร์ตรงรุ่น ========== -->
     <section class="compare-section">
         <div class="section-header">
-            <h2><i class="fas fa-exchange-alt" style="color: #1e90ff;margin-right:10px;"></i>Before &amp; After</h2>
-            <p>เปรียบเทียบผลงานก่อนและหลังการซ่อมสี</p>
+            <h2><i class="fas fa-palette" style="margin-right:10px;"></i>สีเบอร์ตรงรุ่น — ผสมได้ทุกแบรนด์</h2>
+            <p>ไม่ว่าจะเป็นซูเปอร์คาร์ ญี่ปุ่น หรือยุโรป เราผสมสีเบอร์ตรงรุ่นให้ได้ทุกเฉดสี</p>
         </div>
         <div class="compare-grid">
             <div class="compare-card">
                 <div class="compare-images">
-                    <img src="asset/review/494591498_1240290428102196_5560232929467089297_n.jpg" alt="Before" loading="lazy" decoding="async">
-                    <img src="asset/review/494645996_1240103004787605_6228595662156841889_n.jpg" alt="After" loading="lazy" decoding="async">
-                    <span class="compare-label before">BEFORE</span>
-                    <span class="compare-label after">AFTER</span>
+                    <img src="asset/review/494591498_1240290428102196_5560232929467089297_n.jpg" alt="Lamborghini Verde Viper สีเขียว" loading="lazy" decoding="async">
+                    <img src="asset/review/494645996_1240103004787605_6228595662156841889_n.jpg" alt="McLaren Yellow สีเหลืองเมทัลลิก" loading="lazy" decoding="async">
+                    <span class="compare-label before">LAMBORGHINI</span>
+                    <span class="compare-label after">McLAREN</span>
                 </div>
                 <div class="compare-info">
-                    <h4>ตัวอย่างผลงาน</h4>
-                    <p>เปรียบเทียบผลงานก่อนและหลังทำสีจากทางร้าน</p>
+                    <h4>สีเบอร์ตรงรุ่นซูเปอร์คาร์ — Lamborghini &amp; McLaren</h4>
+                    <p>ผสมสีเบอร์ตรงรุ่น ไม่ว่าจะเป็นสีเขียว Verde Viper หรือสีเหลือง McLaren ก็เทียบสีได้แม่นยำ</p>
                     <div class="compare-meta">
-                        <span><i class="fas fa-clock"></i> 3 วัน</span>
+                        <span><i class="fas fa-check-circle"></i> เทียบสีแม่นยำ</span>
                         <span><i class="fas fa-paint-roller"></i> ระบบ 2K</span>
-                        <span><i class="fas fa-shield-alt"></i> รับประกัน 1 ปี</span>
+                        <span><i class="fas fa-shield-alt"></i> รับประกันคุณภาพ</span>
                     </div>
                 </div>
             </div>
             <div class="compare-card">
                 <div class="compare-images">
-                    <img src="asset/review/494706902_1240300161434556_6982653130500121750_n.jpg" alt="Before" loading="lazy" decoding="async">
-                    <img src="asset/review/494714697_1240102854787620_2006478741873266464_n.jpg" alt="After" loading="lazy" decoding="async">
-                    <span class="compare-label before">BEFORE</span>
-                    <span class="compare-label after">AFTER</span>
+                    <img src="asset/review/494706902_1240300161434556_6982653130500121750_n.jpg" alt="Nissan GTR R34 Bay Side Blue สีน้ำเงิน" loading="lazy" decoding="async">
+                    <img src="asset/review/494714697_1240102854787620_2006478741873266464_n.jpg" alt="Top Secret GT-300 Gold Pearl สีทองมุก" loading="lazy" decoding="async">
+                    <span class="compare-label before">GTR R34</span>
+                    <span class="compare-label after">TOP SECRET</span>
                 </div>
                 <div class="compare-info">
-                    <h4>ตัวอย่างผลงาน</h4>
-                    <p>เปรียบเทียบผลงานก่อนและหลังทำสีจากทางร้าน</p>
+                    <h4>สีเบอร์ตรงรุ่น JDM — GTR R34 Bay Side Blue &amp; Top Secret Gold Pearl</h4>
+                    <p>สีสายญี่ปุ่น JDM ผสมได้ครบ ตั้งแต่ Bay Side Blue ของ GTR R34 ไปจนถึง Gold Pearl ในตำนาน</p>
                     <div class="compare-meta">
-                        <span><i class="fas fa-clock"></i> 5 วัน</span>
-                        <span><i class="fas fa-paint-roller"></i> สีแคนดี้</span>
-                        <span><i class="fas fa-shield-alt"></i> รับประกัน 2 ปี</span>
+                        <span><i class="fas fa-check-circle"></i> สูตรสี JDM</span>
+                        <span><i class="fas fa-paint-roller"></i> ระบบ 2K</span>
+                        <span><i class="fas fa-shield-alt"></i> รับประกันคุณภาพ</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
     <section class="testimonials">
         <div class="section-header">
-            <h2><i class="fas fa-comments" style="color: #1e90ff;margin-right:10px;"></i>เสียงจากลูกค้า</h2>
+            <h2><i class="fas fa-comments" style="margin-right:10px;"></i>เสียงจากลูกค้า</h2>
             <p>รีวิวจากลูกค้าที่ใช้บริการและผลิตภัณฑ์ของเรา</p>
         </div>
         <div class="testi-grid">
@@ -201,39 +361,43 @@
                 <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testi-text">"แนะนำร้านนี้ครับบริการดีรวดเร็ว สีออกมาได้เหมือนโอเคเลยครับ"</p>
                 <div class="testi-author">
-                    <div class="testi-avatar" style="background: #fbbc04; color: #000;">ส</div>
+                    <div class="testi-avatar">ส</div>
                     <div><div class="testi-name">สมชัย แซ่ลิ้ม</div><div class="testi-role">ลูกค้าจาก Google</div></div>
                 </div>
-                <div style="position: absolute; bottom: 28px; right: 28px;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
+                <div style="position: absolute; bottom: 28px; right: 28px;"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
             </div>
             <div class="testi-card">
                 <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testi-text">"สีที่ร้านได้มาตรฐานมากเลยครับ ร้านบริการดีมากเลยครับ"</p>
                 <div class="testi-author">
-                    <div class="testi-avatar" style="background: #00a4e4; color: #333;">พ</div>
+                    <div class="testi-avatar">พ</div>
                     <div><div class="testi-name">ไพบูลย์ จงปัญญาวิวัฒน์</div><div class="testi-role">ลูกค้าจาก Google</div></div>
                 </div>
-                <div style="position: absolute; bottom: 28px; right: 28px;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
+                <div style="position: absolute; bottom: 28px; right: 28px;"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
             </div>
             <div class="testi-card">
                 <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testi-text">"สีคุณภาพสำหรับรถที่เรารัก ต้องที่นี่เลยจ้าาา มีให้เลือกทุกเฉดสี"</p>
                 <div class="testi-author">
-                    <div class="testi-avatar" style="background: #00bcd4; color: #333;">O</div>
+                    <div class="testi-avatar">O</div>
                     <div><div class="testi-name">Oui Napapat</div><div class="testi-role">ลูกค้าจาก Google</div></div>
                 </div>
-                <div style="position: absolute; bottom: 28px; right: 28px;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
+                <div style="position: absolute; bottom: 28px; right: 28px;"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height:18px; opacity:0.9;"></div>
             </div>
         </div>
     </section>
     </main>
-    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+
+    <!-- LIGHTBOX -->
+    <div role="button" tabindex="0" class="lightbox" id="lightbox" onclick="closeLightbox(event)">
         <button class="lightbox-close" onclick="closeLightboxBtn(event)" aria-label="ปิด"><i class="fas fa-times"></i></button>
         <button class="lightbox-prev" onclick="lightboxNav(-1,event)" aria-label="รูปก่อนหน้า"><i class="fas fa-chevron-left"></i></button>
-        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <img decoding="async" loading="lazy" class="lightbox-img" id="lightboxImg" src="" alt="">
         <button class="lightbox-next" onclick="lightboxNav(1,event)" aria-label="รูปถัดไป"><i class="fas fa-chevron-right"></i></button>
         <div class="lightbox-caption" id="lightboxCaption"><h3></h3><p></p></div>
     </div>
+
+    <!-- SHARE -->
     <section class="share-section">
         <h2>มีผลงานอยากแชร์?</h2>
         <p>ถ้าคุณใช้สีจาก PK Paint &amp; Supply แล้วผลงานออกมาสวยงาม<br>เชิญแชร์มาให้เราได้โชว์ในหน้านี้ด้วยนะครับ</p>
@@ -241,13 +405,15 @@
             <i class="fab fa-line"></i> ส่งรูปมาทาง LINE
         </a>
     </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <img src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img" width="112" height="38">
+                    <img decoding="async" loading="lazy" src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img" width="112" height="38">
                     <div>
-                        <div style="font-size:14px;font-weight:600;color:#fff;">PAINT &amp; SUPPLY</div>
+                        <div style="font-size:14px;font-weight:600;color:#fff;">PK PAINT &amp; SUPPLY</div>
                         <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
                     </div>
                 </div>
@@ -288,8 +454,37 @@
     <button class="scroll-top" id="scrollTop" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">
         <i class="fas fa-chevron-up"></i>
     </button>
-    <script src="js/review.js?v=1.0.2" defer></script>
+    <script src="js/review.js?v=2.1.0" defer></script>
     <script src="js/main.js?v=1.0.2" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyQsSR1OYvSB2kM7RLMhfC4YJOqT1fCTzykGMNVbsZSsviQnCOFIhUhN7OCSF" crossorigin="anonymous"></script>
+
+<script>
+    const themeToggle = document.getElementById('themeToggle');
+    const icon = themeToggle ? themeToggle.querySelector('i') : null;
+    
+    function applyTheme(isDark) {
+        if(isDark) {
+            document.documentElement.classList.add('dark-mode');
+            if(icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
+            localStorage.setItem('pk_theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+            if(icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
+            localStorage.setItem('pk_theme', 'light');
+        }
+    }
+
+    // Init
+    if (localStorage.getItem('pk_theme') === 'dark') {
+        applyTheme(true);
+    }
+    
+    if(themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.contains('dark-mode');
+            applyTheme(!isDark);
+        });
+    }
+</script>
 </body>
 </html>
