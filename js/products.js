@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     'use strict';
     let selectedCategory = '';
     let selectedBrand = '';
@@ -422,7 +422,7 @@
 
     async function loadProductsData() {
         try {
-            const response = await fetch('api/products.php?active_only=true');
+            const response = await fetch('data/products.json');
             if (!response.ok) throw new Error('Failed to fetch product data');
             const data = await response.json();
             
@@ -503,7 +503,7 @@
                         
                         // Increment product views in database
                         if (card.dataset.id) {
-                            fetch('api/products.php', {
+                            fetch('data/products.json', {
                                 method: 'POST',
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify({ action: 'view', id: parseInt(card.dataset.id) })
@@ -517,7 +517,7 @@
                 if (btn) {
                     const card = btn.closest('.product-card');
                     if (card && card.dataset.id) {
-                        fetch('api/products.php', {
+                        fetch('data/products.json', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ action: 'click', id: parseInt(card.dataset.id) })

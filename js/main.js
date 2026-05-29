@@ -1,4 +1,4 @@
-
+﻿
 // Phase 8: XSS Protection Helper
 function escapeHTML(str) {
     if (typeof str !== 'string') return str;
@@ -41,7 +41,7 @@ function escapeHTML(str) {
                 pageTitle = 'เข้าชมหน้าหลัก';
             }
             
-            fetch('api/stats.php', {
+            fetch('data/stats.json', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'visit', page: pageTitle })

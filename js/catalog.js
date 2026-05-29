@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     'use strict';
     let BRANDS = [];
     let COLORS = [];
@@ -48,7 +48,7 @@
             colorGrid.innerHTML = `<div class="skeleton-grid">${skeletons}</div>`;
         }
 
-        fetch('api/colors.php')
+        fetch('data/colors.json')
             .then(res => {
                 if (!res.ok) throw new Error('HTTP ' + res.status);
                 return res.json();
@@ -473,7 +473,7 @@
         // Log view/search click to backend colors API
         const colorItem = lbData[lbIndex];
         if (colorItem && colorItem.id) {
-            fetch('api/colors.php', {
+            fetch('data/colors.json', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'search', id: colorItem.id })

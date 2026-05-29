@@ -1,4 +1,4 @@
-(function() {
+﻿(function() {
     'use strict';
     const cdDaysEl = document.getElementById('cd-days');
     const cdHoursEl = document.getElementById('cd-hours');
@@ -105,7 +105,7 @@
         }
 
         try {
-            const res = await fetch('api/promotions.php?active_only=true');
+            const res = await fetch('data/promotions.json');
             if (!res.ok) throw new Error('HTTP ' + res.status);
             const promotionsData = await res.json();
 
@@ -231,7 +231,7 @@
                     const promoId = this.dataset.promoId;
                     if (promoId) {
                         // Dynamically log shopee conversion click on the associated product
-                        fetch('api/products.php', {
+                        fetch('data/products.json', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ action: 'click', id: parseInt(promotionsData.find(pr => pr.id == promoId)?.product_id) })
