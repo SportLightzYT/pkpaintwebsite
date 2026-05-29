@@ -497,7 +497,7 @@
     flex-wrap: wrap;
 }
 
-button.page-link, button.page-link[onclick] {
+.page-link {
     width: 40px;
     height: 40px;
     display: flex;
