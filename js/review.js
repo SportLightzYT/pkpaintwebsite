@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    // Filter gallery by category
+    // Filter gallery by category (photo grid only)
     window.filterGallery = function(btn, cat) {
         document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
         btn.classList.add('active');
@@ -10,12 +10,30 @@
         });
     };
 
+    // Switch between "ภาพผลงาน" and "คลิปวิดีโอ"
+    window.switchMediaTab = function(btn, type) {
+        document.querySelectorAll('.media-tab').forEach(t => t.classList.remove('active'));
+        btn.classList.add('active');
+        const photoSection = document.getElementById('photoSection');
+        const videoSection = document.getElementById('videoSection');
+        if (photoSection) photoSection.style.display = type === 'photos' ? '' : 'none';
+        if (videoSection) videoSection.style.display = type === 'videos' ? '' : 'none';
+
+        // Stop any playing clip when leaving the video tab
+        if (type !== 'videos') {
+            document.querySelectorAll('#videoGallery video.video-thumb').forEach(v => v.pause());
+        }
+    };
+
     // Lightbox
     let galleryItems = [];
     let currentLightboxIndex = -1;
 
     window.openGalleryLightbox = function(el) {
-        galleryItems = Array.from(document.querySelectorAll('#galleryMasonry .gallery-item')).filter(i => i.style.display !== 'none');
+        const isVideo = el.classList.contains('video-item');
+        galleryItems = isVideo
+            ? Array.from(document.querySelectorAll('#videoGallery .gallery-item'))
+            : Array.from(document.querySelectorAll('#galleryMasonry .gallery-item')).filter(i => i.style.display !== 'none');
         currentLightboxIndex = galleryItems.indexOf(el);
         showLightboxItem(currentLightboxIndex);
         document.getElementById('lightbox').classList.add('open');
@@ -25,14 +43,31 @@
     function showLightboxItem(idx) {
         if (idx < 0 || idx >= galleryItems.length) return;
         const el = galleryItems[idx];
-        const img = el.querySelector('img');
-        const title = el.querySelector('.gallery-title')?.textContent || '';
-        const tags = el.querySelector('.gallery-tags')?.textContent || '';
-        document.getElementById('lightboxImg').src = img.src;
-        document.getElementById('lightboxImg').alt = img.alt || title;
-        const caption = document.getElementById('lightboxCaption');
-        caption.querySelector('h3').textContent = title;
-        caption.querySelector('p').textContent = tags;
+        const imgEl = document.getElementById('lightboxImg');
+        const videoEl = document.getElementById('lightboxVideo');
+        const isVideo = el.classList.contains('video-item');
+
+        if (isVideo) {
+            const sourceEl = el.querySelector('video source');
+            const videoSrc = sourceEl ? sourceEl.getAttribute('src') : '';
+            imgEl.style.display = 'none';
+            videoEl.style.display = 'block';
+            if (videoEl.dataset.currentSrc !== videoSrc) {
+                videoEl.querySelector('source').setAttribute('src', videoSrc);
+                videoEl.load();
+                videoEl.dataset.currentSrc = videoSrc;
+            }
+            videoEl.currentTime = 0;
+            videoEl.play().catch(() => {});
+        } else {
+            videoEl.pause();
+            videoEl.style.display = 'none';
+            imgEl.style.display = 'block';
+            const img = el.querySelector('img');
+            const title = el.querySelector('.gallery-title')?.textContent || '';
+            imgEl.src = img.src;
+            imgEl.alt = img.alt || title;
+        }
         currentLightboxIndex = idx;
     }
 
@@ -46,6 +81,8 @@
         if (!e || e.target === document.getElementById('lightbox')) {
             document.getElementById('lightbox').classList.remove('open');
             document.body.style.overflow = '';
+            const videoEl = document.getElementById('lightboxVideo');
+            if (videoEl) videoEl.pause();
         }
     };
 
@@ -89,7 +126,59 @@
         }
     }, { passive: true });
 
+    // Video thumbnails logic
+    document.querySelectorAll('.video-thumb').forEach(video => {
+        const hasPoster = video.hasAttribute('poster') && video.getAttribute('poster').trim() !== '';
+
+        if (hasPoster) {
+            // Poster image paints on its own; just reveal once it's actually loaded.
+            const posterImg = new Image();
+            posterImg.onload = () => video.classList.add('is-ready');
+            posterImg.onerror = () => {}; // poster missing/broken: leave gradient fallback showing
+            posterImg.src = video.getAttribute('poster');
+        }
+
+        // ฟังก์ชันอัปเดตเวลาดึงออกมาเป็นตัวแปรเพื่อเรียกใช้งานได้ทั้ง 2 กรณี
+        const handleMetadataLoaded = function() {
+            if (!hasPoster) {
+                const target = Math.min(1, (video.duration || 2) / 4);
+                try { video.currentTime = target; } catch (e) {}
+            }
+
+            const durationEl = video.closest('.gallery-img-container')?.querySelector('.video-duration');
+            if (durationEl && isFinite(video.duration) && video.duration > 0) {
+                const totalSeconds = Math.round(video.duration);
+                const minutes = Math.floor(totalSeconds / 60);
+                const seconds = totalSeconds % 60;
+                durationEl.textContent = minutes + ':' + String(seconds).padStart(2, '0');
+            }
+        };
+
+        // ตรวจสอบว่าวิดีโอโหลด Metadata เสร็จไปแล้วหรือยัง (แก้ปัญหาโหลดจาก Cache)
+        if (video.readyState >= 1) { // 1 = HAVE_METADATA
+            handleMetadataLoaded();
+        } else {
+            video.addEventListener('loadedmetadata', handleMetadataLoaded, { once: true });
+        }
+
+        const handleDataLoaded = function() {
+            if (!hasPoster) video.classList.add('is-ready');
+        };
+
+        if (video.readyState >= 2) { // 2 = HAVE_CURRENT_DATA
+            handleDataLoaded();
+        } else {
+            video.addEventListener('loadeddata', handleDataLoaded, { once: true });
+        }
+    });
+
     // Scroll animation (simple fade-in)
+    document.querySelectorAll('.gallery-item[onclick]').forEach(el => {
+        el.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+        });
+    });
+
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {

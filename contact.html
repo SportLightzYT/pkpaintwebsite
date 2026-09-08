@@ -1,318 +1,225 @@
 <!DOCTYPE html>
+
 <html lang="th">
+
 <head>
-    <meta charset="UTF-8" />
-    <style>
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #1e90ff;
-            color: white;
-            padding: 8px;
-            z-index: 10000;
-            transition: top 0.3s;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    </style>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-    <title>PK Paint &amp; Supply - ติดต่อเรา</title>
-    <meta name="description"
-        content="ติดต่อ PK Paint &amp; Supply รังสิต ปทุมธานี สอบถามข้อมูลสินค้า ขอใบเสนอราคา หรือรับคำปรึกษาเรื่องสีพ่นรถยนต์จากผู้เชี่ยวชาญ โทร 092-852-8535" />
-    <meta property="og:title" content="PK Paint & Supply - ติดต่อเรา" />
-    <meta property="og:description"
-        content="จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง รังสิต ปทุมธานี" />
-    <meta property="og:type" content="website" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+    <meta name="view-transition" content="same-origin" />
+
+    <title>PK Paint & Supply - ติดต่อเรา</title>
+
+    <meta name="description" content="ติดต่อ PK Paint & Supply ศูนย์จำหน่ายสีพ่นรถยนต์ รังสิต ปทุมธานี สอบถามข้อมูลสินค้า ขอใบเสนอราคา หรือรับคำปรึกษา โทร 092-852-8535">
+
+    <meta property="og:title" content="PK Paint & Supply - ติดต่อเรา">
+
+    <meta property="og:description" content="จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง รับประกันคุณภาพ">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:locale" content="th_TH">
+
+    <meta property="og:url" content="https://pkpaintandsupply.com/contact.html">
+
+    <meta property="og:image" content="https://pkpaintandsupply.com/asset/Cover.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="PK Paint & Supply - ติดต่อเรา">
+
+    <meta name="twitter:description" content="จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง รับประกันคุณภาพ">
+
+    <meta name="twitter:image" content="https://pkpaintandsupply.com/asset/Cover.jpg">
+
+    <link rel="canonical" href="https://pkpaintandsupply.com/contact.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
     <link rel="icon" type="image/png" href="asset/pklogosvg.png">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/main.css?v=1.1.1">
+
     <link rel="stylesheet" href="css/contact.css?v=1.0.2">
+
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
-    <div class="scroll-progress" id="scrollProgress"></div>
-    <nav class="navbar">
-        <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
-            <div class="logo-section">
-                <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint &amp; Supply Logo" class="logo-img" fetchpriority="high" width="124" height="42">
-                <div class="logo-text">PK PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
-            </div>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="products.html">สินค้า</a></li>
-            <li><a href="catalog.html">แคตตาล็อค</a></li>
-            <li><a href="promotions.html">โปรโมชั่น</a></li>
-            <li><a href="review.html">รีวิว</a></li>
-            <li><a href="about.html">เกี่ยวกับเรา</a></li>
-            <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
-        </ul>
-        <div class="nav-right">
-            
-            <div class="phone"><i class="fas fa-phone-alt"></i> <a href="tel:0928528535">092-852-8535</a></div>
-            <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
-            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+<a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+<nav class="navbar">
+    <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
+        <div class="logo-section">
+            <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high" width="124" height="42">
+            <div class="logo-text">PK PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
         </div>
-    </nav>
-    <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="เมนูหลัก">
-        <a href="index.html">หน้าแรก</a>
-        <a href="products.html">สินค้า</a>
-        <a href="catalog.html">แคตตาล็อค</a>
-        <a href="promotions.html">โปรโมชั่น</a>
-        <a href="review.html">รีวิว</a>
-        <a href="about.html">เกี่ยวกับเรา</a>
-        <a href="contact.html" class="active">ติดต่อเรา</a>
-    
-        <div class="mobile-nav-contact">
-            <a href="tel:0928528535"><i class="fas fa-phone-alt" style="margin-right:8px;color:#1e90ff;"></i>092-852-8535</a>
-            <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line" style="margin-right:8px;color:#00c300;"></i>LINE: @999snkil</a>
-            <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html" >หน้าแรก</a></li>
+        <li><a href="products.html" >สินค้า</a></li>
+        <li><a href="catalog.html" >แคตตาล็อก</a></li>
+        <li><a href="promotions.html" >โปรโมชั่น</a></li>
+        <li><a href="review.html" >รีวิว</a></li>
+        <li><a href="about.html" >เกี่ยวกับเรา</a></li>
+        <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+    </ul>
+    <div class="nav-right">
+        <div class="phone">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:0928528535">092-852-8535</a>
         </div>
+        <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
+        <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <main id="main-content">
-    <section class="page-hero">
-        <div class="hero-inner">
-            <div class="hero-copy">
-                <div class="breadcrumb">
-                    <a href="index.html">หน้าแรก</a> / <span>ติดต่อเรา</span>
-                </div>
-                <div class="hero-kicker"><i class="fas fa-headset"></i> Get in touch</div>
-                <h1>ติดต่อ PK Paint &amp; Supply</h1>
-                <p>ยินดีให้คำปรึกษาเรื่องสีพ่นรถยนต์และอุปกรณ์ครบวงจร
-                    พร้อมบริการประเมินราคาและให้ข้อมูลสินค้าโดยผู้เชี่ยวชาญ</p>
-                <div class="hero-actions">
-                    <a class="hero-btn primary" href="tel:0928528535"><i class="fas fa-phone-alt"></i> โทรสอบถาม</a>
-                    <a class="hero-btn secondary" href="https://line.me/R/ti/p/@999snkil" target="_blank"
-                        rel="noopener"><i class="fab fa-line"></i> แชทผ่าน LINE</a>
-                    <a class="hero-btn facebook" href="https://www.facebook.com/pkpaint1996/" target="_blank"
-                        rel="noopener"><i class="fab fa-facebook-f"></i> Facebook</a>
-                </div>
-            </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav-header">
+        <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="mobile-nav-logo" width="100" height="34">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="ปิดเมนู">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <ul class="mobile-nav-links">
+        <li><a href="index.html" >หน้าแรก</a></li>
+        <li><a href="products.html" >สินค้า</a></li>
+        <li><a href="catalog.html" >แคตตาล็อก</a></li>
+        <li><a href="promotions.html" >โปรโมชั่น</a></li>
+        <li><a href="review.html" >รีวิว</a></li>
+        <li><a href="about.html" >เกี่ยวกับเรา</a></li>
+        <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+        <div class="mobile-nav-phone">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:0928528535">092-852-8535</a>
         </div>
-    </section>
-    <section class="contact-section">
-        <div class="contact-wrap">
-            <div class="info-row">
-                <div class="info-card">
-                    <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
-                    <h4>โทรศัพท์</h4>
-                    <p><a href="tel:0928528535">092-852-8535</a></p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon"><i class="fab fa-line"></i></div>
-                    <h4>LINE Official</h4>
-                    <p><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                    <h4>อีเมล</h4>
-                    <p><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></p>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon"><i class="fas fa-clock"></i></div>
-                    <h4>เวลาทำการ</h4>
-                    <p>จันทร์ - เสาร์ (08:30 – 18:00)</p>
-                </div>
-            </div>
-            <div class="info-row" style="margin-top:-14px;">
-                <div class="info-card" style="grid-column: 1 / -1;">
-                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h4>ที่อยู่ร้าน พี.เค.เพ้นท์แอนด์ซัพพลาย</h4>
-                    <p>249/3 ม.6 ถ.รังสิต ต.บางพูน อ.เมือง จ.ปทุมธานี</p>
-                    <p style="margin-top:8px;">
-                        <a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener">
-                            <i class="fas fa-directions" style="margin-right:6px;"></i>เปิดนำทาง Google Maps
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="contact-grid">
-                <section class="panel form-area">
-                    <div class="panel-head">
-                        <div class="section-kicker">Message us</div>
-                        <h2 class="section-title">ส่งข้อความถึงเรา</h2>
-                        <p class="section-desc">กรอกรายละเอียดเพื่อให้ทีมงานติดต่อกลับโดยเร็วที่สุด</p>
+        <a class="mobile-nav-btn" href="contact.html">ติดต่อสอบถาม</a>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <div class="hero-kicker"><i class="fas fa-headset"></i> Get in touch</div>
+                    <div class="breadcrumb">
+                        <a href="index.html">หน้าแรก</a> / <span>ติดต่อเรา</span>
                     </div>
-                    <form action="#" method="post" id="contactForm">
-                        <input type="hidden" name="csrf_token" id="csrfToken" value="">
-                        <div class="form-group" style="display:none;">
-                            <label class="form-label">Leave blank if human</label>
-                            <input type="text" name="website" tabindex="-1" autocomplete="off">
-                        </div>
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label class="form-label">ชื่อ-นามสกุล <span>*</span></label>
-                                <input type="text" class="form-control" name="name" required 
-                                    pattern="^[\u0E01-\u0E5B\u0E30-\u0E4E\u0E50-\u0E59a-zA-Z\s]{2,50}$"
-                                    title="กรุณากรอกชื่อ-นามสกุล (2-50 ตัวอักษร)" />
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">เบอร์โทรศัพท์ <span>*</span></label>
-                                <input type="tel" class="form-control" name="phone" required 
-                                    pattern="^0[0-9]{8,9}$"
-                                    title="กรุณากรอกเบอร์โทรศัพท์ (10 หลัก ขึ้นต้นด้วย 0)" />
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">LINE ID <span
-                                        style="color: #777;font-size:11px;">(ไม่บังคับ)</span></label>
-                                <input type="text" class="form-control" name="line_id"
-                                    placeholder="ระบุ LINE ID ของคุณ"
-                                    pattern="^[a-zA-Z0-9._-]{1,50}$"
-                                    title="LINE ID (1-50 ตัวอักษร ภาษาอังกฤษและตัวเลขเท่านั้น)" />
-                            </div>
-                            <div class="form-group full">
-                                <label class="form-label">เรื่องที่ติดต่อ <span>*</span></label>
-                                <select class="form-control" name="topic" required>
-                                    <option value="">-- เลือกหัวข้อ --</option>
-                                    <option value="สอบถามสินค้า">สอบถามสินค้า</option>
-                                    <option value="ขอใบเสนอราคา">ขอใบเสนอราคา</option>
-                                    <option value="ผสมสีตามตัวอย่าง">ผสมสีตามตัวอย่าง</option>
-                                    <option value="อัดสีสเปรย์กระป๋อง">อัดสีสเปรย์กระป๋อง</option>
-                                    <option value="อื่นๆ">อื่นๆ</option>
-                                </select>
-                            </div>
-                            <div class="form-group full">
-                                <label class="form-label">ข้อความรายละเอียด <span>*</span></label>
-                                <textarea class="form-control" name="message" required
-                                    minlength="10" maxlength="1000"
-                                    title="กรุณากรอกข้อความ (10-1000 ตัวอักษร)"></textarea>
-                            </div>
-                        </div>
-                        <div class="privacy-check">
-                            <input type="checkbox" id="p1" required />
-                            <label for="p1"> ยอมรับนโยบายความเป็นส่วนตัว</label>
-                        </div>
-                        <div class="submit-row">
-                            <button type="submit" class="btn-submit"><i class="far fa-paper-plane"></i>
-                                ส่งข้อความตอนนี้</button>
-                        </div>
-                    </form>
-                </section>
-                <aside class="panel">
+                    <h1>ติดต่อ PK Paint &amp; Supply</h1>
+                    <p>ยินดีให้คำปรึกษาเรื่องสีพ่นรถยนต์และอุปกรณ์พ่นสีครบวงจร พร้อมบริการประเมินราคาและให้ข้อมูลสินค้าโดยผู้เชี่ยวชาญ</p>
+                    <div class="hero-actions">
+                        <a class="hero-btn primary" href="tel:0928528535"><i class="fas fa-phone-alt"></i> โทรสอบถาม</a>
+                        <a class="hero-btn secondary" href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line"></i> ทักแชท LINE</a>
+                        <a class="hero-btn facebook" href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-wrap">
+                <div class="info-row">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h4>โทรศัพท์</h4>
+                        <p><a href="tel:0928528535">092-852-8535</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fab fa-line"></i></div>
+                        <h4>LINE Official</h4>
+                        <p><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>อีเมล</h4>
+                        <p><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <h4>เวลาทำการ</h4>
+                        <p>จันทร์ - เสาร์ (08:30 - 18:00)</p>
+                    </div>
+                </div>
+
+                <div class="map-card">
                     <div class="map-box">
                         <div class="map-top">
                             <div class="section-kicker">Find us</div>
-                            <h2 class="section-title">แผนที่ร้าน</h2>
-                            <p class="section-desc">พี.เค.เพ้นท์แอนด์ซัพพลาย — 249/3 ม.6 ถ.รังสิต ต.บางพูน อ.เมือง
-                                จ.ปทุมธานี</p>
+                            <h2 class="section-title">แผนที่ร้านเรา</h2>
+                            <p class="section-desc">พี.เค. เพ้นท์ แอนด์ ซัพพลาย ณ 249/3 ม.6 ถ.รังสิต ต.บ้านปทุม อ.เมือง จ.ปทุมธานี</p>
                             <div class="hours-bar">
                                 <i class="fas fa-clock"></i>
-                                <span><strong>จ.–ส.</strong> <span class="hours-open">8:30–18:00 น.</span></span>
+                                <span><strong>จ.-ส.</strong> <span class="hours-open">8:30-18:00 น.</span></span>
                                 <span>·</span>
                                 <span><strong>อาทิตย์</strong> <span class="hours-closed">ปิดทำการ</span></span>
                             </div>
                         </div>
-                        <iframe class="map-frame"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.235!2d100.5913704!3d13.9839944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e281bdfe5b1e65%3A0xa9592bcd8898ae6e!2z4Lij4LmJ4Liy4LiZ4Liq4Li14Lie4LmI4LiZ4Lij4LiW4Lii4LiZ4LiV4LmM4Lij4Lix4LiH4Liq4Li04LiVIOC4nuC4tS7guYDguIQu4LmA4Lie4LmJ4LiZ4LiX4LmM4LmB4Lit4LiZ4LiU4LmM4LiL4Lix4Lie4Lie4Lil4Liy4LiiIC0gUEsgUEFJTlQ!5e0!3m2!1sth!2sth!4v1715150000000!5m2!1sth!2sth" loading="lazy"
-                            allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="map-frame" title="แผนที่ตำแหน่ง PK Paint & Supply รังสิต"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.235!2d100.5913704!3d13.9839944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e281bdfe5b1e65%3A0xa9592bcd8898ae6e!2sPK+Paint+%26+Supply!5e0!3m2!1sth!2sth!4v1" 
+                            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </aside>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-col">
-                <div class="footer-logo">
-                    <img decoding="async" loading="lazy" src="asset/PK Logo-05.png" alt="PK Paint &amp; Supply Logo" class="footer-logo-img" width="112" height="38">
-                    <div>
-                        <div style="font-size:14px;font-weight:600;color:#fff;">PK PAINT &amp; SUPPLY</div>
-                        <div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div>
-                    </div>
-                </div>
-                <p class="footer-desc">จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K สีเบอร์ตรงรุ่นรถ<br>ผสมสีตามตัวอย่าง
-                    รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศไทย</p>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">เมนู</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="products.html">สินค้า</a></li>
-                    <li><a href="catalog.html">แคตตาล็อค</a></li>
-                    <li><a href="promotions.html">โปรโมชั่น</a></li>
-                    <li><a href="review.html">รีวิว</a></li>
-                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
-                    <li><a href="contact.html">ติดต่อเรา</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">ติดต่อเรา</h4>
-                <div class="footer-contact">
-                    <div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div>
-                    <div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank"
-                            rel="noopener">@999snkil</a></div>
-                    <div><i class="fas fa-envelope"></i><a
-                            href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div>
-                    <div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6
-                        ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บางพูน อ.เมือง จ.ปทุมธานี</div>
-                    <div style="margin-top:6px;"><a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank"
-                            rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions"
-                                style="margin-right:4px;"></i>เปิดนำทาง Google Maps</a></div>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h4 class="footer-title">ติดตามเรา</h4>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i
-                            class="fab fa-line"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint &amp; Supply. All Rights Reserved.
-        </div>
-    </footer>
+
+    
+
     <button class="scroll-top" id="scrollTop" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">
+
         <i class="fas fa-chevron-up"></i>
+
     </button>
-    <script src="js/contact.js?v=1.0.2" defer></script>
-    <script src="js/main.js?v=1.0.2" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyQsSR1OYvSB2kM7RLMhfC4YJOqT1fCTzykGMNVbsZSsviQnCOFIhUhN7OCSF" crossorigin="anonymous"></script>
 
-<script>
-    const themeToggle = document.getElementById('themeToggle');
-    const icon = themeToggle ? themeToggle.querySelector('i') : null;
-    
-    function applyTheme(isDark) {
-        if(isDark) {
-            document.documentElement.classList.add('dark-mode');
-            if(icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
-            localStorage.setItem('pk_theme', 'dark');
-        } else {
-            document.documentElement.classList.remove('dark-mode');
-            if(icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
-            localStorage.setItem('pk_theme', 'light');
-        }
-    }
+    <script src="js/main.js?v=1.0.2"></script>
 
-    // Init
-    if (localStorage.getItem('pk_theme') === 'dark') {
-        applyTheme(true);
-    }
-    
-    if(themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const isDark = document.documentElement.classList.contains('dark-mode');
-            applyTheme(!isDark);
-        });
-    }
-</script>
+    <script>
+
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    </script>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-col">
+            <div class="footer-logo"><img decoding="async" loading="lazy" src="asset/PK Logo-05.png" alt="PK Paint & Supply Logo" class="footer-logo-img"><div><div style="font-size:14px;font-weight:600;color:#fff;">PK PAINT &amp; SUPPLY</div><div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง ครบวงจร</div></div></div>
+            <p class="footer-desc">จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K สีเบอร์ตรงรุ่นรถ<br>ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศไทย</p>
+        </div>
+        <div class="footer-col"><h4 class="footer-title">เมนู</h4><ul class="footer-links"><li><a href="index.html">หน้าแรก</a></li><li><a href="products.html">สินค้า</a></li><li><a href="catalog.html">แคตตาล็อก</a></li><li><a href="promotions.html">โปรโมชั่น</a></li><li><a href="review.html">รีวิว</a></li><li><a href="about.html">เกี่ยวกับเรา</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></div>
+        <div class="footer-col"><h4 class="footer-title">ติดต่อเรา</h4><div class="footer-contact"><div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div><div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></div><div><i class="fas fa-envelope"></i><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div><div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6 ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บ้านปทุม อ.เมือง จ.ปทุมธานี</div><div style="margin-top:6px;"><a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions" style="margin-right:4px;"></i>เปิดแผนที่ Google Maps</a></div></div></div>
+        <div class="footer-col"><h4 class="footer-title">ติดตามเรา</h4><div class="footer-social"><a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a>
+<a href="https://www.tiktok.com/@pk.paint" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>   
+<a href="https://th.shp.ee/PVz5zBdo" target="_blank" rel="noopener" title="Shopee"><i class="fas fa-store"></i></a></div></div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint &amp; Supply. All Rights Reserved.</div>    
+</footer>
 </body>
+
 </html>

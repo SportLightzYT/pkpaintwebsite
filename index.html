@@ -2,22 +2,6 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <style>
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #1e90ff;
-            color: white;
-            padding: 8px;
-            z-index: 10000;
-            transition: top 0.3s;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    </style>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="view-transition" content="same-origin" />
@@ -29,21 +13,27 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="icon" type="image/png" href="asset/pklogosvg.png">
-    <link rel="preload" href="asset/Cover.jpg" as="image" fetchpriority="high">
+    <link rel="preload" href="asset/Cover.webp" as="image" fetchpriority="high">
     <title>PK Paint &amp; Supply - สีพ่นรถยนต์คุณภาพสูง</title>
     <meta name="description"
-        content="จำหน่ายสีพ่นรถยนต์คุณภาพสูง อุปกรณ์พ่นสีครบวงจร ปืนพ่นสี เครื่องขัดสี จัดส่งทั่วประเทศ บริการให้คำปรึกษาโดยผู้เชี่ยวชาญ">
+        content="จำหน่ายสีพ่นรถยนต์คุณภาพสูง อุปกรณ์พ่นสีครบวงจร เครื่องพ่นสีแบบคอมพิวเตอร์และระบบดั้งเดิม บริการให้คำปรึกษาโดยผู้เชี่ยวชาญ">
     <meta property="og:title" content="PK Paint &amp; Supply - สีพ่นรถยนต์คุณภาพสูง">
     <meta property="og:description"
-        content="จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง รังสิต ปทุมธานี">
+        content="จำหน่ายสีพ่นรถยนต์คุณภาพสูง อุปกรณ์ครบวงจร ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศ รับประกันคุณภาพ">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="th_TH">
     <meta property="og:url" content="https://pkpaintandsupply.com/index.html">
     <meta property="og:image" content="asset/Cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PK Paint &amp; Supply - สีพ่นรถยนต์คุณภาพสูง">
+    <meta name="twitter:description" content="จำหน่ายสีพ่นรถยนต์คุณภาพสูง อุปกรณ์ครบวงจร ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศ รับประกันคุณภาพ">
+    <meta name="twitter:image" content="asset/Cover.jpg">
     <link rel="canonical" href="https://pkpaintandsupply.com/index.html">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css?v=1.1.1">
     <link rel="stylesheet" href="css/index.css?v=1.0.2">
     <script type="application/ld+json">
@@ -58,7 +48,7 @@
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "249/3 ม.6 ถ.รังสิต",
-            "addressLocality": "ต.บางพูน อ.เมือง",
+            "addressLocality": "ต.บ้านปทุม อ.เมือง",
             "addressRegion": "ปทุมธานี",
             "addressCountry": "TH"
         },
@@ -68,61 +58,281 @@
     </script>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">ข้ามไปที่เนื้อหาหลัก</a>
-    <div class="scroll-progress" id="scrollProgress"></div>
-    <nav class="navbar">
-        <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
-            <div class="logo-section">
-                <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high">
-                <div class="logo-text">PK PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
-            </div>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">หน้าแรก</a></li>
-            <li><a href="products.html">สินค้า</a></li>
-            <li><a href="catalog.html">แคตตาล็อค</a></li>
-            <li><a href="promotions.html">โปรโมชั่น</a></li>
-            <li><a href="review.html">รีวิว</a></li>
-            <li><a href="about.html">เกี่ยวกับเรา</a></li>
-            <li><a href="contact.html">ติดต่อเรา</a></li>
-        </ul>
-        <div class="nav-right">
-            
-            <div class="phone">
-                <i class="fas fa-phone-alt"></i>
-                <a href="tel:0928528535">092-852-8535</a>
-            </div>
-            <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
-            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+﻿<a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+
+
+
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo-link" aria-label="กลับหน้าแรก">
+
+
+
+
+        <div class="logo-section">
+
+
+
+
+            <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="logo-img" fetchpriority="high" width="124" height="42">
+
+
+
+
+            <div class="logo-text">PK PAINT &amp; SUPPLY<br>สีพ่นรถยนต์คุณภาพสูง</div>
+
+
+
+
         </div>
-    </nav>
-    <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="เมนูหลัก">
-        <a href="index.html" class="active">หน้าแรก</a>
-        <a href="products.html">สินค้า</a>
-        <a href="catalog.html">แคตตาล็อค</a>
-        <a href="promotions.html">โปรโมชั่น</a>
-        <a href="review.html">รีวิว</a>
-        <a href="about.html">เกี่ยวกับเรา</a>
-        <a href="contact.html">ติดต่อเรา</a>
-        <div class="mobile-nav-contact">
-            <a href="tel:0928528535"><i class="fas fa-phone-alt" style="margin-right:8px;color:#1e90ff;"></i>092-852-8535</a>
-            <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line" style="margin-right:8px;color:#00c300;"></i>LINE: @999snkil</a>
-            <a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener"><i class="fab fa-facebook-f" style="margin-right:8px;color:#1877f2;"></i>Facebook</a>
+
+
+
+
+    </a>
+
+
+
+
+    <ul class="nav-links">
+
+
+
+
+        <li><a href="index.html" class="active">หน้าแรก</a></li>
+
+
+
+
+        <li><a href="products.html" >สินค้า</a></li>
+
+
+
+
+        <li><a href="catalog.html" >แคตตาล็อก</a></li>
+
+
+
+
+        <li><a href="promotions.html" >โปรโมชั่น</a></li>
+
+
+
+
+        <li><a href="review.html" >รีวิว</a></li>
+
+
+
+
+        <li><a href="about.html" >เกี่ยวกับเรา</a></li>
+
+
+
+
+        <li><a href="contact.html" >ติดต่อเรา</a></li>
+
+
+
+
+    </ul>
+
+
+
+
+    <div class="nav-right">
+
+
+
+
+        <div class="phone">
+
+
+
+
+            <i class="fas fa-phone-alt"></i>
+
+
+
+
+            <a href="tel:0928528535">092-852-8535</a>
+
+
+
+
         </div>
+        <a class="btn-contact" href="contact.html">ติดต่อสอบถาม</a>
+
+        <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+
+
+
+
+
+
+            <span></span><span></span><span></span>
+
+
+
+
+
+
+        </button>
+
+
+
     </div>
+
+
+
+
+</nav>
+
+
+
+
+<!-- Mobile Navigation Panel -->
+
+
+
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+
+
+
+
+    <div class="mobile-nav-header">
+
+
+
+
+        <img decoding="async" loading="lazy" src="asset/PK Logo-06.png" alt="PK Paint & Supply Logo" class="mobile-nav-logo" width="100" height="34">
+
+
+
+
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="ปิดเมนู">
+
+
+
+
+            <i class="fas fa-times"></i>
+
+
+
+
+        </button>
+
+
+
+
+    </div>
+
+
+
+
+    <ul class="mobile-nav-links">
+
+
+
+
+        <li><a href="index.html" class="active">หน้าแรก</a></li>
+
+
+
+
+        <li><a href="products.html" >สินค้า</a></li>
+
+
+
+
+        <li><a href="catalog.html" >แคตตาล็อก</a></li>
+
+
+
+
+        <li><a href="promotions.html" >โปรโมชั่น</a></li>
+
+
+
+
+        <li><a href="review.html" >รีวิว</a></li>
+
+
+
+
+        <li><a href="about.html" >เกี่ยวกับเรา</a></li>
+
+
+
+
+        <li><a href="contact.html" >ติดต่อเรา</a></li>
+
+
+
+
+    </ul>
+
+
+
+
+    <div class="mobile-nav-footer">
+
+
+
+
+        <div class="mobile-nav-phone">
+
+
+
+
+            <i class="fas fa-phone-alt"></i>
+
+
+
+
+            <a href="tel:0928528535">092-852-8535</a>
+
+
+
+
+        </div>
+
+
+
+
+        <a class="mobile-nav-btn" href="contact.html">ติดต่อสอบถาม</a>
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
     <main id="main-content">
     <section class="hero">
         <div class="hero-content">
             <div class="hero-subtitle">PK PAINT & SUPPLY</div>
             <h1 class="hero-title">
                 สีพ่นรถยนต์คุณภาพสูง<br>
-                <span class="highlight">สวย เงา ทน ใช้ได้จริง</span>
+                <span class="highlight">สวย เงา ทน เชื่อมั่นได้จริง</span>
             </h1>
             <p class="hero-desc">
                 ครบทุกสี · ทุกระบบพ่น · อุปกรณ์มาตรฐาน<br>
-                สำหรับผู้ซ่อมสีและงานพ่นทุกประเภท
+                สำหรับศูนย์ซ่อมสีและงานพ่นทุกประเภท
             </p>
             <div class="features">
                 <div class="feature">
@@ -150,30 +360,30 @@
         <div class="shop-services-header">
             <div class="shop-services-label">OUR EXPERTISE</div>
             <h2 class="shop-services-title">บริการมืออาชีพจากเรา</h2>
-            <p class="shop-services-subtitle">เราเชี่ยวชาญด้านสีพ่นรถยนต์ทุกรูปแบบ ครบวงจรในที่เดียว</p>
+            <p class="shop-services-subtitle">เรามีความเชี่ยวชาญด้านสีพ่นรถยนต์ทุกรูปแบบ ครบวงจรในที่เดียว</p>
         </div>
         <div class="shop-services-grid">
-            <div class="shop-service-card">
+            <div class="shop-service-card animate-on-scroll">
                 <div class="shop-service-img-wrap">
-                    <img decoding="async" src="asset/service_color_match.png" alt="รับเทียบเฉด ผสมสีตัวอย่าง" class="shop-service-img" loading="lazy">
+                    <img decoding="async" src="asset/paint_lab.png" alt="รับเทียบเฉด ผสมสีตามตัวอย่าง" class="shop-service-img" loading="lazy">
                 </div>
                 <div class="shop-service-body">
-                    <h3 class="shop-service-title">รับเทียบเฉด / ผสมสีตัวอย่าง</h3>
-                    <p class="shop-service-desc">รับเทียบเฉดจากชิ้นงานจริง แม่นยำด้วยประสบการณ์กว่า 10 ปี</p>
+                    <h3 class="shop-service-title">รับเทียบเฉด / ผสมสีตามตัวอย่าง</h3>
+                    <p class="shop-service-desc">รับเทียบเฉดจากชิ้นงานจริง แม่นยำด้วยประสบการณ์กว่า 30+ ปี</p>
                 </div>
             </div>
-            <div class="shop-service-card">
+            <div class="shop-service-card animate-on-scroll">
                 <div class="shop-service-img-wrap">
-                    <img decoding="async" src="asset/service_spray_can.png" alt="สีอัดกระป๋อง สีอัดสเปรย์" class="shop-service-img" loading="lazy">
+                    <img decoding="async" src="asset/spray.png" alt="สีอัดกระป๋อง สีอัดสเปรย์" class="shop-service-img" loading="lazy">
                 </div>
                 <div class="shop-service-body">
                     <h3 class="shop-service-title">สีอัดกระป๋อง / สีอัดสเปรย์</h3>
                     <p class="shop-service-desc">บริการอัดสีคุณภาพลงสเปรย์ ใช้งานง่าย พ่นเองได้ทันที</p>
                 </div>
             </div>
-            <div class="shop-service-card">
+            <div class="shop-service-card animate-on-scroll">
                 <div class="shop-service-img-wrap">
-                    <img decoding="async" src="asset/service_bulk_oem.png" alt="ผสมสีปริมาณมาก OEM" class="shop-service-img" loading="lazy">
+                    <img decoding="async" src="asset/oem.png" alt="ผสมสีปริมาณมาก OEM" class="shop-service-img" loading="lazy">
                 </div>
                 <div class="shop-service-body">
                     <h3 class="shop-service-title">ผสมสีปริมาณมาก / OEM</h3>
@@ -182,7 +392,7 @@
             </div>
         </div>
         <div class="shop-services-cta">
-            <a href="https://line.me/R/ti/p/@999snkil" target="_blank" class="btn-line"><i class="fab fa-line"></i> ปรึกษาช่างผสมสีทาง LINE</a>
+            <a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" class="btn-line"><i class="fab fa-line"></i> ปรึกษาเรื่องผสมสีผ่าน LINE</a>
         </div>
     </section>
 
@@ -190,55 +400,55 @@
     <section class="car-brands">
         <div class="car-brands-label">FIND YOUR COLOR</div>
         <h2 class="car-brands-title">ค้นหาสีตรงรุ่นรถของคุณ</h2>
-        <p class="car-brands-subtitle">เลือกยี่ห้อรถยนต์เพื่อดูเฉดสีมาตรฐานที่ตรงรุ่นที่สุด</p>
+        <p class="car-brands-subtitle">เลือกยี่ห้อรถยนต์เพื่อดูเฉดสีมาตรฐานที่ตรงรุ่นที่ดีที่สุด</p>
         <div class="car-brands-grid">
-            <a href="catalog.html?brand=toyota" class="car-brand-card">
+            <a href="catalog.html?brand=toyota" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/Toyota-Symbol.png" alt="TOYOTA" loading="lazy"></div>
                 <span class="car-brand-name">TOYOTA</span>
             </a>
-            <a href="catalog.html?brand=honda" class="car-brand-card">
+            <a href="catalog.html?brand=honda" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/honda-logo.png" alt="HONDA" loading="lazy"></div>
                 <span class="car-brand-name">HONDA</span>
             </a>
-            <a href="catalog.html?brand=isuzu" class="car-brand-card">
+            <a href="catalog.html?brand=isuzu" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/Isuzu.svg.png" alt="ISUZU" loading="lazy"></div>
                 <span class="car-brand-name">ISUZU</span>
             </a>
-            <a href="catalog.html?brand=ford-mazda" class="car-brand-card">
+            <a href="catalog.html?brand=ford-mazda" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap split-logo">
                     <img decoding="async" src="asset/Ford_logo_flat.svg.png" alt="FORD" class="logo-left" loading="lazy">
                     <img decoding="async" src="asset/mazda_PNG86.png" alt="MAZDA" class="logo-right" loading="lazy">
                 </div>
                 <span class="car-brand-name">FORD/MAZDA</span>
             </a>
-            <a href="catalog.html?brand=mitsubishi" class="car-brand-card">
+            <a href="catalog.html?brand=mitsubishi" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/Mitsubishi_logo.svg.png" alt="MITSUBISHI" loading="lazy"></div>
                 <span class="car-brand-name">MITSUBISHI</span>
             </a>
-            <a href="catalog.html?brand=nissan" class="car-brand-card">
+            <a href="catalog.html?brand=nissan" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/nissan-6.svg" alt="NISSAN" loading="lazy"></div>
                 <span class="car-brand-name">NISSAN</span>
             </a>
-            <a href="catalog.html?brand=mg" class="car-brand-card">
+            <a href="catalog.html?brand=mg" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/MG-Logo.png" alt="MG" loading="lazy"></div>
                 <span class="car-brand-name">MG</span>
             </a>
-            <a href="catalog.html?brand=suzuki" class="car-brand-card">
+            <a href="catalog.html?brand=suzuki" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/Suzuki_Motor_Corporation_logo.svg.png" alt="SUZUKI" loading="lazy"></div>
                 <span class="car-brand-name">SUZUKI</span>
             </a>
-            <a href="catalog.html?brand=mercedes-benz" class="car-brand-card">
+            <a href="catalog.html?brand=mercedes-benz" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap"><img decoding="async" src="asset/Mercedes-Benz-Logo.png" alt="MERCEDES BENZ" loading="lazy"></div>
                 <span class="car-brand-name">MERCEDES BENZ</span>
             </a>
-            <a href="catalog.html" class="car-brand-card">
+            <a href="catalog.html" class="car-brand-card animate-on-scroll">
                 <div class="car-brand-logo-wrap">
                     <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 40px;">
                         <circle cx="50" cy="50" r="40" stroke="#1e90ff" stroke-width="3" />
                         <text x="50" y="58" text-anchor="middle" fill="#1e90ff" font-family="Kanit, sans-serif" font-size="16" font-weight="700">ALL</text>
                     </svg>
                 </div>
-                <span class="car-brand-name" style="color:#1e90ff;">แบรนด์ทั้งหมด</span>
+                <span class="car-brand-name" style="color:#1e90ff;">แบรนด์รถทั้งหมด</span>
             </a>
         </div>
     </section>
@@ -248,7 +458,7 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon"><i class="fas fa-clock-rotate-left"></i></div>
-                <span class="stat-number" data-target="10" data-suffix="+">0</span>
+                <span class="stat-number" data-target="30" data-suffix="+">0</span>
                 <span class="stat-label">ปีประสบการณ์</span>
             </div>
             <div class="stat-card">
@@ -281,41 +491,41 @@
     <section class="services">
         <h2 class="services-title">เลือกชมตามหมวดหมู่สินค้า</h2>
         <div class="services-grid">
-            <div class="service-card">
+            <div class="service-card animate-on-scroll">
                 <div class="service-icon"><i class="fas fa-fill-drip"></i></div>
                 <div class="service-name">สีพ่นรถยนต์</div>
-                <div class="service-desc">สีรองพื้น สีสร้าง สีเคลือบ<br>คุณภาพสูง</div>
-                <a href="products.html" class="service-link">→ ดูสินค้าหมวดนี้</a>
+                <div class="service-desc">สีรองพื้น สีจริง สีเคลือบ<br>คุณภาพสูง</div>
+                <a href="products.html" class="service-link">ไปดูสินค้าหมวดนี้</a>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-on-scroll">
                 <div class="service-icon"><i class="fas fa-spray-can"></i></div>
                 <div class="service-name">อุปกรณ์พ่นสี</div>
-                <div class="service-desc">ปืนพ่นสี ฟิลเตอร์ สายลม<br>อุปกรณ์ครบครัน</div>
-                <a href="products.html" class="service-link">→ ดูสินค้าหมวดนี้</a>
+                <div class="service-desc">เครื่องพ่นสี ฟิลเตอร์ สายลม<br>อุปกรณ์ครบครัน</div>
+                <a href="products.html" class="service-link">ไปดูสินค้าหมวดนี้</a>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-on-scroll">
                 <div class="service-icon"><i class="fas fa-gears"></i></div>
                 <div class="service-name">เครื่องมือสี</div>
-                <div class="service-desc">เครื่องขัดสีดีดอล<br>ผลิตแผ่นขัด</div>
-                <a href="products.html" class="service-link">→ ดูสินค้าหมวดนี้</a>
+                <div class="service-desc">เครื่องผสมสีดิจิทัล<br>และถังผสม</div>
+                <a href="products.html" class="service-link">ไปดูสินค้าหมวดนี้</a>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-on-scroll">
                 <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
                 <div class="service-name">อุปกรณ์ขัดสี</div>
-                <div class="service-desc">น้ำยาขัดสี ฟองน้ำ<br>ขัดเงา งานละเอียด</div>
-                <a href="products.html" class="service-link">→ ดูสินค้าหมวดนี้</a>
+                <div class="service-desc">น้ำยาขัดสี ฟองน้ำ<br>ขัดเงาละเอียด</div>
+                <a href="products.html" class="service-link">ไปดูสินค้าหมวดนี้</a>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-on-scroll">
                 <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
                 <div class="service-name">อุปกรณ์งานซ่อม</div>
-                <div class="service-desc">เทป กระดาษทราย ผ้าขัด<br>อุปกรณ์งานซ่อมครบ</div>
-                <a href="products.html" class="service-link">→ ดูสินค้าหมวดนี้</a>
+                <div class="service-desc">โป๊ว กระดาษทราย ผ้าเช็ด<br>อุปกรณ์งานซ่อมครบ</div>
+                <a href="products.html" class="service-link">ไปดูสินค้าหมวดนี้</a>
             </div>
-            <div class="service-card">
+            <div class="service-card animate-on-scroll">
                 <div class="service-icon"><i class="fas fa-truck-fast"></i></div>
                 <div class="service-name">จัดส่งรวดเร็ว</div>
                 <div class="service-desc">จัดส่งทั่วประเทศ<br>แพ็คสินค้าปลอดภัย</div>
-                <a href="products.html" class="service-link">→ ดูสินค้าหมวดนี้</a>
+                <a href="products.html" class="service-link">ไปดูสินค้าหมวดนี้</a>
             </div>
         </div>
     </section>
@@ -325,39 +535,39 @@
             <a class="btn-viewall" href="products.html">ดูสีทั้งหมด <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card animate-on-scroll">
                 <div class="product-image"><svg width="120" height="80" viewBox="0 0 120 80"><ellipse cx="60" cy="40" rx="55" ry="30" fill="#e0e0e0"/><ellipse cx="60" cy="38" rx="50" ry="25" fill="#f0f0f0"/><ellipse cx="60" cy="35" rx="45" ry="20" fill="#f8f8f8"/></svg></div>
                 <div class="product-info"><div class="product-name">White Pearl</div><div class="product-type">ขาวมุก</div><a class="btn-detail" href="products.html">ดูรายละเอียด</a></div>
             </div>
-            <div class="product-card">
+            <div class="product-card animate-on-scroll">
                 <div class="product-image"><svg width="120" height="80" viewBox="0 0 120 80"><ellipse cx="60" cy="40" rx="55" ry="30" fill="#333333"/><ellipse cx="60" cy="38" rx="50" ry="25" fill="#222222"/><ellipse cx="60" cy="35" rx="45" ry="20" fill="#111111"/></svg></div>
                 <div class="product-info"><div class="product-name">Super Black</div><div class="product-type">ดำเงา</div><a class="btn-detail" href="catalog.html?search=Super Black">ดูเฉดสีนี้</a></div>
             </div>
-            <div class="product-card">
+            <div class="product-card animate-on-scroll">
                 <div class="product-image"><svg width="120" height="80" viewBox="0 0 120 80"><ellipse cx="60" cy="40" rx="55" ry="30" fill="#c0c0c0"/><ellipse cx="60" cy="38" rx="50" ry="25" fill="#d0d0d0"/><ellipse cx="60" cy="35" rx="45" ry="20" fill="#e0e0e0"/></svg></div>
-                <div class="product-info"><div class="product-name">Silver Metallic</div><div class="product-type">เงินเมทัลลิก</div><a class="btn-detail" href="catalog.html?search=Silver">ดูเฉดสีนี้</a></div>
+                <div class="product-info"><div class="product-name">Silver Metallic</div><div class="product-type">เมทัลลิก</div><a class="btn-detail" href="catalog.html?search=Silver">ดูเฉดสีนี้</a></div>
             </div>
-            <div class="product-card">
+            <div class="product-card animate-on-scroll">
                 <div class="product-image"><svg width="120" height="80" viewBox="0 0 120 80"><ellipse cx="60" cy="40" rx="55" ry="30" fill="#cc0000"/><ellipse cx="60" cy="38" rx="50" ry="25" fill="#dd0000"/><ellipse cx="60" cy="35" rx="45" ry="20" fill="#ee0000"/></svg></div>
-                <div class="product-info"><div class="product-name">Candy Red</div><div class="product-type">แคนดี้แดง</div><a class="btn-detail" href="catalog.html?search=Candy Red">ดูเฉดสีนี้</a></div>
+                <div class="product-info"><div class="product-name">Candy Red</div><div class="product-type">แคนดี้เรด</div><a class="btn-detail" href="catalog.html?search=Candy Red">ดูเฉดสีนี้</a></div>
             </div>
-            <div class="product-card">
+            <div class="product-card animate-on-scroll">
                 <div class="product-image"><svg width="120" height="80" viewBox="0 0 120 80"><ellipse cx="60" cy="40" rx="55" ry="30" fill="#0033cc"/><ellipse cx="60" cy="38" rx="50" ry="25" fill="#0044dd"/><ellipse cx="60" cy="35" rx="45" ry="20" fill="#0055ee"/></svg></div>
                 <div class="product-info"><div class="product-name">Deep Blue Mica</div><div class="product-type">น้ำเงินไมก้า</div><a class="btn-detail" href="catalog.html?search=Deep Blue">ดูเฉดสีนี้</a></div>
             </div>
-            <div class="product-card">
+            <div class="product-card animate-on-scroll">
                 <div class="product-image"><svg width="120" height="80" viewBox="0 0 120 80"><ellipse cx="60" cy="40" rx="55" ry="30" fill="#4a4a4a"/><ellipse cx="60" cy="38" rx="50" ry="25" fill="#555555"/><ellipse cx="60" cy="35" rx="45" ry="20" fill="#606060"/></svg></div>
-                <div class="product-info"><div class="product-name">Gun Metal</div><div class="product-type">เทากันส์</div><a class="btn-detail" href="catalog.html?search=Gun Metal">ดูเฉดสีนี้</a></div>
+                <div class="product-info"><div class="product-name">Gun Metal</div><div class="product-type">กันเมทัล</div><a class="btn-detail" href="catalog.html?search=Gun Metal">ดูเฉดสีนี้</a></div>
             </div>
         </div>
     </section>
     <section class="cta">
         <div class="cta-content">
             <h2 class="cta-title">ต้องการคำแนะนำเรื่องสีพ่นรถยนต์?</h2>
-            <p class="cta-desc">ทีมงานผู้เชี่ยวชาญพร้อมให้คำปรึกษา เลือกสีตรงงาน สวย ทน แน่นอน</p>
+            <p class="cta-desc">ทีมงานผู้เชี่ยวชาญพร้อมให้คำปรึกษา เลือกสีตรงใจ สวย ทน แน่นอน</p>
         </div>
         <div class="cta-buttons">
-            <a class="btn-line" href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line"></i> แชทผ่าน LINE</a>
+            <a class="btn-line" href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener"><i class="fab fa-line"></i> ทักแชท LINE</a>
             <a class="btn-phone" href="tel:0928528535"><i class="fas fa-phone-alt"></i> โทร 092-852-8535</a>
         </div>
     </section>
@@ -369,64 +579,41 @@
         </div>
         <div class="reviews-summary-bar">
             <span class="reviews-summary-score"><i class="fas fa-star" style="color:#fbbc04;margin-right:6px;"></i>4.9 · รีวิวจาก Google</span>
-            <a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener" class="reviews-summary-btn">ดูรีวิวทั้งหมด →</a>
+            <a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener" class="reviews-summary-btn">ดูรีวิวทั้งหมดไปที่ Google Maps</a>
         </div>
         <div class="reviews-grid">
-            <div class="review-card"><div class="review-author-header"><div class="review-avatar" style="background-color:#fbbc04;color:#000;">ส</div><div class="review-author-info"><div class="review-name">สมชัย แซ่ลิ้ม <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"แนะนำร้านนี้ครับบริการดีรวดเร็ว สีออกมาได้เหมือนโอเคเลยครับ"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
-            <div class="review-card"><div class="review-author-header"><div class="review-avatar" style="background-color:#00a4e4;color:#333;">พ</div><div class="review-author-info"><div class="review-name">ไพบูลย์ จงปัญญาวิวัฒน์ <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"สีที่ร้านได้มาตรฐานมากเลยครับ ร้านบริการดีมากเลยครับ"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
-            <div class="review-card"><div class="review-author-header"><div class="review-avatar" style="background-color:#34a853;color:#333;">P</div><div class="review-author-info"><div class="review-name">Pipatsa Sriyanyong <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"ให้คำแนะนำดีมากๆ มีที่จอดรถหน้าร้านสะดวกมากค่ะ"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
-            <div class="review-card"><div class="review-author-header"><div class="review-avatar" style="background-color:#ea4335;color:#333;">P</div><div class="review-author-info"><div class="review-name">Patyod Suwannawayak <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"บริการดีเยี่ยม สีมีคุณภาพดี มีของให้เลือกหลากหลาย"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
-            <div class="review-card"><div class="review-author-header"><div class="review-avatar" style="background-color:#00bcd4;color:#333;">O</div><div class="review-author-info"><div class="review-name">Oui Napapat <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"สีคุณภาพสำหรับรถที่เรารัก ต้องที่นี่เลยจ้าาา มีให้เลือกทุกเฉดสี❤️"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
-            <div class="review-card"><div class="review-author-header"><div class="review-avatar" style="background-color:#fbbc04;color:#000;">S</div><div class="review-author-info"><div class="review-name">Supamas Yuenying <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"ร้านจำหน่ายอุปกรณ์และวัสดุพ่นสีรถยนต์ครบวงจร เจ้าของร้านใจดี ให้คำปรึกษาเกี่ยวกับด้านสีได้ ผสมสีเหมือน และมีความรู้ความชำนาญมาก เปิดให้บริการมามากกว่า 10 ปี ส่วนใหญ่จำหน่ายสียี่ห้อ RGB มาไม่เคยผิดหวัง ..."</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
+            <div class="review-card animate-on-scroll"><div class="review-author-header"><div class="review-avatar" style="background-color:#fbbc04;color:#000;">ส</div><div class="review-author-info"><div class="review-name">สมชาย แข็งแรง <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"แนะนำร้านนี้ครับ บริการดีรวดเร็ว สีออกมาสวยเหมือนของเดิมเลยครับ"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
+            <div class="review-card animate-on-scroll"><div class="review-author-header"><div class="review-avatar" style="background-color:#00a4e4;color:#333;">พ</div><div class="review-author-info"><div class="review-name">พิพัฒน์ชัย กาญจนวิวัฒน์ <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"สีที่ร้านสวยได้มาตรฐานมากเลยครับ ร้านบริการดีมากเลยครับ"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
+            <div class="review-card animate-on-scroll"><div class="review-author-header"><div class="review-avatar" style="background-color:#34a853;color:#333;">P</div><div class="review-author-info"><div class="review-name">Pipatsa Sriyanyong <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"ให้คำแนะนำดีมากค่ะ มีสีให้เลือกเยอะหน้าร้านสะดวกมากค่ะ"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
+            <div class="review-card animate-on-scroll"><div class="review-author-header"><div class="review-avatar" style="background-color:#ea4335;color:#333;">P</div><div class="review-author-info"><div class="review-name">Patyod Suwannawayak <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"บริการดีเยี่ยม สีมีคุณภาพดี มีของให้เลือกหลากหลาย"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
+            <div class="review-card animate-on-scroll"><div class="review-author-header"><div class="review-avatar" style="background-color:#00bcd4;color:#333;">O</div><div class="review-author-info"><div class="review-name">Oui Napapat <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"สีคุณภาพสำหรับรถที่เรารัก ต้องที่นี่เลยยยยย มีให้เลือกทุกเฉดสี❤️"</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
+            <div class="review-card animate-on-scroll"><div class="review-author-header"><div class="review-avatar" style="background-color:#fbbc04;color:#000;">S</div><div class="review-author-info"><div class="review-name">Supamas Yuenying <i class="fas fa-check-circle review-verified"></i></div><div class="review-date">ล่าสุด</div></div></div><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="review-text">"ร้านจำหน่ายอุปกรณ์และวัสดุพ่นสีรถยนต์ครบวงจร เจ้าของร้านนิสัยดี ให้คำปรึกษาเกี่ยวกับงานสีสวย ผสมสีเหมือน และมีความรู้ความชำนาญมาก เปิดให้บริการมามากกว่า 10 ปี ส่วนใหญ่จำหน่ายสียี่ห้อ RGB ไม่เคยผิดหวังครับ ..."</div><div class="review-footer"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo"></div></div>
         </div>
     </section>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-col">
-                <div class="footer-logo"><img decoding="async" loading="lazy" src="asset/PK Logo-05.png" alt="PK Paint & Supply Logo" class="footer-logo-img"><div><div style="font-size:14px;font-weight:600;color:#fff;">PK PAINT &amp; SUPPLY</div><div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง รังสิต</div></div></div>
-                <p class="footer-desc">จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K สีเบอร์ตรงรุ่นรถ<br>ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศไทย</p>
-            </div>
-            <div class="footer-col"><h4 class="footer-title">เมนู</h4><ul class="footer-links"><li><a href="index.html">หน้าแรก</a></li><li><a href="products.html">สินค้า</a></li><li><a href="catalog.html">แคตตาล็อค</a></li><li><a href="promotions.html">โปรโมชั่น</a></li><li><a href="review.html">รีวิว</a></li><li><a href="about.html">เกี่ยวกับเรา</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></div>
-            <div class="footer-col"><h4 class="footer-title">ติดต่อเรา</h4><div class="footer-contact"><div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div><div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></div><div><i class="fas fa-envelope"></i><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div><div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6 ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บางพูน อ.เมือง จ.ปทุมธานี</div><div style="margin-top:6px;"><a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions" style="margin-right:4px;"></i>เปิดนำทาง Google Maps</a></div></div></div>
-            <div class="footer-col"><h4 class="footer-title">ติดตามเรา</h4><div class="footer-social"><a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a></div></div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-col">
+            <div class="footer-logo"><img decoding="async" loading="lazy" src="asset/PK Logo-05.png" alt="PK Paint & Supply Logo" class="footer-logo-img"><div><div style="font-size:14px;font-weight:600;color:#fff;">PK PAINT &amp; SUPPLY</div><div style="font-size:12px;color:#b0d4f7;">สีพ่นรถยนต์คุณภาพสูง ครบวงจร</div></div></div>
+            <p class="footer-desc">จำหน่ายสีพ่นรถยนต์ทุกชนิด ทุกระบบ 2K-1K สีเบอร์ตรงรุ่นรถ<br>ผสมสีตามตัวอย่าง รับอัดสีสเปรย์กระป๋อง จัดส่งทั่วประเทศไทย</p>
         </div>
-        <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint &amp; Supply. All Rights Reserved.</div>
-    </footer>
+        <div class="footer-col"><h4 class="footer-title">เมนู</h4><ul class="footer-links"><li><a href="index.html">หน้าแรก</a></li><li><a href="products.html">สินค้า</a></li><li><a href="catalog.html">แคตตาล็อก</a></li><li><a href="promotions.html">โปรโมชั่น</a></li><li><a href="review.html">รีวิว</a></li><li><a href="about.html">เกี่ยวกับเรา</a></li><li><a href="contact.html">ติดต่อเรา</a></li></ul></div>
+        <div class="footer-col"><h4 class="footer-title">ติดต่อเรา</h4><div class="footer-contact"><div><i class="fas fa-phone-alt"></i><a href="tel:0928528535">092-852-8535</a></div><div><i class="fab fa-line"></i><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener">@999snkil</a></div><div><i class="fas fa-envelope"></i><a href="mailto:pkpaintandsupply@gmail.com">pkpaintandsupply@gmail.com</a></div><div style="margin-top:10px;"><i class="fas fa-map-marker-alt"></i> 249/3 ม.6 ถ.รังสิต<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ต.บ้านปทุม อ.เมือง จ.ปทุมธานี</div><div style="margin-top:6px;"><a href="https://maps.app.goo.gl/S74pSdH2BgsrWLKd8" target="_blank" rel="noopener" style="color:#90cdff;font-size:12px;"><i class="fas fa-directions" style="margin-right:4px;"></i>เปิดแผนที่ Google Maps</a></div></div></div>
+        <div class="footer-col"><h4 class="footer-title">ติดตามเรา</h4><div class="footer-social"><a href="https://www.facebook.com/pkpaint1996/" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://line.me/R/ti/p/@999snkil" target="_blank" rel="noopener" title="LINE"><i class="fab fa-line"></i></a>
+<a href="https://www.tiktok.com/@pk.paint" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
+<a href="https://th.shp.ee/PVz5zBdo" target="_blank" rel="noopener" title="Shopee"><i class="fas fa-store"></i></a></div></div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="copyright-year"></span> PK Paint &amp; Supply. All Rights Reserved.</div>
+</footer>
     <button class="scroll-top" id="scrollTop" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">
         <i class="fas fa-chevron-up"></i>
     </button>
-    <script src="js/index.js?v=1.0.2" defer></script>
-    <script src="js/main.js?v=1.0.2" defer></script>
+    <script src="js/index.js?v=1.0.2"></script>
+    <script src="js/main.js?v=1.0.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" type="module" integrity="sha384-jnZyQsSR1OYvSB2kM7RLMhfC4YJOqT1fCTzykGMNVbsZSsviQnCOFIhUhN7OCSF" crossorigin="anonymous"></script>
 
 <script>
-    const themeToggle = document.getElementById('themeToggle');
-    const icon = themeToggle ? themeToggle.querySelector('i') : null;
-    
-    function applyTheme(isDark) {
-        if(isDark) {
-            document.documentElement.classList.add('dark-mode');
-            if(icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
-            localStorage.setItem('pk_theme', 'dark');
-        } else {
-            document.documentElement.classList.remove('dark-mode');
-            if(icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
-            localStorage.setItem('pk_theme', 'light');
-        }
-    }
-
-    // Init
-    if (localStorage.getItem('pk_theme') === 'dark') {
-        applyTheme(true);
-    }
-    
-    if(themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const isDark = document.documentElement.classList.contains('dark-mode');
-            applyTheme(!isDark);
-        });
-    }
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>

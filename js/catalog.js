@@ -1,22 +1,24 @@
-﻿(function () {
+(function () {
     'use strict';
+    function debounce(fn, delay) { let timer; return function() { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, arguments), delay); }; }
     let BRANDS = [];
     let COLORS = [];
     let brandMap = {};
 
     function getBrandLogoHTML(b) {
+        if (!b) return ''; // ← FIX: guard against undefined brand
         if (b.id === 'ford-mazda') {
             return `<span class="split-logo-inline"><img src="asset/Ford_logo_flat.svg.png" alt="FORD"><img src="asset/mazda_PNG86.png" alt="MAZDA"></span>`;
         }
-        return `<img src="${b.logo}" alt="${b.name}">`;
+        return `<img src="${b.logo || ''}" alt="${b.name || ''}">`;
     }
 
     // Finish type configuration
     const FINISH_TYPES = [
         { id: 'all', label: 'ทุกประเภทสี', emoji: '🎨' },
-        { id: 'solid', label: 'สีทึบ (Solid)', emoji: '⚫' },
+        { id: 'solid', label: 'สีทึบ (Solid)', emoji: '🎨' },
         { id: 'metallic', label: 'เมทัลลิก (Metallic)', emoji: '⭐' },
-        { id: 'pearl', label: 'เพิร์ล (Pearl)', emoji: '💎' },
+        { id: 'pearl', label: 'มุก (Pearl)', emoji: '✨' },
         { id: 'opal', label: 'โอปอล (Opal)', emoji: '🔮' }
     ];
 
@@ -90,13 +92,15 @@
     function finishLabel(finish) {
         switch (finish) {
             case 'metallic': return { text: 'เมทัลลิก', cls: 'badge-metallic' };
-            case 'pearl': return { text: 'เพิร์ล', cls: 'badge-pearl' };
+            case 'pearl': return { text: 'มุก', cls: 'badge-pearl' };
             case 'opal': return { text: 'โอปอล', cls: 'badge-opal' };
             default: return null;
         }
     }
 
+    // ← FIX: validate hex before slicing to prevent crash on null/malformed color
     function makeSwatchSVG(hex, finish, code) {
+        if (!hex || !/^#[0-9a-fA-F]{6}$/i.test(hex)) hex = '#808080';
         const r = parseInt(hex.slice(1, 3), 16);
         const g = parseInt(hex.slice(3, 5), 16);
         const b = parseInt(hex.slice(5, 7), 16);
@@ -152,7 +156,7 @@
             brandPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active'));
             item.classList.add('active');
             selectedBrand = item.dataset.brand;
-            const text = selectedBrand === 'all' ? 'ยี่ห้อรถทั้งหมด' : brandMap[selectedBrand].name;
+            const text = selectedBrand === 'all' ? 'ยี่ห้อรถทั้งหมด' : (brandMap[selectedBrand] ? brandMap[selectedBrand].name : selectedBrand);
             const triggerText = document.getElementById('brandTriggerText');
             if (triggerText) triggerText.textContent = text;
             const triggerLeft = document.querySelector('#brandTrigger .dropdown-trigger-left');
@@ -248,7 +252,11 @@
         currentFiltered = COLORS.filter(c => {
             const matchBrand = selectedBrand === 'all' || c.brand === selectedBrand;
             const matchFinish = selectedFinish === 'all' || c.finish === selectedFinish;
-            const matchSearch = !search || c.name.toLowerCase().includes(search) || c.code.toLowerCase().includes(search) || (brandMap[c.brand] && brandMap[c.brand].name.toLowerCase().includes(search));
+            // ← FIX: guard c.name and c.code against null before calling .toLowerCase()
+            const matchSearch = !search ||
+                (c.name || '').toLowerCase().includes(search) ||
+                (c.code || '').toLowerCase().includes(search) ||
+                (brandMap[c.brand] && brandMap[c.brand].name.toLowerCase().includes(search));
             return matchBrand && matchFinish && matchSearch;
         });
         if (showingCount) showingCount.textContent = currentFiltered.length;
@@ -270,28 +278,34 @@
             const cardsToAnimate = [];
             
             pageItems.forEach((c, i) => {
-                const b = brandMap[c.brand];
-                const swatch = makeSwatchSVG(c.color, c.finish, c.code);
-                const badge = finishLabel(c.finish);
-                const modelsHtml = c.models ? `<div class="color-card-models">รุ่นที่รองรับ: ${c.models}</div>` : '';
-                const card = document.createElement('div');
-                card.className = 'color-card';
-                card.innerHTML = `
-                <div class="color-card-img-wrap">
-                    <div class="color-swatch" style="background-image:url('${swatch}');background-size:cover;background-position:center;"></div>
-                    ${badge ? `<span class="finish-badge ${badge.cls}">${badge.text}</span>` : ''}
-                    <div class="zoom-icon"><i class="fas fa-expand"></i></div>
-                </div>
-                <div class="color-card-body">
-                    <div class="color-card-brand">${getBrandLogoHTML(b)} ${b.name}</div>
-                    <div class="color-card-name">${c.name}</div>
-                    <div class="color-card-code"><span class="color-dot" style="background:${c.color};"></span> ${c.code}</div>
-                    ${modelsHtml}
-                    <div class="color-disclaimer">* สีที่แสดงเป็นค่าอ้างอิงเท่านั้น</div>
-                </div>`;
-                card.addEventListener('click', () => openColorLightbox(card, currentFiltered, start + i));
-                fragment.appendChild(card);
-                cardsToAnimate.push({ card, delay: (i + 1) * 30 });
+                // ← FIX: wrap each card in try-catch so one bad entry doesn't blank the whole grid
+                try {
+                    // ← FIX: fallback brand object when brand is missing from brandMap
+                    const b = brandMap[c.brand] || { id: c.brand || '', name: c.brand || 'ไม่ระบุยี่ห้อ', logo: '' };
+                    const swatch = makeSwatchSVG(c.color, c.finish, c.code);
+                    const badge = finishLabel(c.finish);
+                    const modelsHtml = c.models ? `<div class="color-card-models">รุ่นที่รองรับ: ${c.models}</div>` : '';
+                    const card = document.createElement('div');
+                    card.className = 'color-card';
+                    card.innerHTML = `
+                    <div class="color-card-img-wrap">
+                        <div class="color-swatch" style="background-image:url('${swatch}');background-size:cover;background-position:center;"></div>
+                        ${badge ? `<span class="finish-badge ${badge.cls}">${badge.text}</span>` : ''}
+                        <div class="zoom-icon"><i class="fas fa-expand"></i></div>
+                    </div>
+                    <div class="color-card-body">
+                        <div class="color-card-brand">${getBrandLogoHTML(b)} ${b.name}</div>
+                        <div class="color-card-name">${c.name || ''}</div>
+                        <div class="color-card-code"><span class="color-dot" style="background:${c.color || '#808080'};"></span> ${c.code || ''}</div>
+                        ${modelsHtml}
+                        <div class="color-disclaimer">* สีที่แสดงอาจแตกต่างจากสีจริง</div>
+                    </div>`;
+                    card.addEventListener('click', () => openColorLightbox(card, currentFiltered, start + i));
+                    fragment.appendChild(card);
+                    cardsToAnimate.push({ card, delay: (i + 1) * 30 });
+                } catch (err) {
+                    console.warn('Skipped rendering card (bad data):', c, err);
+                }
             });
             
             // Single DOM write
@@ -358,7 +372,8 @@
         if (hasBrandFilter) {
             const chip = document.createElement('span');
             chip.className = 'filter-chip';
-            chip.innerHTML = `${brandMap[selectedBrand].name} <i class="fas fa-times"></i>`;
+            const brandName = brandMap[selectedBrand] ? brandMap[selectedBrand].name : selectedBrand;
+            chip.innerHTML = `${brandName} <i class="fas fa-times"></i>`;
             chip.addEventListener('click', () => {
                 selectedBrand = 'all';
                 if (brandPanel) { brandPanel.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active')); const allItem = brandPanel.querySelector('[data-brand="all"]'); if (allItem) allItem.classList.add('active'); }
@@ -405,7 +420,7 @@
 
     const searchInput = document.getElementById('searchInput');
     const searchClearBtn = document.getElementById('searchClear');
-    if (searchInput) searchInput.addEventListener('input', function () { if (searchClearBtn) searchClearBtn.style.display = this.value ? 'block' : 'none'; filterAndRender(); });
+    if (searchInput) searchInput.addEventListener('input', debounce(function () { if (searchClearBtn) searchClearBtn.style.display = this.value ? 'block' : 'none'; filterAndRender(); }, 300));
     if (searchClearBtn) searchClearBtn.addEventListener('click', function () { if (searchInput) { searchInput.value = ''; searchInput.focus(); } this.style.display = 'none'; filterAndRender(); });
 
     function checkUrlParams() {
@@ -483,17 +498,23 @@
         }
     };
     function showLB(idx) {
-        const c = lbData[idx]; const b = brandMap[c.brand]; const badge = finishLabel(c.finish);
-        if (lightboxSwatch) lightboxSwatch.style.background = `linear-gradient(135deg, ${lightenHex(c.color, 30)} 0%, ${c.color} 50%, ${darkenHex(c.color, 20)} 100%)`;
+        // ← FIX: guard against out-of-range index
+        const c = lbData[idx];
+        if (!c) return;
+        // ← FIX: fallback brand + safe hex color
+        const b = brandMap[c.brand] || { id: c.brand || '', name: c.brand || 'ไม่ระบุยี่ห้อ', logo: '' };
+        const badge = finishLabel(c.finish);
+        const safeColor = (c.color && /^#[0-9a-fA-F]{6}$/i.test(c.color)) ? c.color : '#808080';
+        if (lightboxSwatch) lightboxSwatch.style.background = `linear-gradient(135deg, ${lightenHex(safeColor, 30)} 0%, ${safeColor} 50%, ${darkenHex(safeColor, 20)} 100%)`;
         if (lightboxBrand) lightboxBrand.innerHTML = `${getBrandLogoHTML(b)} ${b.name}`;
-        if (lightboxName) lightboxName.textContent = c.name;
+        if (lightboxName) lightboxName.textContent = c.name || '';
         if (lightboxCode) {
-            lightboxCode.innerHTML = `โค้ดสี: <strong>${c.code}</strong>${badge ? ` &nbsp;<span class="finish-badge ${badge.cls}">${badge.text}</span>` : ''}`;
+            lightboxCode.innerHTML = `รหัสสี: <strong>${c.code || ''}</strong>${badge ? ` &nbsp;<span class="finish-badge ${badge.cls}">${badge.text}</span>` : ''}`;
             if (c.models) lightboxCode.innerHTML += `<br><span style="font-size:13px; color:rgba(255,255,255,0.65); margin-top:4px; display:inline-block;">รุ่นที่รองรับ: ${c.models}</span>`;
         }
     }
-    function lightenHex(hex, amt) { if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return '#808080'; const r = Math.min(255, parseInt(hex.slice(1, 3), 16) + amt); const g = Math.min(255, parseInt(hex.slice(3, 5), 16) + amt); const b = Math.min(255, parseInt(hex.slice(5, 7), 16) + amt); return `rgb(${r}, ${g}, ${b})`; }
-    function darkenHex(hex, amt) { if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return '#808080'; const r = Math.max(0, parseInt(hex.slice(1, 3), 16) - amt); const g = Math.max(0, parseInt(hex.slice(3, 5), 16) - amt); const b = Math.max(0, parseInt(hex.slice(5, 7), 16) - amt); return `rgb(${r}, ${g}, ${b})`; }
+    function lightenHex(hex, amt) { if (!/^#[0-9a-fA-F]{6}$/i.test(hex)) return '#808080'; const r = Math.min(255, parseInt(hex.slice(1, 3), 16) + amt); const g = Math.min(255, parseInt(hex.slice(3, 5), 16) + amt); const b = Math.min(255, parseInt(hex.slice(5, 7), 16) + amt); return `rgb(${r}, ${g}, ${b})`; }
+    function darkenHex(hex, amt) { if (!/^#[0-9a-fA-F]{6}$/i.test(hex)) return '#808080'; const r = Math.max(0, parseInt(hex.slice(1, 3), 16) - amt); const g = Math.max(0, parseInt(hex.slice(3, 5), 16) - amt); const b = Math.max(0, parseInt(hex.slice(5, 7), 16) - amt); return `rgb(${r}, ${g}, ${b})`; }
     function closeLB() { if (lightbox) { lightbox.classList.remove('open'); document.body.style.overflow = ''; } }
     const closeBtn = document.getElementById('lightboxClose'); if (closeBtn) closeBtn.addEventListener('click', closeLB);
     const prevBtn = document.getElementById('lightboxPrev'); if (prevBtn) prevBtn.addEventListener('click', () => { lbIndex = (lbIndex - 1 + lbData.length) % lbData.length; showLB(lbIndex); });

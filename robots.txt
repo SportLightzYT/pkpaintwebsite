@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /raw data/
+
+Sitemap: https://pkpaintandsupply.com/sitemap.xml

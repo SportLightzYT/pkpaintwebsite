@@ -1,18 +1,3 @@
-﻿
-// Phase 8: XSS Protection Helper
-function escapeHTML(str) {
-    if (typeof str !== 'string') return str;
-    return str.replace(/[&<>'"]/g, 
-        tag => ({
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            "'": '&#39;',
-            '"': '&quot;'
-        }[tag] || tag)
-    );
-}
-
 (function() {
     'use strict';
 
@@ -41,7 +26,7 @@ function escapeHTML(str) {
                 pageTitle = 'เข้าชมหน้าหลัก';
             }
             
-            fetch('data/stats.json', {
+            fetch('api/stats.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'visit', page: pageTitle })
@@ -101,6 +86,20 @@ function escapeHTML(str) {
 
     window.addEventListener('load', updateCachedDimensions);
     window.addEventListener('resize', updateCachedDimensions);
+    // Recalc when dynamic content (productGrid etc.) injects after fetch
+    if ('ResizeObserver' in window) {
+        const ro = new ResizeObserver(updateCachedDimensions);
+        // observe body changes after dynamic loading
+        if (document.body) ro.observe(document.body);
+        // also observe productGrid if present
+        const pg = document.getElementById('productGrid');
+        if (pg) ro.observe(pg);
+        const cg = document.getElementById('colorGrid');
+        if (cg) ro.observe(cg);
+    } else {
+        // fallback polling for old browsers
+        setInterval(updateCachedDimensions, 1500);
+    }
 
     function updateScrollProgress() {
         if (!scrollProgress) return;
